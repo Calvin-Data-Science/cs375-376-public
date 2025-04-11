@@ -4,6 +4,10 @@ weight: 4
 revised: 2025
 ---
 
+{{% next-year %}}
+The instructions and replies didn't make sense for FlipFlop!
+{{% /next-year %}}
+
 How can we quantify the performance of large language models? Researchers have developed benchmarks to evaluate models on a variety of tasks.
 
 This Discussion addresses the course objective MS-LLM-Eval. With additional thought, you could find connections to CI-LLM-Failures and various CI-Topics objectives here. You may also find connections to MS-LLM-Prompting, MS-LLM-API, and (if you're really ambitious) LM-ICL.
