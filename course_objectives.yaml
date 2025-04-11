@@ -1,0 +1,279 @@
+# Neural Computation Objectives
+- id: NC-MLPParts
+  pillar: Neural Computation
+  class: 375
+  section: null
+  description: I can compute the forward pass through a two-layer classification neural network by hand (or in simple code) and explain the purpose and operation of each part.
+
+- id: NC-Primitives
+  pillar: Neural Computation
+  class: 375
+  section: null
+  description: I can implement the following basic neural network primitives in efficient parallel code (using a library like NumPy or PyTorch) - linear layers, elementwise nonlinearities (like ReLU), softmax, and loss functions like MSE and categorical cross-entropy.
+
+- id: NC-DataFlow
+  pillar: Neural Computation
+  class: 375
+  section: null
+  description: I can draw clear diagrams of the data flow, including array shapes, for the forward pass and loss computation for the following models - linear regression, logistic regression, and a one-layer MLP.
+
+- id: NC-VecSimilarity
+  pillar: Neural Computation
+  class: 375
+  section: null
+  description: I can interpret vectors of data as points in a space and explain similarity measures like the dot product.
+
+- id: NC-Autograd
+  pillar: Neural Computation
+  class: 375
+  section: null
+  description: I can use automatic differentiation APIs to compute and descend gradients.
+
+- id: NC-Embeddings
+  pillar: Neural Computation
+  class: 376
+  section: null
+  description: I can identify various types of embeddings (tokens, hidden states, output, key, and query) in a language model and explain their purpose.
+
+- id: NC-SelfAttention
+  pillar: Neural Computation
+  class: 376
+  section: null
+  description: I can explain the purpose and components of a self-attention layer. (Bonus topics - multi-head attention, positional encodings)
+
+- id: NC-Architectures
+  pillar: Neural Computation
+  class: 376
+  section: null
+  description: I can compare and contrast the following neural architectures - CNN, RNN, and Transformer. (Bonus topics - U-Nets, LSTMs, Vision Transformers, state-space models)
+
+- id: NC-Convolution
+  pillar: Neural Computation
+  class: 376
+  section: null
+  description: I can explain the purpose of a convolution layer and how it operates on an image. (Bonus topics - pooling, strides, padding)
+
+- id: NC-TransformerDataFlow
+  pillar: Neural Computation
+  class: 376
+  section: null
+  description: I can identify the shapes of data flowing through a Transformer-style language model.
+
+- id: NC-Scaling
+  pillar: Neural Computation
+  class: 376
+  section: null
+  description: I can analyze how the computational requirements of a model scale with number of parameters and context size.
+
+# ML Systems Objectives
+- id: MS-API-Notebook
+  pillar: ML Systems
+  class: both
+  section: APIs and Systems
+  description: I can create a computational notebook that includes code, execution results, section headings, and formatted textual explanations.
+
+- id: MS-API-Supervised
+  pillar: ML Systems
+  class: 375
+  section: APIs and Systems
+  description: I can write code that trains a supervised ML model using a sklearn-style fit-predict API.
+
+- id: MS-API-TaskModel
+  pillar: ML Systems
+  class: 375
+  section: APIs and Systems
+  description: I can select appropriate loss functions and metrics for a given task (and thus choose an appropriate model type/structure). Specifically, I can distinguish between regression and classification problems, even if classification targets happen to be encoded as numbers.
+
+- id: MS-API-Integration
+  pillar: ML Systems
+  class: both
+  section: APIs and Systems
+  description: I can integrate an ML model into a larger application.
+
+- id: MS-Eval-Experiment
+  pillar: ML Systems
+  class: both
+  section: Experimentation and Evaluation
+  description: I can design, run, and analyze empirical experiments to quantify the impact of hyperparameter changes on model performance.
+
+- id: MS-Eval-Visualize
+  pillar: ML Systems
+  class: both
+  section: Experimentation and Evaluation
+  description: I can make and interpret plots of relevant evaluation metrics.
+
+- id: MS-Eval-HyperOpt
+  pillar: ML Systems
+  class: 375
+  section: Experimentation and Evaluation
+  description: I can identify hyperparameters that can be adjusted to improve the performance of a model.
+
+- id: MS-LLM-Generation
+  pillar: ML Systems
+  class: 376
+  section: APIs and Systems
+  description: I can extract and interpret model outputs (token logits) and use them to generate text.
+
+- id: MS-LLM-API
+  pillar: ML Systems
+  class: 376
+  section: APIs and Systems
+  description: I can apply industry-standard APIs to work with pretrained language models (LLMs) and generative AI systems.
+
+- id: MS-LLM-Prompting
+  pillar: ML Systems
+  class: 376
+  section: APIs and Systems
+  description: I can critique and refine prompts to improve the quality of responses from an LLM.
+
+- id: MS-LLM-Tokenization
+  pillar: ML Systems
+  class: 376
+  section: APIs and Systems
+  description: I can explain the purpose, inputs, and outputs of tokenization.
+
+- id: MS-LLM-TokenizationImpact
+  pillar: ML Systems
+  class: 376
+  section: APIs and Systems
+  description: I can analyze how tokenization choices affect the performance of an LLM.
+
+- id: MS-LLM-Advanced
+  pillar: ML Systems
+  class: 376
+  section: APIs and Systems
+  description: I can apply techniques such as RAG, in-context learning, tool use, and multi-modal input to solve complex tasks with an LLM.
+
+- id: MS-LLM-Eval
+  pillar: ML Systems
+  class: 376
+  section: Experimentation and Evaluation
+  description: I can apply and critically analyze evaluation strategies for generative models.
+
+- id: MS-LLM-Train
+  pillar: ML Systems
+  class: 376
+  section: Experimentation and Evaluation
+  description: I can describe the overall process of training a state-of-the-art dialogue LLM such as Llama or OLMo.
+
+- id: MS-LLM-Compute
+  pillar: ML Systems
+  class: 376
+  section: Experimentation and Evaluation
+  description: I can analyze the computational requirements of training and inference of generative AI systems.
+
+# Learning Machines Objectives
+- id: LM-Theory-Paradigms
+  pillar: Learning Machines
+  class: 375
+  section: Learning Theory
+  description: I can explain how different ML approaches (supervised, unsupervised/self-supervised, reinforcement) learn.
+
+- id: LM-Theory-SGD
+  pillar: Learning Machines
+  class: 375
+  section: Learning Theory
+  description: I can explain how stochastic gradient descent uses data to improve performance of a model.
+
+- id: LM-Theory-LossMetric
+  pillar: Learning Machines
+  class: 375
+  section: Learning Theory
+  description: I can describe the relationship between loss functions and metrics.
+
+- id: LM-Implement-Validate
+  pillar: Learning Machines
+  class: 375
+  section: Implementation and Debugging
+  description: I apply validation techniques (e.g., data splitting/cross-validation, spot-checks on specific examples, etc.) without having to be reminded to do so.
+
+- id: LM-Debug-Diagnose
+  pillar: Learning Machines
+  class: 375
+  section: Implementation and Debugging
+  description: I can diagnose problems in model training, such as overfitting or underfitting, from metrics.
+
+- id: LM-Implement-PyTorch
+  pillar: Learning Machines
+  class: 375
+  section: Implementation and Debugging
+  description: I can implement a basic training loop in PyTorch.
+
+- id: LM-SelfSupervised
+  pillar: Learning Machines
+  class: 376
+  section: null
+  description: I can explain how self-supervised learning can be used to train foundation models on massive datasets without labeled data.
+
+- id: LM-Theory-Feedback
+  pillar: Learning Machines
+  class: 376
+  section: null
+  description: I can explain how feedback tuning can improve the performance and reliability of a model / agent.
+
+- id: LM-ICL
+  pillar: Learning Machines
+  class: 376
+  section: null
+  description: I can explain how in-context learning can be used to improve test-time performance of a model.
+
+# Context and Implications Objectives
+- id: CI-Basic-Impact
+  pillar: Context and Implications
+  class: 375
+  section: Basic
+  description: Recognize when an AI system might have negative impacts on people and flag the need for careful analysis before deploying such a system.
+
+- id: CI-Basic-Explain
+  pillar: Context and Implications
+  class: 375
+  section: Basic
+  description: Explain basic AI concepts to a non-technical audience without major errors.
+
+- id: CI-Basic-Faith
+  pillar: Context and Implications
+  class: 375
+  section: Basic
+  description: Identify, in general sense, some ways in which reformed Christian concepts apply to AI development and deployment. Specific examples might include - shalom, humanity in the image of God, and the creation-fall-redemption-restoration narrative.
+
+- id: CI-LLM-Failures
+  pillar: Context and Implications
+  class: 376
+  section: Basic
+  description: I can identify common types of failures in LLMs, such as hallucination and bias.
+
+- id: CI-Topic-PhilNarrative
+  pillar: Context and Implications
+  class: both
+  section: Topics
+  description: I can identify and discuss relevant theological narratives and philosophical questions. (Overall - what does it mean to be human?)
+
+- id: CI-Topic-SocAnalyze
+  pillar: Context and Implications
+  class: both
+  section: Topics
+  description: I can identify societal implications of AI technologies and recall relevant facts. I can deeply analyze real-world problems to identify how AI could be used or misused in those situations.
+
+- id: CI-Topic-SocEvaluate
+  pillar: Context and Implications
+  class: both
+  section: Topics
+  description: I can evaluate specific design and evaluation choices in AI systems' based on how they relate to human contexts (organizations, societies, etc.) in which those systems might operate.
+
+- id: CI-Topic-DispIntegrity
+  pillar: Context and Implications
+  class: both
+  section: Topics
+  description: I can identify and demonstrate strategies that support my practice of dispositions such as integrity, humility, meticulousness, creativity, responsibility, perseverance / continuous technical learning / growth mindset.
+
+- id: CI-Topic-DispVision
+  pillar: Context and Implications
+  class: both
+  section: Topics
+  description: I can envision value-aligned technological futures involving AI. Practically, I can use generative AI in ways that honor others, help me think better, and help me serve others better.
+
+- id: CI-Topic-History
+  pillar: Context and Implications
+  class: both
+  section: Topics
+  description: I can trace current AI technologies and ways of thinking back to origins and developments of at least a decade ago.
