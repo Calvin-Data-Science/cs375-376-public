@@ -6,6 +6,10 @@ revised: 2025
 
 {{% next-year %}}
 The instructions and replies didn't make sense for FlipFlop!
+
+And nobody actually saw a flip-flop.
+
+Maybe we have pepole keep trying until they see an incorrect answer flip correct and a correct answer flip incorrect. (That might be a lot of work though.)
 {{% /next-year %}}
 
 How can we quantify the performance of large language models? Researchers have developed benchmarks to evaluate models on a variety of tasks.
