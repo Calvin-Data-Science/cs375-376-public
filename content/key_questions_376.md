@@ -1,3 +1,8 @@
+---
+title: "Key Questions for CS 376"
+revised: 2025
+---
+
 ### Neural Computation
 
 Today's ML systems are a mashup of two kinds of computational objects: the traditional sequential programming that we're used to is still usually the "outer loop" of an ML system, but that code is the caretaker for a very different kind of animal: a highly parallel vector computer controlled by billions of parameters. This pillar is about understanding how that parallel vector computer works and how we can control it.
