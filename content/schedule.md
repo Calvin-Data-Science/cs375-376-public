@@ -541,7 +541,56 @@ Note: I dropped the intro to Streamlit for time reasons, but I highly recommend 
 
 <div class="calendar-week">
 
-## Week 5: Multimodal Models and Diffusion
+## Week 5: Review
+
+{{% calendar-week-header %}}
+Since this is a short week, we'll slow down to review and reinforce (1) how Transformers work inside and (2) how we can use them to make conversational agents that can interact with the world.
+
+{{% details summary="Resources" %}}
+If you're feeling fuzzy about any of the concepts we've covered so far, I recommend going back to these resources:
+
+- Videos / articles
+  - [3Blue1Brown - Visualizing Attention, a Transformer's Heart | Chapter 6, Deep Learning](https://www.3blue1brown.com/lessons/attention)
+  - [3Blue1Brown - How might LLMs store facts | Chapter 7, Deep Learning](https://www.3blue1brown.com/lessons/mlp)
+- Interactive
+  - [Transformer Explainer](https://poloclub.github.io/transformer-explainer/)
+  - [LLM Visualization](https://bbycroft.net/llm): an interactive article, take your time to walk through it over several sessions.
+  - [Softmax and Cross-Entropy](https://observablehq.com/@kcarnold/softmax)
+- Notebooks
+  - Notebook: {{% notebook name="Demo of Logits and Embeddings from a Language Model" nbname="u09n0-logits-demo.ipynb" %}}
+
+Supplemental resources:
+
+- [Tracing the thoughts of a large language model \ Anthropic](https://www.anthropic.com/research/tracing-thoughts-language-model)
+- [OpenAI Tokenizer](https://platform.openai.com/tokenizer)
+- [Zero to Hero](https://karpathy.ai/zero-to-hero.html) part 6: [Let's build GPT: from scratch, in code, spelled out. - YouTube](https://www.youtube.com/watch?v=kCc8FmEb1nY) (go back to [prior parts](https://karpathy.ai/zero-to-hero.html) if you need to)
+
+{{% /details %}}
+{{% /calendar-week-header %}}
+{{% calendar-day dow="Monday" date="2025-04-14" %}}
+
+
+{{% /calendar-day %}}
+
+
+{{% calendar-day dow="Wednesday" date="2025-04-16" %}}
+- Activity: [Lab 5: Stable Diffusion](/units/12multimodal/lab)
+
+{{% /calendar-day %}}
+
+
+{{% calendar-day dow="Friday" date="2025-04-18" %}}
+- Good Friday
+
+{{% /calendar-day %}}
+
+
+</div>
+
+
+<div class="calendar-week">
+
+## Week 6: Multimodal Models and Diffusion
 
 {{% calendar-week-header %}}
 What if we want to have AI conversations that include images or audio? -- both as input and output?
@@ -584,40 +633,6 @@ Also, many people refer to [this blog post](https://lilianweng.github.io/posts/2
 
 {{% /details %}}
 {{% /calendar-week-header %}}
-{{% calendar-day dow="Monday" date="2025-04-14" %}}
-- Finish [last week Slides](/slides/w11-prompting.html): How to learn from feedback
-  - Example: [RLHF dataset](https://huggingface.co/datasets/Dahoas/full-hh-rlhf)
-- Generative Models, Diffusion [Slides](/slides/w12%20Multimodal%20Generation.pdf)
-  - Try the [SigLIP demo](https://colab.research.google.com/github/google-research/big_vision/blob/main/big_vision/configs/proj/image_text/SigLIP_demo.ipynb) that embeds images and text together. Try computing the dot products between a few texts that you write by hand. Does the dot product reflect the similarity of the texts? Repeat with images. What do you find?
-
-{{% /calendar-day %}}
-
-
-{{% calendar-day dow="Wednesday" date="2025-04-16" %}}
-- Activity: [Lab 5: Stable Diffusion](/units/12multimodal/lab)
-
-(Homework 2 due)
-
-{{% /calendar-day %}}
-
-
-{{% calendar-day dow="Friday" date="2025-04-18" %}}
-- Good Friday
-
-{{% /calendar-day %}}
-
-
-</div>
-
-
-<div class="calendar-week">
-
-## Week 6: Miscellaneous Topics
-
-{{% calendar-week-header %}}
-This week we'll cover a few topics that are important but didn't fit neatly into the previous weeks. We'll also have time for project work.
-
-{{% /calendar-week-header %}}
 {{% calendar-day dow="Monday" date="2025-04-21" %}}
 - Easter Monday
 
@@ -625,7 +640,14 @@ This week we'll cover a few topics that are important but didn't fit neatly into
 
 
 {{% calendar-day dow="Wednesday" date="2025-04-23" %}}
-- Sharing Homework 2 results
+- Finish [last week Slides](/slides/w11-prompting.html): How to learn from feedback
+  - Example: [RLHF dataset](https://huggingface.co/datasets/Dahoas/full-hh-rlhf)
+- Generative Models, Diffusion [Slides](/slides/w12%20Multimodal%20Generation.pdf)
+  - Try the [SigLIP demo](https://colab.research.google.com/github/google-research/big_vision/blob/main/big_vision/configs/proj/image_text/SigLIP_demo.ipynb) that embeds images and text together. Try computing the dot products between a few texts that you write by hand. Does the dot product reflect the similarity of the texts? Repeat with images. What do you find?
+
+
+
+- STALE: Sharing Homework 2 results
 - Interpretability and Explanation ([slides](/slides/w13-Explainable%20and%20Usable.pdf))
 - Project Work Time
 
