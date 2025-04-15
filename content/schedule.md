@@ -375,6 +375,20 @@ News (in Perusall library, not officially assigned)
 - [HandsOnLLM/Hands-On-Large-Language-Models: Official code repo for the O'Reilly Book - "Hands-On Large Language Models"](https://github.com/HandsOnLLM/Hands-On-Large-Language-Models)
 
 {{% /details %}}
+{{% details summary="Q&A" %}}
+> Is there a limit to how far back a transformer can look? And how are they improving it? For example, in a chatbot with more context, you can feel that it is getting dumber.
+
+"how far back a transformer can look" = its "context window". Things that limit that:
+
+1. the architecture. if position embeds are absolute (not, say, RoPE), then we need to set a limit before we even start training.
+2. computation. Plain self-attention is quadratic in squence length. So long attention takes way more computation time. This has seen lots of effort to optimize recently.
+3. Training. Gotta actually give the models examples of documents / conversations / etc. where long-range attention is needed, otherwise it won't learn it.
+
+> How does increased communication [via self-attention] actually translate to better token generation?
+
+Consider the case of asking an LLM to fix up a paragraph that you wrote. It needs to basically copy what you gave as input, but with some edits / changes at some places. Self-attention lets the network basically keep a running pointer to where you are in the input, grab what you said next, and repeat that or something similar in the output. A recurrent network (like LSTM), in contrast, would somehow have to encode your entire input into a single vector, and then decode that into the output, which is really challenging to learn to do reliably.
+
+{{% /details %}}
 {{% /calendar-week-header %}}
 {{% calendar-day dow="Monday" date="2025-03-31" %}}
 - Slides: [Neural Architectures](/slides/w10-nn-arch.html)
