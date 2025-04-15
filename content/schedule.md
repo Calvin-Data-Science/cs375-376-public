@@ -388,6 +388,10 @@ News (in Perusall library, not officially assigned)
 
 Consider the case of asking an LLM to fix up a paragraph that you wrote. It needs to basically copy what you gave as input, but with some edits / changes at some places. Self-attention lets the network basically keep a running pointer to where you are in the input, grab what you said next, and repeat that or something similar in the output. A recurrent network (like LSTM), in contrast, would somehow have to encode your entire input into a single vector, and then decode that into the output, which is really challenging to learn to do reliably.
 
+> How else to improve transformers, besides more training and more heads / layers / dimensions?
+
+There's so many little tweaks that people do (read the tech report of any new model release). Common things people play with are how to encode position (RoPE is big now), playing with how keys/queries/values mix and match (Grouped Query Attention etc.), and the data, loss functions, etc. (e.g., reinforcement learning from various kinds of rewards).
+
 {{% /details %}}
 {{% /calendar-week-header %}}
 {{% calendar-day dow="Monday" date="2025-03-31" %}}
