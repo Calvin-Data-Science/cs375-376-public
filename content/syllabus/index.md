@@ -233,7 +233,7 @@ For a rough illustrative example (not meant to be prescriptive or override the c
 Specifically, we propose to compute the final grade as a weighted mean:
 
 - 10%: PPP points (instructor may adjust the denominator depending on how this category is affecting the course grade)
-- 20%: course project (see rubric for detailed specs, but rubric will be set so that C = checks all the minimum boxes, B = also connects substantively to course objectives, A = sufficient quality to publish as an academic paper or blog post)
+- 20%: [course project](/project) (see that page for detailed specs). Technical work for projects will be counted towards course objectives; this grading section is mostly focused on the quality and coherence of the project.
 - 70%: course objectives, computed as the mean of all objectives scores, where 0 = not addressed, 1 = P achieved one time, 2 = P achieved 2 times, 3 = M achieved, 4 = E achieved. This average (0-4) will then be rescaled to the 0-100 scale such that 1 = D+, 2 = C+, 3 = B+, 4 = 100%.
 
 For example:
