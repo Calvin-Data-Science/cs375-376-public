@@ -600,7 +600,7 @@ Supplemental resources:
   - Biggest thing to review *how self-attention works*
 - Project Work Time!
   - Deliverable: what's your project? What's success look like (sketch an example)? What are two next steps that you can take to make progress?
-- Review
+- Review (see [Summary](/units/12review/))
   - LLMs view the world as a sequence of tokens
     - tokenization approach and vocabulary size is chosen before training
     - which tokens to use are determined by some training data
