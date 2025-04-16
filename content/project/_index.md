@@ -31,36 +31,44 @@ You are encouraged to try to demonstrate competency in several of these topics e
 
 The [choosing-a-project](/project/proj-choice) page has some suggestions for project types.
 
-
-### Rubric (To Be Updated)
+### Rubric
 
 {{% details summary="Rubric" %}}
-*This rubric was from last year, we may adjust it for this year.*
 
 This rubric is a rough guide; adjustments may be made based on the specifics of your project. The [choosing-a-project](/project/proj-choice) page has some details about evaluation of different types of projects.
 
-- 20pt: **Concepts: Used fundamental ML concepts**
+## Project Rubric
 
-    The project dug below the surface in some way to connect to fundamental ML concepts. (This is about conceptual understanding, not implementation, although those are related.)
+Since different projects will have different emphases, projects wil lbe graded holistically based on their contribution to your portfolio:
 
-    The report might demonstrate this by a *substantive* discussion of:
+- A = I could write you a recommendation letter based on this work
+- B = you should definitely include this in your portfolio
+- C = you could include this in your portfolio, but not if you have better work
+- D = you should probably not include this in your portfolio
+
+Here are some ways that projects can demonstrate these levels of quality. The strongest projects will demonstrate several of these.
+
+- **Connecting to fundamental ML concepts**. You can dig below the surface in some way. For example, your report might include a *substantive* discussion of:
 
     - why a model (or hyperparameter of some model) was chosen by discussing how the model aligns with the task
     - analyzing what kinds of errors the model makes and why that might or might not make sense in light of the architecture
     - how a choice of loss function, training data, evaluation approach, etc. impacts the outcome
     - how a model type that was not covered in detail in class actually works (ideally with some specific examples)
 
-- 20pt: **Implementation and/or Experimentation**
+- **Evaluation**, both quantitative and qualitative. Don't just say it works, measure it. For example, you might:
 
-    The project implemented a method not discussed in class, experimented systematically with some existing method, or otherwise did good applied work.
+    - compare the performance of two or three different approaches to a task (e.g., simple baseline method you implemented, state-of-the-art method that someone else implemented, and simple tweak to the baseline method that improves it a little)
+    - quantitative (numbers that measure performance) and qualitative (specific examples of what the model does well or poorly)
+    - robustness analyses
 
-    In many projects, this will be addressed by a thorough *evaluation* of the proposed approach. Evaluations should be both quantitative (numbers) and qualitative (discussing specific examples). A *comparison* between two or three interestingly different approaches is probably good.
+- **Real-World Connections**:
 
-- 5pt: **Communication: project goal clear?**
+  - Why is this project interesting? What is the real-world problem that it addresses?
+  - What choices are you making *because of the real-world problem*?
+  - Connect your results about system performance to the real-world problem.
+  - Are there any decisions that you might make differently because of ethical considerations? Be specific!
 
-    The report and presentation clearly state the project goal and *connect* it with the technical details of the approach and metrics. Then, the discussion of the results should *connect back* to the goal. (e.g., suppose you got some loss number; does that mean your model succeeded at its goal?)
-
-- 10pt: **Communication: Decisions and Rationale**
+- **Communication: Decisions and Rationale**
 
     Explains what decisions were made during the project why they were made, and possible alternatives.
 
@@ -82,33 +90,30 @@ This rubric is a rough guide; adjustments may be made based on the specifics of 
     - which tells us ______ about the relationship between X and Y
     - so, were we successful at X? (and why or why not?)
 
-- 5pt: **Communication: Results**
+- **Clear communication of results**:
 
-    It summarizes results clearly, using visuals if possible, and relates those results to overall success at the goal.
+  - Good visualizations, tables, textual summaries, examples, etc.
+  - Connect the results to the real-world problem.
 
-- 5pt: **Communication: Limitations and Future Directions**
+- **Clear discussion of limitations and future directions**
 
-    It summarizes limitations/caveats, social/ethical considerations, and future directions that could be pursued.
+  - Not just "I ran out of time to do X", but "these results assume that Y is true, but in the real world, some cases where Y might not be true are [examples]."
+  - What are the implications of this? What would you do next if you had more time?
+  - Specific limitations of the chosen approach are discussed (e.g., "our dataset only had examples of X, so we couldn't test how well the model generalizes to Y")
+  - Ethical considerations are specific, e.g., rather than generic concerns about bias, the report gives specific examples of biases that might be present and what the consequences might be.
+  - Future directions are plausible and described in enough detail that someone else could pick up the project and run with it.
 
-    - [ ] Specific limitations of the chosen approach are discussed (e.g., "our dataset only had examples of X, so we couldn't test how well the model generalizes to Y")
-    - [ ] Ethical considerations are specific, e.g., rather than generic concerns about bias, the report gives specific examples of biases that might be present and what the consequences might be.
-    - [ ] Future directions are plausible and described in enough detail that someone else could pick up the project and run with it.
 
-- 5pt: **Report and Presentation Craft**
+Minimum expectations:
 
-    The report is clear, concise, and well organized, and has no major writing issues.
+- **Report**: 
+  - [ ] The report is well organized (has a clear logical flow, uses headings to indicate sections, etc.)
+  - [ ] It has no major writing issues.
+  - [ ] The report is concise (any unnecessary information or outputs are moved to an appendix or removed)
+  - [ ] The report is understandable without reading the code.
+  - [ ] All resources that were used (except for provided course materials) are clearly cited.
 
-    In general the reports will be Jupyter notebooks (ipynb) with code included. The results should be understandable *without reading the code*, though.
-
-    - [ ] Overall, the report displays a high degree of *integrity*: claims are backed up with evidence, strengths and limitations are acknowledged.
-    - [ ] The report is well-organized, with clear headings and a logical flow.
-    - [ ] The report is concise, with no unnecessary information. (e.g., outputs are selected to be informative, rather than large dumps of data)
-
-- 5pt: **References**
-
-    All resources that were used (except for provided course materials) are clearly cited.
-
-An excellent project could become a submission to a conference or a blog post (see [upcoming AI deadlines](https://aideadlin.es/?sub=ML,AI)). At the very least it should be a good portfolio piece.
+An excellent project could become a submission to an academic conference or a blog post. At the very least it should be a good portfolio piece.
 
 {{% /details %}}
 
@@ -186,7 +191,9 @@ The report should be at the level of polish and formality of a blog post (more t
   - Use Markdown (text) cells appropriately, e.g., to format headers (`## Header`) and links.
 -   Submit your work as a Jupyter Notebook (`.ipynb`) file if possible.
 
-Here are some elements that would generally be expected in a report. Not all reports need to have all elements, and reports may include other elements. Reports should *generally* include:
+{{% details summary="Example Report Structure" %}}
+
+Reports should be organized in a way that makes sense for your project. The following is a general outline of what a report might look like. You can use this as a starting point, but feel free to adjust it to fit your project.
 
 - A succinct but descriptive **title**
 - A **real-world question or goal** and *why* it's interesting.
@@ -210,6 +217,8 @@ Checklist:
 - [ ] Describes **why** you made various decisions
 - [ ] Backs up claims with **evidence** (e.g., numbers, examples)
 - [ ] Cites **sources** for any ideas that are not your own (and describes what you took from each source)
+
+{{% /details %}}
 
 ### Reflection
 
@@ -256,13 +265,6 @@ See the Resources page here, especially [Tools](/resources/#tools).
 
 Feedback:
 
-I wrote up some general comments here: https://cs.calvin.edu/courses/cs/344/22sp/project/#choosing-a-replication-project
-
-
-Kaggle will be most straightforward, the others more interesting.
-
-If you can get access to the dataset, the replication project could also be cool, especially if it connects with some of your personal interests.
-
 Have you found existing work that you\'d replicate?
 
 I agree that a Kaggle competition would be good for you. Maybe warm up on a closed competition to get used to how it works, then jump to a live one when you feel ready?
@@ -279,11 +281,6 @@ Note that there have been lots of other papers since the Taming Transformers pap
 
 I wrote up some general comments about replication projects that might help you here: https://cs.calvin.edu/courses/cs/344/22sp/project/#choosing-a-replication-project
 
-
-
-If you want to try the research project, that would be cool. If so, let\'s find a time to meet. Easiest would be to try to book an "advising" meeting with me: https://outlook.office365.com/owa/calendar/Arnoldmeetings@calvincollege.onmicrosoft.com/bookings/s/HPLJtsUd4EWK0_CV-nIgEg2
-
-I wrote up some general comments about replication projects that might help you here: https://cs.calvin.edu/courses/cs/344/22sp/project/#choosing-a-replication-project
 
 General notes to everyone:
 
