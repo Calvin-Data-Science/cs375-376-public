@@ -37,8 +37,6 @@ The [choosing-a-project](/project/proj-choice) page has some suggestions for pro
 
 This rubric is a rough guide; adjustments may be made based on the specifics of your project. The [choosing-a-project](/project/proj-choice) page has some details about evaluation of different types of projects.
 
-## Project Rubric
-
 Since different projects will have different emphases, projects wil lbe graded holistically based on their contribution to your portfolio:
 
 - A = I could write you a recommendation letter based on this work
@@ -222,15 +220,16 @@ Checklist:
 
 ### Reflection
 
-Write, individually, about a page on:
+Write an individual reflection (about a page or should suffice) discussing:
 
 1. What was your role or contribution to the project (if it was a team project)? Look at some examples of Author contributions statements, such as [this one](https://transformer-circuits.pub/2022/in-context-learning-and-induction-heads/index.html#author-contributions).
-2. How you would describe the project in a technical job interview.
-3. A summary of the main things you learned from the process of doing the project.
-4. Superlatives: most fun part? most proud of part? frustrating? surprising? interesting? challenging? rewarding? most useful part of the course for your project? 
-5. Wishes: what would you do differently next time? advice for someone else doing a similar project? material you wish you had learned in the course?
+2. How does this project fit into your portfolio? What **technical skills** do you want it to demonstrate? **What makes it high-quality**?
+3. How you would describe the project in a technical job interview.
+4. A summary of the main things you learned from the process of doing the project.
+5. Superlatives (pick a few): most fun part? most proud of part? frustrating? surprising? interesting? challenging? rewarding? most useful part of the course for your project? 
+6. Wishes: what would you do differently next time? advice for someone else doing a similar project? material you wish you had learned in the course?
 
-At the end of your report, include a brief summary of how the project demonstrates competency of various skills.
+Also, include a section that lists which *course objectives* you think this project demonstrates; for each one, write a sentence or two about how you think it demonstrates that objective. (You can find the course objectives in the syllabus.)
 
 ### Supporting Material
 
