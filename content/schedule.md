@@ -658,6 +658,11 @@ By the end of this week you should be able to:
 - Explain how a Generative Adversarial Network is trained.
 
 {{% /details %}}
+{{% details summary="Key Questions" %}}
+- How is noise useful for diffusion models for image generation?
+- Why does diffusion require multiple time steps?
+
+{{% /details %}}
 {{% details summary="Terms" %}}
 - **Multimodal**: Combining multiple modes of input, such as text, images, and sound.
 - Denoising **Diffusion**: Sampling from a conditional distribution by iteratively denoising a noisy sample.
