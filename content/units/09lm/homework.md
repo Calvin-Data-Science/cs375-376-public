@@ -8,6 +8,22 @@ revised: 2025
 
 - Conduct a quantitative experiment comparing openly available language models
 
+This exercise addresses the following course objectives:
+
+- [MS-LLM-Eval](objective)
+- [MS-LLM-API](objective)
+- [MS-Eval-Experiment](objective)
+
+You may also found opportunities to demonstrate the following course objectives:
+
+- [CI-LLM-Failures](objective)
+- [MS-LLM-Prompting](objective)
+- [MS-LLM-Advanced](objective)
+- [MS-LLM-Compute](objective)
+- [LM-ICL](objective)
+
+## Overview
+
 We're going to do the same task as Discussion 1, but in code.
 
 **Start by picking one specific example from your Discussion 1 task**. We'll hard-code it for simplicity.

@@ -392,6 +392,10 @@ Consider the case of asking an LLM to fix up a paragraph that you wrote. It need
 
 There's so many little tweaks that people do (read the tech report of any new model release). Common things people play with are how to encode position (RoPE is big now), playing with how keys/queries/values mix and match (Grouped Query Attention etc.), and the data, loss functions, etc. (e.g., reinforcement learning from various kinds of rewards).
 
+> What does the [Anthropic article](https://www.anthropic.com/research/tracing-thoughts-language-model) mean by "Claude wasn't designed as a calculator—it was trained on text, not equipped with mathematical algorithms"?
+
+The Transformer architecture is hugely inefficient and unreliable if all you want to do is addition or multiplication. But it had to learn to do that anyway, even with unreliable building blocks, because being able to add and multiply make the Internet a bit less surprising.
+
 {{% /details %}}
 {{% /calendar-week-header %}}
 {{% calendar-day dow="Monday" date="2025-03-31" %}}
