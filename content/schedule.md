@@ -675,8 +675,16 @@ By the end of this week you should be able to:
   - e.g., almost all possible images look like random noise; the manifold is the region of images that look like images in the training data
 
 {{% /details %}}
-{{% details summary="Preparation" %}}
-- A context reading about training data: [Models All the Way Down](https://knowingmachines.org/models-all-the-way) until Part 3
+{{% details summary="Readings" %}}
+- the rest of the ethics chapter from [Understanding Deep Learning](https://udlbook.github.io/udlbook/)
+- [Scheming reasoning evaluations — Apollo Research](https://www.apolloresearch.ai/research/scheming-reasoning-evaluations)
+- [Stanford 2025 AI Index Report](
+- [Artificial intelligence learns to reason _ Science](https://www.science.org/doi/10.1126/science.adw5211)
+- [Turning Employees Into AI Janitors - by Cassie Kozyrkov](https://decision.substack.com/p/turning-employees-into-ai-janitors)
+- [Technical Report: Prompt Engineering is Complicated and Contingent - Wharton AI & Analytics Initiative](https://ai-analytics.wharton.upenn.edu/generative-ai-labs/research-and-technical-reports/tech-report-prompt-engineering-is-complicated-and-contingent/)
+- [22365_3_Prompt Engineering_v7](https://drive.google.com/file/d/1AbaBYbEa_EbPelsT40-vj64L-2IwUJHy/view)
+
+Another nice reading (about training data), but the server seems down: [Models All the Way Down](https://knowingmachines.org/models-all-the-way) until Part 3
 
 {{% /details %}}
 {{% details summary="Resources" %}}
