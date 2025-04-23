@@ -678,13 +678,15 @@ By the end of this week you should be able to:
 {{% details summary="Readings" %}}
 - the rest of the ethics chapter from [Understanding Deep Learning](https://udlbook.github.io/udlbook/)
 - [Scheming reasoning evaluations — Apollo Research](https://www.apolloresearch.ai/research/scheming-reasoning-evaluations)
-- [Stanford 2025 AI Index Report](
+- [Stanford 2025 AI Index Report](https://hai.stanford.edu/ai-index/2025-ai-index-report)
 - [Artificial intelligence learns to reason _ Science](https://www.science.org/doi/10.1126/science.adw5211)
 - [Turning Employees Into AI Janitors - by Cassie Kozyrkov](https://decision.substack.com/p/turning-employees-into-ai-janitors)
 - [Technical Report: Prompt Engineering is Complicated and Contingent - Wharton AI & Analytics Initiative](https://ai-analytics.wharton.upenn.edu/generative-ai-labs/research-and-technical-reports/tech-report-prompt-engineering-is-complicated-and-contingent/)
 - [22365_3_Prompt Engineering_v7](https://drive.google.com/file/d/1AbaBYbEa_EbPelsT40-vj64L-2IwUJHy/view)
 
 Another nice reading (about training data), but the server seems down: [Models All the Way Down](https://knowingmachines.org/models-all-the-way) until Part 3
+
+- [An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale | Abstract](https://arxiv.org/abs/2010.11929)
 
 {{% /details %}}
 {{% details summary="Resources" %}}
@@ -705,6 +707,11 @@ Also, many people refer to [this blog post](https://lilianweng.github.io/posts/2
 
 
 {{% calendar-day dow="Wednesday" date="2025-04-23" %}}
+- Logistics
+  - Perusall readings
+  - Project Walkthrough
+  - Final Discussion
+  - Final Exercise
 - Homework 1 Examples
   - Managing conversation context
 - Generative Models, Diffusion [Slides](/slides/w12%20Multimodal%20Generation.pdf)
@@ -717,9 +724,7 @@ Also, many people refer to [this blog post](https://lilianweng.github.io/posts/2
 {{% calendar-day dow="Friday" date="2025-04-25" %}}
 - Activity: [Lab 5: Stable Diffusion](/units/13multimodal/lab)
   - Stable Diffusion
-
-- Project Work Time
-- Quiz 3
+- Quiz 3 OR Project Work Time
 
 {{% /calendar-day %}}
 
