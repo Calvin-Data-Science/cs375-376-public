@@ -222,14 +222,17 @@ Checklist:
 
 Write an individual reflection (about a page or should suffice) discussing:
 
-1. What was your role or contribution to the project (if it was a team project)? Look at some examples of Author contributions statements, such as [this one](https://transformer-circuits.pub/2022/in-context-learning-and-induction-heads/index.html#author-contributions).
+1. Which *course objectives* do you think this project demonstrates? For each one, write a sentence or two about how you think it demonstrates that objective. (You can find the course objectives in the [syllabus](/syllabus/).)
 2. How does this project fit into your portfolio? What **technical skills** do you want it to demonstrate? **What makes it high-quality**?
-3. How you would describe the project in a technical job interview.
-4. A summary of the main things you learned from the process of doing the project.
-5. Superlatives (pick a few): most fun part? most proud of part? frustrating? surprising? interesting? challenging? rewarding? most useful part of the course for your project? 
-6. Wishes: what would you do differently next time? advice for someone else doing a similar project? material you wish you had learned in the course?
+3. Imagine discussing this project in a technical job interview. What question does the interviewer ask? What's your response? (Ask an LLM for feedback on this one.)
+4. What was your role or contribution to the project (if it was a team project)? Look at some examples of Author contributions statements, such as [this one](https://transformer-circuits.pub/2022/in-context-learning-and-induction-heads/index.html#author-contributions).
 
-Also, include a section that lists which *course objectives* you think this project demonstrates; for each one, write a sentence or two about how you think it demonstrates that objective. (You can find the course objectives in the syllabus.)
+A few other things you could optionally include in the reflection:
+
+- A summary of the main things you learned from the process of doing the project.
+- Superlatives (pick a few): most fun part? most proud of part? frustrating? surprising? interesting? challenging? rewarding? most useful part of the course for your project? 
+- Wishes: what would you do differently next time? advice for someone else doing a similar project? material you wish you had learned in the course?
+
 
 ### Supporting Material
 

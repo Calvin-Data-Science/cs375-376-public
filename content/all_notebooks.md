@@ -318,6 +318,8 @@ We also strive for the sequence to make sense.
   - Sampling
   - Guidance
   - Conclusions
+- {{% notebook name="Option 1: Run locally:" nbname="u12n2-agent-rag.ipynb" %}}
+  - Warm-Up: Structured Outputs
 
 ### Week 13
 

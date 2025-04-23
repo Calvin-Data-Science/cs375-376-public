@@ -705,24 +705,19 @@ Also, many people refer to [this blog post](https://lilianweng.github.io/posts/2
 
 
 {{% calendar-day dow="Wednesday" date="2025-04-23" %}}
-- Activity: [Lab 5: Stable Diffusion](/units/13multimodal/lab)
-  - Stable Diffusion
-
-- Finish [last week Slides](/slides/w11-prompting.html): How to learn from feedback
-  - Example: [RLHF dataset](https://huggingface.co/datasets/Dahoas/full-hh-rlhf)
+- Homework 1 Examples
+  - Managing conversation context
 - Generative Models, Diffusion [Slides](/slides/w12%20Multimodal%20Generation.pdf)
   - Try the [SigLIP demo](https://colab.research.google.com/github/google-research/big_vision/blob/main/big_vision/configs/proj/image_text/SigLIP_demo.ipynb) that embeds images and text together. Try computing the dot products between a few texts that you write by hand. Does the dot product reflect the similarity of the texts? Repeat with images. What do you find?
-
-
-
-- STALE: Sharing Homework 2 results
-- Interpretability and Explanation ([slides](/slides/w13-Explainable%20and%20Usable.pdf))
 - Project Work Time
 
 {{% /calendar-day %}}
 
 
 {{% calendar-day dow="Friday" date="2025-04-25" %}}
+- Activity: [Lab 5: Stable Diffusion](/units/13multimodal/lab)
+  - Stable Diffusion
+
 - Project Work Time
 - Quiz 3
 
@@ -739,7 +734,7 @@ Also, many people refer to [this blog post](https://lilianweng.github.io/posts/2
 {{% calendar-week-header %}}
 {{% /calendar-week-header %}}
 {{% calendar-day dow="Monday" date="2025-04-28" %}}
-
+- Interpretability and Explanation ([slides](/slides/w13-Explainable%20and%20Usable.pdf))
 
 {{% /calendar-day %}}
 
