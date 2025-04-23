@@ -318,8 +318,11 @@ We also strive for the sequence to make sense.
   - Sampling
   - Guidance
   - Conclusions
-- {{% notebook name="Option 1: Run locally:" nbname="u12n2-agent-rag.ipynb" %}}
+- {{% notebook name="Calvin Course Advisor Bot" nbname="u12n2-agent-rag.ipynb" %}}
+    - Option 1: Run locally:
   - Warm-Up: Structured Outputs
+  - Step 2: Make a simple retrieval system
+  - A Complete Bot
 
 ### Week 13
 
