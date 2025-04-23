@@ -716,7 +716,7 @@ Also, many people refer to [this blog post](https://lilianweng.github.io/posts/2
   - Managing conversation context
 - Generative Models, Diffusion [Slides](/slides/w12%20Multimodal%20Generation.pdf)
   - Try the [SigLIP demo](https://colab.research.google.com/github/google-research/big_vision/blob/main/big_vision/configs/proj/image_text/SigLIP_demo.ipynb) that embeds images and text together. Try computing the dot products between a few texts that you write by hand. Does the dot product reflect the similarity of the texts? Repeat with images. What do you find?
-- Project Work Time
+- Handout: [Conversation documents, multimodal models, and LLM reliability](/handouts/2025_04_23.pdf)
 
 {{% /calendar-day %}}
 
