@@ -1,6 +1,6 @@
 ---
 title: "Discussion: Fans and Skeptics, Optimists and Pessimists"
-revised: 2024
+revised: 2025
 ---
 
 You've just taken an AI/ML class. You might get asked: where is AI going? And is it good or bad? Now that you've engaged with the details of how some AI systems work, you're much more qualified than average to answer those questions. But even experts disagree about those questions.
@@ -43,16 +43,20 @@ Read a few of your classmates' responses to learn about their articles and posit
 
 I won't try to list every possible source here, especially because there are new ones all the time. Instead, here are some ideas of kinds of articles to look for (with a few examples if you're lazy).
 
+- Two from Nicholas Carlini:
+  - [My Thoughts on the Future of "AI"](https://nicholas.carlini.com/writing/2025/thoughts-on-future-ai.html)
+  - [Machines of Ruthless Efficiency](https://nicholas.carlini.com/writing/2025/machines-of-ruthless-efficiency.html)
+- capabilities: [The Era of Experience](https://storage.googleapis.com/deepmind-media/Era-of-Experience%20/The%20Era%20of%20Experience%20Paper.pdf): "A new generation of agents will acquire superhuman capabilities by learning predominantly from experience." (see [press coverage](https://www.businessinsider.com/google-openai-anthropic-ai-agents-training-data-2025-4))
+- economic impacts: 
+  - The [Anthropic Economic Index: Insights from Claude 3.7 Sonnet \ Anthropic](https://www.anthropic.com/news/anthropic-economic-index-insights-from-claude-sonnet-3-7)
+  - [GPTs are GPTs: An Early Look at the Labor Market Impact Potential of Large Language Models | Abstract](https://arxiv.org/pdf/2303.10130) (note the date: March 2023)
+- [Why AI Will Save the World | Andreessen Horowitz](https://a16z.com/ai-will-save-the-world/)
+- [Dario Amodei — Machines of Loving Grace](https://www.darioamodei.com/essay/machines-of-loving-grace)
 - Announcements of new AI capabilities
   - e.g., from tech companies (whether big ones like Meta, Google, OpenAI, or smaller ones like DataBricks, Anthropic, Mistral, etc.)
   - Academic from AI researchers (look at an aggregator like [PapersWithCode](https://paperswithcode.com/))
   - Techie YouTube channels, like [Two Minute Papers](https://www.youtube.com/channel/UCbfYPyITQ-7l4upoX8nvctg)
   - or papers like [Sparks of Artificial General Intelligence: Early experiments with GPT-4 | Abstract](https://arxiv.org/pdf/2303.12712) or [The AI Revolution: The Road to Superintelligence](https://waitbutwhy.com/2015/01/artificial-intelligence-revolution-1.html) (note: this is a rabbit hole, especially if you go on to [part 2](https://waitbutwhy.com/2015/01/artificial-intelligence-revolution-2.html))
-- People who think that AI will benefit everyone
-  - e.g., [Why AI Will Save the World | Andreessen Horowitz](https://a16z.com/ai-will-save-the-world/)
-- Articles about the economic impacts of AI
-  - e.g., from financial institutions, like [JP Morgan's "Eye on the Market"](https://am.jpmorgan.com/us/en/asset-management/institutional/insights/market-insights/eye-on-the-market/)
-  - one of many other examples: [GPTs are GPTs: An Early Look at the Labor Market Impact Potential of Large Language Models | Abstract](https://arxiv.org/pdf/2303.10130)
 - Articles about the societal impact of AI
   - from journalists (note that Calvin has a site license to the New York Times)
   - from institutions like the [Berkman Klein Center for Internet & Society at Harvard](https://cyber.harvard.edu/), [AI Now Institute at NYU](https://ainowinstitute.org/), [AlgorithmWatch](https://algorithmwatch.org/en/), [Center for Humane Technology](https://www.humanetech.com/), etc.
