@@ -11,7 +11,9 @@ To be wise, we should consider various points of view: fans and skeptics, optimi
 
 ## Instructions
 
-Read two articles with different perspectives. Read with hospitality: you'll need to be able to articulate the other side's point of view.
+The Moodle form includes a link to a brief survey about your overall views on AI. Start by filling that out according to your current views.
+
+Then, find two articles that represent different perspectives on the future of AI. (More on sources below.) Read with hospitality: you'll need to be able to articulate the other side's point of view.
 
 1. For your first article:
     - Provide a well-formatted link (that indicates the source without having to click it).
@@ -26,7 +28,7 @@ Read two articles with different perspectives. Read with hospitality: you'll nee
 
 ## Responses
 
-Read a few of your classmates' responses to learn about their articles and positions. Respond to at least one of them. 
+Read a few of your classmates' responses to learn about their articles and positions. Respond to at least one of them.
 
 ## Rubric
 
