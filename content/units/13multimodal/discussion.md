@@ -62,6 +62,7 @@ I won't try to list every possible source here, especially because there are new
 - Articles about the societal impact of AI
   - from journalists (note that Calvin has a site license to the New York Times)
   - from institutions like the [Berkman Klein Center for Internet & Society at Harvard](https://cyber.harvard.edu/), [AI Now Institute at NYU](https://ainowinstitute.org/), [AlgorithmWatch](https://algorithmwatch.org/en/), [Center for Humane Technology](https://www.humanetech.com/), etc.
+- [Reward Hacking in Reinforcement Learning | Lil'Log](https://lilianweng.github.io/posts/2024-11-28-reward-hacking/)
 - Articles from people who have been publicly skeptical of current claims of AI progress:
   - [Gary Marcus](https://garymarcus.substack.com/)
   - [AI Snake Oil](https://aisnakeoil.substack.com/)
