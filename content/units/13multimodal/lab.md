@@ -5,6 +5,20 @@ revised: 2024
 
 Open this notebook. You can run it on Kaggle or Colab, or run it on a lab machine (but there's some configuration issues to resolve if you do that.)
 
+On a lab machine, start by opening a terminal and running the following command to set up the environment:
+
+```bash
+/home/cs/376/setup-cs376.sh
+```
+
+Then, log out and log back in. Then open a terminal and run the following command to start Jupyter Lab:
+
+```bash
+activate_376
+jupyter lab
+```
+
+
 - {{% notebook name="Stable Diffusion Deep Dive" nbname="u12n1-stable-diffusion.ipynb" %}}
 
 Your goal today is to *be creative* and see what you can make! The notebook includes a variety of things to try, but you can also try your own ideas.
