@@ -253,7 +253,7 @@ find_courses_matching_queries(["programming", "AI"])
 
 ## Part 3: Recommendations
 
-Here's my suggestion for a recommendation output format:
+Here's a possible recommendation output format (it has some issues that you might want to fix later):
 
 ```python
 class CourseRecommendation(BaseModel):
@@ -268,7 +268,8 @@ class RecommendTool(BaseModel):
     recommendations: list[CourseRecommendation]
 ```
 
-Now you put it together to make a course advisor bot!
+Now you put it together to make a course advisor bot! First try running these steps "by hand" to see how it works. Then, put it all together in a function. You can follow the rough outline given in the code snippet above.
+
 
 ## Part 4: Testing
 
