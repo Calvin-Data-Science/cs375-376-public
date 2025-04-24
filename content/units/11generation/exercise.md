@@ -133,19 +133,7 @@ And here's how we might use it in an OpenAI-compatible LLM call:
 completion = client.beta.chat.completions.parse(
     model=model,
     messages=[
-        {"role": "system", "content": f"""
-Write 10 search queries to make against a course catalog that would find information relevant to the user's interest.
-
-Example:
-Student interest: "art"
-Queries: ["art", "photography", "visual rhetoric", "painting", "sculpture", "art history", "graphic design", "digital media", "art theory", "contemporary art"]
-
-Notes:
-- Before responding, write a short thought about what kinds of courses might be relevant to the user's interest.
-- Ensure that each query would match the title or description of one or more specific courses in an undergraduate program
-       
-The output should be JSON with the following schema: {json.dumps(SearchTool.model_json_schema())}
-"""},
+        {"role": "system", "content": f"""Write 10 search queries."""},
         {"role": "user", "content": "I'm looking for courses related to AI."},
     ],
     response_format=SearchTool,
@@ -156,17 +144,44 @@ event = completion.choices[0].message.parsed
 event
 ```
 
-Observe:
+Observe that the `response_format` parameter is set to `SearchTool`, which means the LLM will be forced to output JSON that matches the `SearchTool` schema.
 
-1. The `response_format` parameter is set to `SearchTool`, which means the LLM will be forced to output JSON that matches the `SearchTool` schema.
-2. The system prompt provides (1) an overall description of the task, (2) an example of expected output, and (3) notes about how to do the task.
+Try making the following changes to the system prompt and see how they affect the output:
 
-Try this out with yourself with a few different search queries. Also try making changes to the system prompt:
+#### Add an example
 
-- how useful was the example? (This is an example of **in-context learning**.)
-- how useful were the notes?
-- how useful was it to provide the JSON schema?
-- what if you were lazy or minimalist with the system prompt?
+For in-context learning, it can sometimes be helpful to provide examples of the kind of output that you expect. But it can also sometimes lead to the model getting fixated on your specific examples. Try it out by adding an example to the system prompt. Try adding something like:
+
+```
+Example:
+Student interest: "art"
+Queries: ["art", "photography", "visual rhetoric", "painting", "sculpture", "art history", "graphic design", "digital media", "art theory", "contemporary art"]
+```
+
+How useful was adding this example?
+
+#### Add additional instructions
+
+You might try adding a "notes" section to the system prompt to give the model additional guidance. For example, you could say:
+
+```
+Notes:
+- Before responding, write a short thought about what kinds of courses might be relevant to the user's interest.
+- Assume that queries will be run against a specific course catalog, so avoid general terms like "course" or "department".
+- Ensure that each query would match the title or description of one or more specific courses in an undergraduate program
+```
+
+Did these notes help the model produce better output? How would you measure that?
+
+#### Add the output schema
+
+You might add (within the `f`-string):
+
+```
+The output should be JSON with the following schema: {json.dumps(SearchTool.model_json_schema())}
+```
+
+Overall, which of these changes was most helpful for getting the model to produce useful output? Are there any other changes you could make? Refer to our course readings on prompt engineering for more ideas.
 
 ## Part 2: Search the Course Catalog
 
