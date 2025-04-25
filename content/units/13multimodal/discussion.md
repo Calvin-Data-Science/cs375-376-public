@@ -49,6 +49,7 @@ I won't try to list every possible source here, especially because there are new
   - [My Thoughts on the Future of "AI"](https://nicholas.carlini.com/writing/2025/thoughts-on-future-ai.html)
   - [Machines of Ruthless Efficiency](https://nicholas.carlini.com/writing/2025/machines-of-ruthless-efficiency.html)
 - capabilities: [The Era of Experience](https://storage.googleapis.com/deepmind-media/Era-of-Experience%20/The%20Era%20of%20Experience%20Paper.pdf): "A new generation of agents will acquire superhuman capabilities by learning predominantly from experience." (see [press coverage](https://www.businessinsider.com/google-openai-anthropic-ai-agents-training-data-2025-4))
+- [AI as Normal Technology](https://knightcolumbia.org/content/ai-as-normal-technology) by Arvind Narayanan & Sayash Kapoor
 - economic impacts: 
   - The [Anthropic Economic Index: Insights from Claude 3.7 Sonnet \ Anthropic](https://www.anthropic.com/news/anthropic-economic-index-insights-from-claude-sonnet-3-7)
   - [GPTs are GPTs: An Early Look at the Labor Market Impact Potential of Large Language Models | Abstract](https://arxiv.org/pdf/2303.10130) (note the date: March 2023)
