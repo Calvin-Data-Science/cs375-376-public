@@ -1,13 +1,23 @@
 ---
-title: "Homework 376.2: Architectural Experimentation"
-weight: 4
-revised: 2024
+title: "Optional Extension: Architectural Experimentation"
+revised: 2025
 ---
 
 ## Outcomes
 
 - Experiment with architectural choices for a causal language model.
 - Compare the performance of different models on a specific task.
+
+You can use this exercise to demonstrate the following course objectives:
+
+- [MS-LLM-Compute](objective)
+- [MS-LLM-API](objective)
+- [NC-Scaling](objective)
+- [MS-LLM-Advanced](objective)
+- [MS-Eval-Experiment](objective)
+- [MS-Eval-Experiment](objective)
+- [MS-LLM-Tokenization](objective)
+- [MS-LLM-TokenizationImpact](objective)
 
 ## Task
 
