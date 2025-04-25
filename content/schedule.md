@@ -381,7 +381,7 @@ News (in Perusall library, not officially assigned)
 "how far back a transformer can look" = its "context window". Things that limit that:
 
 1. the architecture. if position embeds are absolute (not, say, RoPE), then we need to set a limit before we even start training.
-2. computation. Plain self-attention is quadratic in squence length. So long attention takes way more computation time. This has seen lots of effort to optimize recently.
+2. computation. Plain self-attention is quadratic in sequence length. So long attention takes way more computation time. This has seen lots of effort to optimize recently.
 3. Training. Gotta actually give the models examples of documents / conversations / etc. where long-range attention is needed, otherwise it won't learn it.
 
 > How does increased communication [via self-attention] actually translate to better token generation?
@@ -722,9 +722,10 @@ Also, many people refer to [this blog post](https://lilianweng.github.io/posts/2
 
 
 {{% calendar-day dow="Friday" date="2025-04-25" %}}
-- Activity: [Lab 5: Stable Diffusion](/units/13multimodal/lab)
+- Review handout from last time (question 3)
+- Activity: [Lab 376.6: Stable Diffusion](/units/13multimodal/lab)
   - Stable Diffusion
-- Quiz 3 OR Project Work Time
+- Project Work Time
 
 {{% /calendar-day %}}
 

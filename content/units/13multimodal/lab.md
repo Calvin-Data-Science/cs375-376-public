@@ -1,6 +1,6 @@
 ---
-title: "Lab 5: Stable Diffusion"
-revised: 2024
+title: "Lab 376.6: Stable Diffusion"
+revised: 2025
 ---
 
 Open this notebook. You can run it on Kaggle or Colab, or run it on a lab machine (but there's some configuration issues to resolve if you do that.)
@@ -18,6 +18,7 @@ activate_376
 jupyter lab
 ```
 
+Download the following notebook, find it in the Jupyter Lab file browser, and open it:
 
 - {{% notebook name="Stable Diffusion Deep Dive" nbname="u12n1-stable-diffusion.ipynb" %}}
 
