@@ -740,14 +740,15 @@ Also, many people refer to [this blog post](https://lilianweng.github.io/posts/2
 {{% calendar-week-header %}}
 {{% /calendar-week-header %}}
 {{% calendar-day dow="Monday" date="2025-04-28" %}}
-- Interpretability and Explanation ([slides](/slides/w13-Explainable%20and%20Usable.pdf))
+- Activity: [Lab: RL, Transformers, or other topics](/units/14misc/lab)
+    - choose-your-own-adventure Lab on reinforcement Learning or neural net architectures
 
 {{% /calendar-day %}}
 
 
 {{% calendar-day dow="Wednesday" date="2025-04-30" %}}
-- Activity: [Lab: RL, Transformers, or other topics](/units/14misc/lab)
-    - optional choose-your-own-adventure Lab on reinforcement Learning or other topics
+- Interpretability and Explanation ([slides](/slides/w13-Explainable%20and%20Usable.pdf))
+- Quiz 3
 
 {{% /calendar-day %}}
 

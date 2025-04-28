@@ -1,6 +1,6 @@
 ---
 title: "Lab: RL, Transformers, or other topics"
-revised: 2024
+revised: 2025
 ---
 
 Choose from one of the following notebooks, **or** do the Reinforcement Learning activities at the bottom of this page.
