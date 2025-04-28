@@ -43,13 +43,13 @@
 
 - id: NC-Architectures
   pillar: Neural Computation
-  class: 376
+  class: 376-bonus
   section: null
   description: I can compare and contrast the following neural architectures - CNN, RNN, and Transformer. (Bonus topics - U-Nets, LSTMs, Vision Transformers, state-space models)
 
 - id: NC-Convolution
   pillar: Neural Computation
-  class: 376
+  class: 376-bonus
   section: null
   description: I can explain the purpose of a convolution layer and how it operates on an image. (Bonus topics - pooling, strides, padding)
 
@@ -142,7 +142,7 @@
   pillar: ML Systems
   class: 376
   section: APIs and Systems
-  description: I can apply techniques such as RAG, in-context learning, tool use, and multi-modal input to solve complex tasks with an LLM.
+  description: I can apply techniques such as Retrieval-Augmented Generation, in-context learning, tool use, and multi-modal input to solve complex tasks with an LLM.
 
 - id: MS-LLM-Eval
   pillar: ML Systems
@@ -213,7 +213,7 @@
 
 - id: LM-ICL
   pillar: Learning Machines
-  class: 376
+  class: 376-bonus
   section: null
   description: I can explain how in-context learning can be used to improve test-time performance of a model.
 
@@ -240,7 +240,7 @@
   pillar: Context and Implications
   class: 376
   section: Basic
-  description: I can identify common types of failures in LLMs, such as hallucination and bias.
+  description: I can identify common types of failures in LLMs, such as hallucination (confabulation) and bias.
 
 - id: CI-Topic-PhilNarrative
   pillar: Context and Implications

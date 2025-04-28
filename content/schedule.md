@@ -740,6 +740,7 @@ Also, many people refer to [this blog post](https://lilianweng.github.io/posts/2
 {{% calendar-week-header %}}
 {{% /calendar-week-header %}}
 {{% calendar-day dow="Monday" date="2025-04-28" %}}
+- Handout: [Tokenization and Scaling Review](/handouts/2025_04_28.pdf)
 - Activity: [Lab: RL, Transformers, or other topics](/units/14misc/lab)
     - choose-your-own-adventure Lab on reinforcement Learning or neural net architectures
 

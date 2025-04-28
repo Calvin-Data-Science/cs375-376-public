@@ -44,11 +44,18 @@ After this course, I will be able to:
 - 376:
   {{< objectives "Neural Computation" 376 >}}
 
+{{% details summary="Optional objectives" %}}
+The following objectives were planned for the course but did not end up being covered in class. Some students may pursue them in projects, but they are not required for the course.
+
+{{< objectives "Neural Computation" "376-bonus" >}}
+
 Not core objectives, but useful for understanding the field:
 
 - State-space models
 - Quantization and pruning
 - Key-value caching
+{{% /details %}}
+
 
 ### ML Systems
 
@@ -73,6 +80,14 @@ After this course, I will be able to:
 - 376:
   {{< objectives "ML Systems" 376 >}}
 
+{{% details summary="Optional objectives" %}}
+The following objectives were planned for the course but did not end up being covered in class. Some students may pursue them in projects, but they are not required for the course.
+
+{{< objectives "ML Systems" "376-bonus" >}}
+
+{{% /details %}}
+
+
 ### Learning Machines
 
 #### Key questions
@@ -95,6 +110,13 @@ After this course, I will be able to:
   {{< objectives "Learning Machines" 375 >}}
 - 376:
   {{< objectives "Learning Machines" 376 >}}
+
+{{% details summary="Optional objectives" %}}
+The following objectives were planned for the course but did not end up being covered in class. Some students may pursue them in projects, but they are not required for the course.
+
+{{< objectives "Learning Machines" "376-bonus" >}}
+
+{{% /details %}}
 
 ### Context and Implications
 
