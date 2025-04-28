@@ -5,6 +5,8 @@ revised: 2025
 
 Choose from one of the following notebooks, **or** do the Reinforcement Learning activities at the bottom of this page.
 
+## Neural Net Architecture
+
 - {{% notebook name="Why so big? Counting parameters in sequence models" nbname="u13n1-count-params.ipynb" %}}
 - {{% notebook name="Models for Sequence Data" nbname="u13n2-seq-models.ipynb" %}}
 - {{% notebook name="Programming with Self-Attention" nbname="u13n3-self-attention.ipynb" %}}
@@ -12,6 +14,14 @@ Choose from one of the following notebooks, **or** do the Reinforcement Learning
 ## Reinforcement Learning
 
 ### Policy, Value, and Q functions
+
+Open up [Observable RL Playground](https://observablehq.com/@kcarnold/q-table-reinforcement-learning)
+
+1. Read through "Strategically Making Mistakes".
+2. What does a low epsilon do? What does a high epsilon do?
+3. Try editing the `maze = ` definition to edit the environment. What does it take to get the agent to tolerate a short-term negative reward to achieve a higher long-term reward?
+
+{{% details summary="Older activity that doesn't work anymore" %}}
 
 Go to the "Playground" at the bottom of [this article](https://distill.pub/2019/paths-perspective-on-value-learning/).
 
@@ -26,8 +36,4 @@ Go to the "Playground" at the bottom of [this article](https://distill.pub/2019/
 
 This environment isn't rich enough for exploration to help much. So: go to a different playground, where we can actually edit the environment and see what the agent learns.
 
-[Observable RL Playground](https://observablehq.com/@kcarnold/q-table-reinforcement-learning)
-
-1. Read through "Strategically Making Mistakes".
-2. What does a low epsilon do? What does a high epsilon do?
-3. Try editing the `maze = ` definition to edit the environment. What does it take to get the agent to tolerate a short-term negative reward to achieve a higher long-term reward?
+{{% /details %}}
