@@ -5,8 +5,8 @@ revised: 2025
 
 This lab is designed to help you make progress towards the following course objectives:
 
-- I can explain the purpose, inputs, and outputs of tokenization. [MS-LLM-Tokenization]
-- I can analyze how tokenization choices affect the performance of an LLM. [MS-LLM-TokenizationImpact]
+- [MS-LLM-Tokenization](objective)
+- [MS-LLM-TokenizationImpact](objective)
 
 Work through the following notebook. (No accelerator is needed. Either Kaggle or Colab is fine; if you use Colab, remember to "Copy to Drive".)
 
