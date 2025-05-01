@@ -274,7 +274,7 @@ This grading scheme addresses the following problems with the CS 375 grading sch
 
 ### How do I demonstrate that I've met objectives?
 
-You can demonstrate that you've met an objective through a *reflection in a project*, a *meeting with the instructor*, or a screen recording of a *chatbot conversation*. See ["How to Demonstrate Objectives"](../demo_objectives.md) for details.
+You can demonstrate that you've met an objective through a *reflection in a project*, a *meeting with the instructor*, or a screen recording of a *chatbot conversation*. See ["How to Demonstrate Objectives"](../demo_objectives) for details.
 
 **Graduate students** taking this course will be graded on the same overall criteria, but with more rigorous expectations for what it means to meet an objective. For example, graduate students should curate a portfolio at a level of completeness and refinement that they could present to a potential employer. Their work should also demonstrate engagement with primary sources and more rigorous evaluation, both quantitative and qualitative, of their own and others' work.
 
