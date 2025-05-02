@@ -788,5 +788,5 @@ Final Discussion topics
 Additional items:
 
 - Tuesday, May 6, 9am: Final Project Presentations during our class's [final exam time slot](https://calvin.edu/registrars-office/exam-schedule)
-Slides: [A Final Commission](/slides/w14-conclusion.html)
+- Slides: [A Final Commission](/slides/w14-conclusion.html)
 
