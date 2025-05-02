@@ -759,7 +759,6 @@ Also, many people refer to [this blog post](https://lilianweng.github.io/posts/2
 
 - Fairness and Wrap-Up [slides](/slides/w13-Fairness%20and%20Wrap-Up.pdf)
 
-Slides: [A Final Commission](/slides/w14-conclusion.html)
 Final Discussion topics
 
 - Personal Impacts
@@ -787,6 +786,6 @@ Final Discussion topics
 
 Additional items:
 
-
 - Tuesday, May 6, 9am: Final Project Presentations during our class's [final exam time slot](https://calvin.edu/registrars-office/exam-schedule)
+Slides: [A Final Commission](/slides/w14-conclusion.html)
 
