@@ -755,6 +755,7 @@ Also, many people refer to [this blog post](https://lilianweng.github.io/posts/2
 
 
 {{% calendar-day dow="Friday" date="2025-05-02" %}}
+- Handout: [Wrap-Up](/handouts/2025_05_02.pdf)
 - Discussion 3 sharing, comparing our survey to the results of the [Pew Research survey](https://www.pewresearch.org/internet/2025/04/03/how-the-us-public-and-ai-experts-view-artificial-intelligence/)
 
 - Fairness and Wrap-Up [slides](/slides/w13-Fairness%20and%20Wrap-Up.pdf)
