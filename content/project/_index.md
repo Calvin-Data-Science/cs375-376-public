@@ -167,7 +167,7 @@ Here is an [example presentation](https://docs.google.com/presentation/d/1WVWa32
 
 {{% /details %}}
 
-{{% details summary="Final Deliverables" %}}
+## Final Deliverables
 
 By the **end of the day of final presentations**, submit the following:
 
@@ -244,8 +244,6 @@ Submit code needed to replicate the visual and quantitative results in your repo
   - "Restart and Run All" before submitting, if possible.
   - The technical report may include all of the needed code; if so, nothing more is required.
 - Include clear instructions for how to acquire any data you used. (Don't upload the dataset itself, unless it happens to be very small.)
-
-{{% /details %}}
 
 ## General Advice
 
