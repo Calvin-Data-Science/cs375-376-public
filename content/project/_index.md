@@ -123,18 +123,22 @@ An excellent project could become a submission to an academic conference or a bl
 - Post in the Moodle discussion forum for help finding teammates
 
 
-## Milestones and Deliverables
+## Milestones
 
 To show progress:
 
 1. Submit your project report early, nearly blank but with a clear vision statement, and submit updates to it as you progress.
 2. Include an update on your project progress in your weekly reflection.
 
-{{% details summary="Presentations" %}}
+## Final Deliverables
+
+### Presentation
 
 The final course meeting (during the designated final exam period) will be devoted to final project presentations. Feedback on others' projects is expected, so attendance is mandatory.
 
 Presentations should communicate the key points (not every detail) of your project, such as:
+
+{{% details summary="Example Presentation Outline" %}}
 
 - What **problem** are you trying to solve?
 - **How you approached** that problem:
@@ -156,7 +160,11 @@ Presentations should communicate the key points (not every detail) of your proje
   - What broader questions might your project raise? How might you contribute to the discussion?
   - What might you do next?
 
+{{% /details %}}
+
 Slides are not strictly required (you could talk as you scroll through a notebook) but are probably helpful. Aim for 5 minutes of content. All team members should participate.
+
+{{% details summary="Example Presentation" %}}
 
 Here is an [example presentation](https://docs.google.com/presentation/d/1WVWa32uvPxat12nuemBX2Pjo19EAKnUKbwjaGpkOR_M/edit#slide=id.p) that I threw together. Self-critique:
 
@@ -166,8 +174,6 @@ Here is an [example presentation](https://docs.google.com/presentation/d/1WVWa32
 - Evaluation is quick and dirty and not finished. (But it's a good idea to show some results, even if they're not great.)
 
 {{% /details %}}
-
-## Final Deliverables
 
 By the **end of the day of final presentations**, submit the following:
 
