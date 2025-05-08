@@ -247,6 +247,7 @@ For a rough illustrative example (not meant to be prescriptive or override the c
   - The Met (M) level requires either an *in-class quiz*, an *interaction* (with the instructor, or perhaps with a chatbot or a peer), or a self-directed *project*.
   - The E level is given at instructor discretion to work that demonstrates understanding, strategy, or disposition that is likely to generalize robustly beyond this scope of course. As a concrete example, a successful interview for a ML-centered job would demonstrate E-level completion of an objective.
   - The instructor may limit the number of objectives that can become Met in a given week. So students are strongly encouraged to Meet objectives promptly.
+  - Although the "basic" CI objective is required, students only need to complete 2 of the CI "Topics" objectives. Any objectives beyond that are extra credit (computed by adding the score achieved to both the numerator and denominator of the final objectives grade).
 - The course grade will be determined by 3 factors:
   - The number of objectives met at each level: 
   - The quality of the course project.
