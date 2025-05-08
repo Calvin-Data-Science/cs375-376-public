@@ -20,6 +20,7 @@ It could also be used to address the following course objectives:
 - [NC-Scaling](objective)
 - [LM-SelfSupervised](objective)
 - [CI-Topic-History](objective)
+- [CI-LLM-Failures](objective)
 
 ## Task
 
@@ -33,4 +34,4 @@ You may find it helpful to refer to [The Illustrated GPT-2 (Visualizing Transfor
 Extension idea
 
 - measure how much this network speeds up when you move it to a GPU (you may need to `torch.compile` it first)
-- Other extensions are described on the [Architectural Experimentation](extension.md) page.
+- Other extensions are described on the [Architectural Experimentation](../extension/) page.
