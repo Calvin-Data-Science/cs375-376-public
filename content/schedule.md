@@ -432,7 +432,7 @@ The Transformer architecture is hugely inefficient and unreliable if all you wan
   - Software: describe the wiring, then what flows through the wires.
   - Hardware: compute queries, keys, and values, then compute the attention matrix, then compute the output.
 - For Friday, please start working on:
-  - Activity: [Lab 376.3](/units/10arch/lab)
+  - Activity: [Lab 376.3: Implementing Self-Attention](/units/10arch/lab)
 - Notebook: {{% notebook name="Demo of Logits and Embeddings from a Language Model" nbname="u09n0-logits-demo.ipynb" %}}
 - Notebook: {{% notebook name="Translation as Language Modeling" nbname="u09n2-decoding.ipynb" %}}
 
@@ -440,7 +440,7 @@ The Transformer architecture is hugely inefficient and unreliable if all you wan
 
 
 {{% calendar-day dow="Friday" date="2025-04-04" %}}
-- Activity: [Lab 376.3](/units/10arch/lab)
+- Activity: [Lab 376.3: Implementing Self-Attention](/units/10arch/lab)
   - Slides: [376 Lab 3: Implementing Self-Attention](/slides/w10-lab.html)
 - Quiz 1: Looking for evidence of learning about:
   - [MS-LLM-Tokenization](objective)
