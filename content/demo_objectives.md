@@ -51,7 +51,7 @@ Here's how I think this evidence demonstrates that I've fulfilled the objectives
 1. Speak your thoughts aloud as you type your responses to the chatbot. (Check your mic first.) You are also welcome to use a voice-based chatbot if you prefer, just test that the microphone recording works.
 2. Answer questions honestly. Don't look up an answer or just guess; it's ok to say "I'm not sure" or "please try asking that question in a different way." **If the chatbot asks about something that we didn't emphasize in class, it's ok to say "we didn't focus on that in class, please ask me something else."**
 3. If you make a mistake, explain your mistake and correct it.
-4. When the conversation is complete, stop the screen recording and save the video file.
+4. When the conversation is complete, stop the screen recording and save the video file. **If it's big, use [this preset](https://gist.githubusercontent.com/kcarnold/9c33da9d122a78ba073ed9a40db68afa/raw/1d8d5b233a7268fc03958445a9627004efe369f5/Screen%2520Recording%2520Handbrake%2520Preset.json) in [Handbrake](https://handbrake.fr/) to reduce the size**, or use OneDrive.
 5. Submit the following to the dropbox on Moodle (name them according to the objective, so you can submit multiple times without overwriting):
 
     - The video file of the chatbot conversation (**if it's too big for Moodle, upload it to OneDrive and share the link with the instructor**; also include the link on Moodle)
