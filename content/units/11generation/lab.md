@@ -15,6 +15,24 @@ We'll be using a model released by Google, called Gemma.
 - Explain how "chain of thought" prompting helps a model reason better.
 - Explain how "tool use" works in language models.
 
+This lab will address the following course objectives:
+
+- [MS-LLM-API](objective)
+- [MS-LLM-Prompting](objective)
+- [MS-LLM-Advanced](objective)
+
+You may also use this lab to demonstrate the following course objectives (e.g., by adding additional discussion to your notebook submission or having a conversation with the instructor or a chatbot):
+
+- [MS-LLM-Generation](objective)
+- [MS-LLM-Compute](objective)
+- [MS-LLM-Tokenization](objective)
+- [LM-ICL](objective)
+- [CI-LLM-Failures](objective)
+- [MS-LLM-Train](objective)
+- [MS-LLM-Eval](objective)
+- [MS-LLM-TokenizationImpact](objective)
+- [NC-Scaling](objective)
+
 ## Getting Started
 
 Start by accepting [Google's license agreement](https://www.kaggle.com/models/google/gemma/license/consent) for the Gemma model. You'll need to accept the license for Gemma models. If you have any difficulty with accepting this license, let the instructor know.
