@@ -76,6 +76,8 @@ Here's the recommended approach for computing perplexity:
    - Tokenize the full text
    - Get model predictions (logits)
    - For each token position (except the first), compute the negative log probability of the actual next token
+    - There are shortcut ways to do this (e.g., passing `labels` into the model, or asking an AI to generate the code for you), but **I strongly recommend you do it manually** to understand the process.
+    - I suggest you work this out first *outside* of the function and check your work on the way, and then put it in the function once you understand it.
    - Average these values and compute perplexity as exp(mean_loss)
 
 3. **Note**: Refer to Lab 2 for examples of how to extract and work with logits from language models.
@@ -114,7 +116,7 @@ Create a Jupyter notebook that includes:
 4. Analysis of results:
    - Which models performed best?
    - Is there a consistent relationship between model size and perplexity?
-   - Which stories had the highest/lowest perplexity across models?
+   - Which stories had the highest/lowest perplexity across models? (look at their full text, don't make assumptions)
    - Optional: Identify specific tokens or sentence positions that were most challenging for the models
 
 ## Grading Rubric
