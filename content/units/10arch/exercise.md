@@ -13,11 +13,12 @@ This assignment addresses the following course objectives:
 
 - [MS-LLM-Generation](objective)
 - [MS-LLM-Eval](objective)
-- [NC-Scaling](objective)
 - [MS-LLM-API](objective)
+- [MS-LLM-Compute](objective)
 
 Students may also use this exercise to demonstrate additional objectives, such as:
 
+- [NC-Scaling](objective)
 - [MS-LLM-Tokenization](objective)
 - [MS-Eval-Experiment](objective)
 - [MS-Eval-Visualize](objective)
