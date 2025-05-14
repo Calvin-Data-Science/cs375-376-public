@@ -4,6 +4,15 @@
   class: 375
   section: null
   description: I can compute the forward pass through a two-layer classification neural network by hand (or in simple code) and explain the purpose and operation of each part.
+  explanation: |
+    The forward pass is the process of computing the output of a neural network given an input.
+  why_important: |
+    This is a foundational skill for understanding how neural networks work.
+    It is also a prerequisite for understanding more advanced topics like backpropagation and optimization.  
+  criteria:
+    - I can identify the sequence of operations in a two-layer classification neural network.
+    - I can compute the output of the matrix multiplication and the activation function for each layer.
+    - I can define the following terms in the context of a neural network - input, output, weights, biases, activation function, activation value, logit, probability, and loss.
 
 - id: NC-Primitives
   pillar: Neural Computation
@@ -71,6 +80,12 @@
   class: both
   section: APIs and Systems
   description: I can create a computational notebook that includes code, execution results, section headings, and formatted textual explanations.
+  why_important: |
+    Computational notebooks are not just a common way that data scientists share their work,
+    they also support and encourage incremental development (doing one step at a time and testing it),
+    reproducibility (anyone can run the code and get the same results),
+    documentation (the code is documented with explanations),
+    and narrative (you can start by introducing a problem and then walk through a solution step by step).
 
 - id: MS-API-Supervised
   pillar: ML Systems
