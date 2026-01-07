@@ -183,9 +183,9 @@ Although CS 375 is not a formal prerequisite for CS 376, students who do not hav
 
 ## Materials
 
-- 375 Textbook: [Deep Learning with Python, Second Edition](https://www.manning.com/books/deep-learning-with-python-second-edition?a_aid=keras&a_bid=76564dff) by [François Chollet](https://fchollet.com/)
-  - Suggestion: get the print version, it's only slightly more than the e-book and includes the e-book.
-  - There is a 3rd edition in progress; the chapters we're using are already released in the e-book but you won't get the print version until the full book is released, expected March 2025.
+- 375 Textbook: [Deep Learning with Python, Third Edition](https://deeplearningwithpython.io/) by [François Chollet](https://fchollet.com/)
+  - It's free to read online, and we'll be loading chapters into Perusall for shared commenting.
+  - If you'd like a physical copy, you can [buy it from Manning](https://www.manning.com/books/deep-learning-with-python-third-edition) or other retailers.
 - 376: We will not be using a formal textbook, but we will draw from resources such as:
   - [Understanding Deep Learning](https://udlbook.github.io/udlbook/) by Simon J.D. Prince
   - [Build a Large Language Model (From Scratch)](https://www.manning.com/books/build-a-large-language-model-from-scratch) by Sebastian Raschka
