@@ -1,11 +1,13 @@
 ---
 title: "Schedule - CS376"
-revised: 2025
+revised: 2026
 toc: true
 ---
 
+See also: [CS 375 Schedule](/schedule-375)
+
 Any content in the future should be considered tentative and subject to change.
-      
+
 
 <div class="calendar-week">
 
@@ -162,7 +164,7 @@ How to represent text as input to a neural network?
 
 {{% /details %}}
 {{% /calendar-week-header %}}
-{{% calendar-day dow="Monday" date="2025-03-17" %}}
+{{% calendar-day dow="Monday" date="2026-03-16" %}}
 - Slides: [376 Unit 1: Generative Modeling Introduction](/slides/w08-generative.html)
 - Topics:
     - Intro
@@ -177,7 +179,7 @@ How to represent text as input to a neural network?
 {{% /calendar-day %}}
 
 
-{{% calendar-day dow="Wednesday" date="2025-03-19" %}}
+{{% calendar-day dow="Wednesday" date="2026-03-18" %}}
 - Slides: [376 Unit 1: Generative Modeling Introduction](/slides/w08-generative.html)
   - Scripture: Proverbs
   - Readings, Moodle participation activity
@@ -193,7 +195,7 @@ How to represent text as input to a neural network?
 {{% /calendar-day %}}
 
 
-{{% calendar-day dow="Friday" date="2025-03-21" %}}
+{{% calendar-day dow="Friday" date="2026-03-20" %}}
 - Handout: [GenAI problem setup, LLM as next-token classifier](/handouts/2025_03_21.pdf)
 - Slides: [376 Unit 1: Generative Modeling Introduction](/slides/w08-generative.html)
 - Activity: [CS 376 Lab 1: Tokenization](/units/08generative-intro/lab)
@@ -254,7 +256,7 @@ This has actually been one of the things that challenged my understanding the mo
 
 {{% /details %}}
 {{% /calendar-week-header %}}
-{{% calendar-day dow="Monday" date="2025-03-24" %}}
+{{% calendar-day dow="Monday" date="2026-03-23" %}}
 Logistics:
 
 - Scripture: [Jeremiah 17:7-8](https://www.biblegateway.com/passage/?search=Jeremiah%2017%3A7-8&version=NIV&interface=print)
@@ -276,7 +278,7 @@ Supplemental material: [list comprehensions in Python](https://cs.calvin.edu/cou
 {{% /calendar-day %}}
 
 
-{{% calendar-day dow="Wednesday" date="2025-03-26" %}}
+{{% calendar-day dow="Wednesday" date="2026-03-25" %}}
 - Advising
 
 
@@ -285,7 +287,7 @@ Supplemental material: [list comprehensions in Python](https://cs.calvin.edu/cou
 {{% /calendar-day %}}
 
 
-{{% calendar-day dow="Friday" date="2025-03-28" %}}
+{{% calendar-day dow="Friday" date="2026-03-27" %}}
 - Project Inspirations
   - An example related to our topic today: [How to make a racist AI without really trying | ConceptNet blog](https://concepts.arborelia.net/posts/2017/how-to-make-a-racist-ai-without-really-trying/)
   - An idea: use a pretrained autoregressive model as if it were a diffusion LM by simply instructing it to "fill in the blanks" in a document (and then giving the blanked document as input)
@@ -398,7 +400,7 @@ The Transformer architecture is hugely inefficient and unreliable if all you wan
 
 {{% /details %}}
 {{% /calendar-week-header %}}
-{{% calendar-day dow="Monday" date="2025-03-31" %}}
+{{% calendar-day dow="Monday" date="2026-03-30" %}}
 - Slides: [Neural Architectures](/slides/w10-nn-arch.html)
   - Intro
   - Review
@@ -410,7 +412,7 @@ The Transformer architecture is hugely inefficient and unreliable if all you wan
 {{% /calendar-day %}}
 
 
-{{% calendar-day dow="Wednesday" date="2025-04-02" %}}
+{{% calendar-day dow="Wednesday" date="2026-04-01" %}}
 - Review
   - Go over key questions from past 2 weeks
   - Reminder: Quiz 1 Friday
@@ -439,7 +441,10 @@ The Transformer architecture is hugely inefficient and unreliable if all you wan
 {{% /calendar-day %}}
 
 
-{{% calendar-day dow="Friday" date="2025-04-04" %}}
+{{% calendar-day dow="Friday" date="2026-04-03" %}}
+- Good Friday
+
+
 - Activity: [Lab 376.3: Implementing Self-Attention](/units/10arch/lab)
   - Slides: [376 Lab 3: Implementing Self-Attention](/slides/w10-lab.html)
 - Quiz 1: Looking for evidence of learning about:
@@ -508,7 +513,10 @@ All readings are posted on Perusall, copied here for reference.
 
 {{% /details %}}
 {{% /calendar-week-header %}}
-{{% calendar-day dow="Monday" date="2025-04-07" %}}
+{{% calendar-day dow="Monday" date="2026-04-06" %}}
+- Easter Monday
+
+
 - Review quiz 1
   - Solutions available for those who have completed it
   - Grading by objectives
@@ -528,7 +536,7 @@ Reference:
 {{% /calendar-day %}}
 
 
-{{% calendar-day dow="Wednesday" date="2025-04-09" %}}
+{{% calendar-day dow="Wednesday" date="2026-04-08" %}}
 - Review attention via the [Transformer Explainer](https://poloclub.github.io/transformer-explainer/)
 - Motivational examples:
   - [Claude Plays Pokemon](https://www.twitch.tv/claudeplayspokemon)
@@ -542,7 +550,7 @@ Reference:
 {{% /calendar-day %}}
 
 
-{{% calendar-day dow="Friday" date="2025-04-11" %}}
+{{% calendar-day dow="Friday" date="2026-04-10" %}}
 - Slides: [Generation by Prompting](/slides/w11-prompting.html)
 - Quiz 2: An opportunity to demonstrate your understanding of some of the following objectives:
   - [MS-LLM-Generation](objective)
@@ -589,7 +597,7 @@ Supplemental resources:
 
 {{% /details %}}
 {{% /calendar-week-header %}}
-{{% calendar-day dow="Monday" date="2025-04-14" %}}
+{{% calendar-day dow="Monday" date="2026-04-13" %}}
 - Quiz 2 review
 - Feedback / checkin activity
 - Q&A
@@ -597,7 +605,7 @@ Supplemental resources:
 {{% /calendar-day %}}
 
 
-{{% calendar-day dow="Wednesday" date="2025-04-16" %}}
+{{% calendar-day dow="Wednesday" date="2026-04-15" %}}
 - Results of feedback activity:
   - Biggest hope (by far): good projects
   - Biggest things we want to learn: *How to make a (semi-autonomous) agent that improves its behavior from feedback*
@@ -631,7 +639,7 @@ Supplemental resources:
 {{% /calendar-day %}}
 
 
-{{% calendar-day dow="Friday" date="2025-04-18" %}}
+{{% calendar-day dow="Friday" date="2026-04-17" %}}
 - Good Friday
 
 {{% /calendar-day %}}
@@ -700,13 +708,13 @@ Also, many people refer to [this blog post](https://lilianweng.github.io/posts/2
 
 {{% /details %}}
 {{% /calendar-week-header %}}
-{{% calendar-day dow="Monday" date="2025-04-21" %}}
+{{% calendar-day dow="Monday" date="2026-04-20" %}}
 - Easter Monday
 
 {{% /calendar-day %}}
 
 
-{{% calendar-day dow="Wednesday" date="2025-04-23" %}}
+{{% calendar-day dow="Wednesday" date="2026-04-22" %}}
 - Logistics
   - Perusall readings
   - Project Walkthrough
@@ -721,7 +729,7 @@ Also, many people refer to [this blog post](https://lilianweng.github.io/posts/2
 {{% /calendar-day %}}
 
 
-{{% calendar-day dow="Friday" date="2025-04-25" %}}
+{{% calendar-day dow="Friday" date="2026-04-24" %}}
 - Review handout from last time (question 3)
 - Activity: [Lab 376.6: Stable Diffusion](/units/13multimodal/lab)
   - Stable Diffusion
@@ -739,7 +747,7 @@ Also, many people refer to [this blog post](https://lilianweng.github.io/posts/2
 
 {{% calendar-week-header %}}
 {{% /calendar-week-header %}}
-{{% calendar-day dow="Monday" date="2025-04-28" %}}
+{{% calendar-day dow="Monday" date="2026-04-27" %}}
 - Handout: [Tokenization and Scaling Review](/handouts/2025_04_28.pdf)
 - Activity: [Lab: RL, Transformers, or other topics](/units/14misc/lab)
     - choose-your-own-adventure Lab on reinforcement Learning or neural net architectures
@@ -747,14 +755,14 @@ Also, many people refer to [this blog post](https://lilianweng.github.io/posts/2
 {{% /calendar-day %}}
 
 
-{{% calendar-day dow="Wednesday" date="2025-04-30" %}}
+{{% calendar-day dow="Wednesday" date="2026-04-29" %}}
 - Interpretability and Explanation ([slides](/slides/w13-Explainable%20and%20Usable.pdf))
 - Quiz 3
 
 {{% /calendar-day %}}
 
 
-{{% calendar-day dow="Friday" date="2025-05-02" %}}
+{{% calendar-day dow="Friday" date="2026-05-01" %}}
 - Handout: [Wrap-Up](/handouts/2025_05_02.pdf)
 - Discussion 3 sharing, comparing our survey to the results of the [Pew Research survey](https://www.pewresearch.org/internet/2025/04/03/how-the-us-public-and-ai-experts-view-artificial-intelligence/)
 

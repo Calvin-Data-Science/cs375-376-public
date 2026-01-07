@@ -1,6 +1,6 @@
 ---
 title: "Syllabus"
-revised: 2025
+revised: 2026
 ---
 
 This is a pair of hands-on courses on AI systems using machine learning, with a particular emphasis on deep neural networks.
@@ -9,18 +9,16 @@ This is a pair of hands-on courses on AI systems using machine learning, with a 
 - **Studio Meeting Times**: MWF 11:00am-12:05pm, SB 343
 - **Review/Coding Hours**: Tuesdays 2-3pm in Syslab (SB 337). Other times to be arranged on request. Or message me directly; time permitting, I'd love to chat.
 
-The pair is composed of two half-semester courses: CS 375 and CS 376. It is designed so that students who can only take 2 credit hours can take only CS 375 and finish at Spring Break, while students who are able to go in more depth can continue to CS 376. (Although not recommended, it is technically possible to take only CS 376. But we highly recommend taking the two courses in sequence.)
+The pair is composed of two half-semester courses: CS 375 and CS 376. It is designed so that students who can only take 2 credit hours can take only CS 375 and finish at Spring Break, while students who are able to go in more depth can continue to CS 376. (Taking only CS 376 is highly discouraged. Taking CS376 in a different year from CS375 is mildly discouraged.)
 
 ## Objectives
 
-CS 375 focuses on fundamentals; CS 376 dives into generative AI. But both courses are organized around the same 4 key pillars of modern AI: neural computation, ML systems, learning, and context/implications.
-
-(Note that most interesting concepts live at the intersection of pillars, so the descriptions below should feel like they overlap somewhat.)
+CS 375 focuses on fundamentals; CS 376 dives into generative AI. But both courses are organized around the two key pillars of modern AI: a **tuneable machine** playing an **optimization game**. Both courses also discuss the broader **context and implications** of AI systems.
 
 The key questions in each pillar motivate why we should care about studying that topic. The key objectives are specific things we can show that we can do as a result of studying that topic.
 
 <!-- OBJECTIVES -->
-### Neural Computation
+### Tuneable Machines
 
 Today's ML systems are a mashup of two kinds of computational objects: the traditional sequential programming that we're used to is still usually the "outer loop" of an ML system, but that code is the caretaker for a very different kind of animal: a highly parallel vector computer controlled by billions of parameters. This pillar is about understanding how that parallel vector computer works and how we can control it.
 
@@ -276,8 +274,6 @@ This grading scheme addresses the following problems with the CS 375 grading sch
 ### How do I demonstrate that I've met objectives?
 
 You can demonstrate that you've met an objective through a *reflection in a project*, a *meeting with the instructor*, or a screen recording of a *chatbot conversation*. See ["How to Demonstrate Objectives"](../demo_objectives) for details.
-
-**Graduate students** taking this course will be graded on the same overall criteria, but with more rigorous expectations for what it means to meet an objective. For example, graduate students should curate a portfolio at a level of completeness and refinement that they could present to a potential employer. Their work should also demonstrate engagement with primary sources and more rigorous evaluation, both quantitative and qualitative, of their own and others' work.
 
 ### Preparation, Practice, and Participation (PPP)
 
