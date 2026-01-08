@@ -11,7 +11,45 @@ This is a pair of hands-on courses on AI systems using machine learning, with a 
 
 The pair is composed of two half-semester courses: CS 375 and CS 376. It is designed so that students who can only take 2 credit hours can take only CS 375 and finish at Spring Break, while students who are able to go in more depth can continue to CS 376. (Taking only CS 376 is highly discouraged. Taking CS376 in a different year from CS375 is mildly discouraged.)
 
+## Course Descriptions
+
+Note that these descriptions were revised in Fall 2025 and may not have made it into the official catalog yet.
+
+### CS 375 - Machine Learning
+
+An introduction to artificial intelligence through machine learning, with an emphasis on deep neural networks. Students learn how neural networks compute and are trained, how to implement and apply them to tasks such as image classification, and how different learning approaches (supervised learning and reinforcement learning) address different types of problems. The course emphasizes hands-on implementation, evaluation of system performance, and discernment of philosophical, psychological, historical, and religious aspects of AI systems. Prerequisites: DATA 202, MATH 255, and either STAT 243 or STAT 343 (or permission of the instructor). Lab fee.
+
+### CS 376 - Advanced Machine Learning
+
+Building on CS 375, an in-depth study of modern generative AI systems, with an emphasis on large language models (LLMs) and transformer architectures. Students examine how these systems are built, trained, and deployed; implement core architectures from fundamental components; learn practical techniques for building and evaluating ML-powered applications; and discern the philosophical, psychological, historical, and religious contexts and implications of generative AI. Students learn to view diverse data types (text, images, audio) as sequences of tokens processed by neural architectures. The course emphasizes hands-on experience with contemporary tools and APIs. Prerequisite: CS 375. Lab fee.
+
+
 ## Objectives
+
+### CS 375 – Machine Learning
+
+Upon successful completion of this course, students will be able to:
+
+1. **Frame machine learning problems** by identifying appropriate learning approaches (supervised vs. reinforcement learning), task specifications, and evaluation metrics for a given problem context
+2. **Explain the computational mechanisms** of neural network training and inference, including forward propagation, loss computation, and gradient-based optimization
+3. **Implement and train neural networks** for classification and regression tasks using both low-level primitives and high-level frameworks
+4. **Evaluate and improve ML systems** by selecting appropriate metrics, applying validation strategies, diagnosing common problems (overfitting, underfitting), and tuning hyperparameters
+5. **Work with diverse ML approaches** including supervised learning models, pretrained models via APIs (e.g., large language models), and reinforcement learning systems
+6. **Analyze and articulate** philosophical, psychological, historical, and religious aspects of AI systems, including appropriate use cases, limitations, and potential societal impacts
+
+## Topics
+
+1. **Problem framing for machine learning**: Agent framework (environment, state, action, reward); supervised learning and reinforcement learning as different learning paradigms; task specification; evaluation metrics; considerations of data and appropriate use cases
+
+2. **Neural computational architecture**: Computational building blocks (linear layers, activation functions, loss functions); the multi-layer perceptron (MLP) architecture; vector/matrix/tensor data and operations; embeddings and representation learning; gradient descent algorithms; backpropagation / automatic differentiation
+
+3. **Implementation and training**: Implementing neural network primitives; training loops; stochastic gradient descent; validation strategies; diagnosing and addressing common training problems; low-level implementation in computational notebooks using PyTorch
+
+4. **Applications of machine learning**: Design decisions in applied contexts; transfer learning; evaluation in practice; at least one substantial application (e.g., image classification with exploration of architecture choices, data augmentation, and hyperparameter tuning); also, use of LLM APIs for simple tasks.
+
+5. **Perspectives on Artificial Intelligence**: Historical developments (from Turing to contemporary AI); philosophical questions (consciousness, intelligence, Chinese Room); religious and theological themes (imago Dei, technology and human relationships); societal impacts (bias, privacy, appropriate use); the nature of measurement and reductionism in AI systems
+
+
 
 CS 375 focuses on fundamentals; CS 376 dives into generative AI. But both courses are organized around the two key pillars of modern AI: a **tuneable machine** playing an **optimization game**. Both courses also discuss the broader **context and implications** of AI systems.
 
@@ -183,9 +221,13 @@ Although CS 375 is not a formal prerequisite for CS 376, students who do not hav
 
 ## Materials
 
-- 375 Textbook: [Deep Learning with Python, Third Edition](https://deeplearningwithpython.io/) by [François Chollet](https://fchollet.com/)
-  - It's free to read online, and we'll be loading chapters into Perusall for shared commenting.
-  - If you'd like a physical copy, you can [buy it from Manning](https://www.manning.com/books/deep-learning-with-python-third-edition) or other retailers.
+- 375:
+  - Textbook: [Deep Learning with Python, Third Edition](https://deeplearningwithpython.io/) by [François Chollet](https://fchollet.com/)
+   - It's free to read online, and we'll be loading chapters into Perusall for shared commenting.
+   - If you'd like a physical copy, you can [buy it from Manning](https://www.manning.com/books/deep-learning-with-python-third-edition) or other retailers.
+  - Other materials (optional):
+    - [The Thinking Game](https://www.youtube.com/watch?v=d95J8yzvjbQ) documentary (2025)
+    - [Artificial Intelligence: A Guide for Thinking Humans](https://www.amazon.com/dp/1250404851) by Melanie Mitchell
 - 376: We will not be using a formal textbook, but we will draw from resources such as:
   - [Understanding Deep Learning](https://udlbook.github.io/udlbook/) by Simon J.D. Prince
   - [Build a Large Language Model (From Scratch)](https://www.manning.com/books/build-a-large-language-model-from-scratch) by Sebastian Raschka
@@ -197,49 +239,17 @@ Although CS 375 is not a formal prerequisite for CS 376, students who do not hav
 
 ### How will the course be graded?
 
-I designed the grading scheme of this class to:
+This course will be graded using a hybrid proficiency-based system that is designed to encourage you to bring your whole self to this course. We are not computers, so we shouldn't assess ourselves like computers! But at the end of the day there are some things that we need to be able to *do* to demonstrate our learning.
 
-- Be simple and clear.
-- Balance flexibility with structure.
-- Generally trust you to be honest adults.
+We first agree to trust each other:
 
-{{% details summary="CS 375 Grading Scheme" %}}
+- I trust you to be honest adults who care about your own learning and growth.
+- You trust me to design a course that helps you learn and grow, and to provide activities and feedback that helps you do that.
+- You trust yourself that *you can learn this material* if you put in the effort. You should not take shortcuts that shortchange your own learning.
 
-The course grade is determined by the number and breadth of objectives that are fulfilled. The list below gives a tentative mapping of objectives to letter grades; the final mapping will be determined collaboratively at the conclusion of the class and may require exceptions in special cases.
+Here's how the system works:
 
-- A: at most one missing objective in any of the 4 pillars AND at least 2/3 of PPP points
-- B: no fewer than 3/4 of the objectives satisfied in each of the 4 pillars AND at least 1/2 of PPP points
-- C: no fewer than half of the objectives satisfied in each of the 4 pillars AND at least 1/3 of PPP points
-- D: at least one objective satisfied in each of the 4 pillars AND at least 10% of PPP points.
-
-Note: For the Context and Implications pillar, only one "Topics" pillar is required. For example, if you cover none of the Topics objectives but all of the Basic objectives, you can still earn an A. Likewise, if you cover a Topics objective, you can miss a Basic objective and still earn an A.
-
-> Note: There was some inconsistency about how we'd verbally discussed the A-level grade in class. If your understanding was different from the above, please discuss that in the self-assessment (described below).
-
-Other requirements ("should" means "strongly encouraged", but not strictly required):
-
-- At least one objective in each pillar should be met by a project. (You can meet multiple objectives across several pillars in a single project, so you probably only need one bigger project or a few mini-projects.)
-- At least two project objectives should be met *before the final week of class*. (i.e., avoid last-minute work).
-- At least one objective in each pillar should be met through a discussion with the instructor.
-
-If most but not all criteria of one grade level are met, a `-` should be assigned to that grade. If some but not all of the criteria of the next grade level are met, a `+` should be assigned to the original grade.
-
-At the end of the course you will submit a **self-assessment** document where you will reflect on your understanding of AI according to the objectives listed above. We will attempt to track completion in the Moodle gradebook, but since Moodle was designed for traditional bucket-of-points grading, it will not track perfectly. So **keep track of your progress on your own** and include the grade that you have demonstrated in your self-assessment, along with references to items in your portfolio that demonstrate that competency.
-
-For a rough illustrative example (not meant to be prescriptive or override the criteria above), the following might characterize the sort of student who would earn a C in this course:
-
-- Can use an AI API in contexts very similar to those explored in class (but doesn't think deeply about whether it's appropriate)
-- Can discuss superficially how an AI system can learn from training data (but doesn't draw implications beyond that)
-- Can give a general example of what the input and output of an AI system is and what processing the system generally does (but the descriptions are vague, can't actually perform the computations by hand or in code)
-- Can match a clearly specified ML task with an appropriate performance metric; doesn't confuse regression with classification even if the classes happen to be encoded numerically (but doesn't deeply consider real-world implications of this metric, i.e., what it means practically for a model to perform well by that metric)
-- Applies data splitting techniques (at least train-test) without being explicitly instructed to do so; doesn't train on the test set.
-- Can list several categories of social and contextual questions (such as bias, privacy, interpretability, etc.), but describes them generically; can't draw implications in specific situations. Can mention some generic principles from the reformed Christian tradition that might apply to those categories, but doesn't make specific connections.
-
-{{% /details %}}
-
-{{% details summary="CS 376 Grading Scheme" %}}
-
-- The list of objectives is given in the Objectives section above, under headings marked 376.
+- The list of objectives is given in the Objectives section above.
 - Students can meet objectives at three levels: "progressing" (P), "met" (M), and "excellent" (E).
   - The Progressing (P) level can be met by assignments (such as lab notebooks and discussion forums). The instructor will track these and ensure that there is an assignment corresponding to each assessed objective.
   - The Met (M) level requires either an *in-class quiz*, an *interaction* (with the instructor, or perhaps with a chatbot or a peer), or a self-directed *project*.
@@ -261,15 +271,6 @@ For example:
 
 An M in all course objectives, a B-level project, and full participation = (.1 * 1.0) + (.2 * .85) + (.7 * .89) = 89.3%, a B+, so any effort to achieve an E will push the grade up to A-.
 
-This grading scheme addresses the following problems with the CS 375 grading scheme:
-
-1. It was not sufficiently clear what it meant to meet an objective.
-2. Demonstrations of objectives piled up at the end of the course.
-3. No distinction was made between meeting an objective superficially and meeting it deeply.
-4. The Context and Implications section was not well-integrated with the rest of the course.
-5. The breadth requirement (across pillars) added unnecessary complexity.
-
-{{% /details %}}
 
 ### How do I demonstrate that I've met objectives?
 

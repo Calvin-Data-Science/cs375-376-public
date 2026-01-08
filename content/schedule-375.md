@@ -22,8 +22,9 @@ Getting started with ML: running Python in notebooks, training an image classifi
 
 {{% /details %}}
 {{% details summary="Objectives" %}}
-- Run Python code in computational notebooks
+- Write and execute basic Python code in Jupyter Notebooks
 - Train an ML model using off-the-shelf code
+- Describe the basic ML workflow (instantiating a model architecture, feeding it training data, evaluating how it generalizes)
 - Understand the PPP grading system
 
 {{% /details %}}
@@ -31,13 +32,14 @@ Getting started with ML: running Python in notebooks, training an image classifi
 {{% calendar-day dow="Wednesday" date="2026-01-21" %}}
 - Welcome discussion: hopes and concerns
 - Course logistics
-- Intro slides
+- Slides: [Welcome to CS 375](/slides/w01-intro.html)
 
 {{% /calendar-day %}}
 
 
 {{% calendar-day dow="Friday" date="2026-01-23" %}}
-- Basic Image Classifier notebook
+- Notebook: {{% notebook name="Jupyter Notebook Warmup" nbname="u01n0-notebook-warmup.ipynb" %}}
+- Notebook: {{% notebook name="Train a simple image classifier" nbname="u01n1-train-clf.ipynb" %}}
 - PPP credit system
 - Intro to Perusall
 
@@ -61,14 +63,15 @@ Introduction to numerical computing with NumPy/PyTorch: element-wise operations,
 
 {{% /details %}}
 {{% details summary="Objectives" %}}
-- Implement basic array operations (element-wise, reductions, dot products)
-- Describe the basic ML workflow (instantiate, fit, predict, evaluate)
-- Use the sklearn API for regression tasks
+- Implement basic essential array-computing operations (element-wise operations, reductions, dot products, MSE)
+- Contrast different types of learning machines (supervised learning, unsupervised learning, RL)
+- Use the sklearn API for basic regression tasks
 
 {{% /details %}}
 {{% /calendar-week-header %}}
 {{% calendar-day dow="Monday" date="2026-01-26" %}}
 - Lab 1 review
+- Slides: [Computing](/slides/computing.html#/lab-1-review)
 - Translation workflow discussion
 - Cognition required for imitation
 
@@ -77,14 +80,17 @@ Introduction to numerical computing with NumPy/PyTorch: element-wise operations,
 
 {{% calendar-day dow="Wednesday" date="2026-01-28" %}}
 - Intro to array programming
-- PyTorch/NumPy warmup: dot products and MSE
+- Slides: [Computing](/slides/computing.html#/array-programming)
+- Notebook: {{% notebook name="PyTorch Warmup" nbname="u02n1-pytorch.ipynb" %}}
+- Context discussion: Future of Work
 
 {{% /calendar-day %}}
 
 
 {{% calendar-day dow="Friday" date="2026-01-30" %}}
 - Landscape of AI/ML (supervised, unsupervised, RL)
-- sklearn regression notebook
+- Slides: [Learning Machines](/slides/learning-machines.html#/landscape-of-ai)
+- Notebook: {{% notebook name="Regression in `scikit-learn`" nbname="u02n2-sklearn-regression.ipynb" %}}
 
 {{% /calendar-day %}}
 
@@ -106,29 +112,32 @@ Using LLM APIs to build AI-powered applications. Introduction to classification 
 
 {{% /details %}}
 {{% details summary="Objectives" %}}
-- Call an LLM API to build an AI-powered application
-- Contrast regression and classification tasks
-- Use sklearn for classification
+- Use an LLM API to build an AI-powered application
+- Fit a linear regression model "by hand" using numerical computing primitives
+- Describe two different ways of measuring how good a classification is
+- Use basic linear and tree models for classification with sklearn
+- Quantify classifier performance using accuracy, precision, recall, and cross-entropy
 
 {{% /details %}}
 {{% /calendar-week-header %}}
 {{% calendar-day dow="Monday" date="2026-02-02" %}}
 - Lab recap: PyTorch and sklearn notebooks
-- Calling LLM APIs: "use an AI to make an AI"
+- LLM API intro: "use an AI to make an AI"
 
 {{% /calendar-day %}}
 
 
 {{% calendar-day dow="Wednesday" date="2026-02-04" %}}
-- Linear regression "the hard way"
-- AI fairness/bias context
+- Notebook: {{% notebook name="Linear Regression the Hard Way" nbname="u03n1-linreg-manual.ipynb" %}}
+- Context discussion: AI fairness and bias
 
 {{% /calendar-day %}}
 
 
 {{% calendar-day dow="Friday" date="2026-02-06" %}}
-- sklearn classification notebook
-- Intro to classification metrics
+- Slides: [Learning Machines](/slides/learning-machines.html#/metrics)
+- Notebook: {{% notebook name="Classification in `scikit-learn`" nbname="u03n2-sklearn-classification.ipynb" %}}
+- Classification metrics (accuracy, precision, recall, cross-entropy)
 
 {{% /calendar-day %}}
 
@@ -150,28 +159,30 @@ Extending linear models to multiple inputs. Understanding softmax and cross-entr
 
 {{% /details %}}
 {{% details summary="Objectives" %}}
-- Implement multiple linear regression "by hand"
-- Explain the purpose and mathematical properties of softmax
-- Connect cross-entropy loss to classifier evaluation
+- Extend understanding of linear regression to multiple input features (thinking through shapes)
+- Explain the purpose and mathematical properties of the softmax operation
+- Practice logistic regression and learn how to fit simple models in PyTorch
+- Describe and compute cross-entropy loss
 
 {{% /details %}}
 {{% /calendar-week-header %}}
 {{% calendar-day dow="Monday" date="2026-02-09" %}}
-- Multiple linear regression: thinking in shapes
-- Multilingual chat application
+- Notebook: {{% notebook name="Multiple Linear Regression, the Hard Way" nbname="u04n1-multi-linreg-manual.ipynb" %}}
+- Multilingual chat application demo
 
 {{% /calendar-day %}}
 
 
 {{% calendar-day dow="Wednesday" date="2026-02-11" %}}
-- Softmax notebook
+- Slides: [Computing](/slides/computing.html#/linear-regression)
+- Notebook: {{% notebook name="Softmax, part 1" nbname="u04n2-softmax.ipynb" %}}
 - Interactive softmax demo
 
 {{% /calendar-day %}}
 
 
 {{% calendar-day dow="Friday" date="2026-02-13" %}}
-- From Linear Regression to Logistic Regression in PyTorch
+- Notebook: {{% notebook name="From Linear Regression in NumPy to Logistic Regression in PyTorch" nbname="u04n3-logreg-pytorch.ipynb" %}}
 - Hw2 soft-due: demo an AI-powered application
 
 {{% /calendar-day %}}
@@ -195,21 +206,24 @@ Understanding feature extraction with ReLU. Introduction to classifier heads and
 {{% /details %}}
 {{% details summary="Objectives" %}}
 - Explain the importance of good features for neural network models
-- Trace data flow through an MLP, especially shapes
-- Write PyTorch expressions for MLP components
+- Understand how a nonlinearity (like ReLU) can be useful for feature extraction
+- Trace the data flow through an MLP, especially the shapes
+- Write PyTorch expressions for each of the MLP components
+- Explain the role of nonlinearities in a neural network (e.g., why they are used between linear layers)
 
 {{% /details %}}
 {{% /calendar-week-header %}}
 {{% calendar-day dow="Monday" date="2026-02-16" %}}
 - Feature extractors intro
-- ReLU features
+- ReLU features intro
 - Classifier head and body intro
 
 {{% /calendar-day %}}
 
 
 {{% calendar-day dow="Wednesday" date="2026-02-18" %}}
-- ReLU features notebook
+- Notebook: {{% notebook name="ReLU Regression Interactive" nbname="u05n00-relu.ipynb" %}}
+- Notebook: {{% notebook name="Logistic Regression and MLP" nbname="u05n2-logreg-mlp.ipynb" %}}
 - MLP shapes practice
 
 {{% /calendar-day %}}
@@ -217,7 +231,8 @@ Understanding feature extraction with ReLU. Introduction to classifier heads and
 
 {{% calendar-day dow="Friday" date="2026-02-20" %}}
 - Preview of learning by gradient descent
-- Review day
+- Review day: gradient game
+- Tech presentation
 
 {{% /calendar-day %}}
 
@@ -239,29 +254,32 @@ Learning by gradient descent. Understanding why generalization matters and how t
 
 {{% /details %}}
 {{% details summary="Objectives" %}}
-- Train an MLP classifier by gradient descent
-- Describe ways a model might fail to generalize
-- Describe ways to improve generalization (more data, augmentation, regularization)
+- Train an MLP classifier by gradient descent and know what everything does
+- Describe the overall approach of Stochastic Gradient Descent: how it uses information from a batch of data to improve performance
+- Describe a few ways that an ML model might do well on its training data but fail to generalize
+- Describe ways to make a model generalize better (more data, data augmentation, regularization)
+- Explain the importance of evaluating models on unseen data
 
 {{% /details %}}
 {{% /calendar-week-header %}}
 {{% calendar-day dow="Monday" date="2026-02-23" %}}
-- Learning by Gradient Descent
 - Gradient game activity
+- Notebook: {{% notebook name="MNIST with PyTorch" nbname="u06n1-mnist-torch.ipynb" %}}
 
 {{% /calendar-day %}}
 
 
 {{% calendar-day dow="Wednesday" date="2026-02-25" %}}
-- autograd API
+- Notebook: {{% notebook name="Compute gradients using PyTorch" nbname="u06n2-compute-grad-pytorch.ipynb" %}}
 - Review training loops, SGD, MLP model
 
 {{% /calendar-day %}}
 
 
 {{% calendar-day dow="Friday" date="2026-02-27" %}}
-- Will It Generalize?
-- Data augmentation
+- Will It Generalize? slides
+- Data augmentation notebook
+- Tech presentation
 
 {{% /calendar-day %}}
 
@@ -283,27 +301,33 @@ Embeddings as the data structures of neural computation. Introduction to reinfor
 
 {{% /details %}}
 {{% details summary="Objectives" %}}
-- Explain what embeddings are and how they represent similarity
-- Describe the key differences between supervised learning and RL
+- Explain what embeddings are (the data structures used in ML) and how they represent similarity
+- Interpret vectors as points in a space and use dot product to measure similarity between data items
+- Explain how a pretrained model can be repurposed for a new task by separating it into a feature extractor (body) and task-specific classifier (head)
+- Describe the key differences between supervised learning and reinforcement learning
 - Understand delayed rewards and exploration in RL
+- Explain the difference between learning to mimic vs learning by exploring
 
 {{% /details %}}
 {{% /calendar-week-header %}}
 {{% calendar-day dow="Monday" date="2026-03-02" %}}
 - Embeddings Day: words, sentences, images
-- Image embedding notebook
+- Slides: [Computing](/slides/computing.html#/embeddings)
+- Notebook: {{% notebook name="Probe an Image Classifier" nbname="u07n1-image-embeddings.ipynb" %}}
 
 {{% /calendar-day %}}
 
 
 {{% calendar-day dow="Wednesday" date="2026-03-04" %}}
 - Reinforcement Learning intro
-- AlphaGo documentary discussion
+- Notebook: {{% notebook name="A Reinforcement Learning Example" nbname="u07n2-rl.ipynb" %}}
+- Optional: Notebook: u07n1-image-ops.ipynb
 
 {{% /calendar-day %}}
 
 
 {{% calendar-day dow="Friday" date="2026-03-06" %}}
+- Slides: [CS 375: Wrap-Up](/slides/wrapup-375.html)
 - Learning to Mimic vs Learning by Exploring
 - Course wrap-up
 
