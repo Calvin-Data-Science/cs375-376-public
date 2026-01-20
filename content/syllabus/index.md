@@ -210,14 +210,12 @@ I encourage students to research and share material on these and other AI-relate
 
 ## Prerequisites
 
-A background at the level of either CS 212 or DATA 202 will be be generally expected. Beyond that, students should come to this course with some (perhaps rusty) ability to:
+A background at the level of DATA 202 (for basic supervised learning), MATH 255 (for working with vectors and matrices), and either STAT 243 or STAT 343 (for thinking about *distributions*) will be be generally expected. Beyond that, students should come to this course with some (perhaps rusty) ability to:
 
 - Read and write Python code (or be willing to invest significant energy the first few weeks picking it up)
 - Think systematically, generate and test hypotheses to explain observations, and communicate that thinking in precise language
 - Manage time, individually and in small groups
 - Collaborate to solve problems
-
-Although CS 375 is not a formal prerequisite for CS 376, students who do not have a solid understanding of the objectives of CS 375 should be prepared to proactively identify and fill in those gaps as they arise.
 
 ## Materials
 
@@ -247,40 +245,47 @@ We first agree to trust each other:
 - You trust me to design a course that helps you learn and grow, and to provide activities and feedback that helps you do that.
 - You trust yourself that *you can learn this material* if you put in the effort. You should not take shortcuts that shortchange your own learning.
 
-Here's how the system works:
+The following elements go into the course grade:
 
-- The list of objectives is given in the Objectives section above.
+1. **Skills**: You will demonstrate that you can meet specific objectives related to the course material. These objectives are listed above.
+2. **Effort**: Each week, you self-report what you spend time on related to this course.
+3. **Community**: You will choose a small number of activities to contribute to our learning community.
+
+A tentative proposal for how we'll compute the final grade is below. I welcome feedback on this document in Perusall.
+
+#### Skills: Proficiency-Based Grading
+
 - Students can meet objectives at three levels: "progressing" (P), "met" (M), and "excellent" (E).
-  - The Progressing (P) level can be met by assignments (such as lab notebooks and discussion forums). The instructor will track these and ensure that there is an assignment corresponding to each assessed objective.
-  - The Met (M) level requires either an *in-class quiz*, an *interaction* (with the instructor, or perhaps with a chatbot or a peer), or a self-directed *project*.
+  - The Progressing (P) level can be met by assignments (such as lab notebooks and discussion forums).
+  - The Met (M) level requires either an *in-class quiz* or a self-directed *project*.
   - The E level is given at instructor discretion to work that demonstrates understanding, strategy, or disposition that is likely to generalize robustly beyond this scope of course. As a concrete example, a successful interview for a ML-centered job would demonstrate E-level completion of an objective.
   - The instructor may limit the number of objectives that can become Met in a given week. So students are strongly encouraged to Meet objectives promptly.
-  - Although the "basic" CI objective is required, students only need to complete 2 of the CI "Topics" objectives. Any objectives beyond that are extra credit (computed by adding the score achieved to both the numerator and denominator of the final objectives grade).
-- The course grade will be determined by 3 factors:
-  - The number of objectives met at each level: 
-  - The quality of the course project.
-  - PPP (completion) credits
+- We will aggregate these objective levels in a way that encourages students to aim for M-level completion of most objectives, with some room for P-level completion and some room for E-level completion. Last year we computed his as the mean of all objectives scores, where 0 = not addressed, 1 = P achieved one time, 2 = P achieved 2 times, 3 = M achieved, 4 = E achieved. This average (0-4) will then be rescaled to the 0-100 scale such that 1 = D+, 2 = C+, 3 = B+, 4 = 100%.
 
-Specifically, we propose to compute the final grade as a weighted mean:
+I propose giving this a weight of 70% of the course grade.
 
-- 10%: PPP points (instructor may adjust the denominator depending on how this category is affecting the course grade)
-- 20%: [course project](/project) (see that page for detailed specs). Technical work for projects will be counted towards course objectives; this grading section is mostly focused on the quality and coherence of the project.
-- 70%: course objectives, computed as the mean of all objectives scores, where 0 = not addressed, 1 = P achieved one time, 2 = P achieved 2 times, 3 = M achieved, 4 = E achieved. This average (0-4) will then be rescaled to the 0-100 scale such that 1 = D+, 2 = C+, 3 = B+, 4 = 100%.
+### Effort Hours
 
-For example:
+> In-person, 2-credit courses will typically have a ... 195 (3 x 65) minutes of class time and 8 hours of out-of-class student work per week over an 8-week half-semester. Source: [Definition of a Credit Hour](https://calvin.edu/sites/default/files/2025-01/Definition%20of%20a%20credit%20hour%2C%20including%20specific%20considerations%20for%20distance%20learning.pdf), based on [34 CFR 600.2](https://www.ecfr.gov/current/title-34/subtitle-B/chapter-VI/part-600/subpart-A/section-600.2)
 
-An M in all course objectives, a B-level project, and full participation = (.1 * 1.0) + (.2 * .85) + (.7 * .89) = 89.3%, a B+, so any effort to achieve an E will push the grade up to A-.
+Each week, your weekly reflection should account for how you spent each of the 8 hours of out-of-class time. The reflection assignments will give details. This will be on the honor system.
 
+To allow for flexibility between lighter and heavier weeks (since things come up) while still encouraging consistent effort, we will allow a **maximum of 12 hours** reported each week.
 
-### How do I demonstrate that I've met objectives?
+I propose computing effort grade as total hours divided by total possible hours (7 weeks * 8 hours per week = 56 hours). And I propose giving this a weight of 20% of the course grade.
 
-You can demonstrate that you've met an objective through a *reflection in a project*, a *meeting with the instructor*, or a screen recording of a *chatbot conversation*. See ["How to Demonstrate Objectives"](../demo_objectives) for details.
+### Community
 
-### Preparation, Practice, and Participation (PPP)
+Every student should be able to identify at least 3 substantial contributions to the course community, with at most 2 credits of any one of the following types:
 
-As a community, we will undertake many activities that don't directly demonstrate proficiency but are important for shaping our community and retaining what you've learned.
+- Thoughtful contributions to discussions, either in class or outside of class (e.g., Moodle discussion forums). The contribution should be significant enough that another student would credit you specifically for shaping their thinking (it's ok if no one actually does, but that's the level to aim for)
+- Substantial contributions to the class's making sense of readings. Same standard as for discussions.
+- Presenting a tech update in class
+- Organizing a perspectival discussion in class
+- Leading an opening devotion.
+- Providing substantial feedback on others' work.
 
-PPP activities are graded by completion, not content. Any legitimate effort by the due date will be awarded a completion credit. Late completion is okay (but frowned on) for solo activities but not for community activities. In some cases the same activity will have multiple occasions of engagement (e.g., posting a comment and responding to others' comments); in that case, each occasion will receive a PPP activity point.
+I propose we compute this grade component as `min(1, x/3)`, where `x` is the number of contributions (subject to the limit of 2 per type). And I propose we give this a weight of 10% of the final course grade.
 
 ### Are Incomplete grades offered?
 
@@ -288,13 +293,19 @@ An incomplete grade (I) will only be given in unusual circumstances, and only if
 
 ### Do I have to come to class?
 
-Attendance is not mandatory, but highly encouraged, both for your own learning and as one of the main ways to contribute to other students' learning. Come to class:
+Students are expected to be present at class, both physically and mentally. Why?
+
+- We have turned away students that wanted to enroll because there are not enough seats in the room. If you're not going to come to class, please drop the course so that someone else can take your seat.
+- We will do many activities in class that are difficult to make up later.
+- Many of the assessments of your learning will happen in class, through quizzes, discussions, and other activities.
+
+Come to class:
 
 - to ask the questions that you think everyone else already knows the answer to (but in fact they nod in agreement because they were wondering that too).
 - to help your fellow students figure out that thing that just clicked for you yesterday.
 - or just because you want to discuss AI!
 
-Also note that many in-class activities will earn PPP points, so if you miss many class meetings you may have difficulty earning a high grade.
+That said, things happen: sickness, family emergencies, job interviews, etc. If you must miss class, please notify me in advance if possible, and plan to stop by my office hours as soon as possible to catch up on what you missed.
 
 ### I have some special needs; will you accommodate them?
 
@@ -314,7 +325,15 @@ If you realize that your actions have violated academic integrity principles, pl
 
 ## How should we use AI in this course?
 
-Thoughtful use of all types of AI is highly encouraged in this class. However, you should be capable of fulfilling most of the class objectives without AI assistance.
+Thoughtful use of all types of AI is encouraged in this class. However, you should be capable of fulfilling most of the class objectives without AI assistance.
+
+### Freedom *not* to use AI
+
+In this class **you always have the freedom to choose not to use AI tools**. In particular, that means that we will grade such that **choosing not to use AI will never lower your grade**.
+
+Practically, this means: if you're ever tempted to take a shortcut by using AI, instead describe what you'd ask for help with. For example, rather than using an AI to polish a discussion post, post the pre-AI version and describe what you would have asked the AI to help with.
+
+Another option to consider is **only using local LLMs** that you can run on your own computer.
 
 ### Encouraged Uses
 

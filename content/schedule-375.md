@@ -25,7 +25,7 @@ Getting started with ML: running Python in notebooks, training an image classifi
 - Write and execute basic Python code in Jupyter Notebooks
 - Train an ML model using off-the-shelf code
 - Describe the basic ML workflow (instantiating a model architecture, feeding it training data, evaluating how it generalizes)
-- Understand the PPP grading system
+- Understand the grading system
 
 {{% /details %}}
 {{% /calendar-week-header %}}
