@@ -1,35 +1,40 @@
 ---
-title: "Discussion 1: What's AI useful for?"
+title: "Discussion 1: Feelings and Curiosities"
 weight: 4
-revised: 2025
+revised: 2026
 ---
 
-To help understand the landscape of AI and also get introduced to each other, let's survey some examples that students find interesting.
+## Objectives
 
-In this week's Discussion forum, please make a two-part post:
+- We feel heard regarding what we're bringing to this class.
+- We support each other as a community.
 
-## Part 1: Introduction
+## Instructions
 
-Post something interesting about yourself.
+In this week's Discussion forum, please write a minimally filtered post. This isn't for showing off; **please feel free to *not* use AI to "polish" these**. You may write and post in your native language, but include a translation to English. (If a free translation service doesn't do a good job, ask me, I've got some resources.)
 
-## Part 2: AI Examples
+Here's two things to include:
 
-> **Suppose someone asks you**: Tech companies and governments are investing hundreds of *billions* of dollars in AI. **Is AI worth the billions** or is this just a bubble? Is AI actually *useful* for anything in the real world?
+### Part 1: Who are you?
 
-Please post a brief (50--200 word) statement where you give an example of an application of AI that you think is useful, interesting, or important. (Try to pick an example that other students haven't mentioned yet.) Include:
+First, tell us how you want people to address you, since sometimes Moodle has a name you don't actually use, or it's unclear what pronouns to use.
 
-- An image of the system in action, or a link to something that describes it.
-- Some evidence that the technology is, or will soon be, of practical interest. **Who would pay for it?**
-- Describe what about its behavior merits the description "intelligent". Referring back to the contextual reading for this week, **would Turing have considered this behavior "intelligent"**? Would *you* consider it intelligent?
+Tell us some small part of your story. Some ideas:
 
-Also read your peers' posts and reply to at least one.
+- Where you grew up and what that was like
+- How you ended up at Calvin?
+- Some highlights (or difficulties) from your time so far. What have been your favorite classes/instructors (why?), favorite places, ...
+- What you enjoy doing outside of classes
+- What you did over the break (or last summer or whatever)
 
-### Where to find AI examples?
+Keep it short and real.
 
-- Think of some topic outside of computing that you find important or interesting. Search for "AI" or "ML" combined with that term.
-- Pick a large company and look at their "AI blog" (or sometimes "tech blog" or "engineering blog")
-- Providers of AI computing, like NVIDIA, Amazon AWS, Google Cloud, Microsoft Azure, etc. like to show off what people are doing with their tools
-- Lots of YouTubers, podcasters, bloggers, news sources, etc. like to talk about AI; see Resources for some examples.
-- https://PapersWithCode.com/
-- Subscribe to an AI or Machine Learning newsletter, podcast, or social media account. Good ones start and stop all the time, so we can't list them here.
-- AI work shows up at many academic conferences.
+### Part 2: How are you feeling about AI?
+
+Write a short vent about how you're feeling about AI. What gets you excited? Scared? Overwhelmed? etc.
+
+You can interpret "AI" either broadly (what's going on in the world) or narrowly (this half-semester class), it's up to you.
+
+## Replies
+
+You don't *have* to reply, but I encourage you to read what others write and respond to a few of them in a way that makes them feel heard.
