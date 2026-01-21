@@ -17,14 +17,16 @@ Any content in the future should be considered tentative and subject to change.
 Getting started with ML: running Python in notebooks, training an image classifier using off-the-shelf code.
 
 {{% details summary="Key Questions" %}}
-- What is a model architecture? What is training data? What is validation data?
-- How do we measure if a model is learning (accuracy vs loss)?
+- What is the essence of modern approaches to AI?
+- What optimization games are AI systems playing?
+- Can AI systems be smarter than humans?
 
 {{% /details %}}
 {{% details summary="Objectives" %}}
-- Write and execute basic Python code in Jupyter Notebooks
-- Train an ML model using off-the-shelf code
-- Describe the basic ML workflow (instantiating a model architecture, feeding it training data, evaluating how it generalizes)
+- Describe the goals of artificial intelligence and machine learning.
+- Describe the overall approach of how learning-based AI learns from data, in contrast with rule-based (symbolic) AI
+- Contrast supervised learning, unsupervised/self-supervised learning, and reinforcement learning
+- Write and execute basic Python code using Jupyter Notebooks
 - Understand the grading system
 
 {{% /details %}}
@@ -32,16 +34,42 @@ Getting started with ML: running Python in notebooks, training an image classifi
 {{% calendar-day dow="Wednesday" date="2026-01-21" %}}
 - Welcome discussion: hopes and concerns
 - Course logistics
+    - Assessments: skills, effort, and community
+    - Weekly journals, quizzes every other Friday
+    - Perusall
 - Slides: [Welcome to CS 375](/slides/w01-intro.html)
+    - My story and stance:
+        - how God brought me to learn about ML/AI
+        - how it’s a gift that will definitely be in the new creation but we abuse it
+    - We need to work to discern AI together.
+        - Importance
+            - Divisiveness
+            - Economic impacts
+            - Existential angst
+            - Identity, desires, and relationships
+            - You need to be able to discern it fundamentally, not just from external behavior
+        - This class:
+            - This class will be about how it works at a fundamental level and what that fundamental understanding helps us understand about how it fits into God’s story
+    - Tweakable Machines playing Optimization Games
+        - board games
+        - hook-the-human games
+        - predict protein folding, guess the weather, design a molecule, ...
+        - imitation games: mimicking decisions, conversations, images, ...
+        - exploration games: control a robot, ...
+    - Problem framing
+        - programmed vs learned
+        - supervised learning: mimicry
+        - self-supervised learning: reducing surprise
+        - reinforcement learning: learning by trial and error
 
 {{% /calendar-day %}}
 
 
 {{% calendar-day dow="Friday" date="2026-01-23" %}}
+I may revise these notebooks before Friday. It's ok to work ahead if you're ok with restarting from the revised notebooks.
+- Handout introduction to the dot product
 - Notebook: {{% notebook name="Jupyter Notebook Warmup" nbname="u01n0-notebook-warmup.ipynb" %}}
 - Notebook: {{% notebook name="Train a simple image classifier" nbname="u01n1-train-clf.ipynb" %}}
-- PPP credit system
-- Intro to Perusall
 
 {{% /calendar-day %}}
 
@@ -70,6 +98,7 @@ Introduction to numerical computing with NumPy/PyTorch: element-wise operations,
 {{% /details %}}
 {{% /calendar-week-header %}}
 {{% calendar-day dow="Monday" date="2026-01-26" %}}
+- Handout introduction to regression losses (MSE, MAE)
 - Lab 1 review
 - Slides: [Computing](/slides/computing.html#/lab-1-review)
 - Translation workflow discussion
