@@ -73,7 +73,9 @@ A background at the level of DATA 202 (for basic supervised learning), MATH 255 
    - If you'd like a physical copy, you can [buy it from Manning](https://www.manning.com/books/deep-learning-with-python-third-edition) or other retailers.
   - Other materials (optional):
     - [The Thinking Game](https://www.youtube.com/watch?v=d95J8yzvjbQ) documentary (2025)
-    - [Artificial Intelligence: A Guide for Thinking Humans](https://www.amazon.com/dp/1250404851) by Melanie Mitchell
+    - [Artificial Intelligence: A Guide for Thinking Humans](https://www.amazon.com/dp/1250404851) by Melanie Mitchell - recommended inexpensive but good purchase
+    - [Speech and Language Processing](https://web.stanford.edu/~jurafsky/slp3/) by Jurafsky and Martin (3rd edition draft, online only)
+    - [AI by Hand](https://www.byhand.ai/t/foundation) by Tom Yeh
 - 376: We will not be using a formal textbook, but we will draw from resources such as:
   - [Understanding Deep Learning](https://udlbook.github.io/udlbook/) by Simon J.D. Prince
   - [Build a Large Language Model (From Scratch)](https://www.manning.com/books/build-a-large-language-model-from-scratch) by Sebastian Raschka
