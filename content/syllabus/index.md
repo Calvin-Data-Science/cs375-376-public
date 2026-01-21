@@ -6,8 +6,8 @@ revised: 2026
 This is a pair of hands-on courses on AI systems using machine learning, with a particular emphasis on deep neural networks.
 
 - **Instructor**: [Ken Arnold](https://kenarnold.org), Calvin University, North Hall NH298
-- **Studio Meeting Times**: MWF 11:00am-12:05pm, SB 343
-- **Review/Coding Hours**: Tuesdays 2-3pm in Syslab (SB 337). Other times to be arranged on request. Or message me directly; time permitting, I'd love to chat.
+- **Meeting Times**: MWF 11:00am-12:05pm, SB 382
+- **Review Hours**: Tuesdays 1:30-3pm in Syslab (SB 337). Other times to be arranged on request. Or message me directly; time permitting, I'd love to chat.
 
 The pair is composed of two half-semester courses: CS 375 and CS 376. It is designed so that students who can only take 2 credit hours can take only CS 375 and finish at Spring Break, while students who are able to go in more depth can continue to CS 376. (Taking only CS 376 is highly discouraged. Taking CS376 in a different year from CS375 is mildly discouraged.)
 
@@ -37,6 +37,8 @@ Upon successful completion of this course, students will be able to:
 5. **Work with diverse ML approaches** including supervised learning models, pretrained models via APIs (e.g., large language models), and reinforcement learning systems
 6. **Analyze and articulate** philosophical, psychological, historical, and religious aspects of AI systems, including appropriate use cases, limitations, and potential societal impacts
 
+The specific objectives used for course grading will be listed in the pages for each unit.
+
 ## Topics
 
 1. **Problem framing for machine learning**: Agent framework (environment, state, action, reward); supervised learning and reinforcement learning as different learning paradigms; task specification; evaluation metrics; considerations of data and appropriate use cases
@@ -53,160 +55,6 @@ Upon successful completion of this course, students will be able to:
 
 CS 375 focuses on fundamentals; CS 376 dives into generative AI. But both courses are organized around the two key pillars of modern AI: a **tuneable machine** playing an **optimization game**. Both courses also discuss the broader **context and implications** of AI systems.
 
-The key questions in each pillar motivate why we should care about studying that topic. The key objectives are specific things we can show that we can do as a result of studying that topic.
-
-<!-- OBJECTIVES -->
-### Tuneable Machines
-
-Today's ML systems are a mashup of two kinds of computational objects: the traditional sequential programming that we're used to is still usually the "outer loop" of an ML system, but that code is the caretaker for a very different kind of animal: a highly parallel vector computer controlled by billions of parameters. This pillar is about understanding how that parallel vector computer works and how we can control it.
-
-#### Key questions
-
-- 375:
-  - How do neural nets compute? (How does that differ from traditional programming?)
-  - What are the "data structures" of neural computing and efficient operations we can do with them?
-  - How can we update parameters to optimize an objective function?
-- 376:
-  - How can we represent text, images, and other data as sequences?
-  - How can we process and generate sequences using neural nets?
-  - How can models capture and use nuanced long-range relationships?
-
-#### Key objectives
-
-After this course, I will be able to:
-
-- 375 (5 objectives, 3.75 required for B, 2.5 for C):
-  {{< objectives "Neural Computation" 375 >}}
-- 376:
-  {{< objectives "Neural Computation" 376 >}}
-
-{{% details summary="Optional objectives" %}}
-The following objectives were planned for the course but did not end up being covered in class. Some students may pursue them in projects, but they are not required for the course.
-
-{{< objectives "Neural Computation" "376-bonus" >}}
-
-Not core objectives, but useful for understanding the field:
-
-- State-space models
-- Quantization and pruning
-- Key-value caching
-{{% /details %}}
-
-
-### ML Systems
-
-#### Key questions
-
-- 375:
-  - What are the inputs to and outputs of AI systems?
-  - What abstractions do systems provide, and how can they compose? (ML APIs)
-  - How do we evaluate ML solutions?
-- 376:
-  - How do we evaluate language models?
-  - Can I run an LLM on my laptop? Can I train one?
-  - How do I get good-quality results from an LLM?
-  - How can I use an LLM to make a (semi-)autonomous agent?
-
-#### Key objectives
-
-After this course, I will be able to:
-
-- 375 (7 objectives, 5.25 required for B, 3.5 for C):
-  {{< objectives "ML Systems" 375 >}}
-- 376:
-  {{< objectives "ML Systems" 376 >}}
-
-{{% details summary="Optional objectives" %}}
-The following objectives were planned for the course but did not end up being covered in class. Some students may pursue them in projects, but they are not required for the course.
-
-{{< objectives "ML Systems" "376-bonus" >}}
-
-{{% /details %}}
-
-
-### Learning Machines
-
-#### Key questions
-
-- 375:
-  - How can systems improve from experience?
-  - What can be learned from data vs interaction?
-  - How can we evaluate learning: does it generalize?
-- 376:
-  - How can we learn without labeled data? (self-supervised learning)
-  - How do *foundation models* learn generalizable patterns from massive datasets?
-  - How can generative agents learn to improve their behavior from feedback?
-  - Some current models can learn at *test time* (e.g., in-context learning); how does this work?
-
-#### Key objectives
-
-After this course, I will be able to:
-
-- 375 (6 objectives, 4.5 required for B, 3 for C):
-  {{< objectives "Learning Machines" 375 >}}
-- 376:
-  {{< objectives "Learning Machines" 376 >}}
-
-{{% details summary="Optional objectives" %}}
-The following objectives were planned for the course but did not end up being covered in class. Some students may pursue them in projects, but they are not required for the course.
-
-{{< objectives "Learning Machines" "376-bonus" >}}
-
-{{% /details %}}
-
-### Context and Implications
-
-CS 375 and 376 will investigate broader contexts and implications of AI from many lenses.
-
-#### Key questions
-
-- What problems can we use AI to solve?
-- What *should* we use AI for?
-- What are the limits of AI systems? Is superhuman AI imminent?
-- What might happen socially when AI systems are deployed broadly? (effects on work, education, creativity, ...)
-- How might we design AI systems to align with human values? to honor each other and our neighbors? What are the risks if we don't?
-- How do privacy and copyright relate with AI? Is generative AI all theft?
-- What is creativity? Agency? Truth?
-
-#### Key objectives
-
-The implications of AI are vast, so we will not attempt to cover everything in this course. Here are the basic objectives that we will aim for:
-
-- 375:
-  - Recognize when an AI system might have negative impacts on people and flag the need for careful analysis before deploying such a system. [CI-Basic-Impact]
-  - Explain basic AI concepts to a non-technical audience without major errors. [CI-Basic-Explain]
-  - Identify, in general sense, some ways in which reformed Christian concepts apply to AI development and deployment. Specific examples might include: shalom, humanity in the image of God, and the creation-fall-redemption-restoration narrative. [CI-Basic-Faith]
-- 376:
-  - I can identify common types of failures in LLMs, such as hallucination and bias. [CI-LLM-Failures]
-
-Beyond the basic objectives, students will have opportunities to explore a variety of types of broader contexts and implications of AI. Students will generally choose two specific areas of depth (for 25SP, we're only requiring one of these). Areas include:
-
-- **Philosophical and Theological**: I can identify and discuss relevant theological narratives and philosophical questions. (Overall: what does it mean to be human?) [CI-Topic-PhilNarrative]
--	**Social, Organizational, and Legal**: I can identify societal implications of AI technologies and recall relevant facts. I can deeply analyze real-world problems to identify how AI could be used or misused in those situations. [CI-Topic-SocAnalyze]. I can evaluate specific design and evaluation choices in AI systems' based on how they relate to human contexts (organizations, societies, etc.) in which those systems might operate. [CI-Topic-SocEvaluate]
-- **Dispositional and Visionary**: I can identify and demonstrate strategies that support my practice of dispositions such as integrity, humility, meticulousness, creativity, responsibility, perseverance / continuous technical learning / growth mindset. I can envision value-aligned technological futures involving AI. Practically, I can use generative AI in ways that honor others, help me think better, and help me serve others better. [CI-Topic-DispIntegrity, CI-Topic-DispVision]
-- **Historical**: I can trace current AI technologies and ways of thinking back to origins and developments of at least a decade ago. [CI-Topic-History]
-
-> Specific topics may include:
-> 
-> - sustainability (energy usage of data center construction and operation, ...)
-> - impacts on relationships and social interactions
-> - privacy and surveillance; data collection and aggregation
-> - Human-AI interaction (over-reliance, resilience to errors, paradoxes of automation)
-> - recommendation systems and the economies of attention and intention
-> - impacts on education
-> - perception, categorization, and algorithmic decision-making
-> - intellectual property and legal considerations around Generative AI
-
-### Optional Topics
-
-I encourage students to research and share material on these and other AI-related topics:
-
-- Robotics and human-robot interaction
-- Computer architecture considerations for neural networks (e.g., memory bandwidth)
-- Hardware architectures optimized for neural networks (e.g., TPUs, CUDA), energy efficiency analysis
-- Quantization, pruning, and other techniques for practical implementation under constraints
-- Stochastic optimization algorithms beyond those covered in class
-- Distributed training/inference abstractions and tooling
 
 ## Prerequisites
 
@@ -247,7 +95,7 @@ We first agree to trust each other:
 
 The following elements go into the course grade:
 
-1. **Skills**: You will demonstrate that you can meet specific objectives related to the course material. These objectives are listed above.
+1. **Skills**: You will demonstrate that you can meet specific objectives related to the course material. These objectives are listed in each unit.
 2. **Effort**: Each week, you self-report what you spend time on related to this course.
 3. **Community**: You will choose a small number of activities to contribute to our learning community.
 

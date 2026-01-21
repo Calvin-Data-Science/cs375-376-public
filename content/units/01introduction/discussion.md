@@ -1,5 +1,5 @@
 ---
-title: "Discussion 1: Feelings and Curiosities"
+title: "Discussion 1: Intros, Feelings, and Curiosities"
 weight: 4
 revised: 2026
 ---
@@ -32,6 +32,8 @@ Keep it short and real.
 ### Part 2: How are you feeling about AI?
 
 Write a short vent about how you're feeling about AI. What gets you excited? Scared? Overwhelmed? etc.
+
+Then make it actionable: what are you curious about? What do you want to understand better this semester?
 
 You can interpret "AI" either broadly (what's going on in the world) or narrowly (this half-semester class), it's up to you.
 
