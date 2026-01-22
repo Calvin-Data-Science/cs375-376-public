@@ -37,6 +37,8 @@ Then make it actionable: what are you curious about? What do you want to underst
 
 You can interpret "AI" either broadly (what's going on in the world) or narrowly (this half-semester class), it's up to you.
 
+**Optional but recommended**: Choose how you will [keep yourself updated about AI developments](/feeds). Browse the sources I suggest or find other ones, pick **just one or two** (avoid overwhelm), and share which you picked.
+
 ## Replies
 
 You don't *have* to reply, but I encourage you to read what others write and respond to a few of them in a way that makes them feel heard.
