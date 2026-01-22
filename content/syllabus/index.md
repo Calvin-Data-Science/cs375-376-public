@@ -112,6 +112,8 @@ A tentative proposal for how we'll compute the final grade is below. I welcome f
   - The instructor may limit the number of objectives that can become Met in a given week. So students are strongly encouraged to Meet objectives promptly.
 - We will aggregate these objective levels in a way that encourages students to aim for M-level completion of most objectives, with some room for P-level completion and some room for E-level completion. Last year we computed his as the mean of all objectives scores, where 0 = not addressed, 1 = P achieved one time, 2 = P achieved 2 times, 3 = M achieved, 4 = E achieved. This average (0-4) will then be rescaled to the 0-100 scale such that 1 = D+, 2 = C+, 3 = B+, 4 = 100%.
 
+![EMP rubric](https://kurmasgvsu.github.io/Teaching/Courses/F24/CIS500/EMPNrubric_notYet.png) by Zach Kurmas at GVSU
+
 I propose giving this a weight of 70% of the course grade.
 
 ### Effort Hours
