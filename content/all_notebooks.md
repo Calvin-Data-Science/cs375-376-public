@@ -48,6 +48,7 @@ We also strive for the sequence to make sense.
   - Setup
   - Configure our experiments
     - Load the data
+    - Example Images
     - Train a model
     - Make some predictions
   - Experimentation
