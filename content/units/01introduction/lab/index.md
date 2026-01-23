@@ -20,15 +20,14 @@ You can use either your personal account (if you have one) or your Calvin accoun
 In this section, we'll practice working with Jupyter notebooks. You may find these references helpful:
 
 - [Colab overview](https://colab.research.google.com/notebooks/basic_features_overview.ipynb)
+- some parts of the [Jupyter Notebooks docs](https://jupyter-notebook.readthedocs.io/en/latest/examples/Notebook/Running%20Code.html)
 
 {{% task %}}
 Get the following notebook.
 
-1. Right-click the "Jupyter Notebook Warmup" link below and select "copy URL" (or "copy link location")
-2. On Kaggle, create a new Notebook (in the [Code](https://www.kaggle.com/code) section).
-3. On the File menu, select Import Notebook.
-4. Paste the URL you just copied and click Import.
-5. **Rename the notebook** to the suggested name (click the "notebookXXXXX" text at the top of the screen.)
+1. Click the "open in Colab" link in on the line below.
+2. **IMPORTANT**: Click "Copy to Drive" on the toolbar. It will open in a new tab -- **close the old tab** so you don't get confused.
+3. Rename the notebook to remove the "Copy of"...
 
 {{% notebook name="Jupyter Notebook Warmup" nbname="u01n0-notebook-warmup.ipynb" %}}
 {{% /task %}}
@@ -36,7 +35,7 @@ Get the following notebook.
 A number will appear next to each of the code cells when they have run successfully.
 
 {{% task %}}
-Add a code cell that computes 1+1. Check the output.
+Add a code cell that computes `1+1`. Check the output.
 {{% /task %}}
 
 **Note carefully** the difference between **Command mode** and **Edit mode**.
@@ -84,15 +83,6 @@ When you're done, save your notebook and submit it on Moodle.
 ## Step 2: Image Classifier
 
 In the next section, you'll work with a basic image classifier.
-
-> **Note**: The first time you log into Kaggle, you'll need to **Verify your phone number** to get Internet and GPU access. So:
->
-> 1. On the right sidebar, find "Session Options".
-> 2. At the bottom of the notebook options, check for a message that reads like "Want more power? Get phone verified". Click that link and follow the instructions.
-> 3. Turn on Internet access.
-> 4. Switch Accelerator to GPU (either GPU option works; you might try to benchmark the difference sometime, *not now*).
-> 
-> If you have any trouble with this, 
 
 In this section (and most future Labs), the tasks to do are inside the notebook itself. You'll find cells labeled **Task** and blank code chunks usually labeled `# your code here`. Follow the instructions top-to-bottom, then download and submit when done.
 
