@@ -1,6 +1,6 @@
 ---
 title: "Set Up Your Feeds"
-revised: 2025
+revised: 2026
 ---
 
 AI technology is changing rapidly. It's helpful to subscribe to a few curated feeds of content.
