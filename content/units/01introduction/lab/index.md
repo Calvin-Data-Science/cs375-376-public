@@ -9,20 +9,17 @@ revised: 2025
 - Use a Jupyter notebook to run Python code
 - Start to uncover how an image classifier works.
 
-## Step 0: Get a Kaggle account
+## Step 0: Log in to your Google account
 
-You'll need an account on [Kaggle](https://www.kaggle.com/).
+You can use either your personal account (if you have one) or your Calvin account.
 
-You'll also need to verify your phone number in order to get access to GPUs, but we'll do that in the "Image Classifier" section below.
-
-**Note**: You can also do this on Google Colab; you'll see links at the notebook sections for that. If you're using Kaggle, though, ignore the Colab links. **I don't recommend trying to run this on your own computer at this point**; even if you have a compatible GPU, getting Python to work with it can be a project.
+**Note**: **I don't recommend trying to run this on your own computer at this point**; even if you have a compatible GPU, getting Python to work with it can be a project.
 
 ## Step 1: Jupyter Notebooks
 
 In this section, we'll practice working with Jupyter notebooks. You may find these references helpful:
 
-- The Help menu in Kaggle
-- Kaggle documentation
+- [Colab overview](https://colab.research.google.com/notebooks/basic_features_overview.ipynb)
 
 {{% task %}}
 Get the following notebook.
