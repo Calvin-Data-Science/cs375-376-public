@@ -1,7 +1,7 @@
 ---
 title: 'Lab 1: Warmup'
 weight: 3
-revised: 2025
+revised: 2026
 ---
 
 ## Objectives

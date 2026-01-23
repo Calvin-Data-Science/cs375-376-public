@@ -67,9 +67,8 @@ Getting started with ML: running Python in notebooks, training an image classifi
 
 {{% calendar-day dow="Friday" date="2026-01-23" %}}
 I may revise these notebooks before Friday. It's ok to work ahead if you're ok with restarting from the revised notebooks.
-- Handout introduction to the dot product
-- Notebook: {{% notebook name="Jupyter Notebook Warmup" nbname="u01n0-notebook-warmup.ipynb" %}}
-- Notebook: {{% notebook name="Train a simple image classifier" nbname="u01n1-train-clf.ipynb" %}}
+- **Moved to Monday** Handout introduction to the dot product
+- [Lab 1](/units/01introduction/lab/)
 
 {{% /calendar-day %}}
 
