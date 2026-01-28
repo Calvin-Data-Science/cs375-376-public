@@ -14,7 +14,7 @@ Any content in the future should be considered tentative and subject to change.
 ## Week 1: Introduction
 
 {{% calendar-week-header %}}
-Getting started with ML: running Python in notebooks, training an image classifier using off-the-shelf code.
+Getting started with ML: impacts of AI, running Python in notebooks, training an image classifier using off-the-shelf code.
 
 {{% details summary="Key Questions" %}}
 - What is the essence of modern approaches to AI?
@@ -94,27 +94,34 @@ Introduction to numerical computing with NumPy/PyTorch: element-wise operations,
 - Use the sklearn API for basic regression tasks
 
 {{% /details %}}
+{{% details summary="Resources" %}}
+Additionally, you may find these interactive articles helpful (by Amazon's Machine Learning team):
+
+- [Linear Regression](https://cs.calvin.edu/courses/info/602/resources/linreg-explainer/) (originally by Amazon Web Services, some [edits by Prof Arnold](https://github.com/kcarnold/aws-mlu-explain))
+
+{{% /details %}}
 {{% /calendar-week-header %}}
 {{% calendar-day dow="Monday" date="2026-01-26" %}}
-- Handout introduction to dot product
+- **Assumptions of AI**: Experience ("IID" amnesia vs continual life; our mistakes matter but Jesus gives us grace)
+- Handout: [Lab 1 review, intro to dot product](/handouts/2026_01_26.pdf)
 - Lab 1 review
-- Slides: [Computing](/slides/computing.html#/lab-1-review)
-- Cognition required for imitation
+- Intro to dot product
 
 {{% /calendar-day %}}
 
 
 {{% calendar-day dow="Wednesday" date="2026-01-28" %}}
-- Intro to array programming, regression losses
-- Slides: [Computing](/slides/computing.html#/array-programming)
+- Handout: [Supervised Learning](/handouts/2026_01_28.pdf)
+- Slides: [CS 375 Week 2](/slides/w02.html)
+    - Landscape of AI/ML (supervised, unsupervised, RL)
 - Notebook: {{% notebook name="PyTorch Warmup" nbname="u02n1-pytorch.ipynb" %}}
-- Context discussion: Future of Work
 
 {{% /calendar-day %}}
 
 
 {{% calendar-day dow="Friday" date="2026-01-30" %}}
-- Landscape of AI/ML (supervised, unsupervised, RL)
+- Handout review of PyTorch
+- Intro to array programming, regression losses
 - Slides: [Learning Machines](/slides/learning-machines.html#/landscape-of-ai)
 - Notebook: {{% notebook name="Regression in `scikit-learn`" nbname="u02n2-sklearn-regression.ipynb" %}}
 
