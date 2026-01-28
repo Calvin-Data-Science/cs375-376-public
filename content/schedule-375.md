@@ -66,7 +66,6 @@ Getting started with ML: running Python in notebooks, training an image classifi
 
 
 {{% calendar-day dow="Friday" date="2026-01-23" %}}
-I may revise these notebooks before Friday. It's ok to work ahead if you're ok with restarting from the revised notebooks.
 - **Moved to Monday** Handout introduction to the dot product
 - [Lab 1](/units/01introduction/lab/)
 
@@ -97,17 +96,16 @@ Introduction to numerical computing with NumPy/PyTorch: element-wise operations,
 {{% /details %}}
 {{% /calendar-week-header %}}
 {{% calendar-day dow="Monday" date="2026-01-26" %}}
-- Handout introduction to regression losses (MSE, MAE)
+- Handout introduction to dot product
 - Lab 1 review
 - Slides: [Computing](/slides/computing.html#/lab-1-review)
-- Translation workflow discussion
 - Cognition required for imitation
 
 {{% /calendar-day %}}
 
 
 {{% calendar-day dow="Wednesday" date="2026-01-28" %}}
-- Intro to array programming
+- Intro to array programming, regression losses
 - Slides: [Computing](/slides/computing.html#/array-programming)
 - Notebook: {{% notebook name="PyTorch Warmup" nbname="u02n1-pytorch.ipynb" %}}
 - Context discussion: Future of Work
