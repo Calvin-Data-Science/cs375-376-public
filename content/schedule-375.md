@@ -126,8 +126,6 @@ Additionally, you may find these interactive articles helpful (by Amazon's Machi
 - If time:
     - Notebook: {{% notebook name="Regression in `scikit-learn`" nbname="u02n2-sklearn-regression.ipynb" %}}
 
-- Slides: [Learning Machines](/slides/learning-machines.html#/landscape-of-ai)
-
 {{% /calendar-day %}}
 
 
