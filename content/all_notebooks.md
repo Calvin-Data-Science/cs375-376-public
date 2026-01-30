@@ -52,7 +52,7 @@ We also strive for the sequence to make sense.
     - Train a model
     - Make some predictions
   - Experimentation
-  - Optional extension: try out your own image
+  - Try out your own image
 
 ### Week 2
 
