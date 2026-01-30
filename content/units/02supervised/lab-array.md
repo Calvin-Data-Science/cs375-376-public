@@ -8,6 +8,16 @@ You might have heard (or experienced) that Python is slow. So how can Python be 
 
 For those used to writing loops, this sort of coding can take some getting used to. Here are two exercises that previous students have found very helpful in getting their mind around how arrays work in PyTorch. (The concepts are basically identical in other libraries like TensorFlow, NumPy, and JAX.)
 
+## CAUTION
+
+The notebook today has *blanks* that are designed for you to think about. Colab's AI autocomplete will try to suggest filling in the blank, which totally defeats the point. So:
+
+1. Open Colab's *Settings* (the gear icon)
+2. Select the "AI Assistance" section of that window.
+3. Uncheck "Show AI-powered inline completions"
+
+We've also disabled it in the notebook itself (under Edit->Notebook settings->Hide generative AI features), in case you need to turn it back on for some reason.
+
 ## Objectives
 
 - Apply mathematical operations to arrays using PyTorch
