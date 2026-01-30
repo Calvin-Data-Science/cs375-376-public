@@ -114,16 +114,19 @@ Additionally, you may find these interactive articles helpful (by Amazon's Machi
 - Handout: [Supervised Learning](/handouts/2026_01_28.pdf)
 - Slides: [CS 375 Week 2](/slides/w02.html)
     - Landscape of AI/ML (supervised, unsupervised, RL)
-- Notebook: {{% notebook name="PyTorch Warmup" nbname="u02n1-pytorch.ipynb" %}}
 
 {{% /calendar-day %}}
 
 
 {{% calendar-day dow="Friday" date="2026-01-30" %}}
-- Handout review of PyTorch
+- Handout: [Problem framing, dot products review, Lab notes](/handouts/2026_01_30.pdf)
+- [Lab 2](/units/02supervised/lab-array/)
+    - Notebook: {{% notebook name="PyTorch Warmup" nbname="u02n1-pytorch.ipynb" %}}
 - Intro to array programming, regression losses
+- If time:
+    - Notebook: {{% notebook name="Regression in `scikit-learn`" nbname="u02n2-sklearn-regression.ipynb" %}}
+
 - Slides: [Learning Machines](/slides/learning-machines.html#/landscape-of-ai)
-- Notebook: {{% notebook name="Regression in `scikit-learn`" nbname="u02n2-sklearn-regression.ipynb" %}}
 
 {{% /calendar-day %}}
 
