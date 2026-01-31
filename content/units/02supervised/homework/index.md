@@ -8,6 +8,8 @@ revised: 2026
 - Give students a clear outline of the code, and the structure of the responses (maybe even templates).
 -->
 
+**Important**: Read this whole document before you start.
+
 ## Goal
 
 In this assignment, you will train and evaluate your own image classifier to distinguish the handwritten letters A, B, and C.
