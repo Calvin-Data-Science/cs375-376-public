@@ -26,7 +26,7 @@ Try to make the best model you can, under the following constraints:
 
 1. *No more than* 100 training images. (**Note**: This is a *maximum*, not a minimum.)
 2. No more than 5 minutes compute time (on a Kaggle, Colab, or lab machine GPU) to train a model.
-3. Only use models that are already built into `keras`.
+3. Only use models that are already built into `torchvision`.
 
 ## Instructions
 
