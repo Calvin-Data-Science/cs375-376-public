@@ -52,6 +52,7 @@ We also strive for the sequence to make sense.
     - Train a model
     - Make some predictions
   - Experimentation
+  - All validation set predictions
   - Try out your own image
 
 ### Week 2

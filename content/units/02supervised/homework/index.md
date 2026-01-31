@@ -1,7 +1,6 @@
 ---
 title: "Homework 1: Train and evaluate a classifier on your own images"
-draft: false
-revised: 2025
+revised: 2026
 ---
 
 <!-- next year:
@@ -91,17 +90,47 @@ For this assignment:
     - To get started, you can use [this dataset](https://students.cs.calvin.edu/~ka37/example_letter_images.zip) I hacked together very quickly. But it's bad in various ways, so please collect your own.
 - Coding
   - Start with the Lab 1 classifier code and a small set of images.
-  - One easy way to get your dataset into your notebook is to put it your `public_html` folder on the lab computers. Then you can access it at `https://students.cs.calvin.edu/~username/filename.zip` (make sure you include the tilde.) Then you can use `keras.utils..get_file(origin="https://students.cs.calvin.edu/......", extract=True)`, like the Lab 1 code does.
+    - I've made some updates to the starter notebook so that it runs on MPS (Apple Silicon) and includes some example code for getting validation set predictions.
+  - One easy way to get your dataset into your notebook is to put it your `public_html` folder on the lab computers. Then you can access it at `https://students.cs.calvin.edu/~username/filename.zip` (make sure you include the tilde.) Then you can set `url` to that in the Lab 1 data loader code. (Be sure to change `archive_path` and `extract_path` as needed.)
     - If you have any trouble on the notebook, try accessing that URL on your own browser. If you get a permissions error, check the permissions on the ZIP file on the lab computers (right-click and Properties, or via the command line). For the web server to be able to read it, “Other” has to be able to “read”, i.e., `chmod o+r ~/public_html/letter_images.zip`.
   - You might need to set the batch size to be smaller than the default.
 - Improving a model
-  - Try changing config parameters. The model preset might have a particularly big impact on speed and accuracy.
+  - Try changing config parameters.
+    - The model preset might have a particularly big impact on speed and accuracy. Look up documentation, such as [`torchvision` models](https://docs.pytorch.org/vision/main/models.html)
+    - One epoch is probably not enough.
   - Visualize things:
     - What does your data look like?
     - What do the predictions of your classifier look like?
     - What does the confusion matrix look like?
 
-To get the confusion matrix, you can use `val_predicted_probs = model.predict(val_dataset)` to get the model's probabilities (look at `val_predicted_probs.shape` and make sure you understand why its second dimension is 3), then `val_predictions = np.argmax(val_predicted_probs, axis=1)` to get the model's top prediction. To get the true labels out of the dataset, use `val_labels = [int(label) for img, label in val_dataset.unbatch()]`. Then to show a confusion matrix, use:
+To get the confusion matrix, loop over the validation set, loop over the validation dataloader and accumulate all of the probabilities:
+
+```python
+val_predicted_probs = []
+model.eval()
+with torch.no_grad():
+    for inputs, _ in tqdm(val_dataloader, desc="Predicting on validation set"):
+        inputs = inputs.to(device)
+        outputs = model(inputs)
+        probs = outputs.softmax(dim=1).cpu().numpy()
+        val_predicted_probs.append(probs)
+val_predicted_probs = np.vstack(val_predicted_probs)  # Shape: (num_val_samples, num_classes)
+```
+
+Look at `val_predicted_probs.shape` and make sure you understand why its second dimension is 3.
+
+Then get the model's top prediction for each image using `val_predictions = np.argmax(val_predicted_probs, axis=1)` 
+
+To get the true labels out of the dataset, use
+
+```python
+val_labels = np.hstack([
+    labels.numpy() for _, labels in val_dataloader
+])
+val_labels.shape
+```
+
+Then to show a confusion matrix, use:
 
 ```python
 from sklearn.metrics import ConfusionMatrixDisplay
@@ -109,42 +138,6 @@ ConfusionMatrixDisplay.from_predictions(val_labels, val_predictions, display_lab
 ```
 
 (assuming that `class_names` is the same list you used when constructing the data loader).
-
-{{% details summary="Pretrained models" %}}
-
-The [docs page](https://keras.io/api/keras_cv/models/tasks/image_classifier/#frompreset-method) doesn't format the list of available presets well, so here goes:
-
-- resnet50_imagenet
-- resnet50_v2_imagenet
-- mobilenet_v3_large_imagenet
-- mobilenet_v3_small_imagenet
-- csp_darknet_tiny_imagenet
-- csp_darknet_l_imagenet
-- efficientnetv2_s_imagenet
-- efficientnetv2_b0_imagenet
-- efficientnetv2_b1_imagenet
-- efficientnetv2_b2_imagenet
-- densenet121_imagenet
-- densenet169_imagenet
-- densenet201_imagenet
-- yolo_v8_xs_backbone_coco
-- yolo_v8_s_backbone_coco
-- yolo_v8_m_backbone_coco
-- yolo_v8_l_backbone_coco
-- yolo_v8_xl_backbone_coco
-- vitdet_base_sa1b
-- vitdet_large_sa1b
-- vitdet_huge_sa1b
-- resnet50_v2_imagenet_classifier
-- efficientnetv2_s_imagenet_classifier
-- efficientnetv2_b0_imagenet_classifier
-- efficientnetv2_b1_imagenet_classifier
-- efficientnetv2_b2_imagenet_classifier
-- mobilenet_v3_large_imagenet_classifier
-
-Note that "imagenet", "coco", and "sa1b" are three different datasets, so they might lead to models with different performance on this task.
-
-{{% /details %}}
 
 <!--
 
