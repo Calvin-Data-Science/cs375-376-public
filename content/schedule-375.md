@@ -167,6 +167,7 @@ Using LLM APIs to build AI-powered applications. Introduction to classification 
     - Homework 1
     - Journals
     - Quiz opportunity on Wednesday
+- Slides: [CS 375 Week 3](/slides/w03.html)
 - Lab recap: PyTorch (and sklearn notebooks)
 - Starting ["Linear Regression the Hard Way"](/units/03fundamentals/linreg/)
     - Building intuition for linear regression using [UDL figure](https://udlbook.github.io/udlfigures/) or [linreg explainer](https://cs.calvin.edu/courses/info/602/resources/linreg-explainer/)
