@@ -66,8 +66,9 @@ Getting started with ML: impacts of AI, running Python in notebooks, training an
 
 
 {{% calendar-day dow="Friday" date="2026-01-23" %}}
-- **Moved to Monday** Handout introduction to the dot product
 - [Lab 1](/units/01introduction/lab/)
+
+[Recording](https://calvincollege.sharepoint.com/:v:/r/sites/Section_COURSE_SECTION-3-116692/Shared%20Documents/General/Recordings/Cold-Day%20Class%20Meeting%20123-20260123_155343UTC-Meeting%20Recording.mp4?csf=1&web=1&e=z2LhCH&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)
 
 {{% /calendar-day %}}
 
@@ -134,7 +135,7 @@ Additionally, you may find these interactive articles helpful (by Amazon's Machi
 
 <div class="calendar-week">
 
-## Week 3: LLM APIs & Classification
+## Week 3: Linear Models for Regression and Classification (and LLM APIs)
 
 {{% calendar-week-header %}}
 Using LLM APIs to build AI-powered applications. Introduction to classification models and metrics.
@@ -146,23 +147,36 @@ Using LLM APIs to build AI-powered applications. Introduction to classification 
 
 {{% /details %}}
 {{% details summary="Objectives" %}}
-- Use an LLM API to build an AI-powered application
 - Fit a linear regression model "by hand" using numerical computing primitives
 - Describe two different ways of measuring how good a classification is
-- Use basic linear and tree models for classification with sklearn
 - Quantify classifier performance using accuracy, precision, recall, and cross-entropy
+- Use an LLM API to build an AI-powered application
 
 {{% /details %}}
 {{% /calendar-week-header %}}
 {{% calendar-day dow="Monday" date="2026-02-02" %}}
-- Lab recap: PyTorch and sklearn notebooks
-- LLM API intro: "use an AI to make an AI"
+- Handout: [PyTorch, dot products, regression metrics](/handouts/2026_02_02.pdf)
+- **Assumptions of AI**: What's the objective?
+    - ML: optimize single numbers at huge scale
+    - Reality:
+        - " The thief comes only to steal and kill and destroy; I have come that they may have life, and have it to the full." (John 10:10)
+        - the objective is *life*
+            - Many wise paths
+            - passing on good to children (unbounded richness)
+- Logistics:
+    - Homework 1
+    - Journals
+    - Quiz opportunity on Wednesday
+- Lab recap: PyTorch (and sklearn notebooks)
+- Starting ["Linear Regression the Hard Way"](/units/03fundamentals/linreg/)
+    - Building intuition for linear regression using [UDL figure](https://udlbook.github.io/udlfigures/) or [linreg explainer](https://cs.calvin.edu/courses/info/602/resources/linreg-explainer/)
 
 {{% /calendar-day %}}
 
 
 {{% calendar-day dow="Wednesday" date="2026-02-04" %}}
 - Notebook: {{% notebook name="Linear Regression the Hard Way" nbname="u03n1-linreg-manual.ipynb" %}}
+- LLM API intro: "use an AI to make an AI"
 - Context discussion: AI fairness and bias
 
 {{% /calendar-day %}}

@@ -1,7 +1,7 @@
 ---
 title: "Linear Regression the Hard Way"
 weight: 2
-revised: 2025
+revised: 2026
 ---
 
 The simplest "neural computation" model is linear regression. We'll implement it today so that we can understand each part of how it works.
@@ -16,6 +16,8 @@ Go to [the interactive figures for the Understanding Deep Learning book](https:/
 
 1. Go to Figure 2.2 (Least squares loss). Adjust the sliders to try to make the loss bigger or smaller. **What are the highest and lowest values you can get for the loss?** What does the plot look like at those different settings? (consider the line, the data points, and the dashed lines).
 2. How can you tell if you got a good setting for the sliders? Can you tell just by observing the loss (without looking at the plot of the data and the line)?
+
+Alternatively, you may have played with this in the [linreg explainer](https://cs.calvin.edu/courses/info/602/resources/linreg-explainer/) in the readings.
 
 ## Notebooks
 

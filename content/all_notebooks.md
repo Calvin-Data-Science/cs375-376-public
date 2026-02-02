@@ -102,6 +102,11 @@ We also strive for the sequence to make sense.
 
 ### Week 4
 
+- {{% notebook name="Multiple Linear Regression, the Hard Way (PyTorch version)" nbname="u04n1-multi-linreg-manual-torch.ipynb" %}}
+  - Setup
+  - Task
+    - Part A: Linear regression
+  - Analysis
 - {{% notebook name="Multiple Linear Regression, the Hard Way" nbname="u04n1-multi-linreg-manual.ipynb" %}}
   - Setup
   - Task
