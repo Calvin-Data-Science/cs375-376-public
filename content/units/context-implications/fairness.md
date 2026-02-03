@@ -1,7 +1,7 @@
 ---
 title: "Fairness and Bias"
 weight: 4
-revised: 2025
+revised: 2026
 ---
 
 ## Discussion Prompt
@@ -28,6 +28,13 @@ Then, respond to some peers' posts. In your responses, you might:
 - Suggest an additional impact or affected group your peer didn't consider
 - Propose a potential solution or mitigation
 
+Posts should:
+
+- Be understandable without referring to these instructions
+- Cite sources where possible.
+- Be written clearly, for an educated but non-technical audience.
+
+
 ### Sources for Cases
 
 Ironically, you can ask an AI for examples of AI bias! (but dig in to make sure it's not making stuff up---which is another problem with AI that we'll study later in the course).
@@ -45,10 +52,7 @@ A few sources you might consider:
 - Scholarly articles (e.g., from conferences like [ACM FAccT](https://facctconference.org/))
 
 
-
 {{% details summary="Old Discussion Prompt" %}}
-
-> This was our discussion prompt last year. If you've already started thinking about it, you're welcome to make your post with this prompt instead.
 
 We read an article on challenges with fairness in machine learning. **Choose one of the following prompts** and post a brief (about 150-250 words) substantive response.
 
@@ -58,13 +62,5 @@ We read an article on challenges with fairness in machine learning. **Choose one
 - The article cited mathematical proofs about the impossibility of fair decision-making by anyone, whether machine or human. Do you believe those results, or are they missing something?
 - Suppose a friend was denied a car loan by an algorithm, and thinks he was being unfairly discriminated against. What would you tell your friend to help them understand their situation? What evidence might you want to collect to help your friend make a strong discrimination case against the loan company?
 - or a similar sort of question of your own (send it to the instructor to check)
-
-Your post should:
-
-- Start with the prompt that you're responding to.
-- Cite sources where possible.
-- Be written clearly, for an educated but non-technical audience.
-
-Then, post substantive, thoughtful replies to two of your peers' posts. You might, for example, raise a counterpoint to their argument, suggest a different way of thinking about the situation, or identify a connection between what they wrote about and what someone else wrote about.
 
 {{% /details %}}
