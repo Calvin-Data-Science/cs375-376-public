@@ -2,7 +2,7 @@
 title: 'Classification Models'
 summary: 'Apply linear and tree-based classification models to a dataset; compare metrics'
 revised: 2026
-weight: 3
+weight: 4
 ---
 
 

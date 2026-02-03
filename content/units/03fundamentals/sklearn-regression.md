@@ -1,7 +1,8 @@
 ---
 title: 'Regression Models'
 summary: 'Compare and contrast linear and tree-based regression models'
-revised: 2025
+weight: 3
+revised: 2026
 ---
 
 Neural nets are strong performers for data that lacks clear features. But for well-structured tabular data with meaningful features (or data that can be translated to that form), simple models can sometimes perform very well, and can be much faster and sometimes more interpretable. Even if you plan to fit a neural net model, training a decision tree or random forest first can be a good quick first pass.
