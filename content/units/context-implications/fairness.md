@@ -52,15 +52,12 @@ A few sources you might consider:
 - Scholarly articles (e.g., from conferences like [ACM FAccT](https://facctconference.org/))
 
 
-{{% details summary="Old Discussion Prompt" %}}
+### Some Things to Think About
 
-We read an article on challenges with fairness in machine learning. **Choose one of the following prompts** and post a brief (about 150-250 words) substantive response.
+(If you find any of these interesting, feel free to bring it up in your post.)
 
 - What sorts of decisions might AI systems make more fairly than humans -- or vice versa? Give specific examples of situations, explain why your choice could be more fair, and be specific about what you mean by "fair" in each situation.
 - Do you think that social media algorithms are biased? Why or why not? Cite evidence where possible.
 - Suppose you're hired to develop an AI system that might help identify people at risk of mental illness. What issues of fairness or bias might you be concerned about, and what might you do about them?
 - The article cited mathematical proofs about the impossibility of fair decision-making by anyone, whether machine or human. Do you believe those results, or are they missing something?
 - Suppose a friend was denied a car loan by an algorithm, and thinks he was being unfairly discriminated against. What would you tell your friend to help them understand their situation? What evidence might you want to collect to help your friend make a strong discrimination case against the loan company?
-- or a similar sort of question of your own (send it to the instructor to check)
-
-{{% /details %}}
