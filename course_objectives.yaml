@@ -1,294 +1,337 @@
-# Neural Computation Objectives
-- id: NC-MLPParts
-  pillar: Neural Computation
+# CS 375/376 Course Objectives
+# Organized around two pillars: Tuneable Machines (TM) and Optimization Games (OG)
+# Plus Overall objectives for context and implications
+
+# =============================================================================
+# TUNEABLE MACHINES (TM) - How neural networks compute
+# =============================================================================
+
+- id: TM-MLPParts
+  pillar: Tuneable Machines
   class: 375
-  section: null
   description: I can compute the forward pass through a two-layer classification neural network by hand (or in simple code) and explain the purpose and operation of each part.
-  explanation: |
-    The forward pass is the process of computing the output of a neural network given an input.
-  why_important: |
-    This is a foundational skill for understanding how neural networks work.
-    It is also a prerequisite for understanding more advanced topics like backpropagation and optimization.  
   criteria:
     - I can identify the sequence of operations in a two-layer classification neural network.
     - I can compute the output of the matrix multiplication and the activation function for each layer.
     - I can define the following terms in the context of a neural network - input, output, weights, biases, activation function, activation value, logit, probability, and loss.
 
-- id: NC-Primitives
-  pillar: Neural Computation
+- id: TM-Primitives
+  pillar: Tuneable Machines
   class: 375
-  section: null
-  description: I can implement the following basic neural network primitives in efficient parallel code (using a library like NumPy or PyTorch) - linear layers, elementwise nonlinearities (like ReLU), softmax, and loss functions like MSE and categorical cross-entropy.
+  description: I can implement basic neural network primitives in efficient parallel code (using NumPy or PyTorch) - linear layers, elementwise nonlinearities (like ReLU), softmax, and loss functions.
+  criteria:
+    - I can write a correct linear layer computation (matrix multiply plus bias) given weight and bias tensors.
+    - I can implement ReLU and explain what it does to negative vs positive values.
+    - I can implement softmax and explain why it produces a valid probability distribution.
+    - I can implement MSE and cross-entropy loss given predictions and targets.
 
-- id: NC-DataFlow
-  pillar: Neural Computation
+- id: TM-DataFlow
+  pillar: Tuneable Machines
   class: 375
-  section: null
-  description: I can draw clear diagrams of the data flow, including array shapes, for the forward pass and loss computation for the following models - linear regression, logistic regression, and a one-layer MLP.
+  description: I can draw clear diagrams of the data flow through a neural network, labeling each layer and the tensor shapes at each step.
+  criteria:
+    - I can draw a diagram showing layers, activations, and the flow of data through an MLP.
+    - I can label the shapes of tensors at each point in the network (including batch dimension).
+    - I can distinguish between parameters (weights, biases) and activations in my diagrams.
+    - I can trace how a single input becomes a prediction and then a loss value.
 
-- id: NC-VecSimilarity
-  pillar: Neural Computation
+- id: TM-TensorOps
+  pillar: Tuneable Machines
   class: 375
-  section: null
-  description: I can interpret vectors of data as points in a space and explain similarity measures like the dot product.
+  description: I can work fluently with tensors, including predicting operation results and debugging shape errors.
+  criteria:
+    - Given tensor shapes, I can predict whether a matrix multiplication is valid and what shape results.
+    - I can interpret what each dimension of a tensor represents in context (e.g., batch, features, classes).
+    - I can write correct elementwise operations and reductions without shape errors.
+    - I can diagnose and fix shape mismatch errors by tracing dimensions through operations.
 
-- id: NC-Autograd
-  pillar: Neural Computation
+- id: TM-Embeddings
+  pillar: Tuneable Machines
   class: 375
-  section: null
-  description: I can use automatic differentiation APIs to compute and descend gradients.
+  description: I can explain how neural networks represent data as vectors (embeddings) where geometric relationships encode meaning.
+  criteria:
+    - I can explain that similar items should have similar embeddings (high dot product or small distance).
+    - I can interpret a 2D visualization of embeddings and explain why clusters form.
+    - I can explain why learned embeddings can be more useful than hand-crafted features.
+    - I can describe how pretrained embeddings enable transfer learning.
 
-- id: NC-Embeddings
-  pillar: Neural Computation
+- id: TM-RepresentationLearning
+  pillar: Tuneable Machines
+  class: 375
+  description: I can explain how a neural network learns useful internal representations through training.
+  criteria:
+    - I can explain that hidden layers transform data to make the task easier for subsequent layers.
+    - I can give an example of a representation that would make classification easier (e.g., linearly separable).
+    - I can explain why deeper networks can learn more complex representations.
+
+- id: TM-Autograd
+  pillar: Tuneable Machines
+  class: 375
+  description: I can explain the purpose of automatic differentiation and identify how it is used in PyTorch code.
+  criteria:
+    - I can explain that autograd computes gradients of the loss with respect to all parameters.
+    - I can identify which tensors require gradients and why (requires_grad=True).
+    - I can explain what loss.backward() and optimizer.step() do in a training loop.
+
+- id: TM-Implement-TrainingLoop
+  pillar: Tuneable Machines
+  class: 375
+  description: I can implement a basic training loop in PyTorch.
+  criteria:
+    - I can write a training loop that iterates over batches and updates parameters.
+    - I can correctly order the steps - forward pass, loss computation, backward pass, optimizer step, zero gradients.
+    - I can add validation evaluation at appropriate points in training.
+    - I can track and plot training and validation metrics over epochs.
+
+- id: TM-Convolution
+  pillar: Tuneable Machines
+  class: 375-optional
+  description: I can explain the purpose of convolution layers for image processing.
+  criteria:
+    - I can explain why convolutions are useful for images (local patterns, translation invariance, parameter sharing).
+    - I can describe what a filter/kernel does at a high level.
+
+# 376-specific Tuneable Machines objectives (preserved, criteria to be added later)
+
+- id: TM-LLM-Embeddings
+  pillar: Tuneable Machines
   class: 376
-  section: null
   description: I can identify various types of embeddings (tokens, hidden states, output, key, and query) in a language model and explain their purpose.
 
-- id: NC-SelfAttention
-  pillar: Neural Computation
+- id: TM-SelfAttention
+  pillar: Tuneable Machines
   class: 376
-  section: null
-  description: I can explain the purpose and components of a self-attention layer. (Bonus topics - multi-head attention, positional encodings)
+  description: I can explain the purpose and components of a self-attention layer (key, query, value; multi-head attention; positional encodings).
 
-- id: NC-Architectures
-  pillar: Neural Computation
+- id: TM-Architectures
+  pillar: Tuneable Machines
   class: 376-bonus
-  section: null
   description: I can compare and contrast the following neural architectures - CNN, RNN, and Transformer. (Bonus topics - U-Nets, LSTMs, Vision Transformers, state-space models)
 
-- id: NC-Convolution
-  pillar: Neural Computation
-  class: 376-bonus
-  section: null
-  description: I can explain the purpose of a convolution layer and how it operates on an image. (Bonus topics - pooling, strides, padding)
-
-- id: NC-TransformerDataFlow
-  pillar: Neural Computation
+- id: TM-TransformerDataFlow
+  pillar: Tuneable Machines
   class: 376
-  section: null
   description: I can identify the shapes of data flowing through a Transformer-style language model.
 
-- id: NC-Scaling
-  pillar: Neural Computation
+- id: TM-Scaling
+  pillar: Tuneable Machines
   class: 376
-  section: null
   description: I can analyze how the computational requirements of a model scale with number of parameters and context size.
 
-# ML Systems Objectives
-- id: MS-API-Notebook
-  pillar: ML Systems
-  class: both
-  section: APIs and Systems
-  description: I can create a computational notebook that includes code, execution results, section headings, and formatted textual explanations.
-  why_important: |
-    Computational notebooks are not just a common way that data scientists share their work,
-    they also support and encourage incremental development (doing one step at a time and testing it),
-    reproducibility (anyone can run the code and get the same results),
-    documentation (the code is documented with explanations),
-    and narrative (you can start by introducing a problem and then walk through a solution step by step).
-
-- id: MS-API-Supervised
-  pillar: ML Systems
-  class: 375
-  section: APIs and Systems
-  description: I can write code that trains a supervised ML model using a sklearn-style fit-predict API.
-
-- id: MS-API-TaskModel
-  pillar: ML Systems
-  class: 375
-  section: APIs and Systems
-  description: I can select appropriate loss functions and metrics for a given task (and thus choose an appropriate model type/structure). Specifically, I can distinguish between regression and classification problems, even if classification targets happen to be encoded as numbers.
-
-- id: MS-API-Integration
-  pillar: ML Systems
-  class: both
-  section: APIs and Systems
-  description: I can integrate an ML model into a larger application.
-
-- id: MS-Eval-Experiment
-  pillar: ML Systems
-  class: both
-  section: Experimentation and Evaluation
-  description: I can design, run, and analyze empirical experiments to quantify the impact of hyperparameter changes on model performance.
-
-- id: MS-Eval-Visualize
-  pillar: ML Systems
-  class: both
-  section: Experimentation and Evaluation
-  description: I can make and interpret plots of relevant evaluation metrics.
-
-- id: MS-Eval-HyperOpt
-  pillar: ML Systems
-  class: 375
-  section: Experimentation and Evaluation
-  description: I can identify hyperparameters that can be adjusted to improve the performance of a model.
-
-- id: MS-LLM-Generation
-  pillar: ML Systems
+- id: TM-LLM-Generation
+  pillar: Tuneable Machines
   class: 376
-  section: APIs and Systems
   description: I can extract and interpret model outputs (token logits) and use them to generate text.
 
-- id: MS-LLM-API
-  pillar: ML Systems
+- id: TM-LLM-Compute
+  pillar: Tuneable Machines
   class: 376
-  section: APIs and Systems
-  description: I can apply industry-standard APIs to work with pretrained language models (LLMs) and generative AI systems.
-
-- id: MS-LLM-Prompting
-  pillar: ML Systems
-  class: 376
-  section: APIs and Systems
-  description: I can critique and refine prompts to improve the quality of responses from an LLM.
-
-- id: MS-LLM-Tokenization
-  pillar: ML Systems
-  class: 376
-  section: APIs and Systems
-  description: I can explain the purpose, inputs, and outputs of tokenization.
-
-- id: MS-LLM-TokenizationImpact
-  pillar: ML Systems
-  class: 376
-  section: APIs and Systems
-  description: I can analyze how tokenization choices affect the performance of an LLM.
-
-- id: MS-LLM-Advanced
-  pillar: ML Systems
-  class: 376
-  section: APIs and Systems
-  description: I can apply techniques such as Retrieval-Augmented Generation, in-context learning, tool use, and multi-modal input to solve complex tasks with an LLM.
-
-- id: MS-LLM-Eval
-  pillar: ML Systems
-  class: 376
-  section: Experimentation and Evaluation
-  description: I can apply and critically analyze evaluation strategies for generative models.
-
-- id: MS-LLM-Train
-  pillar: ML Systems
-  class: 376
-  section: Experimentation and Evaluation
-  description: I can describe the overall process of training a state-of-the-art dialogue LLM such as Llama or OLMo.
-
-- id: MS-LLM-Compute
-  pillar: ML Systems
-  class: 376
-  section: Experimentation and Evaluation
   description: I can analyze the computational requirements of training and inference of generative AI systems.
 
-# Learning Machines Objectives
-- id: LM-Theory-Paradigms
-  pillar: Learning Machines
-  class: 375
-  section: Learning Theory
-  description: I can explain how different ML approaches (supervised, unsupervised/self-supervised, reinforcement) learn.
+# =============================================================================
+# OPTIMIZATION GAMES (OG) - How we frame and solve learning problems
+# =============================================================================
 
-- id: LM-Theory-SGD
-  pillar: Learning Machines
+- id: OG-ProblemFraming-Supervised
+  pillar: Optimization Games
   class: 375
-  section: Learning Theory
-  description: I can explain how stochastic gradient descent uses data to improve performance of a model.
+  description: I can frame a problem as a supervised learning task with appropriate inputs, targets, and loss function.
+  criteria:
+    - I can identify what the input features and target variable should be for a given problem.
+    - I can determine whether the task is regression or classification.
+    - I can select an appropriate loss function for the task type (MSE for regression, cross-entropy for classification).
+    - I can articulate what "success" means for the task and how to measure it.
 
-- id: LM-Theory-LossMetric
-  pillar: Learning Machines
+- id: OG-ProblemFraming-Paradigms
+  pillar: Optimization Games
   class: 375
-  section: Learning Theory
-  description: I can describe the relationship between loss functions and metrics.
+  description: I can distinguish between supervised learning, self-supervised learning, and reinforcement learning.
+  criteria:
+    - I can identify which paradigm applies to a given learning scenario.
+    - I can explain what provides the learning signal in each paradigm (labels, prediction task, rewards).
+    - I can give an example problem suited to each paradigm.
+    - I can explain why imitation (supervised) differs from exploration (RL) in what can be learned.
 
-- id: LM-Implement-Validate
-  pillar: Learning Machines
+- id: OG-LossFunctions
+  pillar: Optimization Games
   class: 375
-  section: Implementation and Debugging
-  description: I apply validation techniques (e.g., data splitting/cross-validation, spot-checks on specific examples, etc.) without having to be reminded to do so.
+  description: I can select and compute appropriate loss functions for regression and classification tasks.
+  criteria:
+    - I can compute MSE loss given predictions and targets.
+    - I can compute categorical cross-entropy loss given predicted probabilities and true class.
+    - I can explain why we use cross-entropy rather than accuracy as a training loss.
+    - I can identify which loss function is appropriate for a given task type.
 
-- id: LM-Debug-Diagnose
-  pillar: Learning Machines
+- id: OG-DataDistribution
+  pillar: Optimization Games
   class: 375
-  section: Implementation and Debugging
-  description: I can diagnose problems in model training, such as overfitting or underfitting, from metrics.
+  description: I can reason about how the distribution of training data shapes what a model learns.
+  criteria:
+    - I can identify ways a training distribution might differ from deployment (selection bias, domain shift).
+    - I can explain how data augmentation expands the effective training distribution.
+    - I can contrast supervised learning (distribution given) with RL (distribution shaped by exploration).
+    - I can give an example of how a model might succeed on training data but fail in practice.
 
-- id: LM-Implement-PyTorch
-  pillar: Learning Machines
+- id: OG-Eval-Experiment
+  pillar: Optimization Games
+  class: both
+  description: I can design and execute valid experiments to evaluate model performance.
+  criteria:
+    - I partition data appropriately (train/val/test) before any model fitting.
+    - I can explain why we need held-out data and what goes wrong without it.
+    - I can select metrics appropriate to the task and stakeholder needs.
+    - I can interpret learning curves (loss/metric vs epoch) to understand training dynamics.
+
+- id: OG-Generalization
+  pillar: Optimization Games
   class: 375
-  section: Implementation and Debugging
-  description: I can implement a basic training loop in PyTorch.
+  description: I can diagnose and address generalization problems in trained models.
+  criteria:
+    - I can identify overfitting from learning curves (train loss decreasing while val loss increases).
+    - I can identify underfitting (both train and val loss remain high).
+    - I can propose appropriate interventions (more data, augmentation, regularization, adjust model capacity).
+    - I can explain the bias-variance tradeoff at an intuitive level.
 
-- id: LM-SelfSupervised
-  pillar: Learning Machines
+- id: OG-Implement-Validate
+  pillar: Optimization Games
+  class: 375
+  description: I apply validation techniques correctly and proactively.
+  criteria:
+    - I split data into train/validation before fitting, without being reminded.
+    - I evaluate on validation data to select hyperparameters, not training data.
+    - I spot-check model predictions on specific examples to build intuition.
+    - I can explain why validation performance is a better estimate of real-world performance than training performance.
+
+- id: OG-LLM-APIs
+  pillar: Optimization Games
+  class: 375
+  description: I can apply LLM APIs (such as the Chat Completions API) to build AI-powered applications.
+  criteria:
+    - I can construct appropriate API calls with system and user messages.
+    - I can process and use the model's response in an application.
+    - I can identify tasks where an LLM API is and is not appropriate.
+
+- id: OG-Pretrained
+  pillar: Optimization Games
+  class: 375
+  description: I can explain the benefits and risks of using pretrained models.
+  criteria:
+    - I can explain how pretrained models provide useful features without task-specific training data.
+    - I can describe the "body + head" pattern (pretrained feature extractor with task-specific classifier).
+    - I can identify risks of pretrained models (bias, domain mismatch, licensing).
+    - I can explain when fine-tuning vs feature extraction is appropriate.
+
+- id: OG-Theory-SGD
+  pillar: Optimization Games
+  class: 375
+  description: I can explain how stochastic gradient descent uses gradients to improve model performance.
+  criteria:
+    - I can explain that the gradient points in the direction of steepest increase of the loss.
+    - I can explain why we move in the negative gradient direction to reduce loss.
+    - I can explain why we use batches (stochastic) rather than the full dataset.
+    - I can identify the role of learning rate and what happens if it's too large or too small.
+
+# 376-specific Optimization Games objectives (preserved)
+
+- id: OG-LLM-Prompting
+  pillar: Optimization Games
   class: 376
-  section: null
+  description: I can critique and refine prompts to improve the quality of responses from an LLM.
+
+- id: OG-LLM-Tokenization
+  pillar: Optimization Games
+  class: 376
+  description: I can explain the purpose, inputs, and outputs of tokenization.
+
+- id: OG-LLM-Advanced
+  pillar: Optimization Games
+  class: 376
+  description: I can apply techniques such as Retrieval-Augmented Generation, in-context learning, tool use, and multi-modal input to solve complex tasks with an LLM.
+
+- id: OG-LLM-Eval
+  pillar: Optimization Games
+  class: 376
+  description: I can apply and critically analyze evaluation strategies for generative models.
+
+- id: OG-LLM-Train
+  pillar: Optimization Games
+  class: 376
+  description: I can describe the overall process of training a state-of-the-art dialogue LLM such as Llama or OLMo.
+
+- id: OG-SelfSupervised
+  pillar: Optimization Games
+  class: 376
   description: I can explain how self-supervised learning can be used to train foundation models on massive datasets without labeled data.
 
-- id: LM-Theory-Feedback
-  pillar: Learning Machines
+- id: OG-Theory-Feedback
+  pillar: Optimization Games
   class: 376
-  section: null
   description: I can explain how feedback tuning can improve the performance and reliability of a model / agent.
 
-- id: LM-ICL
-  pillar: Learning Machines
+- id: OG-ICL
+  pillar: Optimization Games
   class: 376-bonus
-  section: null
   description: I can explain how in-context learning can be used to improve test-time performance of a model.
 
-# Context and Implications Objectives
-- id: CI-Basic-Impact
-  pillar: Context and Implications
-  class: 375
-  section: Basic
-  description: Recognize when an AI system might have negative impacts on people and flag the need for careful analysis before deploying such a system.
+# =============================================================================
+# OVERALL - Context, implications, and dispositions
+# =============================================================================
 
-- id: CI-Basic-Explain
-  pillar: Context and Implications
+- id: Overall-Explain
+  pillar: Overall
   class: 375
-  section: Basic
-  description: Explain basic AI concepts to a non-technical audience without major errors.
+  description: I can explain basic AI concepts to a non-technical audience without major errors.
+  criteria:
+    - Given a technical concept (e.g., "training a neural network"), I can produce an accessible analogy or explanation.
+    - My explanations avoid anthropomorphizing AI systems in misleading ways.
+    - I can identify when a popular-press AI claim is misleading or exaggerated.
 
-- id: CI-Basic-Faith
-  pillar: Context and Implications
+- id: Overall-Faith
+  pillar: Overall
   class: 375
-  section: Basic
-  description: Identify, in general sense, some ways in which reformed Christian concepts apply to AI development and deployment. Specific examples might include - shalom, humanity in the image of God, and the creation-fall-redemption-restoration narrative.
+  description: I can articulate connections between Christian concepts and AI development, demonstrating genuine engagement.
+  criteria:
+    - I can identify at least one way a Christian concept (e.g., imago Dei, shalom, stewardship) informs how I think about a specific AI capability or application.
+    - I can distinguish between superficial invocations of faith language and substantive ethical reasoning.
+    - I can engage respectfully with perspectives that differ from my own on faith-AI connections.
 
-- id: CI-LLM-Failures
-  pillar: Context and Implications
+- id: Overall-Impact
+  pillar: Overall
+  class: both
+  description: I can analyze real-world situations to identify potential negative impacts of AI systems.
+  criteria:
+    - Given a scenario, I can identify at least two distinct stakeholder groups who might be affected differently.
+    - I can articulate how training data distribution might differ from deployment conditions.
+    - I can identify feedback loops where model outputs might affect future training data or user behavior.
+    - I can flag concerns that warrant careful analysis before deployment.
+
+- id: Overall-Dispositions
+  pillar: Overall
+  class: both
+  description: I demonstrate growth mindset and integrity in my AI learning and practice.
+  criteria:
+    - I can identify a specific instance where I persisted through difficulty in this course.
+    - I can describe how I use AI tools in ways that support rather than replace my learning.
+    - I can articulate my own boundaries for AI assistance and why I hold them.
+
+- id: Overall-History
+  pillar: Overall
+  class: 375-optional
+  description: I can trace current AI technologies back to historical developments.
+  criteria:
+    - I can name at least one historical development (pre-2015) that enabled current deep learning.
+    - I can place the "deep learning revolution" in approximate historical context.
+
+- id: Overall-PhilNarrative
+  pillar: Overall
+  class: both
+  description: I can engage with philosophical questions raised by AI systems.
+  criteria:
+    - I can articulate at least one philosophical question that AI raises (e.g., consciousness, intelligence, creativity, agency).
+    - I can distinguish between what AI systems do and what those capabilities might mean.
+    - I can identify assumptions embedded in how we talk about AI (e.g., "AI thinks", "AI understands").
+
+- id: Overall-LLM-Failures
+  pillar: Overall
   class: 376
-  section: Basic
   description: I can identify common types of failures in LLMs, such as hallucination (confabulation) and bias.
-
-- id: CI-Topic-PhilNarrative
-  pillar: Context and Implications
-  class: both
-  section: Topics
-  description: I can identify and discuss relevant theological narratives and philosophical questions. (Overall - what does it mean to be human?)
-
-- id: CI-Topic-SocAnalyze
-  pillar: Context and Implications
-  class: both
-  section: Topics
-  description: I can identify societal implications of AI technologies and recall relevant facts. I can deeply analyze real-world problems to identify how AI could be used or misused in those situations.
-
-- id: CI-Topic-SocEvaluate
-  pillar: Context and Implications
-  class: both
-  section: Topics
-  description: I can evaluate specific design and evaluation choices in AI systems' based on how they relate to human contexts (organizations, societies, etc.) in which those systems might operate.
-
-- id: CI-Topic-DispIntegrity
-  pillar: Context and Implications
-  class: both
-  section: Topics
-  description: I can identify and demonstrate strategies that support my practice of dispositions such as integrity, humility, meticulousness, creativity, responsibility, perseverance / continuous technical learning / growth mindset.
-
-- id: CI-Topic-DispVision
-  pillar: Context and Implications
-  class: both
-  section: Topics
-  description: I can envision value-aligned technological futures involving AI. Practically, I can use generative AI in ways that honor others, help me think better, and help me serve others better.
-
-- id: CI-Topic-History
-  pillar: Context and Implications
-  class: both
-  section: Topics
-  description: I can trace current AI technologies and ways of thinking back to origins and developments of at least a decade ago.

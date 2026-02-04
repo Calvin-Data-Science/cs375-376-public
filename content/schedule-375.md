@@ -23,11 +23,10 @@ Getting started with ML: impacts of AI, running Python in notebooks, training an
 
 {{% /details %}}
 {{% details summary="Objectives" %}}
-- Describe the goals of artificial intelligence and machine learning.
-- Describe the overall approach of how learning-based AI learns from data, in contrast with rule-based (symbolic) AI
-- Contrast supervised learning, unsupervised/self-supervised learning, and reinforcement learning
+- Describe the goals of artificial intelligence and machine learning
+- Describe how learning-based AI learns from data, in contrast with rule-based (symbolic) AI
+- [OG-ProblemFraming-Paradigms](objective): Contrast supervised learning, self-supervised learning, and reinforcement learning
 - Write and execute basic Python code using Jupyter Notebooks
-- Understand the grading system
 
 {{% /details %}}
 {{% /calendar-week-header %}}
@@ -40,7 +39,7 @@ Getting started with ML: impacts of AI, running Python in notebooks, training an
 - Slides: [Welcome to CS 375](/slides/w01-intro.html)
     - My story and stance:
         - how God brought me to learn about ML/AI
-        - how it’s a gift that will definitely be in the new creation but we abuse it
+        - how it's a gift that will definitely be in the new creation but we abuse it
     - We need to work to discern AI together.
         - Importance
             - Divisiveness
@@ -49,7 +48,7 @@ Getting started with ML: impacts of AI, running Python in notebooks, training an
             - Identity, desires, and relationships
             - You need to be able to discern it fundamentally, not just from external behavior
         - This class:
-            - This class will be about how it works at a fundamental level and what that fundamental understanding helps us understand about how it fits into God’s story
+            - This class will be about how it works at a fundamental level and what that fundamental understanding helps us understand about how it fits into God's story
     - Tweakable Machines playing Optimization Games
         - board games
         - hook-the-human games
@@ -90,9 +89,12 @@ Introduction to numerical computing with NumPy/PyTorch: element-wise operations,
 
 {{% /details %}}
 {{% details summary="Objectives" %}}
-- Implement basic essential array-computing operations (element-wise operations, reductions, dot products, MSE)
-- Contrast different types of learning machines (supervised learning, unsupervised learning, RL)
-- Use the sklearn API for basic regression tasks
+This week we'll make progress towards the following objectives:
+
+- [TM-TensorOps](objective): Implement basic array-computing operations (element-wise operations, reductions, dot products)
+- [OG-LossFunctions](objective): Compute MSE loss
+- [OG-ProblemFraming-Paradigms](objective): Contrast different types of learning machines (supervised learning, unsupervised learning, RL)
+- If you didn't take DATA 202: use the sklearn API for basic regression tasks
 
 {{% /details %}}
 {{% details summary="Resources" %}}
@@ -138,19 +140,19 @@ Additionally, you may find these interactive articles helpful (by Amazon's Machi
 ## Week 3: Linear Models for Regression and Classification (and LLM APIs)
 
 {{% calendar-week-header %}}
-Using LLM APIs to build AI-powered applications. Introduction to classification models and metrics.
+Linear regression and classification from the ground up. Introduction to classification models and metrics. If time: Using LLM APIs to build AI-powered applications.
 
 {{% details summary="Key Questions" %}}
+- How is linear regression an optimization game played by a tuneable machine?
 - How do we call an LLM API?
-- What's the difference between regression and classification?
-- How do we evaluate a classification model (accuracy, precision, recall)?
+- How do we evaluate a classification model?
 
 {{% /details %}}
 {{% details summary="Objectives" %}}
-- Fit a linear regression model "by hand" using numerical computing primitives
-- Describe two different ways of measuring how good a classification is
-- Quantify classifier performance using accuracy, precision, recall, and cross-entropy
-- Use an LLM API to build an AI-powered application
+- [TM-Primitives](objective): Fit a linear regression model "by hand" using numerical computing primitives
+- [OG-ProblemFraming-Supervised](objective): Identify regression vs classification tasks and select appropriate loss functions
+- [OG-LossFunctions](objective): Compute and interpret cross-entropy loss
+- [OG-LLM-APIs](objective): Use an LLM API to build an AI-powered application
 
 {{% /details %}}
 {{% /calendar-week-header %}}
@@ -169,24 +171,25 @@ Using LLM APIs to build AI-powered applications. Introduction to classification 
     - Quiz opportunity on Wednesday
 - Slides: [CS 375 Week 3](/slides/w03.html)
 - Lab recap: PyTorch (and sklearn notebooks)
-- Starting ["Linear Regression the Hard Way"](/units/03fundamentals/linreg/)
-    - Building intuition for linear regression using [UDL figure](https://udlbook.github.io/udlfigures/) or [linreg explainer](https://cs.calvin.edu/courses/info/602/resources/linreg-explainer/)
 
 {{% /calendar-day %}}
 
 
 {{% calendar-day dow="Wednesday" date="2026-02-04" %}}
+- First quiz opportunity [OG-ProblemFraming-Paradigms](objective), [OG-ProblemFraming-Supervised](objective), [TM-Primitives](objective), [TM-TensorOps](objective)
+- Starting ["Linear Regression the Hard Way"](/units/03fundamentals/linreg/)
+    - Building intuition for linear regression using [UDL figure](https://udlbook.github.io/udlfigures/) or [linreg explainer](https://cs.calvin.edu/courses/info/602/resources/linreg-explainer/)
 - Notebook: {{% notebook name="Linear Regression the Hard Way" nbname="u03n1-linreg-manual.ipynb" %}}
-- LLM API intro: "use an AI to make an AI"
-- Context discussion: AI fairness and bias
 
 {{% /calendar-day %}}
 
 
 {{% calendar-day dow="Friday" date="2026-02-06" %}}
 - Slides: [Learning Machines](/slides/learning-machines.html#/metrics)
+- LLM API intro: "use an AI to make an AI"
+- Context discussion: AI fairness and bias
 - Notebook: {{% notebook name="Classification in `scikit-learn`" nbname="u03n2-sklearn-classification.ipynb" %}}
-- Classification metrics (accuracy, precision, recall, cross-entropy)
+- Classification metrics (accuracy, cross-entropy)
 
 {{% /calendar-day %}}
 
@@ -208,10 +211,10 @@ Extending linear models to multiple inputs. Understanding softmax and cross-entr
 
 {{% /details %}}
 {{% details summary="Objectives" %}}
-- Extend understanding of linear regression to multiple input features (thinking through shapes)
-- Explain the purpose and mathematical properties of the softmax operation
-- Practice logistic regression and learn how to fit simple models in PyTorch
-- Describe and compute cross-entropy loss
+- [TM-TensorOps](objective): Work with multi-dimensional tensors, predict shapes of matrix operations
+- [TM-DataFlow](objective): Trace data shapes through a multi-input linear model
+- [TM-Primitives](objective): Implement softmax and explain why it produces a valid probability distribution
+- [OG-LossFunctions](objective): Describe and compute cross-entropy loss
 
 {{% /details %}}
 {{% /calendar-week-header %}}
@@ -242,10 +245,10 @@ Extending linear models to multiple inputs. Understanding softmax and cross-entr
 
 <div class="calendar-week">
 
-## Week 5: Features & Review
+## Week 5: Features & MLP Architecture
 
 {{% calendar-week-header %}}
-Understanding feature extraction with ReLU. Introduction to classifier heads and bodies. Review and preparation for gradient descent.
+Understanding feature extraction with ReLU. Introduction to classifier heads and bodies. The multi-layer perceptron (MLP) architecture.
 
 {{% details summary="Key Questions" %}}
 - Why are good features important for neural networks?
@@ -254,11 +257,10 @@ Understanding feature extraction with ReLU. Introduction to classifier heads and
 
 {{% /details %}}
 {{% details summary="Objectives" %}}
-- Explain the importance of good features for neural network models
-- Understand how a nonlinearity (like ReLU) can be useful for feature extraction
-- Trace the data flow through an MLP, especially the shapes
-- Write PyTorch expressions for each of the MLP components
-- Explain the role of nonlinearities in a neural network (e.g., why they are used between linear layers)
+- [TM-RepresentationLearning](objective): Explain why good features make classification easier
+- [TM-Primitives](objective): Implement ReLU and explain what it does
+- [TM-DataFlow](objective): Trace the data flow through an MLP, labeling shapes at each layer
+- [TM-MLPParts](objective): Identify and explain the components of an MLP (linear layers, activations, output layer)
 
 {{% /details %}}
 {{% /calendar-week-header %}}
@@ -303,11 +305,12 @@ Learning by gradient descent. Understanding why generalization matters and how t
 
 {{% /details %}}
 {{% details summary="Objectives" %}}
-- Train an MLP classifier by gradient descent and know what everything does
-- Describe the overall approach of Stochastic Gradient Descent: how it uses information from a batch of data to improve performance
-- Describe a few ways that an ML model might do well on its training data but fail to generalize
-- Describe ways to make a model generalize better (more data, data augmentation, regularization)
-- Explain the importance of evaluating models on unseen data
+- [TM-Implement-TrainingLoop](objective): Train an MLP classifier by gradient descent and understand each step
+- [OG-Theory-SGD](objective): Describe how SGD uses gradients and batches to improve performance
+- [TM-Autograd](objective): Explain what loss.backward() and optimizer.step() do
+- [OG-Generalization](objective): Diagnose overfitting and underfitting from learning curves
+- [OG-DataDistribution](objective): Explain how data augmentation expands the effective training distribution
+- [OG-Implement-Validate](objective): Explain the importance of evaluating models on unseen data
 
 {{% /details %}}
 {{% /calendar-week-header %}}
@@ -350,12 +353,10 @@ Embeddings as the data structures of neural computation. Introduction to reinfor
 
 {{% /details %}}
 {{% details summary="Objectives" %}}
-- Explain what embeddings are (the data structures used in ML) and how they represent similarity
-- Interpret vectors as points in a space and use dot product to measure similarity between data items
-- Explain how a pretrained model can be repurposed for a new task by separating it into a feature extractor (body) and task-specific classifier (head)
-- Describe the key differences between supervised learning and reinforcement learning
-- Understand delayed rewards and exploration in RL
-- Explain the difference between learning to mimic vs learning by exploring
+- [TM-Embeddings](objective): Explain what embeddings are and how they represent similarity
+- [OG-Pretrained](objective): Explain how a pretrained model can be repurposed using the body + head pattern
+- [OG-ProblemFraming-Paradigms](objective): Contrast supervised learning and reinforcement learning
+- [OG-DataDistribution](objective): Contrast how data distribution is given (supervised) vs shaped by exploration (RL)
 
 {{% /details %}}
 {{% /calendar-week-header %}}

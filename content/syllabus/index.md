@@ -30,12 +30,36 @@ Building on CS 375, an in-depth study of modern generative AI systems, with an e
 
 Upon successful completion of this course, students will be able to:
 
-1. **Frame machine learning problems** by identifying appropriate learning approaches (supervised vs. reinforcement learning), task specifications, and evaluation metrics for a given problem context
+1. **Frame machine learning problems** by identifying appropriate learning paradigms (supervised, self-supervised, reinforcement learning), task specifications, loss functions, and evaluation approaches
+    - OG-ProblemFraming-Supervised
+    - OG-ProblemFraming-Paradigms
+    - OG-LossFunctions
+    - OG-DataDistribution
 2. **Explain the computational mechanisms** of neural network training and inference, including forward propagation, loss computation, and gradient-based optimization
-3. **Implement and train neural networks** for classification and regression tasks using both low-level primitives and high-level frameworks
-4. **Evaluate and improve ML systems** by selecting appropriate metrics, applying validation strategies, diagnosing common problems (overfitting, underfitting), and tuning hyperparameters
-5. **Work with diverse ML approaches** including supervised learning models, pretrained models via APIs (e.g., large language models), and reinforcement learning systems
-6. **Analyze and articulate** philosophical, psychological, historical, and religious aspects of AI systems, including appropriate use cases, limitations, and potential societal impacts
+    - TM-MLPParts
+    - TM-Primitives
+    - TM-DataFlow
+    - TM-TensorOps
+    - TM-RepresentationLearning
+    - TM-Embeddings
+3. **Implement and train neural networks** for classification and regression tasks
+    - TM-Autograd
+    - TM-Implement-TrainingLoop
+    - OG-Theory-SGD
+4. **Evaluate and improve ML systems** by applying validation strategies, diagnosing generalization problems (overfitting, underfitting), and reasoning about data distributions
+    - OG-Eval-Experiment
+    - OG-Implement-Validate
+    - OG-Generalization
+5. **Work with diverse ML approaches** including supervised learning models, pretrained models via APIs (e.g., large language models), and reinforcement learning concepts
+    - OG-Pretrained
+    - OG-LLM-APIs
+6. **Analyze and articulate** philosophical, historical, and religious aspects of AI systems, including appropriate use cases, limitations, and potential societal impacts
+    - Overall-Explain
+    - Overall-Faith
+    - Overall-PhilNarrative
+    - Overall-Impact
+    - Overall-Dispositions
+    - Overall-History (optional)
 
 The specific objectives used for course grading will be listed in the pages for each unit.
 
