@@ -176,7 +176,7 @@ Linear regression and classification from the ground up. Introduction to classif
 
 
 {{% calendar-day dow="Wednesday" date="2026-02-04" %}}
-- First quiz opportunity [OG-ProblemFraming-Paradigms](objective), [OG-ProblemFraming-Supervised](objective), [TM-Primitives](objective), [TM-TensorOps](objective)
+- First quiz opportunity [OG-ProblemFraming-Paradigms](objective), [OG-ProblemFraming-Supervised](objective), [TM-Primitives](objective), [TM-DotProduct](objective)
 - Starting ["Linear Regression the Hard Way"](/units/03fundamentals/linreg/)
     - Building intuition for linear regression using [UDL figure](https://udlbook.github.io/udlfigures/) or [linreg explainer](https://cs.calvin.edu/courses/info/602/resources/linreg-explainer/)
 - Notebook: {{% notebook name="Linear Regression the Hard Way" nbname="u03n1-linreg-manual.ipynb" %}}

@@ -35,14 +35,22 @@
     - I can distinguish between parameters (weights, biases) and activations in my diagrams.
     - I can trace how a single input becomes a prediction and then a loss value.
 
+- id: TM-DotProduct
+  pillar: Tuneable Machines
+  class: 375
+  description: I can compute and reason about dot products of vectors.
+  criteria:
+    - I can compute the dot product of two vectors by hand.
+    - I can explain that dot products measure similarity or alignment between vectors.
+    - I can explain what it means geometrically when two vectors have a dot product of zero.
+
 - id: TM-TensorOps
   pillar: Tuneable Machines
   class: 375
-  description: I can work fluently with tensors, including predicting operation results and debugging shape errors.
+  description: I can reason about matrix multiplication and multi-dimensional tensor shapes.
   criteria:
     - Given tensor shapes, I can predict whether a matrix multiplication is valid and what shape results.
     - I can interpret what each dimension of a tensor represents in context (e.g., batch, features, classes).
-    - I can write correct elementwise operations and reductions without shape errors.
     - I can diagnose and fix shape mismatch errors by tracing dimensions through operations.
 
 - id: TM-Embeddings
