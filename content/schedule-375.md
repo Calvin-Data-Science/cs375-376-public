@@ -185,11 +185,14 @@ Linear regression and classification from the ground up. Introduction to classif
 
 
 {{% calendar-day dow="Friday" date="2026-02-06" %}}
-- Slides: [Learning Machines](/slides/learning-machines.html#/metrics)
-- LLM API intro: "use an AI to make an AI"
-- Context discussion: AI fairness and bias
-- Notebook: {{% notebook name="Classification in `scikit-learn`" nbname="u03n2-sklearn-classification.ipynb" %}}
-- Classification metrics (accuracy, cross-entropy)
+- Tech update: [Opus 4.6 release](https://www.anthropic.com/news/claude-opus-4-6)
+- Handout: [Matrix product, Elo intuition](/handouts/2026_02_06.pdf)
+- Slides: [CS 375 Week 3](/slides/w03.html)
+- Reviewing notebooks:
+    - Notebook: {{% notebook name="PyTorch Warmup" nbname="u02n1-pytorch.ipynb" %}}
+    - Notebook: {{% notebook name="Linear Regression the Hard Way" nbname="u03n1-linreg-manual.ipynb" %}}
+    - Notebook: {{% notebook name="Regression in `scikit-learn`" nbname="u02n2-sklearn-regression.ipynb" %}}
+    - Notebook: {{% notebook name="Classification in `scikit-learn`" nbname="u03n2-sklearn-classification.ipynb" %}}
 
 {{% /calendar-day %}}
 
@@ -219,8 +222,10 @@ Extending linear models to multiple inputs. Understanding softmax and cross-entr
 {{% /details %}}
 {{% /calendar-week-header %}}
 {{% calendar-day dow="Monday" date="2026-02-09" %}}
+- Classification metrics (accuracy, cross-entropy)
+- Context discussion: AI fairness and bias
+- LLM API intro: "use an AI to make an AI"
 - Notebook: {{% notebook name="Multiple Linear Regression, the Hard Way" nbname="u04n1-multi-linreg-manual.ipynb" %}}
-- Multilingual chat application demo
 
 {{% /calendar-day %}}
 
