@@ -189,6 +189,8 @@ Linear regression and classification from the ground up. Introduction to classif
 - Handout: [Matrix product, Elo intuition](/handouts/2026_02_06.pdf)
 - Slides: [CS 375 Week 3](/slides/w03.html)
 - Reviewing notebooks:
+    - Notebook: {{% notebook name="Train a simple image classifier" nbname="u01n1-train-clf.ipynb" %}}
+- (we didn't get to...)
     - Notebook: {{% notebook name="PyTorch Warmup" nbname="u02n1-pytorch.ipynb" %}}
     - Notebook: {{% notebook name="Linear Regression the Hard Way" nbname="u03n1-linreg-manual.ipynb" %}}
     - Notebook: {{% notebook name="Regression in `scikit-learn`" nbname="u02n2-sklearn-regression.ipynb" %}}
@@ -239,6 +241,8 @@ Extending linear models to multiple inputs. Understanding softmax and cross-entr
 
 
 {{% calendar-day dow="Friday" date="2026-02-13" %}}
+- Handout
+  - gradient intuition: suppose a dot b is 0. How can we change each element of b (in isolation) to make the dot product 0.1 instead?
 - Notebook: {{% notebook name="From Linear Regression in NumPy to Logistic Regression in PyTorch" nbname="u04n3-logreg-pytorch.ipynb" %}}
 - Hw2 soft-due: demo an AI-powered application
 
