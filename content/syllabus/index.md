@@ -37,7 +37,9 @@ Upon successful completion of this course, students will be able to:
     - OG-DataDistribution
 2. **Explain the computational mechanisms** of neural network training and inference, including forward propagation, loss computation, and gradient-based optimization
     - TM-MLPParts
-    - TM-Primitives
+    - TM-LinearLayers
+    - TM-ActivationFunctions
+    - TM-Softmax
     - TM-DataFlow
     - TM-TensorOps
     - TM-RepresentationLearning
@@ -76,8 +78,30 @@ The specific objectives used for course grading will be listed in the pages for 
 5. **Perspectives on Artificial Intelligence**: Historical developments (from Turing to contemporary AI); philosophical questions (consciousness, intelligence, Chinese Room); religious and theological themes (imago Dei, technology and human relationships); societal impacts (bias, privacy, appropriate use); the nature of measurement and reductionism in AI systems
 
 
+## Pillars
 
 CS 375 focuses on fundamentals; CS 376 dives into generative AI. But both courses are organized around the two key pillars of modern AI: a **tuneable machine** playing an **optimization game**. Both courses also discuss the broader **context and implications** of AI systems.
+
+Our objectives are organized around two main pillars:
+
+- **Tuneable Machines (TM)**: The number-crunching machines that implement neural networks in ways that can be tuned to improve quantitative evaluations of their outputs. *How do these machines work?*
+    - The architecture: layers, activations, data flow
+    - The mechanics: forward pass, backward pass, training loops
+- **Optimization Games (OG)**: How we set up problems in ways that we can solve using tuneable machines? What implications does that have on the real world?
+    - Problem setup: supervised vs RL, loss functions, evaluation
+    - Training strategy: SGD, generalization, validation
+
+Each objective covers multiple skills:
+
+- Conceptual understanding (explain, describe)
+- Implementation (write code, compute)
+- Analysis (diagnose, select, compare)
+
+For example, [OG-LossFunctions](objective) asks you to:
+
+- Compute MSE loss (implementation)
+- Explain why we use cross-entropy (conceptual)
+- Identify which loss fits a task (analysis)
 
 
 ## Prerequisites

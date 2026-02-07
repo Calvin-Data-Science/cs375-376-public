@@ -149,7 +149,7 @@ Linear regression and classification from the ground up. Introduction to classif
 
 {{% /details %}}
 {{% details summary="Objectives" %}}
-- [TM-Primitives](objective): Fit a linear regression model "by hand" using numerical computing primitives
+- [TM-LinearLayers](objective): Fit a linear regression model "by hand" using numerical computing primitives
 - [OG-ProblemFraming-Supervised](objective): Identify regression vs classification tasks and select appropriate loss functions
 - [OG-LossFunctions](objective): Compute and interpret cross-entropy loss
 - [OG-LLM-APIs](objective): Use an LLM API to build an AI-powered application
@@ -176,7 +176,7 @@ Linear regression and classification from the ground up. Introduction to classif
 
 
 {{% calendar-day dow="Wednesday" date="2026-02-04" %}}
-- First quiz opportunity [OG-ProblemFraming-Paradigms](objective), [OG-ProblemFraming-Supervised](objective), [TM-Primitives](objective), [TM-DotProduct](objective)
+- First quiz opportunity [OG-ProblemFraming-Paradigms](objective), [OG-ProblemFraming-Supervised](objective), [TM-DotProduct](objective), [OG-LossFunctions](objective), [TM-TensorOps](objective)
 - Starting ["Linear Regression the Hard Way"](/units/03fundamentals/linreg/)
     - Building intuition for linear regression using [UDL figure](https://udlbook.github.io/udlfigures/) or [linreg explainer](https://cs.calvin.edu/courses/info/602/resources/linreg-explainer/)
 - Notebook: {{% notebook name="Linear Regression the Hard Way" nbname="u03n1-linreg-manual.ipynb" %}}
@@ -216,7 +216,7 @@ Extending linear models to multiple inputs. Understanding softmax and cross-entr
 {{% details summary="Objectives" %}}
 - [TM-TensorOps](objective): Work with multi-dimensional tensors, predict shapes of matrix operations
 - [TM-DataFlow](objective): Trace data shapes through a multi-input linear model
-- [TM-Primitives](objective): Implement softmax and explain why it produces a valid probability distribution
+- [TM-Softmax](objective): Implement softmax and explain why it produces a valid probability distribution
 - [OG-LossFunctions](objective): Describe and compute cross-entropy loss
 
 {{% /details %}}
@@ -263,7 +263,7 @@ Understanding feature extraction with ReLU. Introduction to classifier heads and
 {{% /details %}}
 {{% details summary="Objectives" %}}
 - [TM-RepresentationLearning](objective): Explain why good features make classification easier
-- [TM-Primitives](objective): Implement ReLU and explain what it does
+- [TM-ActivationFunctions](objective): Implement ReLU and explain what it does
 - [TM-DataFlow](objective): Trace the data flow through an MLP, labeling shapes at each layer
 - [TM-MLPParts](objective): Identify and explain the components of an MLP (linear layers, activations, output layer)
 

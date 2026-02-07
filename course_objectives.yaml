@@ -15,15 +15,32 @@
     - I can compute the output of the matrix multiplication and the activation function for each layer.
     - I can define the following terms in the context of a neural network - input, output, weights, biases, activation function, activation value, logit, probability, and loss.
 
-- id: TM-Primitives
+- id: TM-LinearLayers
   pillar: Tuneable Machines
   class: 375
-  description: I can implement basic neural network primitives in efficient parallel code (using NumPy or PyTorch) - linear layers, elementwise nonlinearities (like ReLU), softmax, and loss functions.
+  description: I can implement linear (fully-connected) layers using efficient parallel code.
   criteria:
     - I can write a correct linear layer computation (matrix multiply plus bias) given weight and bias tensors.
+    - I can explain why linear layers are called "fully connected."
+    - I can predict the shape of the output given input and weight dimensions.
+
+- id: TM-ActivationFunctions
+  pillar: Tuneable Machines
+  class: 375
+  description: I can implement and explain elementwise nonlinear activation functions.
+  criteria:
     - I can implement ReLU and explain what it does to negative vs positive values.
+    - I can explain why networks need nonlinear activations between layers.
+    - I can compare ReLU to other activations (sigmoid, tanh) and explain tradeoffs.
+
+- id: TM-Softmax
+  pillar: Tuneable Machines
+  class: 375
+  description: I can implement softmax and explain its role in classification networks.
+  criteria:
     - I can implement softmax and explain why it produces a valid probability distribution.
-    - I can implement MSE and cross-entropy loss given predictions and targets.
+    - I can explain when and why we use softmax in neural networks.
+    - I can identify the relationship between softmax and cross-entropy loss.
 
 - id: TM-DataFlow
   pillar: Tuneable Machines
