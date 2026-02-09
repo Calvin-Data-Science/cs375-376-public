@@ -7,7 +7,7 @@ Welcome to CS 375 and CS 376 at Calvin!
 
 - [Syllabus](/syllabus/)
 - [All Notebooks](/all_notebooks/)
-- [Project](/project)
+- [Project](/project) (for 376)
 
 Things that haven't been updated for this year:
 

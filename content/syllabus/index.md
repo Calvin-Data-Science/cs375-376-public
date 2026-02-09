@@ -63,7 +63,7 @@ Upon successful completion of this course, students will be able to:
     - Overall-Dispositions
     - Overall-History (optional)
 
-The specific objectives used for course grading will be listed in the pages for each unit.
+Here are the [specific objectives used for course grading](/objectives-375).
 
 ## Topics
 
