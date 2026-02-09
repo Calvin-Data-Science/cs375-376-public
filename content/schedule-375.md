@@ -230,7 +230,7 @@ Extending linear models to multiple inputs. Understanding softmax and cross-entr
     - Handout: [Cross-entropy loss, linear layer shapes](/handouts/2026_02_09.pdf)
 - Review
     - Slides: [CS 375 Week 3](/slides/w03.html)
-    - Quiz 1
+    - Quiz 1 (and how [objectives](/objectives-375) grading will work)
 - Classification metrics (accuracy, cross-entropy)
     - Slides: [CS375 Week 4](/slides/w04.html)
 - Notebook: {{% notebook name="Multiple Linear Regression, the Hard Way" nbname="u04n1-multi-linreg-manual.ipynb" %}}
@@ -239,6 +239,8 @@ Extending linear models to multiple inputs. Understanding softmax and cross-entr
 
 
 {{% calendar-day dow="Wednesday" date="2026-02-11" %}}
+- Handout - TODO pull questions from last year
+
 - Context discussion: AI fairness and bias
 - LLM API intro: "use an AI to make an AI"
 - Slides: [Computing](/slides/computing.html#/linear-regression)
