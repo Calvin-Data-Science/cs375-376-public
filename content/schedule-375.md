@@ -224,15 +224,23 @@ Extending linear models to multiple inputs. Understanding softmax and cross-entr
 {{% /details %}}
 {{% /calendar-week-header %}}
 {{% calendar-day dow="Monday" date="2026-02-09" %}}
+- Assumptions of AI: framed problems
+- Handouts - review, then new:
+    - Handout: [Matrix product, Elo intuition](/handouts/2026_02_06.pdf)
+    - Handout: [Cross-entropy loss, linear layer shapes](/handouts/2026_02_09.pdf)
+- Review
+    - Slides: [CS 375 Week 3](/slides/w03.html)
+    - Quiz 1
 - Classification metrics (accuracy, cross-entropy)
-- Context discussion: AI fairness and bias
-- LLM API intro: "use an AI to make an AI"
+    - Slides: [CS375 Week 4](/slides/w04.html)
 - Notebook: {{% notebook name="Multiple Linear Regression, the Hard Way" nbname="u04n1-multi-linreg-manual.ipynb" %}}
 
 {{% /calendar-day %}}
 
 
 {{% calendar-day dow="Wednesday" date="2026-02-11" %}}
+- Context discussion: AI fairness and bias
+- LLM API intro: "use an AI to make an AI"
 - Slides: [Computing](/slides/computing.html#/linear-regression)
 - Notebook: {{% notebook name="Softmax, part 1" nbname="u04n2-softmax.ipynb" %}}
 - Interactive softmax demo
