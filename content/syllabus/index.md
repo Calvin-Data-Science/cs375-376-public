@@ -7,7 +7,7 @@ This is a pair of hands-on courses on AI systems using machine learning, with a 
 
 - **Instructor**: [Ken Arnold](https://kenarnold.org), Calvin University, North Hall NH298
 - **Meeting Times**: MWF 11:00am-12:05pm, SB **343**
-- **Review Hours**: Tuesdays 1:30-3pm in Syslab (SB 337). Other times to be arranged on request. Or message me directly; time permitting, I'd love to chat.
+- **Review/Office Hours**: **Thursdays** 1:30-3pm in NH 298 (or sometimes the Syslab, SB 337). Other times to be arranged on request. Or message me directly; time permitting, I'd love to chat.
 
 The pair is composed of two half-semester courses: CS 375 and CS 376. It is designed so that students who can only take 2 credit hours can take only CS 375 and finish at Spring Break, while students who are able to go in more depth can continue to CS 376. (Taking only CS 376 is highly discouraged. Taking CS376 in a different year from CS375 is mildly discouraged.)
 
