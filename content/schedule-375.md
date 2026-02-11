@@ -69,6 +69,8 @@ Getting started with ML: impacts of AI, running Python in notebooks, training an
 
 [Recording](https://calvincollege.sharepoint.com/:v:/r/sites/Section_COURSE_SECTION-3-116692/Shared%20Documents/General/Recordings/Cold-Day%20Class%20Meeting%20123-20260123_155343UTC-Meeting%20Recording.mp4?csf=1&web=1&e=z2LhCH&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)
 
+- Tech update: Qwen-TTS
+
 {{% /calendar-day %}}
 
 
@@ -239,22 +241,20 @@ Extending linear models to multiple inputs. Understanding softmax and cross-entr
 
 
 {{% calendar-day dow="Wednesday" date="2026-02-11" %}}
-- Handout - TODO pull questions from last year
-
-- Context discussion: AI fairness and bias
-- LLM API intro: "use an AI to make an AI"
-- Slides: [Computing](/slides/computing.html#/linear-regression)
+- Handout - 2026_02_11 - Shapes for Linear and Logistic Regression; Cross-Entropy
+- Slides: [CS375 Week 4](/slides/w04.html)
 - Notebook: {{% notebook name="Softmax, part 1" nbname="u04n2-softmax.ipynb" %}}
-- Interactive softmax demo
+- [Interactive softmax demo](https://observablehq.com/@kcarnold/softmax)
+- If extra time: LLM API intro
 
 {{% /calendar-day %}}
 
 
 {{% calendar-day dow="Friday" date="2026-02-13" %}}
+- Quiz 2
 - Handout
   - gradient intuition: suppose a dot b is 0. How can we change each element of b (in isolation) to make the dot product 0.1 instead?
 - Notebook: {{% notebook name="From Linear Regression in NumPy to Logistic Regression in PyTorch" nbname="u04n3-logreg-pytorch.ipynb" %}}
-- Hw2 soft-due: demo an AI-powered application
 
 {{% /calendar-day %}}
 
