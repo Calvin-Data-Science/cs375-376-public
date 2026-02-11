@@ -241,7 +241,7 @@ Extending linear models to multiple inputs. Understanding softmax and cross-entr
 
 
 {{% calendar-day dow="Wednesday" date="2026-02-11" %}}
-- Handout - 2026_02_11 - Shapes for Linear and Logistic Regression; Cross-Entropy
+- Handout: [Shapes for Linear and Logistic Regression; Cross-Entropy](/handouts/2026_02_11.pdf)
 - Slides: [CS375 Week 4](/slides/w04.html)
 - Notebook: {{% notebook name="Softmax, part 1" nbname="u04n2-softmax.ipynb" %}}
 - [Interactive softmax demo](https://observablehq.com/@kcarnold/softmax)
