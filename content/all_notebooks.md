@@ -45,6 +45,7 @@ We also strive for the sequence to make sense.
 - {{% notebook name="Jupyter Notebook Warmup" nbname="u01n0-notebook-warmup.ipynb" %}}
   - Jupyter Notebooks
 - {{% notebook name="Train a simple image classifier" nbname="u01n1-train-clf.ipynb" %}}
+    - Course Objectives Addressed
   - Setup
   - Configure our experiments
     - Load the data
@@ -58,6 +59,7 @@ We also strive for the sequence to make sense.
 ### Week 2
 
 - {{% notebook name="PyTorch Warmup" nbname="u02n1-pytorch.ipynb" %}}
+    - Course Objectives Addressed
   - Dot Products
     - `for` loop approach
       - Torch Elementwise Operations
@@ -69,6 +71,7 @@ We also strive for the sequence to make sense.
   - Multidimensional arrays
   - Appendix
 - {{% notebook name="Regression in `scikit-learn`" nbname="u02n2-sklearn-regression.ipynb" %}}
+    - Course Objectives Addressed
   - Setup
   - Task
     - Part A: Linear regression
@@ -81,6 +84,7 @@ We also strive for the sequence to make sense.
 
 - {{% notebook name="Linear Regression the Hard Way" nbname="u03n1-linreg-manual.ipynb" %}}
   - Objectives
+    - Course Objectives Addressed
   - Setup
   - Task
     - Step 0: Initialize the model
@@ -92,6 +96,7 @@ We also strive for the sequence to make sense.
     - Check in
   - Guided Extension
 - {{% notebook name="Classification in `scikit-learn`" nbname="u03n2-sklearn-classification.ipynb" %}}
+    - Course Objectives Addressed
   - Setup
   - Task
     - Part A: Logistic Regression
@@ -103,16 +108,19 @@ We also strive for the sequence to make sense.
 ### Week 4
 
 - {{% notebook name="Multiple Linear Regression, the Hard Way (PyTorch version)" nbname="u04n1-multi-linreg-manual-torch.ipynb" %}}
+    - Course Objectives Addressed
   - Setup
   - Task
     - Part A: Linear regression
   - Analysis
 - {{% notebook name="Multiple Linear Regression, the Hard Way" nbname="u04n1-multi-linreg-manual.ipynb" %}}
+    - Course Objectives Addressed
   - Setup
   - Task
     - Part A: Linear regression
   - Analysis
 - {{% notebook name="Softmax, part 1" nbname="u04n2-softmax.ipynb" %}}
+    - Course Objectives Addressed
   - Setup
   - Task
   - Analysis
@@ -121,6 +129,7 @@ We also strive for the sequence to make sense.
     - Analysis of Numerical Issues
   - Extension *optional*
 - {{% notebook name="From Linear Regression in NumPy to Logistic Regression in PyTorch" nbname="u04n3-logreg-pytorch.ipynb" %}}
+    - Course Objectives Addressed
   - Setup
     - Basic EDA
   - Part 1: Classification the wrong way (using linear regression)

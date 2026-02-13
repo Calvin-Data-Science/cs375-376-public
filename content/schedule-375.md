@@ -256,6 +256,9 @@ Extending linear models to multiple inputs. Understanding softmax and cross-entr
 - Quiz 2
 - Handout
   - gradient intuition: suppose a dot b is 0. How can we change each element of b (in isolation) to make the dot product 0.1 instead?
+  - softmax review: invariant to addition? scaling?
+  - Label the parts of the logistic regression code, explain each step
+  - Why would MSE not be good for
 - Notebook: {{% notebook name="From Linear Regression in NumPy to Logistic Regression in PyTorch" nbname="u04n3-logreg-pytorch.ipynb" %}}
 
 {{% /calendar-day %}}
