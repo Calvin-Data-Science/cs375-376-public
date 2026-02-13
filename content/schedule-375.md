@@ -254,11 +254,6 @@ Extending linear models to multiple inputs. Understanding softmax and cross-entr
 
 {{% calendar-day dow="Friday" date="2026-02-13" %}}
 - Quiz 2
-- Handout
-  - gradient intuition: suppose a dot b is 0. How can we change each element of b (in isolation) to make the dot product 0.1 instead?
-  - softmax review: invariant to addition? scaling?
-  - Label the parts of the logistic regression code, explain each step
-  - Why would MSE not be good for
 - Notebook: {{% notebook name="From Linear Regression in NumPy to Logistic Regression in PyTorch" nbname="u04n3-logreg-pytorch.ipynb" %}}
 
 {{% /calendar-day %}}
@@ -289,6 +284,10 @@ Understanding feature extraction with ReLU. Introduction to classifier heads and
 {{% /details %}}
 {{% /calendar-week-header %}}
 {{% calendar-day dow="Monday" date="2026-02-16" %}}
+- Handout
+  - gradient intuition: suppose a dot b is 0. How can we change each element of b (in isolation) to make the dot product 0.1 instead?
+  - softmax review: invariant to addition? scaling?
+  - Label the parts of the logistic regression code, explain each step
 - Feature extractors intro
 - ReLU features intro
 - Classifier head and body intro
