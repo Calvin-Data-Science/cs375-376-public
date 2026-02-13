@@ -1,7 +1,7 @@
 ---
 title: "PyTorch and Logistic Regression"
 weight: 5
-revised: 2025
+revised: 2026
 ---
 
 ## Logistic Regression

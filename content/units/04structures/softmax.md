@@ -1,7 +1,7 @@
 ---
 title: "Softmax"
 weight: 4
-revised: 2025
+revised: 2026
 ---
 
 ## Background
