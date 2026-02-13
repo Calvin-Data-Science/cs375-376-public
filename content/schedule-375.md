@@ -254,7 +254,8 @@ Extending linear models to multiple inputs. Understanding softmax and cross-entr
 
 {{% calendar-day dow="Friday" date="2026-02-13" %}}
 - Quiz 2
-- Notebook: {{% notebook name="From Linear Regression in NumPy to Logistic Regression in PyTorch" nbname="u04n3-logreg-pytorch.ipynb" %}}
+- When you're done, one person set up on each monitor around the room and go through:
+    - Notebook: {{% notebook name="From Linear Regression in NumPy to Logistic Regression in PyTorch" nbname="u04n3-logreg-pytorch.ipynb" %}}
 
 {{% /calendar-day %}}
 
