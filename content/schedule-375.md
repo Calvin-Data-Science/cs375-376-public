@@ -139,14 +139,13 @@ Additionally, you may find these interactive articles helpful (by Amazon's Machi
 
 <div class="calendar-week">
 
-## Week 3: Linear Models for Regression and Classification (and LLM APIs)
+## Week 3: Linear Models for Regression and Classification
 
 {{% calendar-week-header %}}
-Linear regression and classification from the ground up. Introduction to classification models and metrics. If time: Using LLM APIs to build AI-powered applications.
+Linear regression and classification from the ground up. Introduction to classification models and metrics.
 
 {{% details summary="Key Questions" %}}
 - How is linear regression an optimization game played by a tuneable machine?
-- How do we call an LLM API?
 - How do we evaluate a classification model?
 
 {{% /details %}}
@@ -247,7 +246,6 @@ Extending linear models to multiple inputs. Understanding softmax and cross-entr
     - Try to match the example given in the handout (3 classes, probs `[0.25, 0.25, 0.5]`).
     - What happens if you shift all the scores up and down (+/- 0.5)? What happens if you multiply?
 - Notebook: {{% notebook name="Softmax, part 1" nbname="u04n2-softmax.ipynb" %}}
-- If extra time: LLM API intro
 
 {{% /calendar-day %}}
 
@@ -265,7 +263,7 @@ Extending linear models to multiple inputs. Understanding softmax and cross-entr
 
 <div class="calendar-week">
 
-## Week 5: Features & MLP Architecture
+## Week 5: Feature Extraction / Embeddings; MLP Architecture
 
 {{% calendar-week-header %}}
 Understanding feature extraction with ReLU. Introduction to classifier heads and bodies. The multi-layer perceptron (MLP) architecture.
@@ -285,26 +283,27 @@ Understanding feature extraction with ReLU. Introduction to classifier heads and
 {{% /details %}}
 {{% /calendar-week-header %}}
 {{% calendar-day dow="Monday" date="2026-02-16" %}}
-- Handout
-  - gradient intuition: suppose a dot b is 0. How can we change each element of b (in isolation) to make the dot product 0.1 instead?
-  - softmax review: invariant to addition? scaling?
-  - Label the parts of the logistic regression code, explain each step
-- Feature extractors intro
-- ReLU features intro
-- Classifier head and body intro
+- Quiz 2 Redo
+- Reviewing [Logistic Regression notebook](/units/04structures/pytorch-logreg/)
 
 {{% /calendar-day %}}
 
 
 {{% calendar-day dow="Wednesday" date="2026-02-18" %}}
+- Handout
+  - gradient intuition: suppose a dot b is 0. How can we change each element of b (in isolation) to make the dot product 0.1 instead?
+  - Label the parts of the logistic regression code, explain each step
+- Feature extractors intro
+- ReLU features intro
+- Classifier head and body intro
 - Notebook: {{% notebook name="ReLU Regression Interactive" nbname="u05n00-relu.ipynb" %}}
 - Notebook: {{% notebook name="Logistic Regression and MLP" nbname="u05n2-logreg-mlp.ipynb" %}}
-- MLP shapes practice
 
 {{% /calendar-day %}}
 
 
 {{% calendar-day dow="Friday" date="2026-02-20" %}}
+- MLP shapes practice
 - Preview of learning by gradient descent
 - Review day: gradient game
 - Tech presentation
@@ -317,7 +316,7 @@ Understanding feature extraction with ReLU. Introduction to classifier heads and
 
 <div class="calendar-week">
 
-## Week 6: Gradient Descent & Generalization
+## Week 6: Gradient Descent & Generalization, and LLM APIs and context
 
 {{% calendar-week-header %}}
 Learning by gradient descent. Understanding why generalization matters and how to measure/improve it.
@@ -339,6 +338,7 @@ Learning by gradient descent. Understanding why generalization matters and how t
 {{% /details %}}
 {{% /calendar-week-header %}}
 {{% calendar-day dow="Monday" date="2026-02-23" %}}
+- LLM API intro
 - Gradient game activity
 - Notebook: {{% notebook name="MNIST with PyTorch" nbname="u06n1-mnist-torch.ipynb" %}}
 
