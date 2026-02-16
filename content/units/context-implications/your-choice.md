@@ -4,7 +4,7 @@ weight: 5
 revised: 2026
 ---
 
-We have discussed several issues about the broader context and implications of AI, but there is far more than we have time to discuss, especially if you're not continuing with us to CS 376. So we will teach each other!
+We have discussed several issues about the broader context and implications of AI, but there is far more than we have time to discuss, especially if you're not continuing with us to CS 376. So we will teach each other! This discussion will be an opportunity to address [Overall-Impact](objective).
 
 1. Choose a topic that you find interesting or important about the broader context and implications of AI. There's a list at the bottom of this page, but feel free to choose something else. **Send a Teams message to the instructor mentioning your choice of topic** before you get started.
 2. Do a bit of research on the topic:
