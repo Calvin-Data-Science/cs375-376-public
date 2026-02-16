@@ -283,6 +283,13 @@ Understanding feature extraction with ReLU. Introduction to classifier heads and
 {{% /details %}}
 {{% /calendar-week-header %}}
 {{% calendar-day dow="Monday" date="2026-02-16" %}}
+- Assumptions of AI: perception
+    - Internal representaitotns collapse "irrelevant" distinctions ("noise reduction")
+    - but:
+        - meditating on texts
+        - faith looks at what is unseen
+        - learning to look again, to change our perception
+        - "the eye is the lamp of the body. If your eyes are healthy, your whole body will be full of light. But if your eyes are unhealthy, your whole body will be full of darkness. If then the light within you is darkness, how great is that darkness!" (Matthew 6:22-23)
 - Quiz 2 Redo
 - Reviewing [Logistic Regression notebook](/units/04structures/pytorch-logreg/)
 
