@@ -1,10 +1,12 @@
 ---
-title: "Your Choice of Context/Implications Topic"
+title: "AI Implications - Topics"
 weight: 5
 revised: 2026
 ---
 
 We have discussed several issues about the broader context and implications of AI, but there is far more than we have time to discuss, especially if you're not continuing with us to CS 376. So we will teach each other! This discussion will be an opportunity to address [Overall-Impact](objective).
+
+### Initial Posts
 
 1. Choose a topic that you find interesting or important about the broader context and implications of AI. There's a list at the bottom of this page, but feel free to choose something else. **Send a Teams message to the instructor mentioning your choice of topic** before you get started.
 2. Do a bit of research on the topic:
@@ -15,6 +17,8 @@ We have discussed several issues about the broader context and implications of A
     - Very briefly introduce the topic and why you think it's important or interesting.
     - Summarize the key issues and evidence from your source(s).
     - Raise at least one question that your colleagues might discuss in response.
+
+### Responses
 
 Then, respond to some peers' posts. In your responses, you might:
 
