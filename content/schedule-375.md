@@ -291,25 +291,29 @@ Understanding feature extraction with ReLU. Introduction to classifier heads and
 
 {{% calendar-day dow="Wednesday" date="2026-02-18" %}}
 - Assumptions of AI: perception
-    - Internal representaitotns collapse "irrelevant" distinctions ("noise reduction")
-    - but:
+    - Internal representations collapse "irrelevant" distinctions ("noise reduction")
+    - But in God's world, nothing is "noise". Every detail can show God's glory, and we can learn from even the smallest things ("Go to the ant, you sluggard; consider its ways and be wise!" [Proverbs 6:6](https://www.biblegateway.com/passage/?search=Proverbs%206%3A6&version=NIV)).
+    - Other examples:
         - meditating on texts
         - faith looks at what is unseen
         - learning to look again, to change our perception
         - "the eye is the lamp of the body. If your eyes are healthy, your whole body will be full of light. But if your eyes are unhealthy, your whole body will be full of darkness. If then the light within you is darkness, how great is that darkness!" (Matthew 6:22-23)
-- Handout
-  - gradient intuition: suppose a dot b is 0. How can we change each element of b (in isolation) to make the dot product 0.1 instead?
-  - Label the parts of the logistic regression code, explain each step
-- Feature extractors intro
-- ReLU features intro
-- Classifier head and body intro
-- Notebook: {{% notebook name="ReLU Regression Interactive" nbname="u05n00-relu.ipynb" %}}
-- Notebook: {{% notebook name="Logistic Regression and MLP" nbname="u05n2-logreg-mlp.ipynb" %}}
+- How objective grading works; [course objectives](/objectives-375)
+- Feature extractors intro, also reviewing logistic regression / softmax / cross-entropy
+  - Handout: [Logistic regression review, ReLU intro](/handouts/2026_02_18.pdf)
+- Possible resources:
+    - [YouTube: tiny neural net](https://www.youtube.com/watch?v=dES5Cen0q-Y)
+    - 0byte [Intro to PyTorch](https://0byte.io/articles/pytorch_introduction.html)
+- If time, ReLU interactive:
+    - Notebook: {{% notebook name="ReLU Regression Interactive" nbname="u05n00-relu.ipynb" %}}
 
 {{% /calendar-day %}}
 
 
 {{% calendar-day dow="Friday" date="2026-02-20" %}}
+- Quiz??
+- Handout on gradients
+  - gradient intuition: suppose a dot b is 0. How can we change each element of b (in isolation) to make the dot product 0.1 instead?
 - MLP shapes practice
 - Preview of learning by gradient descent
 - Review day: gradient game
