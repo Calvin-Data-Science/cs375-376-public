@@ -304,20 +304,19 @@ Understanding feature extraction with ReLU. Introduction to classifier heads and
 - Possible resources:
     - [YouTube: tiny neural net](https://www.youtube.com/watch?v=dES5Cen0q-Y)
     - 0byte [Intro to PyTorch](https://0byte.io/articles/pytorch_introduction.html)
-- If time, ReLU interactive:
-    - Notebook: {{% notebook name="ReLU Regression Interactive" nbname="u05n00-relu.ipynb" %}}
 
 {{% /calendar-day %}}
 
 
 {{% calendar-day dow="Friday" date="2026-02-20" %}}
-- Quiz??
-- Handout on gradients
-  - gradient intuition: suppose a dot b is 0. How can we change each element of b (in isolation) to make the dot product 0.1 instead?
+- Quiz 2 return and walkthrough
+- Intro to ReLU features:
+    - Notebook: {{% notebook name="ReLU Regression Interactive" nbname="u05n00-relu.ipynb" %}}
+    - handout example
+- Mini-lecture on MLP architecture:
+    - tax brackets example as an MLP (with ReLU activations) we can do by hand
+- Handout: [ReLU features, MLP architecture, feature extraction intuition](/handouts/2026_02_20.pdf)
 - MLP shapes practice
-- Preview of learning by gradient descent
-- Review day: gradient game
-- Tech presentation
 
 {{% /calendar-day %}}
 
@@ -349,7 +348,10 @@ Learning by gradient descent. Understanding why generalization matters and how t
 {{% /details %}}
 {{% /calendar-week-header %}}
 {{% calendar-day dow="Monday" date="2026-02-23" %}}
+- Quiz 3: objectives TBD
 - LLM API intro
+- Handout on gradients
+  - gradient intuition: suppose a dot b is 0. How can we change each element of b (in isolation) to make the dot product 0.1 instead?
 - Gradient game activity
 - Notebook: {{% notebook name="MNIST with PyTorch" nbname="u06n1-mnist-torch.ipynb" %}}
 
