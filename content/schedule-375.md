@@ -309,7 +309,10 @@ Understanding feature extraction with ReLU. Introduction to classifier heads and
 
 
 {{% calendar-day dow="Friday" date="2026-02-20" %}}
-- Quiz 2 return and walkthrough
+- Quiz 2 return and walkthrough. Most common mistakes:
+    - Q1: remember matmul shapes: to do `X @ W`, then `X.shape[-1] == W.shape[0]`.
+    - Q2: softmax takes _vectors_ and returns _vectors_.
+    - Q3: cross-entropy is *not* "differences from true class probabilities".
 - Intro to ReLU features:
     - Notebook: {{% notebook name="ReLU Regression Interactive" nbname="u05n00-relu.ipynb" %}}
     - handout example
@@ -326,15 +329,15 @@ Understanding feature extraction with ReLU. Introduction to classifier heads and
 
 <div class="calendar-week">
 
-## Week 6: Gradient Descent & Generalization, and LLM APIs and context
+## Week 6: Gradient Descent, Generalization, and LLM APIs
 
 {{% calendar-week-header %}}
-Learning by gradient descent. Understanding why generalization matters and how to measure/improve it.
+MLP mastery and quiz. Learning by gradient descent. Understanding why generalization matters. First look at LLM APIs.
 
 {{% details summary="Key Questions" %}}
 - How does gradient descent work?
 - What is overfitting vs underfitting?
-- How can data augmentation help generalization?
+- What can we build with LLM APIs?
 
 {{% /details %}}
 {{% details summary="Objectives" %}}
@@ -344,31 +347,63 @@ Learning by gradient descent. Understanding why generalization matters and how t
 - [OG-Generalization](objective): Diagnose overfitting and underfitting from learning curves
 - [OG-DataDistribution](objective): Explain how data augmentation expands the effective training distribution
 - [OG-Implement-Validate](objective): Explain the importance of evaluating models on unseen data
+- [OG-LLM-APIs](objective): Use an LLM API to build an AI-powered application
 
 {{% /details %}}
 {{% /calendar-week-header %}}
 {{% calendar-day dow="Monday" date="2026-02-23" %}}
-- Quiz 3: objectives TBD
-- LLM API intro
-- Handout on gradients
-  - gradient intuition: suppose a dot b is 0. How can we change each element of b (in isolation) to make the dot product 0.1 instead?
-- Gradient game activity
-- Notebook: {{% notebook name="MNIST with PyTorch" nbname="u06n1-mnist-torch.ipynb" %}}
+First half: MLP review and practice
+
+- MLP forward-pass tracing: students work through a 2-layer MLP on a handout, labeling shapes at each step
+- Review: ReLU creates useful features → representations → why this matters
+- MLP "find the bug" exercise (shape mismatch, missing activation, etc.)
+- Reinforces [TM-MLPParts](objective), [TM-DataFlow](objective), [TM-ActivationFunctions](objective), [TM-RepresentationLearning](objective)
+
+Second half: Quiz 3
+
+- Quiz 3: [TM-ActivationFunctions](objective), [TM-RepresentationLearning](objective); redo opportunities for [TM-Softmax](objective), [OG-LossFunctions](objective)
 
 {{% /calendar-day %}}
 
 
 {{% calendar-day dow="Wednesday" date="2026-02-25" %}}
-- Notebook: {{% notebook name="Compute gradients using PyTorch" nbname="u06n2-compute-grad-pytorch.ipynb" %}}
-- Review training loops, SGD, MLP model
+- Mini-lecture: "How does the machine learn?" SGD intuition
+    - Gradient = direction of steepest increase; we go opposite to reduce loss
+    - Learning rate: too big overshoots, too small is slow
+    - Why batches (stochastic): noise helps escape local minima, plus efficiency
+- Handout on gradients
+    - gradient intuition: suppose a dot b is 0. How can we change each element of b (in isolation) to make the dot product 0.1 instead?
+- Gradient game activity
+- Live coding / notebook: training an MNIST classifier
+    - Walk through: forward pass → loss → loss.backward() → optimizer.step() → zero_grad()
+    - Notebook: {{% notebook name="MNIST with PyTorch" nbname="u06n1-mnist-torch.ipynb" %}}
+    - or: Notebook: u06n2-compute-grad-pytorch.ipynb
+- Assign: finish notebook; start thinking about Kaggle submission
 
 {{% /calendar-day %}}
 
 
 {{% calendar-day dow="Friday" date="2026-02-27" %}}
-- Will It Generalize? slides
-- Data augmentation notebook
-- Tech presentation
+First portion: Generalization
+
+- "Will It Generalize?" discussion
+    - Show learning curves: identify overfitting vs underfitting
+    - Adversarial examples as a dramatic illustration
+    - Brief: data augmentation (Notebook: u06s2-mnist-torch-augmentation.ipynb)
+    - Discussion: what makes a model trustworthy?
+
+Second portion: LLM APIs
+
+- LLM API demo: live-code a Chat Completions call
+- Show what's possible: classify text, generate content, answer questions
+
+Last: Assign Homework 3
+
+- Open-ended authentic AI project (menu of options):
+    - (A) Build an LLM-powered app (study tool, creative writing assistant, data analyzer)
+    - (B) Use pretrained embeddings/models to solve a problem (image search, similarity)
+    - (C) Adversarial examples or data augmentation experiment
+- Kaggle competition check-in
 
 {{% /calendar-day %}}
 
