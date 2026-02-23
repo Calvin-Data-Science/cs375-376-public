@@ -1,7 +1,7 @@
 ---
 title: "Training an MLP by Gradient Descent in PyTorch"
 weight: 6
-revised: 2025
+revised: 2026
 ---
 
 ## Gradient Game
