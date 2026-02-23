@@ -31,7 +31,6 @@
   criteria:
     - I can implement ReLU and explain what it does to negative vs positive values.
     - I can explain why networks need nonlinear activations between layers.
-    - I can compare ReLU to other activations (sigmoid, tanh) and explain tradeoffs.
 
 - id: TM-Softmax
   pillar: Tuneable Machines
