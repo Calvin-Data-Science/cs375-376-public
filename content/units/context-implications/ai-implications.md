@@ -18,6 +18,8 @@ We have discussed several issues about the broader context and implications of A
     - Summarize the key issues and evidence from your source(s).
     - Raise at least one question that your colleagues might discuss in response.
 
+> Avoid generalities. Ask an LLM "write a 100 word statement about the social implications AI and ____"... and then resolve to make your post **more interesting than that**.
+
 ### Responses
 
 Then, respond to some peers' posts. In your responses, you might:
