@@ -1,13 +1,10 @@
 ---
-title: "Use an AI to make an AI"
+title: "Chat Completions APIs"
 revised: 2025
 ---
 
-Today we're going to try out using an AI (a chatbot) to make an AI (an LLM-powered web-app).
-
 Objectives:
 
-- I've used a chatbot to generate starter code.
 - I've called the OpenAI Chat Completions API to generate text.
 - I can explain what the inputs and outputs of the Chat Completions API are, especially its "messages" data structure.
 
@@ -18,8 +15,11 @@ You'll need an API key to access most LLM APIs. For this activity, we'll use the
 Think of it like phone chargers: even though we often call them "iPhone chargers" or "Android chargers", any USB-C charger works with any USB-C device. Similarly, we can use any API that's "OpenAI-compatible" with code that expects to talk to OpenAI's API.
 
 You have two options for getting an API key:
+
 1. OpenAI: Create an account and add a few dollars of credit
 2. Google AI Studio: Get a free API key that works with OpenAI-compatible code at [Google Gemini API key page](https://aistudio.google.com/app/apikey)
+
+Easiest is to use Google Colab's Secrets tab.
 
 **Important**: Save your API key in a safe place. You'll need it to access the API, and the page only shows it once.
 

@@ -367,6 +367,7 @@ Second half: Quiz 3
 {{% calendar-day dow="Wednesday" date="2026-02-25" %}}
 - 10 min opportunity to finish Quiz 3
 - Slides: [CS 375 Week 6](/slides/w06.html)
+- [udlbook figure](https://udlbook.github.io/udlfigures/)
 - Mini-lecture: "How does the machine learn?" SGD intuition
     - Gradient = direction of steepest increase; we go opposite to reduce loss
     - Learning rate: too big overshoots, too small is slow
