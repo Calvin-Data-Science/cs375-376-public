@@ -185,11 +185,18 @@ We also strive for the sequence to make sense.
 ### Week 6
 
 - {{% notebook name="MNIST with PyTorch" nbname="u06n1-mnist-torch.ipynb" %}}
+    - Course Objectives
   - Load and Understand the Data
     - Understanding Flattening
-    - Setting up data loaders
-  - Train an MLP to classify MNIST
-  - Data Augmentation
+    - Setting Up Data Loaders
+  - Train an MLP to Classify MNIST
+    - Shape checkpoint
+  - Analyzing the Trained Model
+    - Confusion Matrix
+    - Most Confident Mistakes
+    - Visualizing Learned Weights
+  - Reflection Questions
+  - Next Steps
 - {{% notebook name="Trace Simple Image Classifier" nbname="u06n1-trace-mnist.ipynb" %}}
   - Setup
   - Task

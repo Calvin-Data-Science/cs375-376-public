@@ -354,10 +354,8 @@ MLP mastery and quiz. Learning by gradient descent. Understanding why generaliza
 {{% calendar-day dow="Monday" date="2026-02-23" %}}
 First half: MLP review and practice
 
-- MLP forward-pass tracing: students work through a 2-layer MLP on a handout, labeling shapes at each step
-- Review: ReLU creates useful features → representations → why this matters
-- MLP "find the bug" exercise (shape mismatch, missing activation, etc.)
-- Reinforces [TM-MLPParts](objective), [TM-DataFlow](objective), [TM-ActivationFunctions](objective), [TM-RepresentationLearning](objective)
+- Handout: [MLP review, training loop, and gradient intuition](/handouts/2026_02_23.pdf)
+    - Review: ReLU creates useful features → representations → why this matters
 
 Second half: Quiz 3
 
@@ -367,18 +365,19 @@ Second half: Quiz 3
 
 
 {{% calendar-day dow="Wednesday" date="2026-02-25" %}}
+- 10 min opportunity to finish Quiz 3
+- Slides: [CS 375 Week 6](/slides/w06.html)
 - Mini-lecture: "How does the machine learn?" SGD intuition
     - Gradient = direction of steepest increase; we go opposite to reduce loss
     - Learning rate: too big overshoots, too small is slow
     - Why batches (stochastic): noise helps escape local minima, plus efficiency
-- Handout on gradients
-    - gradient intuition: suppose a dot b is 0. How can we change each element of b (in isolation) to make the dot product 0.1 instead?
+- No new handout today; review last time.
+    - What would happen if we didn't have ReLU?
 - Gradient game activity
+- gradient intuition: suppose a dot b is 0. How can we change each element of b (in isolation) to make the dot product 0.1 instead?
 - Live coding / notebook: training an MNIST classifier
     - Walk through: forward pass → loss → loss.backward() → optimizer.step() → zero_grad()
     - Notebook: {{% notebook name="MNIST with PyTorch" nbname="u06n1-mnist-torch.ipynb" %}}
-    - or: Notebook: u06n2-compute-grad-pytorch.ipynb
-- Assign: finish notebook; start thinking about Kaggle submission
 
 {{% /calendar-day %}}
 
@@ -396,6 +395,10 @@ Second portion: LLM APIs
 
 - LLM API demo: live-code a Chat Completions call
 - Show what's possible: classify text, generate content, answer questions
+
+Return to Week 5 slides briefly for why ReLU works (regions).
+
+- Slides: [Week 5](/slides/w05.html)
 
 Last: Assign Homework 3
 
