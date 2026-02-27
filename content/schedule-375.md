@@ -396,6 +396,9 @@ Second half: Quiz 3
 - Review SGD concepts
     - gradients, learning rates, batches
     - [Interactive demo](https://claude.ai/public/artifacts/41c1d9d2-56c2-4a90-9c13-c93d486e70fd)
+    - Enable "show components". What are the shapes of each component?
+    - What happens if you increase the learning rate? What happens if you decrease it?
+    - What happens if you increase the batch size? What happens if you decrease it?
 
 {{% /calendar-day %}}
 
