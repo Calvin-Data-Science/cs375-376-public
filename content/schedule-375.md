@@ -374,7 +374,7 @@ Second half: Quiz 3
     - Why batches (stochastic): noise helps escape local minima, plus efficiency
 - No new handout today; review last time.
     - What would happen if we didn't have ReLU?
-- Gradient game activity
+- [Gradient game activity](https://ds100.org/su21/resources/assets/lectures/lec18/gradient_game_v3.html)
 - gradient intuition: suppose a dot b is 0. How can we change each element of b (in isolation) to make the dot product 0.1 instead?
 - Live coding / notebook: training an MNIST classifier
     - Walk through: forward pass → loss → loss.backward() → optimizer.step() → zero_grad()
@@ -384,30 +384,18 @@ Second half: Quiz 3
 
 
 {{% calendar-day dow="Friday" date="2026-02-27" %}}
-First portion: Generalization
-
-- "Will It Generalize?" discussion
+- Review Quiz 3
+- Handout: [SGD Lingo, Generalization, Data Augmentation](/handouts/2026_02_27.pdf)
+- Generalization, based on MNIST notebook results
     - Show learning curves: identify overfitting vs underfitting
     - Adversarial examples as a dramatic illustration
     - Brief: data augmentation (Notebook: u06s2-mnist-torch-augmentation.ipynb)
-    - Discussion: what makes a model trustworthy?
-
-Second portion: LLM APIs
-
-- LLM API demo: live-code a Chat Completions call
-- Show what's possible: classify text, generate content, answer questions
-
-Return to Week 5 slides briefly for why ReLU works (regions).
-
-- Slides: [Week 5](/slides/w05.html)
-
-Last: Assign Homework 3
-
-- Open-ended authentic AI project (menu of options):
-    - (A) Build an LLM-powered app (study tool, creative writing assistant, data analyzer)
-    - (B) Use pretrained embeddings/models to solve a problem (image search, similarity)
-    - (C) Adversarial examples or data augmentation experiment
-- Kaggle competition check-in
+- Slides: [CS 375 Week 6](/slides/w06.html)
+- Also a brief review of why ReLU works (regions)
+    - Slides: [Week 5](/slides/w05.html)
+- Review SGD concepts
+    - gradients, learning rates, batches
+    - [Interactive demo](https://claude.ai/public/artifacts/41c1d9d2-56c2-4a90-9c13-c93d486e70fd)
 
 {{% /calendar-day %}}
 

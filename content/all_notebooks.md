@@ -194,6 +194,7 @@ We also strive for the sequence to make sense.
   - Analyzing the Trained Model
     - Confusion Matrix
     - Most Confident Mistakes
+  - Adversarial Examples
     - Visualizing Learned Weights
   - Reflection Questions
   - Next Steps
