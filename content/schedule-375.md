@@ -399,6 +399,7 @@ Second half: Quiz 3
     - Enable "show components". What are the shapes of each component?
     - What happens if you increase the learning rate? What happens if you decrease it?
     - What happens if you increase the batch size? What happens if you decrease it?
+- Intro [Kaggle Competition homework](/units/06generalization/generalization-kaggle/)
 
 {{% /calendar-day %}}
 
