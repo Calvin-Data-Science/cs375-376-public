@@ -135,8 +135,7 @@ We also strive for the sequence to make sense.
   - Part 1: Classification the wrong way (using linear regression)
     - 1.A Using NumPy
     - 1.B: Using PyTorch
-  - Part 2: Converting to Classification
-    - 2.A Using NumPy (we'll do this together)
+    - 2.A Using NumPy
     - 2.B Using PyTorch
       - Setting up the linear layer
       - Softmax

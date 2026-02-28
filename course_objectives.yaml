@@ -14,6 +14,8 @@
     - I can identify the sequence of operations in a two-layer classification neural network.
     - I can compute the output of the matrix multiplication and the activation function for each layer.
     - I can define the following terms in the context of a neural network - input, output, weights, biases, activation function, activation value, logit, probability, and loss.
+  notes: |
+    I'm considering this Met when a student has computed all of the pieces by hand, even if they've done it in isolation, even if they didn't do a whole forward pass by hand, if they also have a clear understanding of why nonlinear activations are needed.
 
 - id: TM-LinearLayers
   pillar: Tuneable Machines
@@ -31,6 +33,8 @@
   criteria:
     - I can implement ReLU and explain what it does to negative vs positive values.
     - I can explain why networks need nonlinear activations between layers.
+  notes: |
+    We're focusing on ReLU for CS 375. It would be nice if students also had some familiarity with other activations (GELU, Swish, etc.), but I'm not explicitly teaching that.
 
 - id: TM-Softmax
   pillar: Tuneable Machines
@@ -50,6 +54,8 @@
     - I can label the shapes of tensors at each point in the network (including batch dimension).
     - I can distinguish between parameters (weights, biases) and activations in my diagrams.
     - I can trace how a single input becomes a prediction and then a loss value.
+  notes: |
+    This overlaps with TM-MLPParts and TM-LinearLayers, so I'll be flexible about what Met means here.
 
 - id: TM-DotProduct
   pillar: Tuneable Machines
@@ -109,7 +115,8 @@
 
 - id: TM-Convolution
   pillar: Tuneable Machines
-  class: 375-optional
+  class: 375
+  status: optional
   description: I can explain the purpose of convolution layers for image processing.
   criteria:
     - I can explain why convolutions are useful for images (local patterns, translation invariance, parameter sharing).
@@ -339,7 +346,8 @@
 
 - id: Overall-History
   pillar: Overall
-  class: 375-optional
+  class: 375
+  status: optional
   description: I can trace current AI technologies back to historical developments.
   criteria:
     - I can name at least one historical development (pre-2015) that enabled current deep learning.

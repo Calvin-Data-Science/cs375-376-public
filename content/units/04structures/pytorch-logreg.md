@@ -82,9 +82,7 @@ loss.backward()
 optimizer.step()
 ```
 
-## Warm-Up Activity
-
-Given on paper.
+## Warm-Up Questions
 
 1. We're classifying houses as low/medium/high price based on longitude and latitude using logistic regression. The model outputs 3 scores, one for each class. For 100 houses (processed all at once in a "batch" of samples):
 

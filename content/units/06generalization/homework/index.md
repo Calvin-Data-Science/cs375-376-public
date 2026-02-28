@@ -1,6 +1,6 @@
 ---
 title: "Homework 3: Open-Ended AI Project"
-revised: 2026
+revised: 2025
 ---
 
 **Important**: Read this whole document before you start.
