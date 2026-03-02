@@ -1,6 +1,6 @@
 ---
 title: "Embeddings"
-revised: 2025
+revised: 2026
 ---
 
 - Analogy: like a map: each object has its GPS coordinates, similar objects are neighbors
@@ -10,12 +10,12 @@ revised: 2025
 
 Example: {{% notebook name="Sentence Embeddings" nbname="u08s1-sentence-embeddings.ipynb" %}}
 
-[Slides](/slides/computing.html#embeddings) (including graphics)
+[Slides](/slides/w07.html) (including graphics)
 
 
 ## Notebooks
 
-- {{% notebook name="Probe an Image Classifier" nbname="u07n1-image-embeddings.ipynb" %}}
+- {{% notebook name="Image Embeddings" nbname="u07n1-image-embeddings.ipynb" %}}
 
 ## Further Exploration
 
