@@ -423,7 +423,7 @@ Embeddings as the data structures of neural computation. Introduction to reinfor
 {{% /details %}}
 {{% /calendar-week-header %}}
 {{% calendar-day dow="Monday" date="2026-03-02" %}}
-- Embeddings Day: words, sentences, images
+- Survey of remaining topics
 - Review SGD concepts
     - gradients, learning rates, batches
     - [Interactive demo](https://claude.ai/public/artifacts/41c1d9d2-56c2-4a90-9c13-c93d486e70fd)
@@ -432,6 +432,7 @@ Embeddings as the data structures of neural computation. Introduction to reinfor
     - What happens if you increase the batch size? What happens if you decrease it?
 - Slides: [Vision and Perspectives](/slides/w07.html)
 - Notebook: {{% notebook name="Image Embeddings" nbname="u07n1-image-embeddings.ipynb" %}}
+    - [details](/units/07/embeddings/)
 
 {{% /calendar-day %}}
 
