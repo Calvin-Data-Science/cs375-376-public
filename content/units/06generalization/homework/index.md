@@ -1,5 +1,5 @@
 ---
-title: "Homework 3: Open-Ended AI Project"
+title: "Homework 3: Open-Ended AI Project (not assigned 26SP)"
 revised: 2025
 ---
 

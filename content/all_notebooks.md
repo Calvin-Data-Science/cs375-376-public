@@ -234,14 +234,20 @@ We also strive for the sequence to make sense.
 
 ### Week 7
 
-- {{% notebook name="Probe an Image Classifier" nbname="u07n1-image-embeddings.ipynb" %}}
+- {{% notebook name="Image Embeddings" nbname="u07n1-image-embeddings.ipynb" %}}
+    - Course Objectives Addressed
   - Setup
-  - Configure our experiments
     - Load the data
-    - Train a model
-  - Top Losses
-  - Manual Last Layer
-  - Softmax and Cross-Entropy
+  - Train a model
+  - The Body and the Head
+  - Extract Embeddings
+  - Similarity in Embedding Space
+    - Cosine similarity
+    - Finding similar images
+  - Embeddings vs Raw Pixels
+  - Visualizing the Embedding Space
+  - Prototypes: How the Classifier Uses Embeddings
+  - Wrap-up
 - {{% notebook name="Image Operations" nbname="u07n1-image-ops.ipynb" %}}
   - Setup
     - Configure

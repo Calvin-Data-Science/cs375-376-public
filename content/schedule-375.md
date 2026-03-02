@@ -431,7 +431,7 @@ Embeddings as the data structures of neural computation. Introduction to reinfor
 {{% calendar-day dow="Monday" date="2026-03-02" %}}
 - Embeddings Day: words, sentences, images
 - Slides: [Computing](/slides/computing.html#/embeddings)
-- Notebook: {{% notebook name="Probe an Image Classifier" nbname="u07n1-image-embeddings.ipynb" %}}
+- Notebook: {{% notebook name="Image Embeddings" nbname="u07n1-image-embeddings.ipynb" %}}
 
 {{% /calendar-day %}}
 
