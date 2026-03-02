@@ -424,7 +424,8 @@ Embeddings as the data structures of neural computation. Introduction to reinfor
 {{% /calendar-week-header %}}
 {{% calendar-day dow="Monday" date="2026-03-02" %}}
 - Opening Devotion
-- Survey of remaining topics
+- Handout: [Course objectives reflection](/handouts/2026_03_02.pdf)
+    - Discuss remaining topics
 - Review SGD concepts
     - gradients, learning rates, batches
     - [Interactive demo](https://claude.ai/public/artifacts/41c1d9d2-56c2-4a90-9c13-c93d486e70fd)
