@@ -1,6 +1,6 @@
 ---
 title: "PyTorch Autograd and SGD"
-revised: 2025
+revised: 2026
 ---
 
 ## How to Compute Gradients
