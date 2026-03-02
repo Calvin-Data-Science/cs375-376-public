@@ -423,6 +423,7 @@ Embeddings as the data structures of neural computation. Introduction to reinfor
 {{% /details %}}
 {{% /calendar-week-header %}}
 {{% calendar-day dow="Monday" date="2026-03-02" %}}
+- Opening Devotion
 - Survey of remaining topics
 - Review SGD concepts
     - gradients, learning rates, batches
@@ -430,6 +431,7 @@ Embeddings as the data structures of neural computation. Introduction to reinfor
     - Enable "show components". What are the shapes of each component?
     - What happens if you increase the learning rate? What happens if you decrease it?
     - What happens if you increase the batch size? What happens if you decrease it?
+- Embeddings (see handout from last time)
 - Slides: [Vision and Perspectives](/slides/w07.html)
 - Notebook: {{% notebook name="Image Embeddings" nbname="u07n1-image-embeddings.ipynb" %}}
     - [details](/units/07/embeddings/)
