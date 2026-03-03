@@ -143,26 +143,28 @@ We first agree to trust each other:
 - You trust me to design a course that helps you learn and grow, and to provide activities and feedback that helps you do that.
 - You trust yourself that *you can learn this material* if you put in the effort. You should not take shortcuts that shortchange your own learning.
 
-The following elements go into the course grade:
+The following elements, detailed in the sections below, go into the course grade:
 
-1. **Skills**: You will demonstrate that you can meet specific objectives related to the course material. These objectives are listed in each unit.
+1. **Skills**: You will demonstrate that you can meet specific [objectives](/objectives-375) related to the course material.
 2. **Effort**: Each week, you self-report what you spend time on related to this course.
 3. **Community**: You will choose a small number of activities to contribute to our learning community.
 
-A tentative proposal for how we'll compute the final grade is below. I welcome feedback on this document in Perusall.
+In a [final "Journal" assignment](/final-journal/), students will propose a final grade based on these three components. The proposed grade should generally follow the guidelines below, but students may argue for exceptions.
 
 #### Skills: Proficiency-Based Grading
+
+The core of the grading system is based on the specific learning objectives for the course. Each objective will be assessed multiple times throughout the course, and students will have multiple opportunities to meet each objective.
 
 - Students can meet objectives at three levels: "progressing" (P), "met" (M), and "excellent" (E).
   - The Progressing (P) level can be met by assignments (such as lab notebooks and discussion forums).
   - The Met (M) level requires either an *in-class quiz* or a self-directed *project*.
   - The E level is given at instructor discretion to work that demonstrates understanding, strategy, or disposition that is likely to generalize robustly beyond this scope of course. As a concrete example, a successful interview for a ML-centered job would demonstrate E-level completion of an objective.
   - The instructor may limit the number of objectives that can become Met in a given week. So students are strongly encouraged to Meet objectives promptly.
-- We will aggregate these objective levels in a way that encourages students to aim for M-level completion of most objectives, with some room for P-level completion and some room for E-level completion. Last year we computed his as the mean of all objectives scores, where 0 = not addressed, 1 = P achieved one time, 2 = P achieved 2 times, 3 = M achieved, 4 = E achieved. This average (0-4) will then be rescaled to the 0-100 scale such that 1 = D+, 2 = C+, 3 = B+, 4 = 100%.
+- We will aggregate these objective levels in a way that encourages students to aim for M-level completion of most objectives, with some room for P-level completion and some room for E-level completion. Last year we computed this as the mean of all objectives scores, where 0 = not addressed, 1 = P achieved one time, 2 = P achieved 2 times, 3 = M achieved, 4 = E achieved. This average (0-4) will then be rescaled to the 0-100 scale such that 1 = 68% (D+), 2 = 78% (C+), 3 = 88% (B+), 4 = 100% (A+).
 
 ![EMP rubric](https://kurmasgvsu.github.io/Teaching/Courses/F24/CIS500/EMPNrubric_notYet.png) by Zach Kurmas at GVSU
 
-I propose giving this a weight of 70% of the course grade.
+The proposed weight for this component is 70% of the course grade.
 
 ### Effort Hours
 
@@ -172,7 +174,7 @@ Each week, your weekly reflection should account for how you spent each of the 8
 
 To allow for flexibility between lighter and heavier weeks (since things come up) while still encouraging consistent effort, we will allow a **maximum of 12 hours** reported each week.
 
-I propose computing effort grade as total hours divided by total possible hours (7 weeks * 8 hours per week = 56 hours). And I propose giving this a weight of 20% of the course grade.
+Effort grades are computed as total hours divided by total possible hours (7 weeks * 8 hours per week = 56 hours). The proposed weight for this component is 20% of the course grade.
 
 ### Community
 
@@ -185,7 +187,7 @@ Every student should be able to identify at least 3 substantial contributions to
 - Leading an opening devotion.
 - Providing substantial feedback on others' work.
 
-I propose we compute this grade component as `min(1, x/3)`, where `x` is the number of contributions (subject to the limit of 2 per type). And I propose we give this a weight of 10% of the final course grade.
+The community grade component is computed as `min(1, x/3)`, where `x` is the number of contributions (subject to the limit of 2 per type). The proposed weight for this component is 10% of the final course grade. (Since the course staff did not support the logistics of this component in Spring 2026, students may choose to opt out of this component, in which case the weight will be redistributed to the other two components.)
 
 ### Are Incomplete grades offered?
 
