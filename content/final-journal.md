@@ -3,7 +3,11 @@ title: "Final Journal"
 revised: 2026
 ---
 
+## Overview
+
 This final journal is an opportunity for you to reflect on your learning and contributions in this course, and to propose a final grade based on the three components of our grading system: Skills, Effort, and Community. (See details on these components in the [syllabus](/syllabus/).
+
+## Instructions
 
 Please structure your Journal as follows:
 
@@ -59,9 +63,9 @@ If you'd like to include Community, list up to 3 contributions (max 2 of any one
 
 For each contribution, briefly describe what you did and why you think it was substantial. Then compute your Community score as `min(1, x/3)` where `x` is the number of qualifying contributions.
 
-### Putting It All Together
+### Tentative Course Grade
 
-Compute your proposed final grade using the weights from the syllabus:
+Compute your proposed course grade using the weights from the syllabus:
 
 - **Skills** (70%): your proposed Skills score
 - **Effort** (20%): your proposed Effort score
@@ -71,9 +75,9 @@ Show the calculation. For example: `0.70 × 88 + 0.20 × 95 + 0.10 × 100 = 90.6
 
 Finally: **what grade do you think this corresponds to, and do you think it's fair?** If you want to argue for a different grade than the formula gives, make your case.
 
-### Submission
+## Submission
 
-Submit your Final Journal as a PDF or document on Moodle by the last day of class (Friday, March 6).
+Submit your Final Journal on Moodle by the last day of class (Friday, March 6).
 
 **Note about the last quiz**: Your Final Journal may reference your quiz scores as of the time you write it. If the last quiz changes any of your objective levels, you may submit a brief addendum after that quiz is returned.
 
