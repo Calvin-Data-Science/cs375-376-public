@@ -441,16 +441,22 @@ Embeddings as the data structures of neural computation. Introduction to reinfor
 
 
 {{% calendar-day dow="Wednesday" date="2026-03-04" %}}
-- Reinforcement Learning intro
-- Notebook: {{% notebook name="A Reinforcement Learning Example" nbname="u07n2-rl.ipynb" %}}
-- Optional: Notebook: u07n1-image-ops.ipynb
+- Slides: [CS 375 Review](/slides/wrapup-375.html)
+- Officially announce Final Journal assignment
+- Coming soon: Moodle quiz (addressing [OG-LossFunctions](objective), [OG-Generalization](objective), [OG-DataDistribution](objective), [OG-Eval-Experiment](objective))
+- Optional notebooks:
+    - Notebook: {{% notebook name="A Reinforcement Learning Example" nbname="u07n2-rl.ipynb" %}}
+    - Notebook: {{% notebook name="Image Operations" nbname="u07n1-image-ops.ipynb" %}}
 
 {{% /calendar-day %}}
 
 
 {{% calendar-day dow="Friday" date="2026-03-06" %}}
+- Quiz 4 at start of class:
+  - Given an MLP with parameters, compute the forward pass by hand (including loss), draw a diagram with shapes labeled. What if various things change? Addresses [TM-MLPParts](objective), [TM-LinearLayers](objective), [TM-ActivationFunctions](objective), [TM-Softmax](objective), [TM-DataFlow](objective), [TM-TensorOps](objective).
+  - Training loop: put steps in order, explain why each is necessary, how to add validation? Addresses [TM-Implement-TrainingLoop](objective), [TM-Autograd](objective), [OG-Implement-Validate](objective), [OG-Theory-SGD](objective).
+  - Suppose you want to train a model to distinguish photos of light-colored vs dark-colored animals, and you're using a pretrained feature extractor that outputs a 2D vector. Sketch a diagram of what a good embedding space would look like (marking the data points from each class), explain why that's a good embedding space, and give an example of the W matrix for a linear head that would achieve good classification performance. Addresses [TM-Embeddings](objective), [OG-Pretrained](objective).
 - Slides: [CS 375 Review](/slides/wrapup-375.html)
-- Learning to Mimic vs Learning by Exploring
 - Course wrap-up
 
 {{% /calendar-day %}}

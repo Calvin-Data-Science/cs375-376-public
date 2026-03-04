@@ -236,7 +236,7 @@
 - id: OG-LLM-APIs
   pillar: Optimization Games
   class: 375
-  status: exposure
+  status: optional
   description: I can apply LLM APIs (such as the Chat Completions API) to build AI-powered applications.
   criteria:
     - I can construct appropriate API calls with system and user messages.
