@@ -236,6 +236,7 @@
 - id: OG-LLM-APIs
   pillar: Optimization Games
   class: 375
+  status: exposure
   description: I can apply LLM APIs (such as the Chat Completions API) to build AI-powered applications.
   criteria:
     - I can construct appropriate API calls with system and user messages.
@@ -310,6 +311,7 @@
 
 - id: Overall-Explain
   pillar: Overall
+  status: optional
   class: 375
   description: I can explain basic AI concepts to a non-technical audience without major errors.
   criteria:
@@ -320,6 +322,7 @@
 - id: Overall-Faith
   pillar: Overall
   class: 375
+  status: optional
   description: I can articulate connections between Christian concepts and AI development, demonstrating genuine engagement.
   criteria:
     - I can identify at least one way a Christian concept (e.g., imago Dei, shalom, stewardship) informs how I think about a specific AI capability or application.
@@ -337,6 +340,7 @@
 
 - id: Overall-Dispositions
   pillar: Overall
+  status: optional
   class: both
   description: I demonstrate growth mindset and integrity in my AI learning and practice.
   criteria:
@@ -356,6 +360,7 @@
 - id: Overall-PhilNarrative
   pillar: Overall
   class: both
+  status: optional
   description: I can engage with philosophical questions raised by AI systems.
   criteria:
     - I can articulate at least one philosophical question that AI raises (e.g., consciousness, intelligence, creativity, agency).

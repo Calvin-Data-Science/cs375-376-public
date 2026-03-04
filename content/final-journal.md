@@ -7,6 +7,8 @@ revised: 2026
 
 This final journal is an opportunity for you to reflect on your learning and contributions in this course, and to propose a final grade based on the three components of our grading system: Skills, Effort, and Community. (See details on these components in the [syllabus](/syllabus/).
 
+To help with the bookkeeping, here's a [spreadsheet template](/cs375-final-journal.xlsx) with all the objectives, formulas, and weights pre-filled. You can fill it in and use it as the basis for your journal, but your submission should include the reflection and narrative parts too — not just the numbers.
+
 ## Instructions
 
 Please structure your Journal as follows:
@@ -23,7 +25,9 @@ In the Moodle Gradebook you'll find the list of objectives and your quiz-based s
   - If you are able to, run this by the instructor, who might ask a follow-up question or ask you to do a small additional task to demonstrate your understanding. Another option is go on Codehelp on Moodle and have a Tutor Chat (with an AI tutor) about the objective. You may start with the two Focused Tutors that are already configured if you like. These are automatically logged, so just mention here that you did that.
 - If you are not able to make a case for meeting the objective, that's okay. Just be honest about that and move on to the next one.
 
-Then overall:
+The **"Overall"** objectives were not well organized this semester. The discussion forums addressed [Overall-Impact](objective) and discussed some of the others, but we didn't provide enough opportunities for you to demonstrate them. So *only the Overall-Impact objective will be assessed for the Skills score this semester*. The one exception is [Overall-Faith](objective): it's officially marked Optional, but if you write a brief reflection and submit it as part of this Journal, we can include it in your Skills score.
+
+Then summarize:
 
 - Compute a proposed Skills score. As a reminder, score each objective: 0 = not addressed, 1 = P achieved once, 2 = P achieved twice, 3 = M achieved, 4 = E achieved. Average these scores (0–4 scale), then rescale: 1→68, 2→78, 3→88, 4→100. Show your work.
 - Reflect overall on what you learned in this course. What difficulties did you encounter, and how did you overcome them? What are you most proud of? What still feels confusing or incomplete?

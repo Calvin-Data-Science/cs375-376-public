@@ -449,7 +449,7 @@ Embeddings as the data structures of neural computation. Introduction to reinfor
 
 
 {{% calendar-day dow="Friday" date="2026-03-06" %}}
-- Slides: [CS 375: Wrap-Up](/slides/wrapup-375.html)
+- Slides: [CS 375 Review](/slides/wrapup-375.html)
 - Learning to Mimic vs Learning by Exploring
 - Course wrap-up
 
