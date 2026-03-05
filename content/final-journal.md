@@ -25,6 +25,8 @@ In the Moodle Gradebook you'll find the list of objectives and your quiz-based s
   - If you are able to, run this by the instructor, who might ask a follow-up question or ask you to do a small additional task to demonstrate your understanding. Another option is go on Codehelp on Moodle and have a Tutor Chat (with an AI tutor) about the objective. You may start with the two Focused Tutors that are already configured if you like. These are automatically logged, so just mention here that you did that.
 - If you are not able to make a case for meeting the objective, that's okay. Just be honest about that and move on to the next one.
 
+For notebooks, write a sentence like "In notebook u06nXX-NAME, I did XYZ, which shows that I can do ABC." You don't need to quote the notebook or explain the details of what you did in it — just point to the relevant part and give a brief explanation of how it connects to the objective.
+
 The **"Overall"** objectives were not well organized this semester. The discussion forums addressed [Overall-Impact](objective) and discussed some of the others, but we didn't provide enough opportunities for you to demonstrate them. So *only the Overall-Impact objective will be assessed for the Skills score this semester*. The one exception is [Overall-Faith](objective): it's officially marked Optional, but if you write a brief reflection and submit it as part of this Journal, we can include it in your Skills score.
 
 Then summarize:
