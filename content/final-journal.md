@@ -31,7 +31,7 @@ The **"Overall"** objectives were not well organized this semester. The discussi
 
 Then summarize:
 
-- Compute a proposed Skills score. As a reminder, score each objective: 0 = not addressed, 1 = P achieved once, 2 = P achieved twice, 3 = M achieved, 4 = E achieved. Average these scores (0–4 scale), then rescale: 1→68, 2→78, 3→88, 4→100. Show your work.
+- Compute a proposed Skills score. As a reminder, score each objective: **0 = not addressed, 1 = P achieved once, 2 = P achieved twice, 3 = M achieved, 4 = E achieved**. Average these scores (0–4 scale), then rescale: 1→68, 2→78, 3→88, 4→100. Show your work.
 - Reflect overall on what you learned in this course. What difficulties did you encounter, and how did you overcome them? What are you most proud of? What still feels confusing or incomplete?
 
 ### Effort
