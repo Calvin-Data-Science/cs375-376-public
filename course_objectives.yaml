@@ -196,6 +196,7 @@
 - id: OG-DataDistribution
   pillar: Optimization Games
   class: 375
+  status: optional
   description: I can reason about how the distribution of training data shapes what a model learns.
   criteria:
     - I can identify ways a training distribution might differ from deployment (selection bias, domain shift).
