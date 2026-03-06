@@ -67,19 +67,36 @@ If you'd like to include Community, list up to 3 contributions (max 2 of any one
 - Leading an opening devotion
 - Providing substantial feedback on others' work
 
-For each contribution, briefly describe what you did and why you think it was substantial. Then compute your Community score as `min(1, x/3)` where `x` is the number of qualifying contributions.
+For each contribution, briefly describe what you did and why you think it was substantial. 
+
+> Old comuptation: Compute your Community score as `min(1, x/3)` where `x` is the number of qualifying contributions.
+>
+> But of course that doesn't make sense: if you choose to claim one or two Community contributions instead of opting out, that formula would penalize you compared to opting out. So instead, just list your Community score at 100% and weight your overall grade accordingly (see below).
+
+
 
 ### Tentative Course Grade
 
-Compute your proposed course grade using the weights from the syllabus:
+Compute your proposed course grade using the weights from the syllabus (*correction: using the following softmax-style computation*).
 
-- **Skills** (70%): your proposed Skills score
-- **Effort** (20%): your proposed Effort score
-- **Community** (10%): your proposed Community score (or redistribute if opting out)
+1. Construct a vector of your scores for each of the three components (Skills, Effort, Community), scaled to 0-100. For example, if you had 88% for Skills, 95% for Effort, and 100% for Community, your vector would be `[88, 95, 100]`.
+2. Construct a vector of logits for each of the three components (Skills, Effort, Community) as, roughly, `logits_base = [0, -1.25, -1.95]`. (Note that `np.exp(logits_base)` gives the weights 70%, 20%, 10%.). Then adjust as needed, e.g., set the logit for Community to something like `-10` if you opted out, `-3` if you had one contribution, `-2.5` if you had two contributions, and `-1.95` (no adjustment) if you had three contributions.
 
-Show the calculation. For example: `0.70 × 88 + 0.20 × 95 + 0.10 × 100 = 90.6`.
+Then compute your weights as `weights = np.exp(logits) / np.exp(logits).sum()`, and your overall grade as `grade = (weights * scores).sum()`. Show the calculation. For example:
 
-Finally: **what grade do you think this corresponds to, and do you think it's fair?** If you want to argue for a different grade than the formula gives, make your case.
+```
+scores = [88, 95, 100]
+logits = np.array([0, -1.25, -1.95])
+logits[2] = -3 # (one Community contribution)
+weights = np.exp(logits) / np.exp(logits).sum()
+print(weights.round(2))
+[0.75, 0.21, 0.04]
+grade = np.dot(weights, scores)
+print(grade.round(2))
+89.95
+```
+
+Finally: **what grade does this correspond to, and do you think it's a fair reflection of what you have learned in this class?** If you want to argue for a different grade than the formula gives, make your case.
 
 ## Submission
 
