@@ -452,6 +452,10 @@ Embeddings as the data structures of neural computation. Introduction to reinfor
 
 
 {{% calendar-day dow="Friday" date="2026-03-06" %}}
+- Logistics (all officially due today but unofficially mid-week is ok)
+  - Final Journal (patch to Community calculation)
+  - Homework and notebooks similarly soft-due (for demonstrating objectives)
+  - "Fill-in-the-Gaps" Moodle quiz: opportunity to make your objectives more robust
 - Quiz 4 at start of class:
   - Given an MLP with parameters, compute the forward pass by hand (including loss), draw a diagram with shapes labeled. What if various things change? Addresses [TM-MLPParts](objective), [TM-LinearLayers](objective), [TM-ActivationFunctions](objective), [TM-Softmax](objective), [TM-DataFlow](objective), [TM-TensorOps](objective).
   - Training loop: put steps in order, explain why each is necessary, how to add validation? Addresses [TM-Implement-TrainingLoop](objective), [TM-Autograd](objective), [OG-Implement-Validate](objective), [OG-Theory-SGD](objective).
