@@ -290,7 +290,6 @@ Supplemental material: [list comprehensions in Python](https://cs.calvin.edu/cou
 {{% calendar-day dow="Friday" date="2026-03-27" %}}
 - Project Inspirations
   - An example related to our topic today: [How to make a racist AI without really trying | ConceptNet blog](https://concepts.arborelia.net/posts/2017/how-to-make-a-racist-ai-without-really-trying/)
-  - An idea: use a pretrained autoregressive model as if it were a diffusion LM by simply instructing it to "fill in the blanks" in a document (and then giving the blanked document as input)
 - Lab review
   - For reference:
   - Notebook: {{% notebook name="Image Embeddings" nbname="u07n1-image-embeddings.ipynb" %}}
