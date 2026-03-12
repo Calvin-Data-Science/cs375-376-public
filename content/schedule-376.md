@@ -171,7 +171,7 @@ How to represent text as input to a neural network?
     - Logistics for 376 vs 375
     - Projects
     - Intro to Generative Modeling
-- Handout: [What do you already know about generative modeling?](/handouts/2025_03_17.pdf)
+- Handout TODO from 2025_03_17 - What do you already know about generative modeling?
 - Activity: [Exploring Language Models](/units/08generative-intro/exploring-lm)
 - Resources:
     - [OpenAI Tokenizer](https://platform.openai.com/tokenizer)
@@ -188,7 +188,7 @@ How to represent text as input to a neural network?
     - Perplexity as cumulative surprise
     - Implications of Autoregressive Generation
   - Text <-> Numbers
-- Handout: [Review tokenization and chat docs; next-token prediction](/handouts/2025_03_19.pdf)
+- Handout TODO from 2025_03_19 - Review tokenization and chat docs; next-token prediction
 - Activity: [Generation Activity](/units/08generative-intro/generation-handout)
     - Next-Token Predictions Activity
 
@@ -196,7 +196,7 @@ How to represent text as input to a neural network?
 
 
 {{% calendar-day dow="Friday" date="2026-03-20" %}}
-- Handout: [GenAI problem setup, LLM as next-token classifier](/handouts/2025_03_21.pdf)
+- Handout TODO from 2025_03_21 - GenAI problem setup, LLM as next-token classifier
 - Slides: [376 Unit 1: Generative Modeling Introduction](/slides/w08-generative.html)
 - Activity: [CS 376 Lab 1: Tokenization](/units/08generative-intro/lab)
 
@@ -293,8 +293,8 @@ Supplemental material: [list comprehensions in Python](https://cs.calvin.edu/cou
   - An idea: use a pretrained autoregressive model as if it were a diffusion LM by simply instructing it to "fill in the blanks" in a document (and then giving the blanked document as input)
 - Lab review
   - For reference:
-  - Notebook: {{% notebook name="Probe an Image Classifier" nbname="u07n1-image-embeddings.ipynb" %}}
-- Handout: [Token and Context Embeddings](/handouts/2025_03_28.pdf)
+  - Notebook: {{% notebook name="Image Embeddings" nbname="u07n1-image-embeddings.ipynb" %}}
+- Handout TODO from 2025_03_28 - Token and Context Embeddings
 - Resources: the [softmax/cross-entropy interactive](https://observablehq.com/@kcarnold/softmax)
 
 Topics:
@@ -372,6 +372,12 @@ News (in Perusall library, not officially assigned)
 
 {{% /details %}}
 {{% details summary="Supplemental Resources" %}}
+- Other neural network architectures (compare with self-attention):
+  - Recurrent Networks: [Elman](https://en.wikipedia.org/wiki/Recurrent_neural_network#Architectures); [LSTM and GRU](http://colah.github.io/posts/2015-08-Understanding-LSTMs/)
+  - Convolutional Networks:
+    - What convolution does to an image: [Image Kernels explained visually](https://setosa.io/ev/image-kernels/)
+    - How to use convolutions in a neural network: [CS231n Convolutional Neural Networks for Visual Recognition](https://cs231n.github.io/convolutional-networks/)
+    - What they learn: [Feature Visualization](https://distill.pub/2017/feature-visualization/)
 - A video course on [How Transformer LLMs Work - DeepLearning.AI](https://learn.deeplearning.ai/courses/how-transformer-llms-work/lesson/nfshb/introduction)
 - Wanna code it? [Zero to Hero](https://karpathy.ai/zero-to-hero.html) part 6: [Let's build GPT: from scratch, in code, spelled out. - YouTube](https://www.youtube.com/watch?v=kCc8FmEb1nY) (go back to [prior parts](https://karpathy.ai/zero-to-hero.html) if you need to)
 - [HandsOnLLM/Hands-On-Large-Language-Models: Official code repo for the O'Reilly Book - "Hands-On Large Language Models"](https://github.com/HandsOnLLM/Hands-On-Large-Language-Models)
@@ -407,52 +413,29 @@ The Transformer architecture is hugely inefficient and unreliable if all you wan
 - Review handout activity from Friday
   - How does the Gemma model actually represent these tokens and contexts? (See logits-demo notebook)
   - Let's write the sampling algorithm together.
-- Handout: [Self-Attention By Hand](/handouts/2025_03_31.pdf)
+- Handout TODO from 2025_03_31 - Self-Attention By Hand
+- [Transformer Explainer](https://poloclub.github.io/transformer-explainer/)
+- Review: Self-Attention = conditional information flow
+  - Software: describe the wiring, then what flows through the wires.
+  - Hardware: compute queries, keys, and values, then compute the attention matrix, then compute the output.
+- Notebook: {{% notebook name="Demo of Logits and Embeddings from a Language Model" nbname="u09n0-logits-demo.ipynb" %}}
 
 {{% /calendar-day %}}
 
 
 {{% calendar-day dow="Wednesday" date="2026-04-01" %}}
-- Review
-  - Go over key questions from past 2 weeks
-  - Reminder: Quiz 1 Friday
-  - Exercises posted
-- [Transformer Explainer](https://poloclub.github.io/transformer-explainer/)
-- Slides: [Neural Architectures](/slides/w10-nn-arch.html)
-  - Fixed wiring: Feed-forward (MLP)
-  - Current sample wired to previous sample:
-    - Recurrent Networks ([Elman](https://en.wikipedia.org/wiki/Recurrent_neural_network#Architectures); [LSTM and GRU](http://colah.github.io/posts/2015-08-Understanding-LSTMs/))
-  - Current sample wired to surrounding samples: Convolutional Networks (CNN)
-    - What convolution does to an image: [Image Kernels explained visually](https://setosa.io/ev/image-kernels/)
-    - How to use convolutions in a neural network: [CS231n Convolutional Neural Networks for Visual Recognition](https://cs231n.github.io/convolutional-networks/)
-    - What they learn: [Feature Visualization](https://distill.pub/2017/feature-visualization/)
-  - Wiring computed dynamically based on "self-attention": Transformer
-- Tricks
-  - Residual Connections
-  - Dropout
-- Review: Self-Attention = conditional information flow
-  - Software: describe the wiring, then what flows through the wires.
-  - Hardware: compute queries, keys, and values, then compute the attention matrix, then compute the output.
-- For Friday, please start working on:
-  - Activity: [Lab 376.3: Implementing Self-Attention](/units/10arch/lab)
-- Notebook: {{% notebook name="Demo of Logits and Embeddings from a Language Model" nbname="u09n0-logits-demo.ipynb" %}}
-- Notebook: {{% notebook name="Translation as Language Modeling" nbname="u09n2-decoding.ipynb" %}}
-
-{{% /calendar-day %}}
-
-
-{{% calendar-day dow="Friday" date="2026-04-03" %}}
-- Good Friday
-
-
-- Activity: [Lab 376.3: Implementing Self-Attention](/units/10arch/lab)
-  - Slides: [376 Lab 3: Implementing Self-Attention](/slides/w10-lab.html)
 - Quiz 1: Looking for evidence of learning about:
   - [MS-LLM-Tokenization](objective)
   - [MS-LLM-Generation](objective)
   - [LM-SelfSupervised](objective)
   - [NC-Embeddings](objective)
   - [NC-SelfAttention](objective) *(basic intuition only)*
+
+{{% /calendar-day %}}
+
+
+{{% calendar-day dow="Friday" date="2026-04-03" %}}
+- Good Friday
 
 {{% /calendar-day %}}
 
@@ -516,52 +499,35 @@ All readings are posted on Perusall, copied here for reference.
 {{% calendar-day dow="Monday" date="2026-04-06" %}}
 - Easter Monday
 
-
-- Review quiz 1
-  - Solutions available for those who have completed it
-  - Grading by objectives
-    - Revised the MS-LLM-API objective to match what the quiz assessed. (question 4 also addressed it, forgot to mark that)
-- Handout: [Self-Attention Shapes](/handouts/2025_04_07.pdf)
-- Review lab 3
-- Project encouragements
-  - Be the ones who can *measure* AI performance
-
-
-
-Reference:
-
-- {{% notebook name="Demo of Logits and Embeddings from a Language Model" nbname="u09n0-logits-demo.ipynb" %}}
-- {{% notebook name="Translation as Language Modeling" nbname="u09n2-decoding.ipynb" %}}
-
 {{% /calendar-day %}}
 
 
 {{% calendar-day dow="Wednesday" date="2026-04-08" %}}
-- Review attention via the [Transformer Explainer](https://poloclub.github.io/transformer-explainer/)
-- Motivational examples:
-  - [Claude Plays Pokemon](https://www.twitch.tv/claudeplayspokemon)
-  - [Capture-the-Flag traces](https://docent.transluce.org/picoCTF)
-  - [Reinforcement Learning for Long-Horizon Interactive LLM Agents | Abstract](https://arxiv.org/abs/2502.01600)
+- Review quiz 1 (brief)
+- Handout TODO from 2025_04_07 - Self-Attention Shapes
 - Activity: [Lab 376.4: Dialogue Agents, Prompt Engineering, Retrieval-Augmented Generation, and Tool Use](/units/11generation/lab)
-  - Prompt Engineering
-  - Instruction Tuning
-  - Retrieval-Augmented Generation
+  - Slides: [376 Lab 3: Implementing Self-Attention](/slides/w10-lab.html)
+  - Implementing self-attention (trace through transformer implementation)
+- Project encouragements
+  - Be the ones who can *measure* AI performance
+
+Reference:
+
+- {{% notebook name="Demo of Logits and Embeddings from a Language Model" nbname="u09n0-logits-demo.ipynb" %}}
 
 {{% /calendar-day %}}
 
 
 {{% calendar-day dow="Friday" date="2026-04-10" %}}
+- Motivational examples:
+  - [Claude Plays Pokemon](https://www.twitch.tv/claudeplayspokemon)
+  - [Capture-the-Flag traces](https://docent.transluce.org/picoCTF)
+  - [Reinforcement Learning for Long-Horizon Interactive LLM Agents | Abstract](https://arxiv.org/abs/2502.01600)
 - Slides: [Generation by Prompting](/slides/w11-prompting.html)
-- Quiz 2: An opportunity to demonstrate your understanding of some of the following objectives:
-  - [MS-LLM-Generation](objective)
-  - [MS-LLM-API](objective)
-  - [LM-SelfSupervised](objective)
-  - [NC-Embeddings](objective)
-  - [NC-SelfAttention](objective)
-  - [NC-TransformerDataFlow](objective)
-
-
-Note: I dropped the intro to Streamlit for time reasons, but I highly recommend you check it out. It's a great way to make your models accessible to others. The [next-token demo](https://huggingface.co/spaces/kcarnold/next-token) that we used in Week 2 was a Streamlit app; click the [Files](https://huggingface.co/spaces/kcarnold/next-token/tree/main) tab on the Hugging Face Space to see the code.
+- Activity: [Lab 376.4: Dialogue Agents, Prompt Engineering, Retrieval-Augmented Generation, and Tool Use](/units/11generation/lab)
+  - Prompt Engineering
+  - Instruction Tuning
+  - Retrieval-Augmented Generation
 
 {{% /calendar-day %}}
 
@@ -571,10 +537,10 @@ Note: I dropped the intro to Streamlit for time reasons, but I highly recommend 
 
 <div class="calendar-week">
 
-## Week 5: Review
+## Week 5: Agents and Tool Use
 
 {{% calendar-week-header %}}
-Since this is a short week, we'll slow down to review and reinforce (1) how Transformers work inside and (2) how we can use them to make conversational agents that can interact with the world.
+How can we turn LLMs into agents that interact with the world? This week we'll explore tool use, function calling, and context engineering for multi-turn agents.
 
 {{% details summary="Resources" %}}
 If you're feeling fuzzy about any of the concepts we've covered so far, I recommend going back to these resources:
@@ -598,49 +564,26 @@ Supplemental resources:
 {{% /details %}}
 {{% /calendar-week-header %}}
 {{% calendar-day dow="Monday" date="2026-04-13" %}}
-- Quiz 2 review
+- Tool use / function calling — live demo with API
+  - Example flow: call API with tool definition → model returns tool_use → execute → feed result back
 - Feedback / checkin activity
-- Q&A
 
 {{% /calendar-day %}}
 
 
 {{% calendar-day dow="Wednesday" date="2026-04-15" %}}
-- Results of feedback activity:
-  - Biggest hope (by far): good projects
-  - Biggest things we want to learn: *How to make a (semi-autonomous) agent that improves its behavior from feedback*
-  - Biggest thing to review *how self-attention works*
+- Context engineering, multi-turn agents, failure modes
+- Motivational examples from last year's student feedback:
+  - *How to make a (semi-autonomous) agent that improves its behavior from feedback*
 - Project Work Time!
   - Deliverable: what's your project? What's success look like (sketch an example)? What are two next steps that you can take to make progress?
-- Review (see [Summary](/units/12review/))
-  - LLMs view the world as a sequence of tokens
-    - tokenization approach and vocabulary size is chosen before training
-    - which tokens to use are determined by some training data
-  - LLMs learn to mimic sequences of tokens
-    - by learning to predict the next token
-      - by learning conditional distributions `P(next token | sequence so far)`
-      - by learning to maximize the probability given to the actual next token (minimizing cross-entropy loss / perplexity)
-  - LLMs compute next-token distributions by asking "what sort of token usually comes next in this context?"
-    - computes a score for each token in the vocabulary
-      - by computing a dot product between the token embedding and the context embedding
-        - a table of token embeddings is learned during training to put tokens that occur in similar contexts close together
-    - context embeddings are computed based on the embeddings of prior tokens
-      - for each token, we need to compute a context vector for predicting the next token
-      - we could:
-        - use the embedding of the current token (but then the model would just repeat itself)
-        - use a neural network ("feed-forward network") to transform each token's embedding (but then we lose the information about the other tokens)
-        - average the embeddings of all previous tokens (but then we're overwhelmed by irrelevant information)
-        - use a weighted average of the embeddings of all previous tokens (but then we need to learn the weights)
-        - use a neural network to compute the weights for the averaging (but then we can't change the information that each token carries)
-        - use another neural network to compute *what* information each token shares with each other token (and now we get self-attention)
-        - add more layers (alternating self-attention and feed-forward layers) to make it more expressive
-        - add lots of tweaks to make it easier to learn (e.g., residual connections, layer normalization, etc.)
 
 {{% /calendar-day %}}
 
 
 {{% calendar-day dow="Friday" date="2026-04-17" %}}
-- Good Friday
+- Project scoping time
+- Review (see [Summary](/units/12review/))
 
 {{% /calendar-day %}}
 
@@ -650,12 +593,10 @@ Supplemental resources:
 
 <div class="calendar-week">
 
-## Week 6: Multimodal Models and Diffusion
+## Week 6: Training Pipeline and Projects
 
 {{% calendar-week-header %}}
-What if we want to have AI conversations that include images or audio? -- both as input and output?
-
-This week we'll look at models that can process (and sometimes generate) multiple types of data at once, such as images and text. We'll also look at diffusion modeling, a powerful generative modeling technique.
+How are modern LLMs trained? This week covers the training pipeline (pretraining → SFT → RLHF) and Quiz 2.
 
 {{% details summary="Objectives" %}}
 By the end of this week you should be able to:
@@ -709,30 +650,26 @@ Also, many people refer to [this blog post](https://lilianweng.github.io/posts/2
 {{% /details %}}
 {{% /calendar-week-header %}}
 {{% calendar-day dow="Monday" date="2026-04-20" %}}
-- Easter Monday
+- Training pipeline overview: pretraining → SFT → RLHF
+  - Tülu blog post reading discussion
+- Handout TODO from 2025_04_23 - Conversation documents, multimodal models, and LLM reliability
 
 {{% /calendar-day %}}
 
 
 {{% calendar-day dow="Wednesday" date="2026-04-22" %}}
-- Logistics
-  - Perusall readings
-  - Project Walkthrough
-  - Final Discussion
-  - Final Exercise
-- Homework 1 Examples
-  - Managing conversation context
-- Generative Models, Diffusion [Slides](/slides/w12%20Multimodal%20Generation.pdf)
-  - Try the [SigLIP demo](https://colab.research.google.com/github/google-research/big_vision/blob/main/big_vision/configs/proj/image_text/SigLIP_demo.ipynb) that embeds images and text together. Try computing the dot products between a few texts that you write by hand. Does the dot product reflect the similarity of the texts? Repeat with images. What do you find?
-- Handout: [Conversation documents, multimodal models, and LLM reliability](/handouts/2025_04_23.pdf)
+- Quiz 2 (proctored — Ken traveling): Looking for evidence of learning about:
+  - [MS-LLM-API](objective)
+  - [MS-LLM-Prompting](objective)
+  - [NC-SelfAttention](objective) *(deeper)*
+  - [NC-TransformerDataFlow](objective)
+  - [MS-LLM-Advanced](objective)
+  - [MS-LLM-Train](objective)
 
 {{% /calendar-day %}}
 
 
 {{% calendar-day dow="Friday" date="2026-04-24" %}}
-- Review handout from last time (question 3)
-- Activity: [Lab 376.6: Stable Diffusion](/units/13multimodal/lab)
-  - Stable Diffusion
 - Project Work Time
 
 {{% /calendar-day %}}
@@ -748,9 +685,9 @@ Also, many people refer to [this blog post](https://lilianweng.github.io/posts/2
 {{% calendar-week-header %}}
 {{% /calendar-week-header %}}
 {{% calendar-day dow="Monday" date="2026-04-27" %}}
-- Handout: [Tokenization and Scaling Review](/handouts/2025_04_28.pdf)
-- Activity: [Lab: RL, Transformers, or other topics](/units/14misc/lab)
-    - choose-your-own-adventure Lab on reinforcement Learning or neural net architectures
+- Diffusion and multimodal models (~20 min conceptual overview)
+  - Generative Models, Diffusion [Slides](/slides/w12%20Multimodal%20Generation.pdf)
+- Handout TODO from 2025_04_28 - Tokenization and Scaling Review
 
 {{% /calendar-day %}}
 
@@ -763,7 +700,7 @@ Also, many people refer to [this blog post](https://lilianweng.github.io/posts/2
 
 
 {{% calendar-day dow="Friday" date="2026-05-01" %}}
-- Handout: [Wrap-Up](/handouts/2025_05_02.pdf)
+- Handout TODO from 2025_05_02 - Wrap-Up
 - Discussion 3 sharing, comparing our survey to the results of the [Pew Research survey](https://www.pewresearch.org/internet/2025/04/03/how-the-us-public-and-ai-experts-view-artificial-intelligence/)
 
 - Fairness and Wrap-Up [slides](/slides/w13-Fairness%20and%20Wrap-Up.pdf)
