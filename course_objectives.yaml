@@ -274,7 +274,12 @@
 - id: OG-LLM-Tokenization
   pillar: Optimization Games
   class: 376
-  description: I can explain the purpose, inputs, and outputs of tokenization.
+  description: I can explain how inputs get chunked into tokens, how outputs are generated token by token, and how this affects usage of the model.
+
+- id: OG-LLM-ConversationAsDocument
+  pillar: Optimization Games
+  class: 376
+  description: I can explain how a conversation with an LLM can be represented as a carefully structured document, including system messages, tool calls, and multimodal inputs and outputs.
 
 - id: OG-LLM-Advanced
   pillar: Optimization Games
@@ -289,7 +294,7 @@
 - id: OG-LLM-Train
   pillar: Optimization Games
   class: 376
-  description: I can describe the overall process of training a state-of-the-art dialogue LLM such as Llama or OLMo.
+  description: I can describe the overall process of training a state-of-the-art dialogue LLM.
 
 - id: OG-SelfSupervised
   pillar: Optimization Games

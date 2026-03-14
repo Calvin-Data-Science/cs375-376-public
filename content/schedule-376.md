@@ -40,15 +40,14 @@ This unit will introduce some of the basic concepts and methods for sequence mod
 
 {{% /details %}}
 {{% details summary="Objectives" %}}
-This week will address course objectives on OG-SelfSupervised, MS-LLM-Tokenization, and MS-LLM-TokenizationImpact.
+This week will address course objectives on OG-SelfSupervised, OG-LLM-Tokenization, and OG-LLM-TokenizationImpact.
 
 - Explain what generative modeling is and its uses
 - Describe the high-level idea of three basic approaches to generative models: autoregressive, latent variable, and diffusion
 - Describe the inputs and outputs of an autoregressive language model
   - tokens -> embeddings
   - next-token conditional probability distribution
-
-We will also discuss how a language model can be used for a chatbot. (TODO: this needs a course objective and a link to some Chat Templating documentation)
+- Describe how a language model can be used for a chatbot.
 
 {{% /details %}}
 {{% details summary="Prep and Readings" %}}
@@ -59,7 +58,6 @@ I recommend the following readings (in Perusall):
 - [Large Language Models explained briefly (3blue1brown)](https://www.youtube.com/watch?v=LPZh9BOjkQs&list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi&index=5)
 - the Hugging Face Transformers course, chapter 1:
     - 1.2 [Natural Language Processing - Hugging Face NLP Course](https://huggingface.co/learn/nlp-course/en/chapter1/2)
-    - 1.3 [Transformers, what can they do? - Hugging Face NLP Course](https://huggingface.co/learn/nlp-course/en/chapter1/3)
     - 1.4 [How do Transformers work? - Hugging Face NLP Course](https://huggingface.co/learn/nlp-course/en/chapter1/4)
 - [Artificial Intelligence Then and Now – Communications of the ACM](https://cacm.acm.org/opinion/artificial-intelligence-then-and-now/)
     
