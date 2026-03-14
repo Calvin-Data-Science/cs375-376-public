@@ -15,7 +15,7 @@ Open the [**Language Model Internals** page](/lm-internals.html).
 
 # Part 1: A Conversation is a Document
 
-Type a message like: `Tell me a story about a dragon.` (Replace "dragon" with your own topic.)
+Type a message like: `Tell me a story about a dragon.` (Replace "dragon" with your own topic.) Click "Send" to finish your message.
 
 Before generating anything, look at how the tool displays the conversation. You should see your message displayed as a sequence of tokens, with special markers indicating the role (e.g., `<start_of_turn>user` and `<start_of_turn>model`).
 
