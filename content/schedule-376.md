@@ -143,7 +143,7 @@ How to represent text as input to a neural network?
 - Implications:
   - the model never "looks ahead" to see what words come after the current word.
   - We can get the model to "rationalize" a statement by including that statement as part of its prompt. The model's "memory" is externalized in the words it's already generated, so we can "edit" that memory by changing the document so far.
-  - We could have factored the joint distribution in a different way, depending on what we want to do. For example, some models are trained to "Fill In the Middle" (FIM), where the model is given context after the section to generate as well. But in practice this is actually implemented by transforming the input into a left-to-right sequence with special marker tokens for the section "<before>", "<after>", and "<to fill in>".
+  - We could have factored the joint distribution in a different way, depending on what we want to do. For example, some models are trained to "Fill In the Middle" (FIM), where the model is given context after the section to generate as well. But in practice this is actually implemented by transforming the input into a left-to-right sequence with special marker tokens for the section `"<before>"`, `"<after>"`, and `"<to fill in>"`.
   - We could also train the model to "reconstruct" any given token from the tokens around it; this is the idea of masked language modeling (MLM) used in models like BERT. It turns out that this allows the model to "cheat" a lot, so tweaks are needed to make it work for generation tasks. But it's reasonably good at learning representations (embeddings) of whole sequences, so it's sometimes used in vector databases.
 - Temperature
   - The model's predictions are a probability distribution over all possible words

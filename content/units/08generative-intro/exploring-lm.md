@@ -1,60 +1,80 @@
 ---
 title: "Exploring Language Models"
 weight: 5
-revised: 2025
+revised: 2026
 ---
-
-
-Revised 2025: we'll need to use the "Show Internals" page of [Writing-Prototypes](https://huggingface.co/spaces/CalvinU/writing-prototypes)
 
 Objectives:
 
+- Describe how a conversation is represented as a document for a language model.
+- Describe what a next-token conditional distribution is.
 - Describe the implications of how language models generate text sequentially.
-- Describe what a conditional distribution is, in the context of language modeling.
-- Compute the log-probability that a language model assigns to of a sequence of words.
+- Compute the log-probability that a language model assigns to a sequence of tokens, and connect this to cross-entropy loss.
 
-# Part 1: Left-to-Right Generation
-
-Go to https://bigprimes.org/RSA-challenge and copy-paste a number from there. By construction, these numbers are the product of two large primes.
-
-1. Type this into the Playground: "The number NNN is composite because it can be written as the product of". Replace NNN with your number, and don't type a space afterwards. Leave all parameters at their defaults. Click Submit to generate. (It should give several numbers; if not, try again.) Check its output using a calculator on your computer (e.g., Python). Is it correct?
+Open the **Show Internals** page of [Writing-Prototypes](https://huggingface.co/spaces/CalvinU/writing-prototypes).
 
 
-2. Repeat the previous step a few more times. (The "Regenerate" button makes this easy.) Keep track of what factorizations it generates and whether they are correct.
+# Part 1: A Conversation is a Document
+
+Type a message like: `Tell me a story about a dragon.`
+
+Before generating anything, look at how the tool displays the conversation. You should see your message displayed as a sequence of tokens, with special markers indicating the role (e.g., `<start_of_turn>user` and `<start_of_turn>model`).
+
+1. Where in the token sequence does the user's turn end and the assistant's turn begin? What markers separate them?
+
+2. Think about this: all the model does is predict the next token in a document. Why would it generate a story rather than, say, continuing your sentence with more questions? What about the document structure makes "a story" the likely continuation?
 
 
-3. Now delete everything and change the prompt to "The number NNN is prime because". Generate again. What do you notice? How does this result relate to the fact that language models generate text one token at a time?
+# Part 2: Building a Response Token by Token
 
-# Part 2: Token Probabilities
+Now we'll construct the assistant's response ourselves, one token at a time.
 
-4. **Set the Temperature slider to 0**. Change the prompt to "Here is a very funny joke:" (again, no space afterwards). What joke is generated?
+The tool should show you the model's predicted **next-token distribution**: a list of candidate tokens and their probabilities. For example, you might see something like:
 
-5. Compare your response to the previous question with that of a neighboring team. What do you notice?
+| Token   | Probability |
+|---------|-------------|
+| In      | 0.25        |
+| Once    | 0.18        |
+| A       | 0.12        |
+| There   | 0.09        |
+| Deep    | 0.07        |
+| ...     | ...         |
 
-6. Now **set the Temperature slider to 1**. Delete the generated text and generate again (the "Regenerate" button won't realize you changed the Temperature). What joke is generated?
+3. Pick the **most likely** token. It gets added to the sequence, and the tool shows a new distribution for the *next* token. Repeat this about 10 times, always picking the top prediction. Write down the sequence of tokens you get. Does it produce a coherent story opening?
 
-7. Repeat the previous step a few times. Summarize what you observe.
+4. Compare your sequence with a neighboring team. Did you get the same thing? Why or why not?
 
-8. Under "Show probabilities", select "**Full spectrum**" (you'll need to scroll down). Generate with a temperature of 0 again. Select the initial "Q"; you should see a table of words with corresponding probabilities. What options was the model considering for how to start the joke?
+5. Now **reset** the response and start over. This time, pick an **unlikely token** for the very first assistant token---say, the 5th or 10th most likely option. Then continue picking the top prediction for the next ~10 tokens. Write down what happens.
 
-9. Click each word in the generated text. (Make sure it was generated with Temperature set to 0.) Notice the words highlighted in red; those are the words that were chosen from the conditional distribution. How do you think the model chooses from among the options it's considering when Temperature is 0?
+6. Try step 5 again with a different unlikely starting token. What do you notice? Reflect on this question: *The model doesn't plan ahead---it only sees the tokens that have already been written. How does it still produce something coherent after a weird start?*
 
-10. Now set Temperature to 1 and Regenerate. How do you think the model chooses from among the options it's considering when Temperature is 1? Regenerate a few times to check your reasoning.
-
-11. Observe the highlighting behind each word. Describe what it means when a token is red.
-
-> Suppose the LM classifier computed scores of 0.1 and 0.2 for two possible words. (In neural-net lingo these are called *logits*). Compute *e^x* for each number (you can use `math.exp()`) to get two positive numbers. They probably don't sum to 1, so they're not a valid probability distribution---so divide them by their sum. (This operation---exponentiate and normalize---is called *softmax* in the NN lingo.). Now divide the logits by .001 and again compute the softmax. The number you divide the logits by is the *temperature*.
+7. *(Bonus)* Try forcing an unlikely token in the *middle* of a response that was going well. Does the model recover?
 
 
-# Part 3: Phrase Probabilities
+# Part 3: Predictable vs. Surprising Tokens
 
-13. Select the first few words of the generated joke. You should see "Total: xx.xxx logprob on yy tokens". Write down the logprob number.
+Generate a full story (maybe 2-3 sentences) by letting the model pick all the tokens itself.
 
-14. Click the first token and observe the corresponding "Total:" statement for that token. Write down the logprobs reported individually for each token, for the first few tokens.
+8. Click on different tokens in the generated story to see the distribution the model predicted at that position. Find a token where the model was **very confident**---one option dominates with high probability (e.g., > 0.8). What token is it, and why is it so predictable?
 
-15. Sum the logprobs of each token. Check that the sum of the individual token logprobs matches the total logprob reported for the phrase.
+9. Find a token where the model was **uncertain**---several options have similar probability. What token is it? Why is this position harder to predict?
 
-16. Compute the logprob for one token by computing the natural logarithm of the probability of the chosen word.
+10. The probability the model assigned to the token that actually came next tells us how "surprised" the model was. Where in the story was the model *most* surprised? Where was it *least* surprised? Does this match your intuition about which words are predictable and which aren't?
 
-17. Type your own joke. Set "maximum length" to the smallest value and click Generate. Ignoring the generated text, highlight your joke and see what probability the model gave to it. Compare joke logprobs with your neighbors; who has the highest and lowest? (You probably need to switch to one of the "Other" models, like `davinci-002`, for this to work; `gpt-3.5-turbo-instruct` broke this feature.)
 
+# Part 4: Measuring Surprise
+
+When training a language model, we need a number that says how well the model predicted the actual next token. We can measure this in **bits**: $-\log_2(p)$, where $p$ is the probability the model assigned to the correct token. This tells us how many bits of information were needed to identify that token, given the context. Some reference points:
+
+- A fair coin flip ($p = 0.5$): 1 bit
+- Rolling a specific number on a die ($p = 1/6$): ~2.6 bits
+- A token the model is very sure about ($p = 0.95$): ~0.07 bits
+- A token the model finds surprising ($p = 0.01$): ~6.6 bits
+
+11. Pick a token where the model was confident and one where it was uncertain. Compute $-\log_2(p)$ for each. Which takes more bits? Does that match your intuition?
+
+12. Select a span of about 5 consecutive tokens in the story. The tool should show you the **total bits** needed to encode that span. Try to verify this: write down the probability for each token, compute $-\log_2(p)$ for each, and add them up. Does it match?
+
+13. Now select two different spans of similar length: one that feels very predictable (e.g., the middle of a common phrase) and one that feels more surprising. Which takes more bits? The model was trained to minimize this total---this is the **cross-entropy loss**.
+
+14. *(Stretch)* Divide the total bits by the number of tokens to get **bits per token**. Compare your value to the reference points above. On average, is the model more like flipping a coin or more like a near-certain prediction?
