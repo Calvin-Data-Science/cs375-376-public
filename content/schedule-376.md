@@ -34,9 +34,7 @@ This unit will introduce some of the basic concepts and methods for sequence mod
 - What is one implication of the fact that LMs generate text sequentially (i.e., that most language models are causal)?
 - What is a conditional distribution, in the context of language modeling (or another example we looked at in class)?
 - Define *perplexity*, and describe how it relates to log-likelihood and cross-entropy (and the general concept of partial credit and/or surprise in classifiers)
-
-
-(next year: add a question about how to use a language model as the backend of a chatbot)
+- How is a chat conversation (even with multiple turns, tool calls, etc.) just a document?
 
 {{% /details %}}
 {{% details summary="Objectives" %}}
@@ -63,9 +61,14 @@ I recommend the following readings (in Perusall):
     
 If you need some additional background, I recommend [Understanding Deep Learning](https://udlbook.github.io/udlbook/)
 
+You may also appreciate the following more technical resources, but these are not required:
+
+- [OpenAI Tokenizer](https://platform.openai.com/tokenizer)
+
 {{% /details %}}
 {{% details summary="Extension Opportunities" %}}
 - Activity: [Optional Extension: Token Efficiency Analysis](/units/08generative-intro/extension-tokenization)
+- See: [SuperBPE](https://superbpe.github.io/): *multi-word tokens* (!)
 
 {{% /details %}}
 {{% details summary="Notes" %}}
@@ -169,10 +172,8 @@ How to represent text as input to a neural network?
     - Logistics for 376 vs 375
     - Projects
     - Intro to Generative Modeling
-- Handout TODO from 2025_03_17 - What do you already know about generative modeling?
+- Handout: [What do you already know about generative modeling?](/handouts/2026_03_16.pdf)
 - Activity: [Exploring Language Models](/units/08generative-intro/exploring-lm)
-- Resources:
-    - [OpenAI Tokenizer](https://platform.openai.com/tokenizer)
 
 {{% /calendar-day %}}
 
