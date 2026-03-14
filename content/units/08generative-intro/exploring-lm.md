@@ -11,12 +11,11 @@ Objectives:
 - Describe the implications of how language models generate text sequentially.
 - Compute the log-probability that a language model assigns to a sequence of tokens, and connect this to cross-entropy loss.
 
-Open the **Show Internals** page of [Writing-Prototypes](https://huggingface.co/spaces/CalvinU/writing-prototypes).
-
+Open the [**Language Model Internals** page](/lm-internals.html).
 
 # Part 1: A Conversation is a Document
 
-Type a message like: `Tell me a story about a dragon.`
+Type a message like: `Tell me a story about a dragon.` (Replace "dragon" with your own topic.)
 
 Before generating anything, look at how the tool displays the conversation. You should see your message displayed as a sequence of tokens, with special markers indicating the role (e.g., `<start_of_turn>user` and `<start_of_turn>model`).
 
