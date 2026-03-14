@@ -40,7 +40,7 @@ This unit will introduce some of the basic concepts and methods for sequence mod
 
 {{% /details %}}
 {{% details summary="Objectives" %}}
-This week will address course objectives on LM-SelfSupervised, MS-LLM-Tokenization, and MS-LLM-TokenizationImpact.
+This week will address course objectives on OG-SelfSupervised, MS-LLM-Tokenization, and MS-LLM-TokenizationImpact.
 
 - Explain what generative modeling is and its uses
 - Describe the high-level idea of three basic approaches to generative models: autoregressive, latent variable, and diffusion
@@ -426,7 +426,7 @@ The Transformer architecture is hugely inefficient and unreliable if all you wan
 - Quiz 1: Looking for evidence of learning about:
   - [MS-LLM-Tokenization](objective)
   - [MS-LLM-Generation](objective)
-  - [LM-SelfSupervised](objective)
+  - [OG-SelfSupervised](objective)
   - [NC-Embeddings](objective)
   - [NC-SelfAttention](objective) *(basic intuition only)*
 

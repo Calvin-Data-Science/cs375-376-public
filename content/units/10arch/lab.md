@@ -18,7 +18,7 @@ It could also be used to address the following course objectives:
 - [MS-LLM-Train](objective)
 - [MS-LLM-Compute](objective)
 - [NC-Scaling](objective)
-- [LM-SelfSupervised](objective)
+- [OG-SelfSupervised](objective)
 - [CI-Topic-History](objective)
 - [CI-LLM-Failures](objective)
 

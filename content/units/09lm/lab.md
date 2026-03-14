@@ -8,7 +8,7 @@ Objectives addressed:
 
 - [MS-LLM-Tokenization](objective)
 - [MS-LLM-API](objective)
-- [LM-SelfSupervised](objective)
+- [OG-SelfSupervised](objective)
 
 Work through this notebook today to learn about what the outputs of a language model look like. You'll see how it's a token-by-token classification model.
 
