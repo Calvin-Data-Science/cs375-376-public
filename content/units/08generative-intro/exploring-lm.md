@@ -15,9 +15,9 @@ Open the [**Language Model Internals** page](/lm-internals.html).
 
 # Part 1: A Conversation is a Document
 
-Type a message like: `Tell me a story about a dragon.` (Replace "dragon" with your own topic.) Click "Send" to finish your message.
+Type a message like: `Write a one-paragraph story about a dragon.` (Replace "dragon" with your own topic.) Click "End Turn" to finish your message.
 
-Before generating anything, look at how the tool displays the conversation. You should see your message displayed as a sequence of tokens, with special markers indicating the role (e.g., `<start_of_turn>user` and `<start_of_turn>model`).
+Before generating anything, look at how the tool displays the conversation. You should see your message displayed as a sequence of tokens, with special markers indicating the role (e.g., `<start_of_turn> user` and `<start_of_turn> assistant`).
 
 1. Where in the token sequence does the user's turn end and the assistant's turn begin? What markers separate them?
 
@@ -39,11 +39,11 @@ The tool should show you the model's predicted **next-token distribution**: a li
 | Deep    | 0.07        |
 | ...     | ...         |
 
-3. Pick the **most likely** token. It gets added to the sequence, and the tool shows a new distribution for the *next* token. Repeat this about 10 times, always picking the top prediction. Write down the sequence of tokens you get. Does it produce a coherent story opening?
+3. Pick the **most likely** token by clicking on it. It gets added to the sequence, and the tool shows a new distribution for the *next* token. Repeat this about 10 times, always picking the top prediction. Write down the sequence of tokens you get. Does it produce a coherent story opening?
 
-4. Compare your sequence with a neighboring team. Did you get the same thing? Why or why not?
+4. Compare your sequence with a neighboring team. Did you get the same thing? Why or why not? Test your theory.
 
-5. Now **reset** the response and start over. This time, pick an **unlikely token** for the very first assistant token---say, the 5th or 10th most likely option. Then continue picking the top prediction for the next ~10 tokens. Write down what happens.
+5. Now delete the response text and start over. This time, pick an **unlikely token** for the very first assistant token---say, the 5th or 10th most likely option. Then continue picking the top prediction for the next ~10 tokens. Write down what happens.
 
 6. Try step 5 again with a different unlikely starting token. What do you notice? Reflect on this question: *The model doesn't plan ahead---it only sees the tokens that have already been written. How does it still produce something coherent after a weird start?*
 
@@ -52,7 +52,7 @@ The tool should show you the model's predicted **next-token distribution**: a li
 
 # Part 3: Predictable vs. Surprising Tokens
 
-Generate a full story (maybe 2-3 sentences) by letting the model pick all the tokens itself.
+Generate a full story (maybe 2-3 sentences) by letting the model pick all the tokens itself. (Use the "Generate Response" button for that.)
 
 8. Click on different tokens in the generated story to see the distribution the model predicted at that position. Find a token where the model was **very confident**---one option dominates with high probability (e.g., > 0.8). What token is it, and why is it so predictable?
 
