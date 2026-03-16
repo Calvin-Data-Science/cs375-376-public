@@ -174,12 +174,13 @@ How to represent text as input to a neural network?
     - Projects
     - Intro to Generative Modeling
 - Handout: [What do you already know about generative modeling?](/handouts/2026_03_16.pdf)
-- Activity: [Exploring Language Models](/units/08generative-intro/exploring-lm)
+- Surprise - fire alarm! (moving exploring-lm activity to Wednesday)
 
 {{% /calendar-day %}}
 
 
 {{% calendar-day dow="Wednesday" date="2026-03-18" %}}
+- Activity: [Exploring Language Models](/units/08generative-intro/exploring-lm)
 - Slides: [376 Unit 1: Generative Modeling Introduction](/slides/w08-generative.html)
   - Scripture: Proverbs
   - Readings, Moodle participation activity
@@ -189,8 +190,6 @@ How to represent text as input to a neural network?
     - Implications of Autoregressive Generation
   - Text <-> Numbers
 - Handout TODO from 2025_03_19 - Review tokenization and chat docs; next-token prediction
-- Activity: [Generation Activity](/units/08generative-intro/generation-handout)
-    - Next-Token Predictions Activity
 
 {{% /calendar-day %}}
 
@@ -198,7 +197,7 @@ How to represent text as input to a neural network?
 {{% calendar-day dow="Friday" date="2026-03-20" %}}
 - Handout TODO from 2025_03_21 - GenAI problem setup, LLM as next-token classifier
 - Slides: [376 Unit 1: Generative Modeling Introduction](/slides/w08-generative.html)
-- Activity: [CS 376 Lab 1: Tokenization](/units/08generative-intro/lab)
+- Activity: [CS 376 Lab 1: Language Model Inputs and Outputs](/units/08generative-intro/lab)
 
 {{% /calendar-day %}}
 

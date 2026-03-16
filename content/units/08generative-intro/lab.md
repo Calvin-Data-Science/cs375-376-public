@@ -1,6 +1,6 @@
 ---
-title: "CS 376 Lab 1: Tokenization"
-revised: 2025
+title: "CS 376 Lab 1: Language Model Inputs and Outputs"
+revised: 2026
 ---
 
 This lab is designed to help you make progress towards the following course objectives:
@@ -14,4 +14,4 @@ Work through the following notebook. (No accelerator is needed. Either Kaggle or
 
 If you finish, you may get started on next week's notebook:
 
-{{% notebook name="Logits in Causal Language Models" nbname="u09n1-lm-logits.ipynb" %}}
+- {{% notebook name="Logits in Causal Language Models" nbname="u09n1-lm-logits.ipynb" %}}
