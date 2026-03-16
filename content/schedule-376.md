@@ -166,6 +166,7 @@ How to represent text as input to a neural network?
 {{% /details %}}
 {{% /calendar-week-header %}}
 {{% calendar-day dow="Monday" date="2026-03-16" %}}
+- Scripture: [Psalm 23](https://www.biblegateway.com/passage/?search=Psalm%2023&version=NIV&interface=print)
 - Slides: [376 Unit 1: Generative Modeling Introduction](/slides/w08-generative.html)
 - Topics:
     - Intro
