@@ -181,6 +181,7 @@ How to represent text as input to a neural network?
 
 {{% calendar-day dow="Wednesday" date="2026-03-18" %}}
 - Handout: [Exploring Language Models](/handouts/2026_03_18.pdf)
+- This uses the [LM Internals tool](/lm-internals.html).
 - Slides: [376 Unit 1: Generative Modeling Introduction](/slides/w08-generative.html)
   - Scripture: Proverbs
   - Readings, Moodle participation activity
