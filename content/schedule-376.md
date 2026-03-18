@@ -180,7 +180,7 @@ How to represent text as input to a neural network?
 
 
 {{% calendar-day dow="Wednesday" date="2026-03-18" %}}
-- Activity: [Exploring Language Models](/units/08generative-intro/exploring-lm)
+- Handout: [Exploring Language Models](/handouts/2026_03_18.pdf)
 - Slides: [376 Unit 1: Generative Modeling Introduction](/slides/w08-generative.html)
   - Scripture: Proverbs
   - Readings, Moodle participation activity
@@ -189,7 +189,6 @@ How to represent text as input to a neural network?
     - Perplexity as cumulative surprise
     - Implications of Autoregressive Generation
   - Text <-> Numbers
-- Handout TODO from 2025_03_19 - Review tokenization and chat docs; next-token prediction
 
 {{% /calendar-day %}}
 

@@ -5,8 +5,8 @@ revised: 2026
 
 This lab is designed to help you make progress towards the following course objectives:
 
-- [MS-LLM-Tokenization](objective)
-- [MS-LLM-TokenizationImpact](objective)
+- [OG-LLM-Tokenization](objective)
+- [OG-LLM-ConversationAsDocument](objective)
 
 Work through the following notebook. (No accelerator is needed. Either Kaggle or Colab is fine; if you use Colab, remember to "Copy to Drive".)
 

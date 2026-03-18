@@ -259,14 +259,13 @@ We also strive for the sequence to make sense.
 
 ### Week 8
 
-- {{% notebook name="Tokenization" nbname="u08n1-tokenization.ipynb" %}}
+- {{% notebook name="Language Model Inputs and Outputs" nbname="u08n1-tokenization.ipynb" %}}
   - Setup
-    - Download and load the model
-  - Demo
-  - Task
-    - Getting familiar with tokens
-    - Applying what you learned
-  - Analysis
+  - Section 1: From Words to Numbers
+  - Section 2: Packaging Input for the Model
+  - Section 3: A Conversation is a Document
+  - Section 4: Why Tokenization Choices Matter
+  - Analysis Questions
 - Supplemental
   - {{% notebook name="Sentence Embeddings" nbname="u08s1-sentence-embeddings.ipynb" %}}
     - Install and Import
