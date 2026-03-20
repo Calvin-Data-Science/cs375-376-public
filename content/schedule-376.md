@@ -110,6 +110,8 @@ You may also appreciate the following more technical resources, but these are no
   - Three approaches to generative modeling (autoregressive, latent variable, diffusion)
   - Tokenization
   - LLM APIs overview
+- Intro [Discussion 376.1: Probing LLM Sycophancy](/units/08generative-intro/discussion/)
+- Intro [Exercise 376.1: LM Evaluation](/units/09lm/homework/)
 - Activity: [CS 376 Lab 1: Language Model Inputs and Outputs](/units/08generative-intro/lab)
 
 {{% /calendar-day %}}

@@ -284,9 +284,10 @@ We also strive for the sequence to make sense.
   - Example of mapping
   - Vector Analogies
   - What the model does
-- {{% notebook name="Logits in Causal Language Models" nbname="u09n1-lm-logits.ipynb" %}}
+- {{% notebook name="Logits and Perplexity in Causal Language Models" nbname="u09n1-lm-logits.ipynb" %}}
   - Setup
   - Task
+  - Perplexity
   - Analysis
 - {{% notebook name="An exercise on bias in word embeddings." nbname="u09n1-word-embeddings.ipynb" %}}
   - Directions are meaningful

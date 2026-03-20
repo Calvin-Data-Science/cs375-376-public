@@ -10,7 +10,7 @@ This lab is designed to help you make progress towards the following course obje
 
 Work through the following notebook. (No accelerator is needed. Either Kaggle or Colab is fine; if you use Colab, remember to "Copy to Drive".)
 
-- {{% notebook name="Tokenization" nbname="u08n1-tokenization.ipynb" %}}
+- {{% notebook name="Language Model Inputs and Outputs" nbname="u08n1-tokenization.ipynb" %}}
 
 If you finish, you may get started on next week's notebook:
 
