@@ -106,8 +106,10 @@ You may also appreciate the following more technical resources, but these are no
 
 
 {{% calendar-day dow="Friday" date="2026-03-20" %}}
-- Handout TODO from 2025_03_21 - GenAI problem setup, LLM as next-token classifier
 - Slides: [376 Unit 1: Generative Modeling Introduction](/slides/w08-generative.html)
+  - Three approaches to generative modeling (autoregressive, latent variable, diffusion)
+  - Tokenization
+  - LLM APIs overview
 - Activity: [CS 376 Lab 1: Language Model Inputs and Outputs](/units/08generative-intro/lab)
 
 {{% /calendar-day %}}
@@ -174,6 +176,8 @@ Logistics:
     - Complete "Reflections Week 1"
     - Discussion 1
 - [Highlight-Edits example](https://huggingface.co/spaces/CalvinU/writing-prototypes)
+
+- Handout TODO from 2025_03_21 - GenAI problem setup, LLM as next-token classifier
 
 Tokenization:
 

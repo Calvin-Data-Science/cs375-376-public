@@ -40,13 +40,32 @@ Language models give us P(next token | context). This is the building block for 
 
 ## Three Approaches to Generative Modeling
 
-There are three main ways to set up a generative model:
+There are three main ways to set up a generative model. Each answers the question "how do we sample from a complex distribution?" differently.
 
-**Autoregressive**: Generate one piece at a time, left to right. Each step predicts the next token given everything before it. This is how most language models (GPT, Claude, Gemma, etc.) work.
+### Autoregressive
 
-**Latent variable**: Sample a compact "code" from a simple distribution (like a Gaussian), then decode it into the full output. Examples: VAEs, GANs. The latent space can capture meaningful variation --- e.g., [StyleGAN interpolations](https://www.youtube.com/watch?v=K8jY-GmvcAY) smoothly blend between faces.
+Generate one piece at a time, left to right. Each step predicts the next token given everything before it. This is how most language models (GPT, Claude, Gemma, etc.) work.
 
-**Diffusion**: Start with pure noise and iteratively remove it, guided by a learned model. This is how image generators like FLUX and Stable Diffusion work. (For a text example, see [InceptionLabs Diffusion LM](https://www.inceptionlabs.ai/news).)
+- **Strengths**: Conceptually simple (it's just classification, repeated), scales well, great for sequential data like text.
+- **Limitations**: Can't "look ahead" or plan the ending before writing the beginning. Generation is inherently sequential --- you can't parallelize it.
+- **Examples**: GPT, Claude, Gemini, Llama, Gemma --- essentially all modern chatbots.
+
+### Latent Variable
+
+Sample a compact "code" **z** from a simple distribution (like a Gaussian), then decode it into the full output. The key idea is that high-dimensional data (like images) actually lives on a lower-dimensional *manifold* --- a latent variable model tries to learn that manifold.
+
+- **Strengths**: Can generate in one shot (no sequential steps), the latent space can capture meaningful variation --- smoothly interpolating between latent codes produces smooth variation in the output.
+- **Limitations**: Can be hard to train. Variational Autoencoders (VAEs) often produce blurry outputs. Generative Adversarial Networks (GANs) can suffer from mode collapse (only generating a subset of possible outputs).
+- **Examples**: VAEs, GANs. See [StyleGAN interpolations](https://www.youtube.com/watch?v=K8jY-GmvcAY) for a striking demo of smoothly blending between faces by moving through latent space.
+
+### Diffusion
+
+Start with pure noise and iteratively remove it, guided by a learned model. The model is trained to predict "what noise was added?" at each step, and generation works by repeatedly denoising.
+
+- **Strengths**: Produces very high-quality images, training is stable (unlike GANs).
+- **Limitations**: Slow --- requires many denoising steps (typically 20-50+), making generation much more expensive than a single forward pass. Each step is also computationally expensive.
+- **Examples**: FLUX, Stable Diffusion, DALL-E 3, Midjourney. For a text example, see [InceptionLabs Diffusion LM](https://www.inceptionlabs.ai/news).
+- **Interactive**: [Diffusion Explainer](https://poloclub.github.io/diffusion-explainer/) walks through the process step by step.
 
 We'll focus primarily on autoregressive models in this course, since they power most modern LLMs.
 
