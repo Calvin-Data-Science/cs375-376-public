@@ -178,6 +178,7 @@ Logistics:
     - Complete "Reflections Week 1"
     - Discussion 1
 - [Highlight-Edits example](https://huggingface.co/spaces/CalvinU/writing-prototypes)
+- Signups sheet
 
 - Handout: [GenAI problem setup (generative model matching, LLM-as-classifier, next-token prediction dry run with capital-of-Michigan example)](/handouts/2026_03_23.pdf)
 
