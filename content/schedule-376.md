@@ -33,7 +33,6 @@ This unit will introduce some of the basic concepts and methods for sequence mod
 {{% details summary="Key Questions" %}}
 - What is one implication of the fact that LMs generate text sequentially (i.e., that most language models are causal)?
 - What is a conditional distribution, in the context of language modeling (or another example we looked at in class)?
-- Define *perplexity*, and describe how it relates to log-likelihood and cross-entropy (and the general concept of partial credit and/or surprise in classifiers)
 - How is a chat conversation (even with multiple turns, tool calls, etc.) just a document?
 
 {{% /details %}}
@@ -130,6 +129,7 @@ This week start to take off the covers of NLP models, just like we took off the 
 Advising is this week, so we won't get to a lot of new content.
 
 {{% details summary="Key Questions" %}}
+- Define *perplexity*, and describe how it relates to log-likelihood and cross-entropy (and the general concept of partial credit and/or surprise in classifiers)
 - What is a token embedding? What is an output (or context) embedding? How do these relate to the input and output of a language model?
 - How does a causal language model use embeddings of contexts (e.g., sentence prefixes)?
 - How can we use a language model to generate text?
