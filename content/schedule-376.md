@@ -183,9 +183,7 @@ Logistics:
 
 Tokenization:
 
-- [How many 'r's in 'strawberry'?](https://www.google.com/search?client=firefox-b-1-d&sca_esv=3c1b2768c64ab720&sxsrf=AHTn8zqr1yqtAe04PcmPoM3OBrPIoS64Lw:1742827820765&q=how+many+r+in+strawberry&udm=2&fbs=ABzOT_CWdhQLP1FcmU5B0fn3xuWpA-dk4wpBWOGsoR7DG5zJBsxayPSIAqObp_AgjkUGqenLclubdwP4zrQWfEJDEVVFVXswA8wQATANG0VCCiWAMmuVVrQFXoYq-dEjWCUw79bWt_4W_Qj_zS4V-wsygQmRTZOioV_ypugMcmPraR5llR8mvXy0mnMZr0gSbcsx14gEjIdWHa4xM4x-LfMTH6rdIOS-0A&sa=X&ved=2ahUKEwik-KTJ-6KMAxXuHTQIHcAfJDEQtKgLegQIFRAB&biw=1728&bih=966&dpr=1#vhid=dSxCuYIjQ5n3LM&vssid=mosaic)
-- [stable diffusion can't spell](https://www.google.com/search?q=stable+diffusion+can%27t+spell&client=firefox-b-1-d&sca_esv=3c1b2768c64ab720&udm=2&biw=1728&bih=966&sxsrf=AHTn8zoDf4_bOZNuVgi_y-1gxQapxCsItQ%3A1742827834099&ei=OnHhZ8fdBfTG0PEPiOyUgAo&ved=0ahUKEwjH4tLP-6KMAxV0IzQIHQg2BaAQ4dUDCBQ&uact=5&oq=stable+diffusion+can%27t+spell&gs_lp=EgNpbWciHHN0YWJsZSBkaWZmdXNpb24gY2FuJ3Qgc3BlbGxIzSVQ0QdY6SNwBXgAkAECmAFZoAHZDqoBAjMwuAEDyAEA-AEBmAIdoAKhDMICChAAGIAEGEMYigXCAgYQABgHGB7CAggQABgHGAoYHsICBRAAGIAEwgIIEAAYgAQYsQPCAg0QABiABBixAxhDGIoFwgILEAAYgAQYsQMYigXCAgsQABiABBixAxiDAcICDhAAGIAEGLEDGIMBGIoFwgIHEAAYgAQYCsICChAAGIAEGLEDGArCAgQQABgewgIGEAAYChgewgIGEAAYCBgewgIIEAAYCBgKGB6YAwCIBgGSBwIyOaAHm50BsgcCMjS4B4AM&sclient=img#vhid=0imS1LbUWQKuKM&vssid=mosaic)
-
+- Run Google Image searches for: "how many r in strawberry" and "stable diffusion can't spell".
 
 Activity: [Lab 376.2: Logits in Causal Language Models](/units/09lm/lab)
 
