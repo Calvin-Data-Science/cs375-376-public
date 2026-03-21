@@ -179,7 +179,7 @@ Logistics:
     - Discussion 1
 - [Highlight-Edits example](https://huggingface.co/spaces/CalvinU/writing-prototypes)
 
-- Handout TODO from 2025_03_21 - GenAI problem setup, LLM as next-token classifier
+- Handout: [GenAI problem setup (generative model matching, LLM-as-classifier, next-token prediction dry run with capital-of-Michigan example)](/handouts/2026_03_23.pdf)
 
 Tokenization:
 
@@ -479,7 +479,7 @@ Supplemental resources:
 {{% calendar-day dow="Monday" date="2026-04-13" %}}
 - Tool use / function calling — live demo with API
   - Example flow: call API with tool definition → model returns tool_use → execute → feed result back
-- Feedback / checkin activity
+- Feedback / check-in activity
 
 {{% /calendar-day %}}
 
@@ -563,7 +563,7 @@ Also, many people refer to [this blog post](https://lilianweng.github.io/posts/2
 {{% /details %}}
 {{% /calendar-week-header %}}
 {{% calendar-day dow="Monday" date="2026-04-20" %}}
-- Training pipeline overview: pretraining → SFT → RLHF
+- Training pipeline overview: pre-training → SFT → RLHF
   - Tülu blog post reading discussion
 - Handout TODO from 2025_04_23 - Conversation documents, multimodal models, and LLM reliability
 
