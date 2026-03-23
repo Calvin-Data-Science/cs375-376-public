@@ -173,14 +173,19 @@ This has actually been one of the things that challenged my understanding the mo
 {{% calendar-day dow="Monday" date="2026-03-23" %}}
 Logistics:
 
-- Scripture: [Jeremiah 17:7-8](https://www.biblegateway.com/passage/?search=Jeremiah%2017%3A7-8&version=NIV&interface=print)
+- Scripture:
+  - [Psalm 1](https://www.biblegateway.com/passage/?search=Psalm+1&version=NIV&interface=print)
+  - [Jeremiah 17:7-8](https://www.biblegateway.com/passage/?search=Jeremiah%2017%3A7-8&version=NIV&interface=print)
 - Reminders:
     - Complete "Reflections Week 1"
     - Discussion 1
 - [Highlight-Edits example](https://huggingface.co/spaces/CalvinU/writing-prototypes)
-- Signups sheet
+- Project
+  - NanoGPT [speedrun](https://github.com/karpathy/nanochat) -- or [Slowrun](https://github.com/qlabs-eng/slowrun)
+  - do an active [Kaggle Competitions](https://www.kaggle.com/competitions)
+- Signups sheet: devos, tech updates, leading discussion, pair programming
 
-- Handout: [GenAI problem setup (generative model matching, LLM-as-classifier, next-token prediction dry run with capital-of-Michigan example)](/handouts/2026_03_23.pdf)
+- Handout: [GenAI problem setup: approaches, LLM-as-classifier, chat-as-document, next-token distribution](/handouts/2026_03_23.pdf)
 
 Tokenization:
 
