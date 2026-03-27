@@ -209,8 +209,10 @@ Supplemental material: [list comprehensions in Python](https://cs.calvin.edu/cou
 
 {{% calendar-day dow="Friday" date="2026-03-27" %}}
 - Tech Update: [current Transformers release](https://github.com/huggingface/transformers/releases/tag/v5.4.0)
+- Project Discussions
 - Project Inspirations
   - An example related to our topic today: [How to make a racist AI without really trying | ConceptNet blog](https://concepts.arborelia.net/posts/2017/how-to-make-a-racist-ai-without-really-trying/)
+- Review handout from last time
 - Lab review
   - For reference:
   - Notebook: {{% notebook name="Image Embeddings" nbname="u07n1-image-embeddings.ipynb" %}}
