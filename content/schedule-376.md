@@ -208,12 +208,13 @@ Supplemental material: [list comprehensions in Python](https://cs.calvin.edu/cou
 
 
 {{% calendar-day dow="Friday" date="2026-03-27" %}}
+- Tech Update: [current Transformers release](https://github.com/huggingface/transformers/releases/tag/v5.4.0)
 - Project Inspirations
   - An example related to our topic today: [How to make a racist AI without really trying | ConceptNet blog](https://concepts.arborelia.net/posts/2017/how-to-make-a-racist-ai-without-really-trying/)
 - Lab review
   - For reference:
   - Notebook: {{% notebook name="Image Embeddings" nbname="u07n1-image-embeddings.ipynb" %}}
-- Handout TODO from 2025_03_28 - Token and Context Embeddings
+- Handout: [Token and Context Embeddings, and Sampling Algorithm](/handouts/2026_03_27.pdf)
 - Resources: the [softmax/cross-entropy interactive](https://observablehq.com/@kcarnold/softmax)
 
 Topics:
