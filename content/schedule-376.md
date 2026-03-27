@@ -147,6 +147,22 @@ This week we start work on these objectives:
 
 ### Q&A
 
+> How do models deal with really long conversations?
+
+The system can cache the internal representation ("k-v cache") so it doesn't have to recompute the whole thing each time. But that takes RAM.
+
+> Does autoregressive generation mean that the model can't plan ahead?
+
+Not exactly. See [Tracing the thoughts of a large language model \ Anthropic](https://www.anthropic.com/research/tracing-thoughts-language-model): "Claude will plan what it will say many words ahead, and write to get to that destination.".
+
+> Does committing to a direction mean that text might be incoherent?
+
+Not necessarily. Better pre-training will mean that it gets examples of plausible continuations of even rare prefixes. And post-training (RLHF and other techniques) can help steer the model to put higher probability on paths that are likely to be coherent.
+
+> How does the tokenizer decide where to split words?
+
+The most common technique is called Byte Pair Encoding (BPE). It starts with a vocabulary of all the individual characters, and then iteratively merges the most common pairs of tokens into new tokens until it reaches the desired vocabulary size. For a deep dive, see [Byte-Pair Encoding tokenization · Hugging Face](https://huggingface.co/learn/llm-course/chapter6/5) or [Let's build the GPT Tokenizer - video by Andrej Karpathy](https://www.youtube.com/watch?v=zduSFxRajkE).
+
 > Why are modern LMs so fast?
 
 Some things that have helped make modern language models so fast are: quantization, which reduces memory bandwidth needed, specialized compute unit units like Google's TPUs, which just do memory multiplies really fast, and some algorithmic improvements like Flash Attention where researchers carefully thought through what memory access is actually required during inference and made an implementation that is highly optimized to the kind of hardware that we have.
@@ -274,7 +290,7 @@ Things we didn't explicitly get to this week:
 
 {{% /details %}}
 {{% details summary="Prep and Reading" %}}
-This week's reading includes a brand new result from Anthropic that looks really helpful for getting an accurate intuition about what's going on inside an LLM. We're looking at the high-level overview article this week; if people are interested we can dig into the technical report in a future week.
+This week's reading includes a result from Anthropic that looks helpful for getting an accurate intuition about what's going on inside an LLM. We're looking at the high-level overview article this week; if people are interested we can dig into the technical report in a future week.
 
 - 3blue1brown articles (you may prefer to watch the linked video at the top)
   - [3Blue1Brown - Visualizing Attention, a Transformer's Heart | Chapter 6, Deep Learning](https://www.3blue1brown.com/lessons/attention)
@@ -287,10 +303,9 @@ This week's reading includes a brand new result from Anthropic that looks really
 - [Tracing the thoughts of a large language model \ Anthropic](https://www.anthropic.com/research/tracing-thoughts-language-model)
 - Ethics: [Understanding Deep Learning book](https://udlbook.github.io/udlbook/) chapter 21, stopping at section 21.2.
 
-News (in Perusall library, not officially assigned)
+News (in Perusall library, not officially assigned):
 
-- [Music publishers ‘remain very confident’ of winning Anthropic case and will ‘vigorously pursue’ monetary damages - Music Business Worldwide](https://www.musicbusinessworldwide.com/music-publishers-remain-very-confident-of-winning-anthropic-case-and-will-vigorously-pursue-monetary-damages1/)
-- [DOGE Plan to Push AI Across the US Federal Government is Wildly Dangerous | TechPolicy.Press](https://www.techpolicy.press/doge-plan-to-push-ai-across-the-us-federal-government-is-wildly-dangerous/)
+- [Vibe Coding (and Autonomous Agents) will bite you](https://decision.substack.com/p/vibe-coding-will-bite-you-heres-exactly)
 
 {{% /details %}}
 {{% details summary="Supplemental Resources" %}}
