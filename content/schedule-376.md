@@ -347,32 +347,42 @@ The Transformer architecture is hugely inefficient and unreliable if all you wan
 - Slides: [Neural Architectures](/slides/w10-nn-arch.html)
   - Intro
   - Review
-- Review handout activity from Friday
-  - How does the Gemma model actually represent these tokens and contexts? (See logits-demo notebook)
+- Review handout activity from Friday (2026_03_27: Token and Context Embeddings)
+  - Pair up, compare answers (5-10 min), then debrief
+  - How does the model actually represent these tokens and contexts?
   - Let's write the sampling algorithm together.
-- Handout TODO from 2025_03_31 - Self-Attention By Hand
-- [Transformer Explainer](https://poloclub.github.io/transformer-explainer/)
-- Review: Self-Attention = conditional information flow
-  - Software: describe the wiring, then what flows through the wires.
-  - Hardware: compute queries, keys, and values, then compute the attention matrix, then compute the output.
 - Notebook: {{% notebook name="Demo of Logits and Embeddings from a Language Model" nbname="u09n0-logits-demo.ipynb" %}}
+  - Vector analogies, logit lens — what does the model "think" at each layer?
+  - Concretely grounds embeddings before we move to self-attention
+- Tease Wednesday: "Now that we know *what* embeddings are — how does the model decide which information to pay attention to?"
 
 {{% /calendar-day %}}
 
 
 {{% calendar-day dow="Wednesday" date="2026-04-01" %}}
-- Quiz 1: Looking for evidence of learning about:
-  - [MS-LLM-Tokenization](objective)
-  - [MS-LLM-Generation](objective)
-  - [OG-SelfSupervised](objective)
-  - [NC-Embeddings](objective)
-  - [NC-SelfAttention](objective) *(basic intuition only)*
+- Slides: [Neural Architectures](/slides/w10-nn-arch.html) ((self-attention section))
+  - Birthday analogy exercises → Q/K/V intuition
+  - Self-Attention: One Attention Head (formal definition)
+  - Transformer block diagrams
+- Handout: [Self-Attention By Hand](/handouts/2026_04_01.pdf)
+  - Students work in pairs, debrief
+- [Transformer Explainer](https://poloclub.github.io/transformer-explainer/) (if time; otherwise assign as explore-over-break)
+- Review: Self-Attention = conditional information flow
+  - Software: describe the wiring, then what flows through the wires.
+  - Hardware: compute queries, keys, and values, then compute the attention matrix, then compute the output.
 
 {{% /calendar-day %}}
 
 
 {{% calendar-day dow="Friday" date="2026-04-03" %}}
 - Good Friday
+
+### Before next class (Wed Apr 8)
+
+- Complete Self-Attention By Hand handout if not finished in class
+- u10n1-implement-transformer notebook: work through Setup → Tokenization → MLP → "Trace the Simple Model" sections (stop before Self-Attention section)
+- Reading: [3Blue1Brown attention video](https://www.3blue1brown.com/lessons/attention) + [Anthropic tracing-thoughts article](https://www.anthropic.com/research/tracing-thoughts-language-model)
+- Study for Quiz 1 (Wed Apr 8)
 
 {{% /calendar-day %}}
 
@@ -440,31 +450,34 @@ All readings are posted on Perusall, copied here for reference.
 
 
 {{% calendar-day dow="Wednesday" date="2026-04-08" %}}
-- Review quiz 1 (brief)
-- Handout TODO from 2025_04_07 - Self-Attention Shapes
-- Activity: [Lab 376.4: Dialogue Agents, Prompt Engineering, Retrieval-Augmented Generation, and Tool Use](/units/11generation/lab)
-  - Slides: [376 Lab 3: Implementing Self-Attention](/slides/w10-lab.html)
-  - Implementing self-attention (trace through transformer implementation)
-- Project encouragements
-  - Be the ones who can *measure* AI performance
-
-Reference:
-
-- {{% notebook name="Demo of Logits and Embeddings from a Language Model" nbname="u09n0-logits-demo.ipynb" %}}
+- Quiz 1: Looking for evidence of learning about:
+  - [MS-LLM-Tokenization](objective)
+  - [MS-LLM-Generation](objective)
+  - [OG-SelfSupervised](objective)
+  - [NC-Embeddings](objective)
+  - [NC-SelfAttention](objective) *(basic intuition only)*
 
 {{% /calendar-day %}}
 
 
 {{% calendar-day dow="Friday" date="2026-04-10" %}}
+- Review quiz 1 (brief, ~10 min)
+- Handout: [Self-Attention Shapes](/handouts/2026_04_10.pdf)
+  - Class exercise: given model dimensions, what are the shapes of Q, K, V, attention matrix?
+- Activity: [Lab 376.4: Dialogue Agents, Prompt Engineering, Retrieval-Augmented Generation, and Tool Use](/units/11generation/lab)
+  - Slides: [376 Lab 3: Implementing Self-Attention](/slides/w10-lab.html)
+  - Implementing self-attention (trace through transformer implementation)
+  - Continue u10n1-implement-transformer: Self-Attention section
+- Project encouragements
+  - Be the ones who can *measure* AI performance
 - Motivational examples:
   - [Claude Plays Pokemon](https://www.twitch.tv/claudeplayspokemon)
   - [Capture-the-Flag traces](https://docent.transluce.org/picoCTF)
   - [Reinforcement Learning for Long-Horizon Interactive LLM Agents | Abstract](https://arxiv.org/abs/2502.01600)
-- Slides: [Generation by Prompting](/slides/w11-prompting.html)
-- Activity: [Lab 376.4: Dialogue Agents, Prompt Engineering, Retrieval-Augmented Generation, and Tool Use](/units/11generation/lab)
-  - Prompt Engineering
-  - Instruction Tuning
-  - Retrieval-Augmented Generation
+
+Reference:
+
+- {{% notebook name="Demo of Logits and Embeddings from a Language Model" nbname="u09n0-logits-demo.ipynb" %}}
 
 {{% /calendar-day %}}
 
