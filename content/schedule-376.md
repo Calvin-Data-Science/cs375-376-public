@@ -347,7 +347,8 @@ The Transformer architecture is hugely inefficient and unreliable if all you wan
 - Slides: [Neural Architectures](/slides/w10-nn-arch.html)
   - Intro
   - Review
-- Review handout activity from Friday (2026_03_27: Token and Context Embeddings)
+- Review handout activity from Friday
+  - Handout: [Token and Context Embeddings, and Sampling Algorithm](/handouts/2026_03_27.pdf)
   - Pair up, compare answers (5-10 min), then debrief
   - How does the model actually represent these tokens and contexts?
   - Let's write the sampling algorithm together.
@@ -355,6 +356,8 @@ The Transformer architecture is hugely inefficient and unreliable if all you wan
   - Vector analogies, logit lens — what does the model "think" at each layer?
   - Concretely grounds embeddings before we move to self-attention
 - Tease Wednesday: "Now that we know *what* embeddings are — how does the model decide which information to pay attention to?"
+- Hand out the "Self-Attention By Hand" activity for Wednesday
+  - Handout: [Self-Attention By Hand](/handouts/2026_04_01.pdf)
 
 {{% /calendar-day %}}
 
