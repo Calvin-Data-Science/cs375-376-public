@@ -363,12 +363,13 @@ The Transformer architecture is hugely inefficient and unreliable if all you wan
 
 
 {{% calendar-day dow="Wednesday" date="2026-04-01" %}}
-- Slides: [Neural Architectures](/slides/w10-nn-arch.html) ((self-attention section))
+- Slides: [Neural Architectures](/slides/w10-nn-arch.html) (self-attention section)
   - Birthday analogy exercises → Q/K/V intuition
   - Self-Attention: One Attention Head (formal definition)
   - Transformer block diagrams
 - Handout: [Self-Attention By Hand](/handouts/2026_04_01.pdf)
   - Students work in pairs, debrief
+- Activity: [Lab 376.3: Implementing Self-Attention](/units/10arch/lab)
 - [Transformer Explainer](https://poloclub.github.io/transformer-explainer/) (if time; otherwise assign as explore-over-break)
 - Review: Self-Attention = conditional information flow
   - Software: describe the wiring, then what flows through the wires.
