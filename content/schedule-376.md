@@ -363,6 +363,8 @@ The Transformer architecture is hugely inefficient and unreliable if all you wan
 
 
 {{% calendar-day dow="Wednesday" date="2026-04-01" %}}
+- [Mr. Chatterbox is a (weak) Victorian-era ethically trained model you can run on your own computer](https://simonwillison.net/2026/Mar/30/mr-chatterbox/) - a project idea?
+  - Combine with [The assistant axis: situating and stabilizing the character of large language models \ Anthropic](https://www.anthropic.com/research/assistant-axis)?
 - Slides: [Neural Architectures](/slides/w10-nn-arch.html) (self-attention section)
   - Birthday analogy exercises → Q/K/V intuition
   - Self-Attention: One Attention Head (formal definition)
