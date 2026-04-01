@@ -371,11 +371,13 @@ The Transformer architecture is hugely inefficient and unreliable if all you wan
   - Transformer block diagrams
 - Handout: [Self-Attention By Hand](/handouts/2026_04_01.pdf)
   - Students work in pairs, debrief
-- Activity: [Lab 376.3: Implementing Self-Attention](/units/10arch/lab)
 - [Transformer Explainer](https://poloclub.github.io/transformer-explainer/) (if time; otherwise assign as explore-over-break)
 - Review: Self-Attention = conditional information flow
   - Software: describe the wiring, then what flows through the wires.
   - Hardware: compute queries, keys, and values, then compute the attention matrix, then compute the output.
+- Start / preview self-attention lab:
+  - Activity: [Lab 376.3: Implementing Self-Attention](/units/10arch/lab)
+  - See "before next class"
 
 {{% /calendar-day %}}
 
