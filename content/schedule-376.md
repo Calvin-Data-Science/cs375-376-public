@@ -370,7 +370,7 @@ The Transformer architecture is hugely inefficient and unreliable if all you wan
   - Self-Attention: One Attention Head (formal definition)
   - Transformer block diagrams
 - Handout: [Self-Attention By Hand](/handouts/2026_04_01.pdf)
-  - Students work in pairs, debrief
+  - Students work in pairs/teams, debrief
 - [Transformer Explainer](https://poloclub.github.io/transformer-explainer/) (if time; otherwise assign as explore-over-break)
 - Review: Self-Attention = conditional information flow
   - Software: describe the wiring, then what flows through the wires.
