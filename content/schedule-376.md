@@ -464,6 +464,10 @@ All readings are posted on Perusall, copied here for reference.
   - [OG-SelfSupervised](objective)
   - [TM-LLM-Embeddings](objective)
   - [TM-SelfAttention](objective) *(basic intuition only)*
+- If you finish early:
+  - {{% notebook name="Self-Attention By Hand (in Code)" nbname="u10s1-attention-by-hand.ipynb" %}}
+  - Work on the lab we'll be doing next class. See the slides:
+  - Slides: [376 Lab 3: Implementing Self-Attention](/slides/w10-lab.html)
 
 {{% /calendar-day %}}
 
