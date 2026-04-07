@@ -318,6 +318,16 @@ We also strive for the sequence to make sense.
     - Tracing the Transformer
     - Finish the trace
   - Other things you could try
+- Supplemental
+  - {{% notebook name="Self-Attention By Hand (in Code)" nbname="u10s1-attention-by-hand.ipynb" %}}
+    - Setup: Vectors from the Handout
+    - Step 1: Compute Attention Scores
+    - Step 2: Normalize to Get Attention Weights
+    - Step 3: Compute the Output
+    - Step 4: Try Softmax Instead
+    - Experiment: Change the Query
+    - Challenge: Design a Query
+    - Scaling Up: From 2D to Real Models
 
 ### Week 11
 

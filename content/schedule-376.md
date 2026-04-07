@@ -459,11 +459,11 @@ All readings are posted on Perusall, copied here for reference.
 
 {{% calendar-day dow="Wednesday" date="2026-04-08" %}}
 - Quiz 1: Looking for evidence of learning about:
-  - [MS-LLM-Tokenization](objective)
-  - [MS-LLM-Generation](objective)
+  - [OG-LLM-Tokenization](objective)
+  - [TM-LLM-Generation](objective)
   - [OG-SelfSupervised](objective)
-  - [NC-Embeddings](objective)
-  - [NC-SelfAttention](objective) *(basic intuition only)*
+  - [TM-LLM-Embeddings](objective)
+  - [TM-SelfAttention](objective) *(basic intuition only)*
 
 {{% /calendar-day %}}
 
