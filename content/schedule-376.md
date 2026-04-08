@@ -458,6 +458,7 @@ All readings are posted on Perusall, copied here for reference.
 
 
 {{% calendar-day dow="Wednesday" date="2026-04-08" %}}
+- Tech update: [Anthropic Glasswing](https://www.anthropic.com/glasswing)
 - Quiz 1: Looking for evidence of learning about:
   - [OG-LLM-Tokenization](objective)
   - [TM-LLM-Generation](objective)
