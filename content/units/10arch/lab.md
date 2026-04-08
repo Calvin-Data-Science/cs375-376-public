@@ -1,6 +1,6 @@
 ---
 title: "Lab 376.3: Implementing Self-Attention"
-revised: 2025
+revised: 2026
 ---
 
 In this lab, you'll trace through parts of the implementation of a Transformer language model, focusing on the self-attention mechanism. We'll compare the performance of a Transformer model with a baseline that only uses a feedforward network (MLP).
