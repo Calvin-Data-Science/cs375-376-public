@@ -13,6 +13,7 @@ This lab address the following course objectives:
 - [MS-LLM-Generation](objective)
 - [MS-LLM-Tokenization](objective)
 
+<!--
 It could also be used to address the following course objectives:
 
 - [MS-LLM-Train](objective)
@@ -21,6 +22,8 @@ It could also be used to address the following course objectives:
 - [OG-SelfSupervised](objective)
 - [CI-Topic-History](objective)
 - [CI-LLM-Failures](objective)
+-->
+
 
 ## Task
 
