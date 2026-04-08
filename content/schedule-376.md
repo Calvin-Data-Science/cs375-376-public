@@ -478,7 +478,7 @@ All readings are posted on Perusall, copied here for reference.
 - Review quiz 1 (brief, ~10 min)
 - Handout: [Self-Attention Shapes](/handouts/2026_04_10.pdf)
   - Class exercise: given model dimensions, what are the shapes of Q, K, V, attention matrix?
-- Activity: [Lab 376.4: Dialogue Agents, Prompt Engineering, Retrieval-Augmented Generation, and Tool Use](/units/11generation/lab)
+- Lab 3 ([Self-Attention in Code](/units/10arch/lab.md))
   - Slides: [376 Lab 3: Implementing Self-Attention](/slides/w10-lab.html)
   - Implementing self-attention (trace through transformer implementation)
   - Continue u10n1-implement-transformer: Self-Attention section
