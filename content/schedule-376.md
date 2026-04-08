@@ -458,6 +458,7 @@ All readings are posted on Perusall, copied here for reference.
 
 
 {{% calendar-day dow="Wednesday" date="2026-04-08" %}}
+- Reminder: [Discussion 376.2: Training Data as Stewardship](/units/10arch/discussion/) posts due today (replies due Fri Apr 11)
 - Tech update: [Anthropic Glasswing](https://www.anthropic.com/glasswing)
 - Quiz 1: Looking for evidence of learning about:
   - [OG-LLM-Tokenization](objective)
@@ -527,6 +528,7 @@ Supplemental resources:
 {{% /details %}}
 {{% /calendar-week-header %}}
 {{% calendar-day dow="Monday" date="2026-04-13" %}}
+- Assign [Discussion 376.3: When Agents Go Wrong](/units/11generation/discussion/) (posts due Fri Apr 17, replies due Mon Apr 20)
 - Tool use / function calling — live demo with API
   - Example flow: call API with tool definition → model returns tool_use → execute → feed result back
 - Feedback / check-in activity
@@ -613,6 +615,7 @@ Also, many people refer to [this blog post](https://lilianweng.github.io/posts/2
 {{% /details %}}
 {{% /calendar-week-header %}}
 {{% calendar-day dow="Monday" date="2026-04-20" %}}
+- Assign [Discussion 376.4: Fans and Skeptics](/units/13multimodal/discussion/) (posts due Mon Apr 27, replies due Thu Apr 30; we'll share in class W7 Fri)
 - Training pipeline overview: pre-training → SFT → RLHF
   - Tülu blog post reading discussion
 - Handout TODO from 2025_04_23 - Conversation documents, multimodal models, and LLM reliability
@@ -664,7 +667,7 @@ Also, many people refer to [this blog post](https://lilianweng.github.io/posts/2
 
 {{% calendar-day dow="Friday" date="2026-05-01" %}}
 - Handout TODO from 2025_05_02 - Wrap-Up
-- Discussion 3 sharing, comparing our survey to the results of the [Pew Research survey](https://www.pewresearch.org/internet/2025/04/03/how-the-us-public-and-ai-experts-view-artificial-intelligence/)
+- Discussion 376.4 sharing, comparing our survey to the results of the [Pew Research survey](https://www.pewresearch.org/internet/2025/04/03/how-the-us-public-and-ai-experts-view-artificial-intelligence/)
 
 - Fairness and Wrap-Up [slides](/slides/w13-Fairness%20and%20Wrap-Up.pdf)
 
