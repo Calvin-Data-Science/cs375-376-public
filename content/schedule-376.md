@@ -475,9 +475,10 @@ All readings are posted on Perusall, copied here for reference.
 
 
 {{% calendar-day dow="Friday" date="2026-04-10" %}}
-- Review quiz 1 (brief, ~10 min)
 - Handout: [Self-Attention Shapes](/handouts/2026_04_10.pdf)
   - Class exercise: given model dimensions, what are the shapes of Q, K, V, attention matrix?
+  - Reference: the [Qwen 2.5 tech report](https://arxiv.org/abs/2407.10671) and [model page](https://huggingface.co/Qwen/Qwen2.5-0.5B?show_file_info=model.safetensors)
+- And do: {{% notebook name="Self-Attention By Hand (in Code)" nbname="u10s1-attention-by-hand.ipynb" %}}
 - Lab 3 ([Self-Attention in Code](/units/10arch/lab/))
   - Slides: [376 Lab 3: Implementing Self-Attention](/slides/w10-lab.html)
   - Implementing self-attention (trace through transformer implementation)
@@ -529,8 +530,10 @@ Supplemental resources:
 {{% /calendar-week-header %}}
 {{% calendar-day dow="Monday" date="2026-04-13" %}}
 - Assign [Discussion 376.3: When Agents Go Wrong](/units/11generation/discussion/) (posts due Fri Apr 17, replies due Mon Apr 20)
+- Review quiz 1 (brief, ~10 min)
 - Tool use / function calling — live demo with API
   - Example flow: call API with tool definition → model returns tool_use → execute → feed result back
+  - Reference: [Qwen2.5 chat template](https://huggingface.co/Qwen/Qwen2.5-0.5B?chat_template=default)
 - Feedback / check-in activity
 
 {{% /calendar-day %}}
