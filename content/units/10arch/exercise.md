@@ -65,7 +65,7 @@ stories = dataset.select(range(50))
 
 Adapt your work from the [u09 logits notebook](/notebooks/u09n1-lm-logits.html), where you began implementing perplexity. **I still recommend computing the loss manually** (extracting logits, indexing the correct token probabilities, averaging) rather than using shortcut approaches like passing `labels` to the model. The main addition here is running it across multiple models and stories.
 
-Here's a suggested function signature (you may want to return additional values for token-level analysis):
+Here's a suggested function signature (you may want to return additional values for token-level analysis, or take additional arguments for context to prepend):
 
 ```python
 def compute_perplexity(model, tokenizer, text):
@@ -132,7 +132,12 @@ Create a Jupyter notebook that includes:
 
 ## Extension (for E-level work)
 
-- Compare perplexity when computing it with different prompt lengths (e.g., using first 1, 2, or 3 sentences as context)
-- Compare base models to instruction-tuned variants (e.g., `Qwen2.5-0.5B` vs `Qwen2.5-0.5B-Instruct`) and analyze how instruction tuning affects perplexity on stories
+Implement *context*: instead of just computing perplexity on the full story, only compute it on part of the story while providing the previous sentences as context.
+
+- Compare perplexity when computing it with different prompt lengths (e.g., using first 1, 2, or 3 sentences as context).
+- Prepend an "instruction", like "Write a story about ___", to see how it affects perplexity. 
+    - Does this vary between base models vs instruction-tuned variants (e.g., `Qwen2.5-0.5B` vs `Qwen2.5-0.5B-Instruct`)? For the Instruct models, you may want to use the [chat template](https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct?chat_template=default) to format the input as a conversation.
+    - Try a few different variants of the instruction. Does more specific instructions (e.g., "Write a story about a dragon and a princess") lead to lower perplexity than vague instructions ("Write a story")--and can you disentangle *specificity* from *keyword overlap* (e.g., asking for a story about a "dragon" vs about a "mythical flying creature")?
 - Analyze perplexity on different categories of text (e.g., stories vs. news vs. code)
-- Implement a token-level analysis that highlights exactly where models struggle most
+- Implement a token-level analysis that highlights exactly where models struggle most. Can you identify any patterns?
+
