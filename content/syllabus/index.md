@@ -65,6 +65,37 @@ Upon successful completion of this course, students will be able to:
 
 Here are the [specific objectives used for course grading](/objectives-375).
 
+### CS 376 – Advanced Machine Learning
+
+Upon successful completion of this course, students will be able to:
+
+1. **Explain and implement** the architecture and computational mechanisms of contemporary machine learning architectures
+    - TM-LLM-Embeddings
+    - TM-SelfAttention
+    - TM-TransformerDataFlow
+    - TM-LLM-Generation
+    - TM-Architectures (bonus)
+2. **Describe the approach and computational requirements** of training and using modern generative AI systems, including pre-training, tuning, and learning from feedback
+    - OG-LLM-Train
+    - OG-SelfSupervised
+    - OG-Theory-Feedback
+    - TM-LLM-Compute
+3. **Work with pretrained models** using both low-level and high-level APIs to build AI-powered applications
+    - OG-LLM-Tokenization
+    - OG-LLM-ConversationAsDocument
+    - OG-LLM-Prompting
+    - OG-LLM-ContextAndTools
+4. **Evaluate generative AI systems** and identify common types of failures
+    - OG-LLM-Eval
+    - Overall-LLM-Failures
+5. **Analyze and articulate** philosophical, psychological, historical, and religious aspects of AI systems
+    - Overall-Impact
+    - Overall-PhilNarrative
+    - Overall-Faith
+    - Overall-Dispositions
+
+Here are the [specific objectives used for course grading](/objectives-376).
+
 ## Topics
 
 1. **Problem framing for machine learning**: Agent framework (environment, state, action, reward); supervised learning and reinforcement learning as different learning paradigms; task specification; evaluation metrics; considerations of data and appropriate use cases

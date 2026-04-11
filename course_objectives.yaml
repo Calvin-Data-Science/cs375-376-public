@@ -144,11 +144,6 @@
   class: 376
   description: I can identify the shapes of data flowing through a Transformer-style language model.
 
-- id: TM-Scaling
-  pillar: Tuneable Machines
-  class: 376
-  description: I can analyze how the computational requirements of a model scale with number of parameters and context size.
-
 - id: TM-LLM-Generation
   pillar: Tuneable Machines
   class: 376
@@ -157,7 +152,12 @@
 - id: TM-LLM-Compute
   pillar: Tuneable Machines
   class: 376
-  description: I can analyze the computational requirements of training and inference of generative AI systems.
+  description: I can analyze how computational requirements scale with model size and context length, and reason about the feasibility of training and running generative AI systems.
+  criteria:
+    - I can estimate memory requirements for a model given its parameter count and precision.
+    - I can explain how compute scales with parameters and sequence length.
+    - I can describe at least two optimization techniques (e.g., quantization, KV caching) and their trade-offs.
+    - I can evaluate whether a given model can run on specific hardware (e.g., 12GB GPU, laptop CPU, cloud API).
 
 # =============================================================================
 # OPTIMIZATION GAMES (OG) - How we frame and solve learning problems
@@ -281,10 +281,15 @@
   class: 376
   description: I can explain how a conversation with an LLM can be represented as a carefully structured document, including system messages, tool calls, and multimodal inputs and outputs.
 
-- id: OG-LLM-Advanced
+- id: OG-LLM-ContextAndTools
   pillar: Optimization Games
   class: 376
-  description: I can apply techniques such as Retrieval-Augmented Generation, in-context learning, tool use, and multi-modal input to solve complex tasks with an LLM.
+  description: I can construct effective inputs for LLM-powered systems and use tool calling to connect models to external information.
+  criteria:
+    - I can trace how a prompt is assembled from components (system message, examples, tool results, conversation history) and explain why each part is there.
+    - I can build an LLM-powered system that uses structured outputs and at least one tool call.
+    - I can identify when adding context (examples, retrieved docs) helps vs. when it wastes the context window or distracts the model.
+    - I can diagnose failures in an LLM-powered system (e.g., hallucinating instead of using retrieved context, irrelevant tool results, prompt injection).
 
 - id: OG-LLM-Eval
   pillar: Optimization Games
@@ -295,6 +300,10 @@
   pillar: Optimization Games
   class: 376
   description: I can describe the overall process of training a state-of-the-art dialogue LLM.
+  criteria:
+    - I can identify the three main stages (pretraining, supervised fine-tuning, RL training) and what each accomplishes.
+    - I can explain what data is used at each stage and where human input enters the process.
+    - I can describe how the model's behavior changes across stages.
 
 - id: OG-SelfSupervised
   pillar: Optimization Games
@@ -305,11 +314,6 @@
   pillar: Optimization Games
   class: 376
   description: I can explain how feedback tuning can improve the performance and reliability of a model / agent.
-
-- id: OG-ICL
-  pillar: Optimization Games
-  class: 376-bonus
-  description: I can explain how in-context learning can be used to improve test-time performance of a model.
 
 # =============================================================================
 # OVERALL - Context, implications, and dispositions
