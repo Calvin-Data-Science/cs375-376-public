@@ -1,5 +1,5 @@
 ---
-title: "Course Objectives"
+title: "Course Objectives - CS 376"
 ---
 
 This page lists all course objectives with their assessment criteria.
