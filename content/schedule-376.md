@@ -533,6 +533,7 @@ Supplemental resources:
 - Review quiz 1 (brief, ~10 min)
 - Tool use / function calling — live demo with API
   - See Tools in [LM-Internals](/lm-internals.html)
+    - Example: "Location: Grand Rapids, MI, 49546; Do I need an umbrella today?"
   - Example flow: call API with tool definition → model returns tool_use → execute → feed result back
   - Reference: [Qwen2.5 chat template](https://huggingface.co/Qwen/Qwen2.5-0.5B?chat_template=default)
 - Feedback / check-in activity
