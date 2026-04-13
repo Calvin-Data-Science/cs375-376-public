@@ -532,6 +532,7 @@ Supplemental resources:
 - Assign [Discussion 376.3: When Agents Go Wrong](/units/11generation/discussion/) (posts due Fri Apr 17, replies due Mon Apr 20)
 - Review quiz 1 (brief, ~10 min)
 - Tool use / function calling — live demo with API
+  - See Tools in [LM-Internals](/lm-internals.html)
   - Example flow: call API with tool definition → model returns tool_use → execute → feed result back
   - Reference: [Qwen2.5 chat template](https://huggingface.co/Qwen/Qwen2.5-0.5B?chat_template=default)
 - Feedback / check-in activity
