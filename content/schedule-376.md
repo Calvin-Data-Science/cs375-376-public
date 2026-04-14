@@ -538,6 +538,10 @@ Supplemental resources:
   - Reference: [Qwen2.5 chat template](https://huggingface.co/Qwen/Qwen2.5-0.5B?chat_template=default)
 - Feedback / check-in activity
 
+We ended up referring to:
+
+- [LLM Architecture Gallery](https://sebastianraschka.com/llm-architecture-gallery/)
+
 {{% /calendar-day %}}
 
 
