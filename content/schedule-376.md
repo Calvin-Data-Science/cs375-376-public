@@ -546,7 +546,7 @@ We ended up referring to:
 
 {{% calendar-day dow="Wednesday" date="2026-04-15" %}}
 - Self-Attention Shapes handout debrief (~20 min): pairs fill/correct the table for Qwen2.5-0.5B; whole-class walk-through input → Q/K/V → scores → weights → concatenated output. Hits [TM-SelfAttention](objective) *(deeper)* and [TM-TransformerDataFlow](objective).
-- Lab 376.4 kickoff (~50 min): {{% notebook name="LLM Prompting and Tool Use" nbname="u11n1-prompt-engineering.ipynb" %}}
+- [Lab 376.4](/units/11generation/lab/) kickoff (~50 min): {{% notebook name="LLM Prompting and Tool Use" nbname="u11n1-prompt-engineering.ipynb" %}}
   - Using Qwen2.5-0.5B (base) vs Qwen2.5-0.5B-Instruct — same model students saw in u08n1 and on the Apr 10 handout.
   - Focus on: few-shot, chain-of-thought, chat-templating, RAG, tool-use. Base-vs-tuned contrast is load-bearing for [OG-LLM-Train](objective).
 - Take-home: finish lab (including tool-use stretch) + submit short answers. Posts for [Discussion 376.3](/units/11generation/discussion/) due Fri.
