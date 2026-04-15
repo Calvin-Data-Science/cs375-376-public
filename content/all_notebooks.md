@@ -335,6 +335,12 @@ We also strive for the sequence to make sense.
   - Warm-Up
   - Chat Templating
   - Retrieval-Augmented Generation
+  - Tool Use
+  - Closing the Loop: A Minimal Agent
+    - ⚠️ About what we're about to do
+    - Scenario 1: Prompt Injection via a File
+    - Scenario 2: Helpful Cleanup
+    - Wrap-Up Reflection
 
 ### Week 12
 

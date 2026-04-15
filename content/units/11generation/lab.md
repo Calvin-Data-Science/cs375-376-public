@@ -1,12 +1,12 @@
 ---
 title: "Lab 376.4: Dialogue Agents, Prompt Engineering, Retrieval-Augmented Generation, and Tool Use"
 weight: 4
-revised: 2025
+revised: 2026
 ---
 
 If under the hood all a language model does is predict the next token, how can you get it to do useful tasks for you? The key idea is to make "doing a task" look like "predicting the next token" in some context. This lab will introduce you to a few ways to do that.
 
-We'll be using a model released by Google, called Gemma.
+We'll be using Qwen2.5-0.5B — the same Alibaba-released model whose dimensions (d=896, 14 attention heads) you worked out on the [Apr 10 Self-Attention Shapes handout](/handouts/2026_04_10.pdf) and loaded in {{% notebook name="Tokenization" nbname="u08n1-tokenization.ipynb" %}}. Today we'll compare its *base* version against its *instruction-tuned* version (`-Instruct`) to see what post-training actually changes.
 
 ## Objectives
 
@@ -17,41 +17,30 @@ We'll be using a model released by Google, called Gemma.
 
 This lab will address the following course objectives:
 
-- [MS-LLM-API](objective)
-- [MS-LLM-Prompting](objective)
-- [MS-LLM-Advanced](objective)
+- [OG-LLM-APIs](objective)
+- [OG-LLM-Prompting](objective)
+- [OG-LLM-ContextAndTools](objective)
+- [OG-LLM-Train](objective) *(base vs instruction-tuned comparison)*
 
 You may also use this lab to demonstrate the following course objectives (e.g., by adding additional discussion to your notebook submission or having a conversation with the instructor or a chatbot):
 
-- [MS-LLM-Generation](objective)
-- [MS-LLM-Compute](objective)
-- [MS-LLM-Tokenization](objective)
-- [LM-ICL](objective)
-- [CI-LLM-Failures](objective)
-- [MS-LLM-Train](objective)
-- [MS-LLM-Eval](objective)
-- [MS-LLM-TokenizationImpact](objective)
-- [NC-Scaling](objective)
+- [TM-LLM-Generation](objective)
+- [TM-LLM-Compute](objective)
+- [OG-LLM-Tokenization](objective)
+- [Overall-LLM-Failures](objective)
+- [OG-LLM-Eval](objective)
 
 ## Getting Started
-
-Start by accepting [Google's license agreement](https://www.kaggle.com/models/google/gemma/license/consent) for the Gemma model. You'll need to accept the license for Gemma models. If you have any difficulty with accepting this license, let the instructor know.
 
 Start with the Lab 4 notebook. Also open a document where you can write the answers to the questions (we won't be turning in a notebook for this lab). **Create headings for each section of the lab** and write your answers under each heading.
 
 {{% notebook name="Prompt Engineering" nbname="u11n1-prompt-engineering.ipynb" %}}
 
-We'll use two different models: first, the non-instruction-tuned model, then the instruction-tuned model (`-it`). We'll use the "2B" model size for both.
+We'll use two different models: first, the non-instruction-tuned **base** model (`Qwen/Qwen2.5-0.5B`), then the instruction-tuned sibling (`Qwen/Qwen2.5-0.5B-Instruct`). Both are public on Hugging Face — no license acceptance needed. The 0.5B size fits comfortably on the free Kaggle/Colab GPUs.
 
-If you're using Kaggle, the models *should* already be added to the notebook. Check the Inputs section to see if it already has two Gemma models. If not, add the Gemma model to your notebook by following these steps:
+## Base Model Warm-Up
 
-- On the right sidebar, click Add Input -> Select Models -> Gemma 3 (Google) (Framework: Transformers), variation: '1b-pt'
-
-> If you're not on Kaggle, you can use the Hugging Face model hub to download the model; see the code in the notebook for details.
-
-## Gemma Warm-Up
-
-Try completing the following tasks using the Gemma model (without instruction tuning). Do this by modifying the `doc` given in the example code chunk. You might try setting the `do_sample` parameter to `True` (to get a sense of the range of possible outputs), or `False` (to get a single prediction).
+Try completing the following tasks using the Qwen2.5-0.5B **base** model (without instruction tuning). Do this by modifying the `doc` given in the example code chunk. You might try setting the `do_sample` parameter to `True` (to get a sense of the range of possible outputs), or `False` (to get a single prediction).
 
 1. A trivia task, like: "The capital of France is"
 2. A math task, like: "2 + 2 = ___." (You might want to frame it like "Expression: 2 + 2. Result:")
@@ -65,7 +54,7 @@ def sum_evens(lst):
 ```
 
 {{% task %}}
-1. Write a brief summary of how Gemma performed on each task.
+1. Write a brief summary of how the base Qwen2.5-0.5B model performed on each task.
 2. Notice that we expressed these tasks in the form of making reasonable completions of a document, not giving instructions to the model. What implications does this have for how useful the completion is?
 3. Notice that the model took some time to generate the first token, then generated the rest of the text more quickly (but still not instantly). Given what you know about the Transformer architecture, what operations might be happening during this time?
 {{% /task %}}
@@ -76,7 +65,7 @@ def sum_evens(lst):
 
 In machine learning jargon, "shot" refers to the number of examples you have of a particular task. "Few-shot learning" refers to the problem of learning a new task with only a few examples.
 
-For example, you might have noticed that the model completes "The capital of France is" as if it were a travel article (or perhaps a multiple-choice question)---because that's the sort of document it was trained on! But you can give it examples of the sort of things you want. For example, try this instead:
+For example, you might have noticed that the base model completes "The capital of France is" as if it were a travel article (or perhaps a multiple-choice question)---because that's the sort of document it was trained on! But you can give it examples of the sort of things you want. For example, try this instead:
 
 ```
 The capital of Michigan is Lansing.
@@ -86,7 +75,7 @@ The capital of France is
 
 We can consider the first two lines as "examples" of the task we want the model to do. This is a "few-shot" example, because we're giving the model only a few examples of the task we want it to do.
 
-Write a brief summary of how Gemma performed on this task, as compared with not giving it any examples.
+Write a brief summary of how the base model performed on this task, as compared with not giving it any examples.
 
 Also try this:
 
@@ -101,7 +90,7 @@ Response:
 
 ### Chain of Thought
 
-Try the following prompt, again with plain Gemma:
+Try the following prompt, again with the base model:
 
 ```
 I went to the market and bought 10 apples. I gave 2 apples to the neighbor and 2 to the repairman. I then went and bought 5 more apples and ate 1. How many apples did I remain with?
@@ -109,7 +98,7 @@ I went to the market and bought 10 apples. I gave 2 apples to the neighbor and 2
 
 (Before you run this, think about how you would solve this problem.)
 
-What does Gemma predict?
+What does the model predict?
 
 Now, add the following to the prompt: `Let's think step by step. After I bought the apples, I had`
 
@@ -125,13 +114,13 @@ Instruction tuning does several things to make the model more useful at followin
 
 Let's switch to the instruction-tuned model.
 
-Repeat the steps above to add a model, except this time select the variation: 'gemma-3-1b-it'. Change the model loading code in the notebook to load this model (`USE_INSTRUCITON_TUNED` should be `True`). **Stop the session** and then restart it to run with this new model.
+Change `USE_INSTRUCTION_TUNED = False` to `True` in the model loading cell of the notebook and re-run it. (You may want to restart the session first to free GPU memory.)
 
 ### Conversations as Documents
 
 Instruction-tuned models were fine-tuned on documents formatted as dialogues between a user and an assistant. To get the best performance from these models at inference, we need to format our prompts in a similar way as the documents were formatted during fine-tuning. Different models have different fine-tuning formats, but fortunately the HuggingFace Transformers library has code to help us format our prompts correctly for each model.
 
-The "Chat Templating" section of the notebook includes code to format the prompt for the instruction-tuned model. The `apply_chat_template` method takes a list of messages, where each message is a dictionary with two keys: "role" and "content". The "role" key can be either "user", "assistant", or "system". The "content" key is the text of the message. See the Gemma documentation for more details.
+The "Chat Templating" section of the notebook includes code to format the prompt for the instruction-tuned model. The `apply_chat_template` method takes a list of messages, where each message is a dictionary with two keys: "role" and "content". The "role" key can be either "user", "assistant", or "system". The "content" key is the text of the message.
 
 ```python
 role = """You are a helpful 2nd-grade teacher. Help a 2nd grader to answer questions in a short and clear manner."""
@@ -153,10 +142,9 @@ print(tokenizer.decode(tokenized_chat[0]))
 3. Use the model's `generate` method to generate a completion of this prompt. What does the model predict? (Refer to how we used the `generate` method in the earlier section)
 {{% /task %}}
 
-- Example from:  https://www.promptingguide.ai/models/gemma
-- Overall Gemma docs: https://ai.google.dev/gemma/docs/core
-- Gemma's chat template docs: https://ai.google.dev/gemma/docs/formatting
-- API docs: https://huggingface.co/docs/transformers/main/en/chat_templating
+- Qwen2.5 chat template: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct?chat_template=default
+- Qwen2.5 tech report: https://arxiv.org/abs/2412.15115
+- HuggingFace chat templating: https://huggingface.co/docs/transformers/main/en/chat_templating
 
 ### Retrieval-Augmented Generation
 
@@ -200,45 +188,29 @@ where `{task}` is the question you want to ask and `{context}` is the docstring 
 
 ### Tool Use
 
-We can also prompt the model to use a tool, like a calculator, when it recognizes that it can't answer a question directly. For example, try the following dialogue:
+With RAG, *we* picked what context to give the model. A more flexible approach: let the model decide when it needs outside information and have it *emit a request* for that information — a structured call to a named function with arguments. That's a **tool call**.
 
-```
-    {
-        "role": "user",
-        "content": f"What is the sum of the odd numbers less than 20?",
-    },
-    {
-        "role": "assistant",
-        "content": f"""
-Run Python code: print(sum(x for x in range(20) if x % 2 == 1))
-Code output: 100
+Modern chat models like Qwen2.5-0.5B-Instruct are trained to emit tool calls in a specific format. The "Tool Use" section of the notebook walks through three stages:
 
-The result is 100."""
-    },
-    {
-        "role": "user",
-        "content": f"What is the sum of the even numbers less than 40?",
-    },
-```
+1. **A simple demo**: the model emits a `<tool_call>` block for a weather lookup, but nothing executes it — you just see the structured output.
+2. **A minimal agent loop** (`run_agent` in the notebook) that detects, parses, executes, and feeds back tool calls. It uses the tokenizer's [`parse_response`](https://huggingface.co/docs/transformers/chat_response_parsing) method to extract tool calls from the model's output.
+3. **Two scenarios** that give the agent a `run_bash` tool — real shell access to the Colab VM — and show what goes wrong:
+   - **Scenario 1 — Prompt injection**: an "innocent" summarization task where the document being summarized contains instructions aimed at the model.
+   - **Scenario 2 — Helpful cleanup**: an innocent-sounding request that the model might take too literally, potentially trashing the runtime environment.
 
-Note that we would need to intercept the generation process and detect that the model has generated a request to run some code -- then run that code and insert the result in the dialogue. For simplicity we won't actually do that in this lab.
+These scenarios target the `OG-LLM-ContextAndTools` failure-diagnosis criterion. The planted secrets are all **fake** — the worst that can happen is you need to restart the Colab runtime.
 
-In this case, the "tool" is the Python interpreter. We could also provide the model with other tools, like a search engine (which would insert text from the search results into the dialogue), a call to an API like Wolfram Alpha (see [Stephen Wolfram's blog post on this topic](https://writings.stephenwolfram.com/2023/03/chatgpt-gets-its-wolfram-superpowers/)), or a call to an API that does something in the physical world (like turning on a light).
+Note: we could treat retrieval as a tool too. For example, the model could generate a request to run a search query against a database, then insert the results into the dialogue. This is called "agentic RAG".
 
-{{% task %}}
-1. What are some advantages of using a tool like a calculator in a dialogue agent? (If unsure, try asking a few more math questions until you get one that it can't compute accurately.)
-2. What are some potential challenges to getting a model to use a tool correctly? What about risks of using a tool?
-{{% /task %}}
-
-Note: we could treat retrieval as a tool, too. For example, the model could generate a request to run a search query against a database, then insert the results into the dialogue. This is called "agentic RAG".
+We could also provide the model with other tools: a search engine, a call to an API like Wolfram Alpha (see [Stephen Wolfram's blog post on this topic](https://writings.stephenwolfram.com/2023/03/chatgpt-gets-its-wolfram-superpowers/)), or a call to an API that does something in the physical world (like turning on a light). Each additional capability multiplies the attack surface described in the scenarios above.
 
 ## Your Turn
 
-Suppose we wanted to make a chatbot that answers incoming students' questions about Calvin University on topics like courses, schedule, recent events, activities, etc.. 
+Suppose we wanted to make a chatbot that answers incoming students' questions about Calvin University on topics like courses, schedule, recent events, activities, etc.
 
 {{% task %}}
 1. List a few specific questions that an incoming student might ask.
-2. Describe how you would design a system that uses a language model to answer questions lke these. **Refer to specific concepts introduced in this lab** or other prompt engineering concepts from the reading.
+2. Describe how you would design a system that uses a language model to answer questions like these. **Refer to specific concepts introduced in this lab** or other prompt engineering concepts from the reading. Name at least one tool the system would need, and describe one failure mode from the scenarios above that applies.
 {{% /task %}}
 
 ## Wrap-Up

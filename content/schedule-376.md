@@ -138,8 +138,8 @@ Advising is this week, so we won't get to a lot of new content.
 {{% details summary="Objectives" %}}
 This week we start work on these objectives:
 
-- I can identify the shapes of data flowing through a Transformer-style language model. [NC-TransformerDataFlow]
-- I can identify various types of embeddings (tokens, hidden states, output, key, and query) in a language model and explain their purpose. [NC-Embeddings]
+- I can identify the shapes of data flowing through a Transformer-style language model. [TM-TransformerDataFlow]
+- I can identify various types of embeddings (tokens, hidden states, output, key, and query) in a language model and explain their purpose. [TM-LLM-Embeddings]
 
 {{% /details %}}
 {{% details summary="Notes" %}}
@@ -258,9 +258,9 @@ This week we'll see how they work!
 We'll also look at other architectures that have been popular in the past, such as convolutional networks (CNNs) and recurrent networks (RNNs), and maybe even look at how some new architectures bring in ideas from those older architectures.
 
 {{% details summary="Objectives" %}}
-- [NC-SelfAttention](objective)
-- [NC-Architectures](objective)
-- [NC-TransformerDataFlow](objective)
+- [TM-SelfAttention](objective)
+- [TM-Architectures](objective)
+- [TM-TransformerDataFlow](objective)
 
 {{% /details %}}
 {{% details summary="Key Questions" %}}
@@ -422,20 +422,19 @@ How can a model trained to mimic become a helpful, capable, mostly-harmless(?), 
 {{% details summary="Objectives" %}}
 Core objectives:
 
-- [MS-LLM-API](objective)
-- [MS-LLM-Prompting](objective)
-- [MS-LLM-Advanced](objective)
-- [MS-LLM-Train](objective)
+- [OG-LLM-APIs](objective)
+- [OG-LLM-Prompting](objective)
+- [OG-LLM-ContextAndTools](objective)
+- [OG-LLM-Train](objective)
 
 Review objectives:
 
-- [MS-LLM-Tokenization](objective)
-- [MS-LLM-TokenizationImpact](objective)
-- [MS-LLM-Generation](objective)
+- [OG-LLM-Tokenization](objective)
+- [TM-LLM-Generation](objective)
 
 Extension objectives:
 
-- [MS-LLM-Compute](objective)
+- [TM-LLM-Compute](objective)
 
 {{% /details %}}
 {{% details summary="Readings" %}}
@@ -546,18 +545,20 @@ We ended up referring to:
 
 
 {{% calendar-day dow="Wednesday" date="2026-04-15" %}}
-- Context engineering, multi-turn agents, failure modes
-- Motivational examples from last year's student feedback:
-  - *How to make a (semi-autonomous) agent that improves its behavior from feedback*
-- Project Work Time!
-  - Deliverable: what's your project? What's success look like (sketch an example)? What are two next steps that you can take to make progress?
+- Self-Attention Shapes handout debrief (~20 min): pairs fill/correct the table for Qwen2.5-0.5B; whole-class walk-through input → Q/K/V → scores → weights → concatenated output. Hits [TM-SelfAttention](objective) *(deeper)* and [TM-TransformerDataFlow](objective).
+- Lab 376.4 kickoff (~50 min): {{% notebook name="LLM Prompting and Tool Use" nbname="u11n1-prompt-engineering.ipynb" %}}
+  - Using Qwen2.5-0.5B (base) vs Qwen2.5-0.5B-Instruct — same model students saw in u08n1 and on the Apr 10 handout.
+  - Focus on: few-shot, chain-of-thought, chat-templating, RAG, tool-use. Base-vs-tuned contrast is load-bearing for [OG-LLM-Train](objective).
+- Take-home: finish lab (including tool-use stretch) + submit short answers. Posts for [Discussion 376.3](/units/11generation/discussion/) due Fri.
 
 {{% /calendar-day %}}
 
 
 {{% calendar-day dow="Friday" date="2026-04-17" %}}
-- Project scoping time
-- Review (see [Summary](/units/12review/))
+- Lab 376.4 debrief (~15 min): base-vs-tuned surprises, RAG mis-context failures, tool-use observations.
+- Context engineering + failure modes (~20 min): anchor to Lab 4 failures students observed. Second pass at [OG-LLM-ContextAndTools](objective).
+- Quiz 2 preview (~10 min): objective-by-objective map to prep artifacts (handout, Lab 4, Tülu reading).
+- Project scoping time (remainder).
 
 {{% /calendar-day %}}
 
@@ -634,12 +635,13 @@ Also, many people refer to [this blog post](https://lilianweng.github.io/posts/2
 
 {{% calendar-day dow="Wednesday" date="2026-04-22" %}}
 - Quiz 2 (proctored — Ken traveling): Looking for evidence of learning about:
-  - [MS-LLM-API](objective)
-  - [MS-LLM-Prompting](objective)
-  - [NC-SelfAttention](objective) *(deeper)*
-  - [NC-TransformerDataFlow](objective)
-  - [MS-LLM-Advanced](objective)
-  - [MS-LLM-Train](objective)
+  - [OG-LLM-Prompting](objective)
+  - [OG-LLM-ContextAndTools](objective)
+  - [OG-LLM-Eval](objective)
+  - [Overall-LLM-Failures](objective)
+  - [TM-SelfAttention](objective) *(deeper)*
+  - [TM-TransformerDataFlow](objective)
+  - [OG-LLM-Train](objective)
 
 {{% /calendar-day %}}
 
