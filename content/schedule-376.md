@@ -545,7 +545,9 @@ We ended up referring to:
 
 
 {{% calendar-day dow="Wednesday" date="2026-04-15" %}}
+- Note: revised [Project description](/project) up, feedback welcome.
 - Self-Attention Shapes handout debrief (~20 min): pairs fill/correct the table for Qwen2.5-0.5B; whole-class walk-through input → Q/K/V → scores → weights → concatenated output. Hits [TM-SelfAttention](objective) *(deeper)* and [TM-TransformerDataFlow](objective).
+  - Reference: the [Qwen 2.5 tech report](https://arxiv.org/abs/2407.10671) and [model page](https://huggingface.co/Qwen/Qwen2.5-0.5B?show_file_info=model.safetensors)
 - [Lab 376.4](/units/11generation/lab/) kickoff (~50 min): {{% notebook name="LLM Prompting and Tool Use" nbname="u11n1-prompt-engineering.ipynb" %}}
   - Using Qwen2.5-0.5B (base) vs Qwen2.5-0.5B-Instruct — same model students saw in u08n1 and on the Apr 10 handout.
   - Focus on: few-shot, chain-of-thought, chat-templating, RAG, tool-use. Base-vs-tuned contrast is load-bearing for [OG-LLM-Train](objective).
