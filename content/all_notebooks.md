@@ -337,7 +337,15 @@ We also strive for the sequence to make sense.
   - Retrieval-Augmented Generation
   - Tool Use
   - Closing the Loop: A Minimal Agent
-    - ⚠️ About what we're about to do
+    - Step 1 — Build the messages list
+    - Step 2 — Apply the chat template and inspect the prompt
+    - Step 3 — Generate and inspect the raw output
+    - Step 4 — Parse the tool call (manually)
+    - Step 5 — Dispatch the tool and collect the result
+    - Step 6 — Append the assistant message and tool result
+    - Step 7 — Wrap in a loop
+    - ⚠️ About what we're about to do (Friday material)
+    - Happy Case: A Real Agentic Task
     - Scenario 1: Prompt Injection via a File
     - Scenario 2: Helpful Cleanup
     - Wrap-Up Reflection

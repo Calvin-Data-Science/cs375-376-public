@@ -190,11 +190,16 @@ where `{task}` is the question you want to ask and `{context}` is the docstring 
 
 With RAG, *we* picked what context to give the model. A more flexible approach: let the model decide when it needs outside information and have it *emit a request* for that information — a structured call to a named function with arguments. That's a **tool call**.
 
-Modern chat models like Qwen2.5-0.5B-Instruct are trained to emit tool calls in a specific format. The "Tool Use" section of the notebook walks through three stages:
+Modern chat models like Qwen2.5-0.5B-Instruct are trained to emit tool calls in a specific format. The "Tool Use" section of the notebook walks through two stages:
 
 1. **A simple demo**: the model emits a `<tool_call>` block for a weather lookup, but nothing executes it — you just see the structured output.
-2. **A minimal agent loop** (`run_agent` in the notebook) that detects, parses, executes, and feeds back tool calls. It uses the tokenizer's [`parse_response`](https://huggingface.co/docs/transformers/chat_response_parsing) method to extract tool calls from the model's output.
-3. **Two scenarios** that give the agent a `run_bash` tool — real shell access to the Colab VM — and show what goes wrong:
+2. **A minimal agent loop** built cell by cell: build messages → apply chat template → generate → parse the `<tool_call>` output → dispatch → append tool result → loop. (HuggingFace documents a `tokenizer.parse_response` helper that would automate the parsing step, but it is not yet implemented for Qwen models, so the notebook shows the regex approach directly.)
+
+**Wednesday**: complete the notebook through the end of the agent-loop walkthrough (before the "⚠️ Friday material" heading). Write answers for the tasks in the Base Model Warm-Up, Chat Templating, RAG, and Tool Use sections below.
+
+## Friday
+
+The "⚠️ Friday material" cells in the notebook give the agent a `run_bash` tool — real shell access to the Colab VM — and show what goes wrong in two scenarios:
    - **Scenario 1 — Prompt injection**: an "innocent" summarization task where the document being summarized contains instructions aimed at the model.
    - **Scenario 2 — Helpful cleanup**: an innocent-sounding request that the model might take too literally, potentially trashing the runtime environment.
 

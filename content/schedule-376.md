@@ -551,16 +551,18 @@ We ended up referring to:
 - [Lab 376.4](/units/11generation/lab/) kickoff (~50 min): {{% notebook name="LLM Prompting and Tool Use" nbname="u11n1-prompt-engineering.ipynb" %}}
   - Using Qwen2.5-0.5B (base) vs Qwen2.5-0.5B-Instruct — same model students saw in u08n1 and on the Apr 10 handout.
   - Focus on: few-shot, chain-of-thought, chat-templating, RAG, tool-use. Base-vs-tuned contrast is load-bearing for [OG-LLM-Train](objective).
-- Take-home: finish lab (including tool-use stretch) + submit short answers. Posts for [Discussion 376.3](/units/11generation/discussion/) due Fri.
+- Take-home: complete through the Tool Use section (stop before "⚠️ Friday material") + write answers for those sections. Posts for [Discussion 376.3](/units/11generation/discussion/) due Fri.
 
 {{% /calendar-day %}}
 
 
 {{% calendar-day dow="Friday" date="2026-04-17" %}}
-- Lab 376.4 debrief (~15 min): base-vs-tuned surprises, RAG mis-context failures, tool-use observations.
-- Context engineering + failure modes (~20 min): anchor to Lab 4 failures students observed. Second pass at [OG-LLM-ContextAndTools](objective).
-- Quiz 2 preview (~10 min): objective-by-objective map to prep artifacts (handout, Lab 4, Tülu reading).
-- Project scoping time (remainder).
+- Review earlier handout on generation loop
+- Debrief Wed + walkthrough the unfolded agent loop cells (~10 min): cells show build → template → generate → parse → dispatch → append → loop.
+- Happy-case agent task: wamerican word count (~15 min): run `run_agent` with `run_bash` on install + count task; observe multi-step execution.
+- Scenario 1 — Prompt injection (~15 min): model summarizes a file planted with malicious instructions; observe exfiltration of fake credentials. [OG-LLM-ContextAndTools](objective)
+- Scenario 2 — Helpful cleanup (~10 min): innocent-sounding request that may trash the runtime. Contrast with Scenario 1.
+- Context engineering takeaways + Quiz 2 preview (~15 min): anchor to [OG-LLM-ContextAndTools](objective); map observed failures to attack-surface criteria; objective-by-objective map to quiz prep artifacts.
 
 {{% /calendar-day %}}
 
