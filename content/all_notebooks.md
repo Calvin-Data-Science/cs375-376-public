@@ -344,7 +344,7 @@ We also strive for the sequence to make sense.
     - Step 5 — Dispatch the tool and collect the result
     - Step 6 — Append the assistant message and tool result
     - Step 7 — Wrap in a loop
-    - ⚠️ About what we're about to do (Friday material)
+    - ⚠️ Danger Zone:
     - Happy Case: A Real Agentic Task
     - Scenario 1: Prompt Injection via a File
     - Scenario 2: Helpful Cleanup
