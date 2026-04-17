@@ -558,6 +558,10 @@ We ended up referring to:
 
 {{% calendar-day dow="Friday" date="2026-04-17" %}}
 - Review earlier handout on generation loop
+  - Handout: [Token and Context Embeddings, and Sampling Algorithm](/handouts/2026_03_27.pdf)
+- Logistics:
+  - [Discussion 376.3: When Agents Go Wrong](/units/11generation/discussion/) posts due today (replies due Mon Apr 20)
+  - [Project](/project/) Milestone 2 ("What Success Looks Like") due "soon" (Monday ideally, but flexible)
 - Debrief Wed + walkthrough the unfolded agent loop cells (~10 min): cells show build → template → generate → parse → dispatch → append → loop.
 - Happy-case agent task: wamerican word count (~15 min): run `run_agent` with `run_bash` on install + count task; observe multi-step execution.
 - Scenario 1 — Prompt injection (~15 min): model summarizes a file planted with malicious instructions; observe exfiltration of fake credentials. [OG-LLM-ContextAndTools](objective)
