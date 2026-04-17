@@ -6,7 +6,11 @@ revised: 2026
 
 How reliable are LLM responses? One well-documented failure mode is *sycophancy*: the tendency to agree with the user rather than give an accurate or helpful answer. In this discussion, you'll design a small experiment to probe sycophancy in a chatbot of your choice.
 
-This Discussion addresses the course objective MS-LLM-Eval. With additional thought, you could find connections to CI-LLM-Failures and various CI-Topics objectives here. You may also find connections to MS-LLM-Prompting, MS-LLM-API, and (if you're really ambitious) LM-ICL.
+This Discussion addresses the following course objectives:
+
+- [OG-LLM-Eval](objective): You are designing a controlled experiment to measure a specific model behavior.
+- [Overall-LLM-Failures](objective): Sycophancy is a well-documented failure mode of LLMs.
+- [OG-LLM-Prompting](objective): Crafting effective baseline and probe prompts is essential to a sound experiment.
 
 ### Background
 

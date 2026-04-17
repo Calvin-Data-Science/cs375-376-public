@@ -122,39 +122,60 @@
     - I can explain why convolutions are useful for images (local patterns, translation invariance, parameter sharing).
     - I can describe what a filter/kernel does at a high level.
 
-# 376-specific Tuneable Machines objectives (preserved, criteria to be added later)
+# 376-specific Tuneable Machines objectives
+# Decision log: TM-Scaling merged into TM-LLM-Compute (D12 resolved); criteria added (26sp revision)
 
 - id: TM-LLM-Embeddings
   pillar: Tuneable Machines
   class: 376
   description: I can identify various types of embeddings (tokens, hidden states, output, key, and query) in a language model and explain their purpose.
+  criteria:
+    - I can distinguish between token embeddings (input lookup table) and context embeddings (output of transformer layers).
+    - I can explain how context embeddings incorporate information from other tokens via attention.
+    - I can describe how the final context embedding is used to produce next-token logits (dot product with token embeddings).
 
 - id: TM-SelfAttention
   pillar: Tuneable Machines
   class: 376
   description: I can explain the purpose and components of a self-attention layer (key, query, value; multi-head attention; positional encodings).
+  criteria:
+    - I can explain what queries, keys, and values represent and how they interact (dot product → softmax → weighted sum).
+    - I can compute a simple attention calculation by hand given Q, K, V vectors.
+    - I can explain why multi-head attention is useful (different heads can attend to different relationship types).
+    - I can explain why causal masking is needed for autoregressive models.
 
 - id: TM-Architectures
   pillar: Tuneable Machines
   class: 376-bonus
-  description: I can compare and contrast the following neural architectures - CNN, RNN, and Transformer. (Bonus topics - U-Nets, LSTMs, Vision Transformers, state-space models)
+  description: I can compare and contrast the following neural architectures - CNN, RNN, and Transformer.
+  criteria:
+    - I can describe at least one strength and one limitation of each architecture for sequence modeling.
+    - I can explain why Transformers have largely replaced RNNs for language tasks.
 
 - id: TM-TransformerDataFlow
   pillar: Tuneable Machines
   class: 376
   description: I can identify the shapes of data flowing through a Transformer-style language model.
+  criteria:
+    - Given model hyperparameters (layers, heads, hidden dim, vocab size, seq length), I can state the shape of key tensors (embeddings, Q/K/V, attention weights, logits).
+    - I can trace how a single token's representation changes from input embedding through attention and MLP layers to output logits.
+    - I can explain the role of residual connections in preserving information across transformer layers.
 
 - id: TM-LLM-Generation
   pillar: Tuneable Machines
   class: 376
   description: I can extract and interpret model outputs (token logits) and use them to generate text.
+  criteria:
+    - I can explain the autoregressive generation loop (prompt → logits → sample → append → repeat).
+    - I can explain how temperature affects the sampling distribution (higher = more random).
+    - I can write pseudocode for a basic text generation algorithm given a model and tokenizer.
 
 - id: TM-LLM-Compute
   pillar: Tuneable Machines
   class: 376
   description: I can analyze how computational requirements scale with model size and context length, and reason about the feasibility of training and running generative AI systems.
   criteria:
-    - I can estimate memory requirements for a model given its parameter count and precision.
+    - I can estimate memory requirements for a model given its parameter count and numerical precision.
     - I can explain how compute scales with parameters and sequence length.
     - I can describe at least two optimization techniques (e.g., quantization, KV caching) and their trade-offs.
     - I can evaluate whether a given model can run on specific hardware (e.g., 12GB GPU, laptop CPU, cloud API).
@@ -236,7 +257,7 @@
 
 - id: OG-LLM-APIs
   pillar: Optimization Games
-  class: 375
+  class: both
   status: optional
   description: I can apply LLM APIs (such as the Chat Completions API) to build AI-powered applications.
   criteria:
@@ -264,22 +285,36 @@
     - I can explain why we use batches (stochastic) rather than the full dataset.
     - I can identify the role of learning rate and what happens if it's too large or too small.
 
-# 376-specific Optimization Games objectives (preserved)
-
-- id: OG-LLM-Prompting
-  pillar: Optimization Games
-  class: 376
-  description: I can critique and refine prompts to improve the quality of responses from an LLM.
+# 376-specific Optimization Games objectives
+# Decision log: OG-LLM-Advanced → OG-LLM-ContextAndTools (D11 resolved);
+# OG-ICL folded into OG-LLM-ContextAndTools (D13 agreed); TM-Scaling removed (D12 agreed); criteria added (26sp revision)
 
 - id: OG-LLM-Tokenization
   pillar: Optimization Games
   class: 376
   description: I can explain how inputs get chunked into tokens, how outputs are generated token by token, and how this affects usage of the model.
+  criteria:
+    - I can describe the tokenization pipeline (text → token IDs → embeddings) and its reverse.
+    - I can explain why subword tokenization is used instead of character-level or word-level approaches.
+    - I can identify at least one consequence of tokenization choices (e.g., multilingual bias, difficulty counting syllables, spelling quirks).
 
 - id: OG-LLM-ConversationAsDocument
   pillar: Optimization Games
   class: 376
   description: I can explain how a conversation with an LLM can be represented as a carefully structured document, including system messages, tool calls, and multimodal inputs and outputs.
+  criteria:
+    - I can describe how system, user, and assistant turns are serialized into a single token sequence.
+    - I can explain how function/tool calls fit into the conversation document format.
+    - I can explain how this framing allows a next-token predictor to behave as a dialogue agent.
+
+- id: OG-LLM-Prompting
+  pillar: Optimization Games
+  class: 376
+  description: I can critique and refine prompts to improve the quality of responses from an LLM.
+  criteria:
+    - I can identify why a given prompt produces poor results (ambiguity, missing context, wrong framing).
+    - I can apply at least two prompting strategies (e.g., role assignment, few-shot examples, chain-of-thought, structured output constraints).
+    - I can explain the difference between system, user, and assistant messages and when to use each.
 
 - id: OG-LLM-ContextAndTools
   pillar: Optimization Games
@@ -295,25 +330,45 @@
   pillar: Optimization Games
   class: 376
   description: I can apply and critically analyze evaluation strategies for generative models.
-
-- id: OG-LLM-Train
-  pillar: Optimization Games
-  class: 376
-  description: I can describe the overall process of training a state-of-the-art dialogue LLM.
   criteria:
-    - I can identify the three main stages (pretraining, supervised fine-tuning, RL training) and what each accomplishes.
-    - I can explain what data is used at each stage and where human input enters the process.
-    - I can describe how the model's behavior changes across stages.
+    - I can explain why evaluating generative systems is harder than evaluating classifiers.
+    - I can describe at least two evaluation approaches (e.g., perplexity, human preference, task-specific metrics, LLM-as-judge).
+    - I can identify limitations of automatic metrics for open-ended generation.
+    - I can design a basic evaluation strategy for a specific LLM application.
+  instructorNote: |
+    These are important but they're aspirational given the current state of the course. TODO: find places in the course to dig into these -- at least Week 6!
 
 - id: OG-SelfSupervised
   pillar: Optimization Games
   class: 376
   description: I can explain how self-supervised learning can be used to train foundation models on massive datasets without labeled data.
+  criteria:
+    - I can explain next-token prediction as a self-supervised task (the "labels" come from the data itself).
+    - I can connect cross-entropy loss and perplexity to the idea of prediction quality and "surprise."
+    - I can explain why self-supervised pretraining enables capabilities that weren't explicitly trained for.
+
+- id: OG-LLM-Train
+  pillar: Optimization Games
+  class: 376
+  description: I can describe the overall process of training a state-of-the-art dialogue LLM such as Llama or OLMo.
+  notes: |
+    Scaling-laws narrative (Chinchilla, emergent abilities) captured here rather than as a separate
+    TM-Scaling objective (D12 resolved 26sp).
+  criteria:
+    - I can identify the three main stages of training (pretraining, supervised fine-tuning, RLHF/RLVR) and what each accomplishes.
+    - I can explain what data is used at each stage and where human input enters the process.
+    - I can describe how the model's behavior changes across stages (mimicry → instruction following → aligned responses).
+    - I can explain the basic insight of scaling laws (more data + more compute → predictably better models) and its practical implications.
 
 - id: OG-Theory-Feedback
   pillar: Optimization Games
   class: 376
-  description: I can explain how feedback tuning can improve the performance and reliability of a model / agent.
+  description: I can explain how feedback tuning can improve the performance and reliability of a model or agent.
+  criteria:
+    - I can explain the basic RLHF loop (generate samples → collect preferences → train reward model → optimize policy).
+    - I can explain what a reward signal is and give examples for different tasks (human preference, code correctness, factual accuracy).
+    - I can articulate why the reward signal is the hard part (reward hacking, specification gaming, proxy objectives).
+    - I can describe how RLVR (RL with verifiable rewards) simplifies the reward problem for certain tasks.
 
 # =============================================================================
 # OVERALL - Context, implications, and dispositions
@@ -381,3 +436,7 @@
   pillar: Overall
   class: 376
   description: I can identify common types of failures in LLMs, such as hallucination (confabulation) and bias.
+  criteria:
+    - I can explain what hallucination/confabulation is and why LLMs are prone to it.
+    - I can identify at least two other failure modes (e.g., bias amplification, prompt injection, sycophancy, inconsistency across turns).
+    - I can describe strategies for mitigating specific failure modes in a given application context.

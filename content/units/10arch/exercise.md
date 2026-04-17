@@ -13,7 +13,7 @@ This assignment addresses the following course objectives:
 
 - [TM-LLM-Generation](objective)
 - [OG-LLM-Eval](objective)
-- [TM-Scaling](objective)
+- [TM-LLM-Compute](objective)
 - [OG-Eval-Experiment](objective)
 
 Students may also use this exercise to demonstrate additional objectives, such as:
@@ -127,7 +127,7 @@ Create a Jupyter notebook that includes:
 |-----------|----------------------|---------------|---------------------|
 | **TM-LLM-Generation** (extracting logits) | Loads at least one model and extracts logits to compute perplexity | Correctly computes perplexity for all chosen models | Performs token-level analysis showing which specific tokens contribute most to perplexity |
 | **OG-LLM-Eval** (evaluation strategy) | Computes perplexity for at least one model on the dataset | Compares perplexity across multiple models; identifies which model performs best | Critically analyzes what perplexity captures and misses as an evaluation metric |
-| **TM-Scaling** (size vs. performance) | Reports perplexity values for different model sizes | Creates a clear plot of perplexity vs. model size and describes the trend | Connects findings to scaling laws; analyzes whether improvement is linear, logarithmic, etc.; discusses diminishing returns |
+| **TM-LLM-Compute** (size vs. performance) | Reports perplexity values for different model sizes | Creates a clear plot of perplexity vs. model size and describes the trend | Connects findings to scaling laws; analyzes whether improvement is linear, logarithmic, etc.; discusses diminishing returns |
 | **OG-Eval-Experiment** (experimental design) | Runs the comparison on a small sample | Uses a sufficient sample of stories and reports results systematically | Controls for confounds (e.g., story length, genre); reports variance or confidence intervals |
 
 ## Extension (for E-level work)

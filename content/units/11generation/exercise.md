@@ -5,12 +5,10 @@ revised: 2025
 
 This exercise is focused on prompting and structured output techniques to attempt to make a useful and reliable system out of an LLM. This exercise will allow you to demonstrate the following course objectives:
 
-- [MS-API-Integration](objective)
-- [MS-LLM-API](objective)
-- [MS-LLM-Prompting](objective)
-- [MS-LLM-Advanced](objective)
-- [MS-LLM-Eval](objective)
-- [CI-LLM-Failures](objective)
+- [OG-LLM-ContextAndTools](objective)
+- [OG-LLM-Prompting](objective)
+- [OG-LLM-Eval](objective)
+- [Overall-LLM-Failures](objective)
 
 The fancy (resume/buzzword) name for what we're going to do here is [Agentic RAG](https://arxiv.org/abs/2501.09136). But we're going to [own our control flow](https://github.com/humanlayer/12-factor-agents/blob/main/content/factor-8-own-your-control-flow.md) rather than letting the LLM fully drive the interaction. We're also going to be practicing engineering techniques to make the system reliable and measure its performance.
 

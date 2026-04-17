@@ -12,17 +12,16 @@ revised: 2026
 
 This exercise addresses the following course objectives:
 
-- [MS-LLM-Eval](objective)
-- [MS-LLM-API](objective)
-- [MS-Eval-Experiment](objective)
+- [OG-LLM-Eval](objective)
+- [OG-LLM-ContextAndTools](objective)
+- [OG-Eval-Experiment](objective)
 
 You may also find opportunities to demonstrate the following course objectives:
 
-- [CI-LLM-Failures](objective)
-- [MS-LLM-Prompting](objective)
-- [MS-LLM-Advanced](objective)
-- [MS-LLM-Compute](objective)
-- [LM-ICL](objective)
+- [Overall-LLM-Failures](objective)
+- [OG-LLM-Prompting](objective)
+- [OG-LLM-ContextAndTools](objective)
+- [TM-LLM-Compute](objective)
 
 ## Overview
 

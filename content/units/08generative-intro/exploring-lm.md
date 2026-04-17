@@ -4,7 +4,13 @@ weight: 5
 revised: 2026
 ---
 
-Objectives:
+This activity addresses the following course objectives:
+
+- [OG-LLM-ConversationAsDocument](objective)
+- [TM-LLM-Generation](objective)
+- [OG-SelfSupervised](objective)
+
+Specific learning goals:
 
 - Describe how a conversation is represented as a document for a language model.
 - Describe what a next-token conditional distribution is.

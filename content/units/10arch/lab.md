@@ -5,24 +5,13 @@ revised: 2026
 
 In this lab, you'll trace through parts of the implementation of a Transformer language model, focusing on the self-attention mechanism. We'll compare the performance of a Transformer model with a baseline that only uses a feedforward network (MLP).
 
-This lab address the following course objectives:
+This lab addresses the following course objectives:
 
-- [NC-Embeddings](objective)
-- [NC-SelfAttention](objective)
-- [NC-TransformerDataFlow](objective)
-- [MS-LLM-Generation](objective)
-- [MS-LLM-Tokenization](objective)
-
-<!--
-It could also be used to address the following course objectives:
-
-- [MS-LLM-Train](objective)
-- [MS-LLM-Compute](objective)
-- [NC-Scaling](objective)
+- [TM-LLM-Embeddings](objective)
+- [TM-SelfAttention](objective)
+- [TM-TransformerDataFlow](objective)
+- [TM-LLM-Generation](objective)
 - [OG-SelfSupervised](objective)
-- [CI-Topic-History](objective)
-- [CI-LLM-Failures](objective)
--->
 
 
 ## Task

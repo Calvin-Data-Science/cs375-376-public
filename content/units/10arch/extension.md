@@ -10,14 +10,10 @@ revised: 2025
 
 You can use this exercise to demonstrate the following course objectives:
 
-- [MS-LLM-Compute](objective)
-- [MS-LLM-API](objective)
-- [NC-Scaling](objective)
-- [MS-LLM-Advanced](objective)
-- [MS-Eval-Experiment](objective)
-- [MS-Eval-Experiment](objective)
-- [MS-LLM-Tokenization](objective)
-- [MS-LLM-TokenizationImpact](objective)
+- [TM-LLM-Compute](objective)
+- [OG-LLM-ContextAndTools](objective)
+- [OG-Eval-Experiment](objective)
+- [OG-LLM-Tokenization](objective)
 
 ## Task
 

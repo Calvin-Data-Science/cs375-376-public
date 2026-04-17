@@ -37,7 +37,7 @@ This unit will introduce some of the basic concepts and methods for sequence mod
 
 {{% /details %}}
 {{% details summary="Objectives" %}}
-This week will address course objectives on OG-SelfSupervised, OG-LLM-Tokenization, and OG-LLM-TokenizationImpact.
+This week will address course objectives on OG-SelfSupervised and OG-LLM-Tokenization.
 
 - Explain what generative modeling is and its uses
 - Describe the high-level idea of three basic approaches to generative models: autoregressive, latent variable, and diffusion
@@ -259,8 +259,8 @@ We'll also look at other architectures that have been popular in the past, such 
 
 {{% details summary="Objectives" %}}
 - [TM-SelfAttention](objective)
-- [TM-Architectures](objective)
 - [TM-TransformerDataFlow](objective)
+- [TM-Architectures](objective) *(extension)*
 
 {{% /details %}}
 {{% details summary="Key Questions" %}}
@@ -422,7 +422,6 @@ How can a model trained to mimic become a helpful, capable, mostly-harmless(?), 
 {{% details summary="Objectives" %}}
 Core objectives:
 
-- [OG-LLM-APIs](objective)
 - [OG-LLM-Prompting](objective)
 - [OG-LLM-ContextAndTools](objective)
 - [OG-LLM-Train](objective)
@@ -589,29 +588,15 @@ We ended up referring to:
 How are modern LLMs trained? This week covers the training pipeline (pretraining → SFT → RLHF) and Quiz 2.
 
 {{% details summary="Objectives" %}}
-By the end of this week you should be able to:
-
-- Describe how autoregressive generation works
-- Describe how generative adversarial networks work
-- Describe how diffusion models work
-
-
-- Compare and contrast the process and results of generating sequences using three different algorithms: greedy generation, sampling, and beam search.
-- Explain the concept of a *generator network*.
-- Explain how a Generative Adversarial Network is trained.
+- [OG-LLM-Train](objective)
+- [OG-Theory-Feedback](objective)
 
 {{% /details %}}
 {{% details summary="Key Questions" %}}
-- How is noise useful for diffusion models for image generation?
-- Why does diffusion require multiple time steps?
-
-{{% /details %}}
-{{% details summary="Terms" %}}
-- **Multimodal**: Combining multiple modes of input, such as text, images, and sound.
-- Denoising **Diffusion**: Sampling from a conditional distribution by iteratively denoising a noisy sample.
-- **Embedding**: A vector representation of an object, such as a caption or an image. (In some contexts, also called *latent space* or *latent representation*.)
-- **Manifold**: The high-probability region of a distribution
-  - e.g., almost all possible images look like random noise; the manifold is the region of images that look like images in the training data
+- What are the three main stages of training a modern dialogue LLM, and what does each stage accomplish?
+- Where does human judgment enter the training process at each stage?
+- What is a reward signal, and why is designing one hard?
+- What is reward hacking, and how can you mitigate it?
 
 {{% /details %}}
 {{% details summary="Readings" %}}

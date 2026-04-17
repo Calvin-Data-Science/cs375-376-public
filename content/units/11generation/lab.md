@@ -15,20 +15,20 @@ We'll be using Qwen2.5-0.5B — the same Alibaba-released model whose dimensions
 - Explain how "chain of thought" prompting helps a model reason better.
 - Explain how "tool use" works in language models.
 
-This lab will address the following course objectives:
+This lab addresses the following course objectives:
 
-- [OG-LLM-APIs](objective)
 - [OG-LLM-Prompting](objective)
 - [OG-LLM-ContextAndTools](objective)
+- [OG-LLM-ConversationAsDocument](objective)
 - [OG-LLM-Train](objective) *(base vs instruction-tuned comparison)*
 
-You may also use this lab to demonstrate the following course objectives (e.g., by adding additional discussion to your notebook submission or having a conversation with the instructor or a chatbot):
+You may also use this lab to demonstrate:
 
 - [TM-LLM-Generation](objective)
 - [TM-LLM-Compute](objective)
 - [OG-LLM-Tokenization](objective)
-- [Overall-LLM-Failures](objective)
 - [OG-LLM-Eval](objective)
+- [Overall-LLM-Failures](objective)
 
 ## Getting Started
 
