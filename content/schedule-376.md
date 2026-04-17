@@ -567,6 +567,7 @@ We ended up referring to:
 - Scenario 1 — Prompt injection (~15 min): model summarizes a file planted with malicious instructions; observe exfiltration of fake credentials. [OG-LLM-ContextAndTools](objective)
 - Scenario 2 — Helpful cleanup (~10 min): innocent-sounding request that may trash the runtime. Contrast with Scenario 1.
 - Context engineering takeaways + Quiz 2 preview (~15 min): anchor to [OG-LLM-ContextAndTools](objective); map observed failures to attack-surface criteria; objective-by-objective map to quiz prep artifacts.
+- Reference: [Slides w11](/slides/w11-prompting.html)
 
 {{% /calendar-day %}}
 

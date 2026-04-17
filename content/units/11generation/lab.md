@@ -156,6 +156,8 @@ Notice that the result includes *hallucinations*, i.e., information that it simp
 
 One way to reduce (**but not eliminate**) hallucinations is to explicitly provide the model with the information it needs. This is called retrieval-augmented generation. The idea is to provide the model with a "retrieval" of relevant information, which it can then use to generate a response.
 
+> Note: I'd wanted to revise this exercise but ran out of time. I was going to have you ask it to give you suggestions for what courses to take at Calvin -- with and without revelant sections of the course catalog as context, and compare the results. For now, just do the PyTorch example. The goal was to see that the model would confabulate plausible-sounding information with no connection to reality, but would be more accurate when given the relevant context. You can also try it with other questions and contexts of your choice.
+
 We'll use the docstrings for PyTorch functions as our knowledge base. Use the following code to extract the docstrings for all functions in the `torch.nn` module:
 
 ```python
