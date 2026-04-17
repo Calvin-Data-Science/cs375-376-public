@@ -563,6 +563,7 @@ We ended up referring to:
 - Logistics:
   - [Discussion 376.3: When Agents Go Wrong](/units/11generation/discussion/) posts due today (replies due Mon Apr 20)
   - [Project](/project/) Milestone 2 ("What Success Looks Like") due "soon" (Monday ideally, but flexible)
+  - walkthroughs: probably best after next week.
 - Prompting and agents:
   - Define these terms: context engineering, few-shot, retrieval-augmented generation (RAG), reasoning models, tool use, agent loop
   - Agent failures: incorrect tool use, prompt injection ([lethal trifecta](https://simonwillison.net/2025/Jun/16/the-lethal-trifecta/))
