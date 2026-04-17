@@ -559,15 +559,20 @@ We ended up referring to:
 {{% calendar-day dow="Friday" date="2026-04-17" %}}
 - Review earlier handout on generation loop
   - Handout: [Token and Context Embeddings, and Sampling Algorithm](/handouts/2026_03_27.pdf)
+- Hand back Quiz 1
 - Logistics:
   - [Discussion 376.3: When Agents Go Wrong](/units/11generation/discussion/) posts due today (replies due Mon Apr 20)
   - [Project](/project/) Milestone 2 ("What Success Looks Like") due "soon" (Monday ideally, but flexible)
+- Prompting and agents:
+  - Define these terms: context engineering, few-shot, retrieval-augmented generation (RAG), reasoning models, tool use, agent loop
+  - Agent failures: incorrect tool use, prompt injection ([lethal trifecta](https://simonwillison.net/2025/Jun/16/the-lethal-trifecta/))
+  - Why is LLM eval harder than evaluating a classifier?
+- Reference: [Slides w11](/slides/w11-prompting.html)
 - Debrief Wed + walkthrough the unfolded agent loop cells (~10 min): cells show build → template → generate → parse → dispatch → append → loop.
 - Happy-case agent task: wamerican word count (~15 min): run `run_agent` with `run_bash` on install + count task; observe multi-step execution.
 - Scenario 1 — Prompt injection (~15 min): model summarizes a file planted with malicious instructions; observe exfiltration of fake credentials. [OG-LLM-ContextAndTools](objective)
 - Scenario 2 — Helpful cleanup (~10 min): innocent-sounding request that may trash the runtime. Contrast with Scenario 1.
 - Context engineering takeaways + Quiz 2 preview (~15 min): anchor to [OG-LLM-ContextAndTools](objective); map observed failures to attack-surface criteria; objective-by-objective map to quiz prep artifacts.
-- Reference: [Slides w11](/slides/w11-prompting.html)
 
 {{% /calendar-day %}}
 
@@ -635,9 +640,7 @@ Also, many people refer to [this blog post](https://lilianweng.github.io/posts/2
 {{% /calendar-week-header %}}
 {{% calendar-day dow="Monday" date="2026-04-20" %}}
 - Assign [Discussion 376.4: Fans and Skeptics](/units/13multimodal/discussion/) (posts due Mon Apr 27, replies due Thu Apr 30; we'll share in class W7 Fri)
-- Training pipeline overview: pre-training → SFT → RLHF
-  - Tülu blog post reading discussion
-- Handout TODO from 2025_04_23 - Conversation documents, multimodal models, and LLM reliability
+- Probably guest lecture (Ken is traveling)
 
 {{% /calendar-day %}}
 
@@ -656,7 +659,7 @@ Also, many people refer to [this blog post](https://lilianweng.github.io/posts/2
 
 
 {{% calendar-day dow="Friday" date="2026-04-24" %}}
-- Project Work Time
+- Training pipeline: RLHF, RLVR, etc.
 
 {{% /calendar-day %}}
 
