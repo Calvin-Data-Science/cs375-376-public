@@ -26,12 +26,14 @@ You're also encouraged to write *additional* objectives beyond the course list â
 ## Milestones
 
 1. **Ideas and Team Selection**: Pick a team, make an initial proposal, and get feedback from the instructor.
-2. **What Success Looks Like**: Submit a short document with:
-    - what you're doing
-    - which [course objectives](/objectives-376) it will demonstrate and how; also write one or two objectives of your own if you like
-    - how you'll know if it's going well
-  Keep it short â€” a paragraph and a list is fine.
-3. **Weekly updates**: Include a brief project update in your weekly reflection.
+2. **What Success Looks Like**:
+    - Submit a short document with:
+        - what you're doing
+        - which [course objectives](/objectives-376) it will demonstrate and how; also write one or two objectives of your own if you like
+        - how you'll know if it's going well
+        - how it's going so far (if you have started)
+    - Keep it short.
+3. **Weekly updates**: Include a brief project update in your weekly reflection. If you need timely feedback, message the instructor directly on Teams or email.
 4. **Final deliverables**: See below.
 
 ## Final Deliverables
@@ -113,7 +115,7 @@ Every project must meet these to count as submitted:
 
 Your proposal specifies which objectives the project demonstrates. Your reflection self-assesses whether it does. The instructor will confirm or adjust.
 
-Demonstrating an objective in the project counts as meeting it at **M (Met)** level.
+Demonstrating an objective in the project counts as meeting it at **M (Met)** level, and demonstrating it well counts as **E (Exemplary)**. See the [syllabus](/syllabus) for the criteria for each level.
 
 ### Holistic quality
 
