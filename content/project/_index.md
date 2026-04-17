@@ -25,9 +25,14 @@ You're also encouraged to write *additional* objectives beyond the course list �
 
 ## Milestones
 
-1. **Proposal** (due early): Submit a short document with: (a) what you're doing, (b) which course objectives it will demonstrate and how, (c) how you'll know if it's going well. Keep it short — a paragraph and a list is fine.
-2. **Weekly updates**: Include a brief project update in your weekly reflection.
-3. **Final deliverables**: See below.
+1. **Ideas and Team Selection**: Pick a team, make an initial proposal, and get feedback from the instructor.
+2. **What Success Looks Like**: Submit a short document with:
+    - what you're doing
+    - which [course objectives](/objectives-376) it will demonstrate and how; also write one or two objectives of your own if you like
+    - how you'll know if it's going well
+  Keep it short — a paragraph and a list is fine.
+3. **Weekly updates**: Include a brief project update in your weekly reflection.
+4. **Final deliverables**: See below.
 
 ## Final Deliverables
 
@@ -35,7 +40,7 @@ You're also encouraged to write *additional* objectives beyond the course list �
 
 The final course meeting (during the designated final exam period) will be devoted to presentations. **Attendance is mandatory.**
 
-Aim for 5 minutes. Slides are helpful but not required (you could scroll through a notebook). All team members should participate.
+Aim for 5-10 minutes. Slides are helpful but not required (you could scroll through a notebook). All team members should participate.
 
 {{% details summary="Suggested outline" %}}
 
@@ -69,6 +74,7 @@ This is a starting point — adjust for your project.
 - **Limitations and future work**: be specific. Not "I ran out of time to do X" but "these results assume Y, which might not hold when..."
 
 Checklist:
+
 - [ ] Explains *why* you made various decisions
 - [ ] Backs up claims with evidence (numbers, examples)
 - [ ] Cites sources for any ideas not your own
@@ -118,8 +124,11 @@ In your reflection, you'll propose a holistic grade (A/B/C/D) based on the portf
 - **C** — could include it, but not if you have stronger work
 - **D** — probably not portfolio-worthy
 
-The main ways to get to A or B:
-- Go **below the surface** on something: analyze what the model is actually doing, not just what it outputs
+Some ways to get to A or B:
+
+- Go **under the hood** on something: analyze what the model is actually doing, not just what it outputs
 - **Evaluate meaningfully**: qualitative + quantitative, and connect numbers back to the real problem
 - **Make and justify decisions**: explain why you made the choices you did, and what the alternatives were
 - **Specific limitations**: not generic concerns, but concrete examples tied to your project
+
+You're strongly encouraged to reach out to the instructor for feedback on your progress regularly.
