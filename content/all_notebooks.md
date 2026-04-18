@@ -1,6 +1,6 @@
 ---
 title: "Notebooks Index"
-revised: 2025
+revised: 2026
 ---
 
 ## Goal
