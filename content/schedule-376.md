@@ -613,20 +613,10 @@ Another nice reading (about training data), but the server seems down: [Models A
 - [An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale | Abstract](https://arxiv.org/abs/2010.11929)
 
 {{% /details %}}
-{{% details summary="Resources" %}}
-- A [minimalist diffusion model](https://ggx-research.github.io/publication/2023/05/10/publication-iadb.html) (just two tricky concepts, but after that it's pretty accessible; check out the two tutorials linked at the top)
-- A video on the [Manifold Hypothesis](https://www.youtube.com/watch?v=BePQBWPnYuE)
-- [Generative Modeling by Estimating Gradients of the Data Distribution | Yang Song](http://yang-song.net/blog/2021/score/) (mathy, but has good animated diagrams)
-
-(some of these are drawn from the replies to [this X/twitter post](https://twitter.com/srush_nlp/status/1740756730307629530))
-
-Also, many people refer to [this blog post](https://lilianweng.github.io/posts/2021-07-11-diffusion-models/) by Lilian Weng.
-
-{{% /details %}}
 {{% /calendar-week-header %}}
 {{% calendar-day dow="Monday" date="2026-04-20" %}}
 - Assign [Discussion 376.4: Fans and Skeptics](/units/13multimodal/discussion/) (posts due Mon Apr 27, replies due Thu Apr 30; we'll share in class W7 Fri)
-- Probably guest lecture (Ken is traveling)
+- Guest lecture from Prof Santos (Ken is traveling)
 
 {{% /calendar-day %}}
 

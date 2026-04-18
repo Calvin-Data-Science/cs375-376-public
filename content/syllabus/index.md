@@ -184,20 +184,24 @@ In a [final "Journal" assignment](/final-journal/), students will propose a fina
 
 #### Skills: Proficiency-Based Grading
 
-The core of the grading system is based on the specific learning objectives for the course. Each objective will be assessed multiple times throughout the course, and students will have multiple opportunities to meet each objective.
+The core of the grading system is based on the specific learning objectives for the course. See the objectives pages for [CS 375](/objectives-375) and [CS 376](/objectives-376) for details. Each objective will be assessed multiple times throughout the course, and students will have multiple opportunities to meet each objective.
 
 - Students can meet objectives at three levels: "progressing" (P), "met" (M), and "excellent" (E).
-  - The Progressing (P) level can be met by assignments (such as lab notebooks and discussion forums).
+  - Assignments such as lab notebooks, homework assignments, and discussion forums can demonstrate objectives at the Progressing (P) level.
   - The Met (M) level requires either an *in-class quiz* or a self-directed *project*.
-  - The E level is given at instructor discretion to work that demonstrates understanding, strategy, or disposition that is likely to generalize robustly beyond this scope of course. As a concrete example, a successful interview for a ML-centered job would demonstrate E-level completion of an objective.
+  - There are several ways to achieve an **Excellent** (E) level on an objective:
+    1. Most objectives have multiple *criteria*, and quizzes and assignments often don't address every criterion. Students can achieve the **Excellent** (E) level by making clear arguments (on the Final Journal or in an instructor meeting) that they have demonstratde robust understanding across all of the criteria.
+    2. A particularly clear *communication* of the concept can demonstrate E-level understanding, even if it does not address every criterion, at the discretion of the instructor.  
+    3. The instructor may also award an E to work that demonstrates understanding, strategy, or disposition that is likely to generalize robustly beyond this scope of course. As a concrete example, a successful interview for a ML-centered job would demonstrate E-level completion of an objective.
   - The instructor may limit the number of objectives that can become Met in a given week. So students are strongly encouraged to Meet objectives promptly.
 - We will aggregate these objective levels in a way that encourages students to aim for M-level completion of most objectives, with some room for P-level completion and some room for E-level completion. Last year we computed this as the mean of all objectives scores, where 0 = not addressed, 1 = P achieved one time, 2 = P achieved 2 times, 3 = M achieved, 4 = E achieved. This average (0-4) will then be rescaled to the 0-100 scale such that 1 = 68% (D+), 2 = 78% (C+), 3 = 88% (B+), 4 = 100% (A+).
 
-![EMP rubric](https://kurmasgvsu.github.io/Teaching/Courses/F24/CIS500/EMPNrubric_notYet.png) by Zach Kurmas at GVSU
+This grading scheme is adapted from the EMPN rubric used by Zach Kurmas at GVSU:
+![](https://kurmasgvsu.github.io/Teaching/Courses/F24/CIS500/EMPNrubric_notYet.png)
 
 The proposed weight for this component is 70% of the course grade.
 
-### Effort Hours
+### Effort Hours (CS 375 only)
 
 > In-person, 2-credit courses will typically have a ... 195 (3 x 65) minutes of class time and 8 hours of out-of-class student work per week over an 8-week half-semester. Source: [Definition of a Credit Hour](https://calvin.edu/sites/default/files/2025-01/Definition%20of%20a%20credit%20hour%2C%20including%20specific%20considerations%20for%20distance%20learning.pdf), based on [34 CFR 600.2](https://www.ecfr.gov/current/title-34/subtitle-B/chapter-VI/part-600/subpart-A/section-600.2)
 
@@ -206,6 +210,12 @@ Each week, your weekly reflection should account for how you spent each of the 8
 To allow for flexibility between lighter and heavier weeks (since things come up) while still encouraging consistent effort, we will allow a **maximum of 12 hours** reported each week.
 
 Effort grades are computed as total hours divided by total possible hours (7 weeks * 8 hours per week = 56 hours). The proposed weight for this component is 20% of the course grade.
+
+## Project (CS 376 only)
+
+In CS 376, students will have the opportunity to work on a project of their choice that allows them to demonstrate their learning in a way that is meaningful to them. The project can be used to demonstrate course objectives, but it also contributes holistically to the course grade. See the [project description](/project/) for more details on the grading.
+
+The proposed weight for this component is 20% of the course grade.
 
 ### Community
 
@@ -218,7 +228,7 @@ Every student should be able to identify at least 3 substantial contributions to
 - Leading an opening devotion.
 - Providing substantial feedback on others' work.
 
-The community grade component is computed as `min(1, x/3)`, where `x` is the number of contributions (subject to the limit of 2 per type). The proposed weight for this component is 10% of the final course grade. (Since the course staff did not support the logistics of this component in Spring 2026, students may choose to opt out of this component, in which case the weight will be redistributed to the other two components.)
+The community grade component is computed as `min(1, x/3)`, where `x` is the number of contributions (subject to the limit of 2 per type). The proposed weight for this component is 10% of the final course grade.
 
 ### Are Incomplete grades offered?
 
