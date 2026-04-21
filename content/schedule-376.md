@@ -629,7 +629,6 @@ Another nice reading (about training data), but the server seems down: [Models A
   - [Overall-LLM-Failures](objective)
   - [TM-SelfAttention](objective) *(deeper)*
   - [TM-TransformerDataFlow](objective)
-  - [OG-LLM-Train](objective)
 
 {{% /calendar-day %}}
 
@@ -660,6 +659,7 @@ Another nice reading (about training data), but the server seems down: [Models A
 {{% calendar-day dow="Wednesday" date="2026-04-29" %}}
 - Interpretability and Explanation ([slides](/slides/w13-Explainable%20and%20Usable.pdf))
 - Quiz 3
+  - [OG-LLM-Train](objective)
 
 {{% /calendar-day %}}
 
