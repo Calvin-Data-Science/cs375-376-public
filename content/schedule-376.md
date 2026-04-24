@@ -633,13 +633,14 @@ Another nice reading (about training data), but the server seems down: [Models A
 
 {{% calendar-day dow="Friday" date="2026-04-24" %}}
 - Tech Update
-- Quiz 2 review
 - Can you do [this lab](https://cs.calvin.edu/courses/cs/108/26sp/units/13/lab/)?
 - Training Pipeline and Reward Design:
   - [Slides](/slides/w13.html)
   - More details: [rlhfbook.com Ch. 6](https://rlhfbook.com/c/06-policy-gradients)
 - Handout: [Training from Rollouts](/handouts/2026_04_24.pdf)
   - Addresses [OG-LLM-Train](objective), [OG-Theory-Feedback](objective), and (somewhat) [Overall-LLM-Failures](objective)
+- [How LLMs work](https://ynarwal.github.io/how-llms-work/) interactive
+  - Also see the [softmax/cross-entropy interactive](https://observablehq.com/@kcarnold/softmax)
 
 {{% /calendar-day %}}
 
@@ -656,6 +657,7 @@ Another nice reading (about training data), but the server seems down: [Models A
 {{% calendar-day dow="Monday" date="2026-04-27" %}}
 Focus: [Overall-LLM-Failures](objective) + [OG-LLM-Eval](objective)
 
+- Quiz 2 review
 - Brief diffusion / multimodal concept tour (~10 min)
   - Generative Models, Diffusion [Slides](/slides/w12%20Multimodal%20Generation.pdf)
 - Framing (~10 min): "Working well for whom?" — aggregate accuracy vs disaggregated error rates; connection to [OG-SelfSupervised](objective) (pretraining distribution shapes who the model is good at)
