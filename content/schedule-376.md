@@ -624,9 +624,7 @@ Another nice reading (about training data), but the server seems down: [Models A
 {{% calendar-day dow="Wednesday" date="2026-04-22" %}}
 - Quiz 2 (proctored — Ken traveling): Looking for evidence of learning about:
   - [OG-LLM-Prompting](objective)
-  - [OG-LLM-ContextAndTools](objective)
   - [OG-LLM-Eval](objective)
-  - [Overall-LLM-Failures](objective)
   - [TM-SelfAttention](objective) *(deeper)*
   - [TM-TransformerDataFlow](objective)
 
@@ -634,7 +632,13 @@ Another nice reading (about training data), but the server seems down: [Models A
 
 
 {{% calendar-day dow="Friday" date="2026-04-24" %}}
-- Training pipeline: RLHF, RLVR, etc.
+- Tech Update
+- Quiz 2 review
+- Training Pipeline and Reward Design:
+  - [Slides](/slides/w13.html)
+  - More details: [rlhfbook.com Ch. 6](https://rlhfbook.com/c/06-policy-gradients)
+- Handout: [Training from Rollouts](/handouts/2026_04_24.pdf)
+  - Addresses [OG-LLM-Train](objective), [OG-Theory-Feedback](objective), and (somewhat) [Overall-LLM-Failures](objective)
 
 {{% /calendar-day %}}
 
@@ -649,9 +653,16 @@ Another nice reading (about training data), but the server seems down: [Models A
 {{% calendar-week-header %}}
 {{% /calendar-week-header %}}
 {{% calendar-day dow="Monday" date="2026-04-27" %}}
-- Diffusion and multimodal models (~20 min conceptual overview)
+Focus: [Overall-LLM-Failures](objective) + [OG-LLM-Eval](objective)
+
+- Brief diffusion / multimodal concept tour (~10 min)
   - Generative Models, Diffusion [Slides](/slides/w12%20Multimodal%20Generation.pdf)
-- Handout TODO from 2025_04_28 - Tokenization and Scaling Review
+- Framing (~10 min): "Working well for whom?" — aggregate accuracy vs disaggregated error rates; connection to [OG-SelfSupervised](objective) (pretraining distribution shapes who the model is good at)
+- Handout TODO: 2026_04_27 - Evaluating for Fairness
+  - Scenario: an LLM-powered system (e.g., resume screener, medical Q&A, customer-support chatbot) with a headline eval showing high accuracy
+  - Students critique: what's the eval measuring? what's it missing? how does pretraining explain predictable gaps? what would you change about the eval design?
+  - Addresses [Overall-LLM-Failures](objective) + [OG-LLM-Eval](objective) + reinforces [OG-SelfSupervised](objective)
+- Quiz 3 preview (~5 min): which objectives are on Wednesday, what to study
 
 {{% /calendar-day %}}
 
@@ -659,15 +670,21 @@ Another nice reading (about training data), but the server seems down: [Models A
 {{% calendar-day dow="Wednesday" date="2026-04-29" %}}
 - Interpretability and Explanation ([slides](/slides/w13-Explainable%20and%20Usable.pdf))
 - Quiz 3
+  - [OG-LLM-Eval](objective)
+  - [OG-LLM-ContextAndTools](objective)
+  - [Overall-LLM-Failures](objective)
   - [OG-LLM-Train](objective)
+  - maybe also: OG-LLM-Tokenization, TM-LLM-Embeddings, TM-TransformerDataFlow, TM-SelfAttention
 
 {{% /calendar-day %}}
 
 
 {{% calendar-day dow="Friday" date="2026-05-01" %}}
-- Handout TODO from 2025_05_02 - Wrap-Up
-- Discussion 376.4 sharing, comparing our survey to the results of the [Pew Research survey](https://www.pewresearch.org/internet/2025/04/03/how-the-us-public-and-ai-experts-view-artificial-intelligence/)
+Synthesis session — no new intro content. Discussion 376.4 sharing, fairness synthesis (building on Mon Apr 27 activity, not introducing), wrap-up.
 
+- Handout TODO from 2025_05_02 - Wrap-Up (adapt for 26sp)
+- Discussion 376.4 sharing, comparing our survey to the results of the [Pew Research survey](https://www.pewresearch.org/internet/2025/04/03/how-the-us-public-and-ai-experts-view-artificial-intelligence/)
+- Fairness synthesis — extend Mon's eval-critique into Christian perspectives on harm, stewardship, responsibility ([Overall-PhilNarrative](objective) / [Overall-Faith](objective))
 - Fairness and Wrap-Up [slides](/slides/w13-Fairness%20and%20Wrap-Up.pdf)
 
 Final Discussion topics
