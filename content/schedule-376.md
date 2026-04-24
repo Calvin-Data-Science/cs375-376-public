@@ -634,6 +634,7 @@ Another nice reading (about training data), but the server seems down: [Models A
 {{% calendar-day dow="Friday" date="2026-04-24" %}}
 - Tech Update
 - Quiz 2 review
+- Can you do [this lab](https://cs.calvin.edu/courses/cs/108/26sp/units/13/lab/)?
 - Training Pipeline and Reward Design:
   - [Slides](/slides/w13.html)
   - More details: [rlhfbook.com Ch. 6](https://rlhfbook.com/c/06-policy-gradients)
