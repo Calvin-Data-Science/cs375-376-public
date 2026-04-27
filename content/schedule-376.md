@@ -655,40 +655,44 @@ Another nice reading (about training data), but the server seems down: [Models A
 {{% calendar-week-header %}}
 {{% /calendar-week-header %}}
 {{% calendar-day dow="Monday" date="2026-04-27" %}}
-Focus: [Overall-LLM-Failures](objective) + [OG-LLM-Eval](objective)
+Course wrap-up, Part 1 — and Quiz 3 prep.
 
-- Quiz 2 review
-- Brief diffusion / multimodal concept tour (~10 min)
-  - Generative Models, Diffusion [Slides](/slides/w12%20Multimodal%20Generation.pdf)
-- Framing (~10 min): "Working well for whom?" — aggregate accuracy vs disaggregated error rates; connection to [OG-SelfSupervised](objective) (pretraining distribution shapes who the model is good at)
-- Handout TODO: 2026_04_27 - Evaluating for Fairness
-  - Scenario: an LLM-powered system (e.g., resume screener, medical Q&A, customer-support chatbot) with a headline eval showing high accuracy
-  - Students critique: what's the eval measuring? what's it missing? how does pretraining explain predictable gaps? what would you change about the eval design?
-  - Addresses [Overall-LLM-Failures](objective) + [OG-LLM-Eval](objective) + reinforces [OG-SelfSupervised](objective)
-- Quiz 3 preview (~5 min): which objectives are on Wednesday, what to study
+- Quiz 2 return and review
+- Slides: [CS 376 Review, Part 1](/slides/wrapup-376.html)
+  - From 375 to 376: one tunable machine, two stacked games
+  - Inside the LLM: [OG-LLM-Tokenization](objective), [TM-LLM-Embeddings](objective), [TM-SelfAttention](objective), [TM-TransformerDataFlow](objective), [TM-LLM-Generation](objective)
+  - Training the LLM: [OG-LLM-Train](objective), [OG-SelfSupervised](objective), [OG-Theory-Feedback](objective)
+  - Using the LLM: [OG-LLM-ContextAndTools](objective)
+  - Trusting the LLM: [OG-LLM-Eval](objective), then a discussion of when evaluation lies — Goodhart's Law, the layers problem, horror stories — [Overall-LLM-Failures](objective)
+- Handout: [Objectives Reflection](/handouts/2026_04_27.pdf)
+
+<!-- Pivoted from a fairness-as-eval handout to a wrap-up-style review mirroring wrapup-375.qmd. The discussion of when evaluation lies is the planned student-driven break in an otherwise teacher-centered review session — trigger is the OG-LLM-Eval slide. Handout was generated via src/gen_objectives_handout.py. -->
 
 {{% /calendar-day %}}
 
 
 {{% calendar-day dow="Wednesday" date="2026-04-29" %}}
-- Interpretability and Explanation ([slides](/slides/w13-Explainable%20and%20Usable.pdf))
 - Quiz 3
   - [OG-LLM-Eval](objective)
   - [OG-LLM-ContextAndTools](objective)
   - [Overall-LLM-Failures](objective)
   - [OG-LLM-Train](objective)
-  - maybe also: OG-LLM-Tokenization, TM-LLM-Embeddings, TM-TransformerDataFlow, TM-SelfAttention
+  - possibly also: OG-LLM-Tokenization, TM-LLM-Embeddings, TM-TransformerDataFlow, TM-SelfAttention
+
+<!-- Interpretability dropped as its own topic; Monday's eval-critique surfaces the relevant concerns. The Explainable-and-Usable-AI slides remain as optional reference for curious students. -->
 
 {{% /calendar-day %}}
 
 
 {{% calendar-day dow="Friday" date="2026-05-01" %}}
-Synthesis session — no new intro content. Discussion 376.4 sharing, fairness synthesis (building on Mon Apr 27 activity, not introducing), wrap-up.
+Course wrap-up, Part 2 — synthesis.
 
-- Handout TODO from 2025_05_02 - Wrap-Up (adapt for 26sp)
-- Discussion 376.4 sharing, comparing our survey to the results of the [Pew Research survey](https://www.pewresearch.org/internet/2025/04/03/how-the-us-public-and-ai-experts-view-artificial-intelligence/)
-- Fairness synthesis — extend Mon's eval-critique into Christian perspectives on harm, stewardship, responsibility ([Overall-PhilNarrative](objective) / [Overall-Faith](objective))
-- Fairness and Wrap-Up [slides](/slides/w13-Fairness%20and%20Wrap-Up.pdf)
+- [Overall-Impact](objective): stakeholders, distribution mismatch, feedback loops, recourse
+- Discussion 376.4 (Fans and Skeptics) sharing — compare with the [Pew Research survey](https://www.pewresearch.org/internet/2025/04/03/how-the-us-public-and-ai-experts-view-artificial-intelligence/)
+- Christian framing ([Overall-PhilNarrative](objective) / [Overall-Faith](objective)): stewardship, shalom, imago Dei, what it means for the machine to imitate us
+- Closing commission
+
+<!-- Part 2 deck still to draft — can extend wrapup-376.qmd or split into wrapup-376-pt2.qmd. Existing material to draw from: w13-Fairness and Wrap-Up.pdf, 2025_05_02 wrap-up handout (adapt for 26sp). -->
 
 Final Discussion topics
 
