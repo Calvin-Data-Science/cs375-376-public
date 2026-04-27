@@ -657,13 +657,14 @@ Another nice reading (about training data), but the server seems down: [Models A
 {{% calendar-day dow="Monday" date="2026-04-27" %}}
 Course wrap-up, Part 1 — and Quiz 3 prep.
 
-- Quiz 2 return and review
+- Quiz 2 review
 - Slides: [CS 376 Review, Part 1](/slides/wrapup-376.html)
   - From 375 to 376: one tunable machine, two stacked games
   - Inside the LLM: [OG-LLM-Tokenization](objective), [TM-LLM-Embeddings](objective), [TM-SelfAttention](objective), [TM-TransformerDataFlow](objective), [TM-LLM-Generation](objective)
   - Training the LLM: [OG-LLM-Train](objective), [OG-SelfSupervised](objective), [OG-Theory-Feedback](objective)
   - Using the LLM: [OG-LLM-ContextAndTools](objective)
   - Trusting the LLM: [OG-LLM-Eval](objective), then a discussion of when evaluation lies — Goodhart's Law, the layers problem, horror stories — [Overall-LLM-Failures](objective)
+  - One more for color: [An AI agent deleted our production database. The agent's confession is below](https://x.com/lifeof_jer/status/2048103471019434248) [(hn)](https://news.ycombinator.com/item?id=47911524)
 - Handout: [Objectives Reflection](/handouts/2026_04_27.pdf)
 
 <!-- Pivoted from a fairness-as-eval handout to a wrap-up-style review mirroring wrapup-375.qmd. The discussion of when evaluation lies is the planned student-driven break in an otherwise teacher-centered review session — trigger is the OG-LLM-Eval slide. Handout was generated via src/gen_objectives_handout.py. -->
