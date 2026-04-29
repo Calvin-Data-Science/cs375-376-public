@@ -673,6 +673,9 @@ Course wrap-up, Part 1 — and Quiz 3 prep.
 
 
 {{% calendar-day dow="Wednesday" date="2026-04-29" %}}
+- Reminder about Discussion 376.4: Fans and Skeptics (posts due Mon Apr 27, replies due Thu Apr 30; we'll share in class on Fri)
+- Review Handout from last week on training and reward design
+  - Handout: [Training from Rollouts](/handouts/2026_04_24.pdf)
 - Quiz 3
   - [OG-LLM-Eval](objective)
   - [OG-LLM-ContextAndTools](objective)
