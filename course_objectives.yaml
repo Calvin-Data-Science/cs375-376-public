@@ -353,7 +353,7 @@
   description: I can describe the overall process of training a state-of-the-art dialogue LLM such as Llama or OLMo.
   notes: |
     Scaling-laws narrative (Chinchilla, emergent abilities) captured here rather than as a separate
-    TM-Scaling objective (D12 resolved 26sp).
+    TM-Scaling objective.
   criteria:
     - I can identify the three main stages of training (pretraining, supervised fine-tuning, RLHF/RLVR) and what each accomplishes.
     - I can explain what data is used at each stage and where human input enters the process.
