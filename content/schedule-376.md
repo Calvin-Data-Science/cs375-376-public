@@ -691,12 +691,15 @@ Course wrap-up, Part 1 — and Quiz 3 prep.
 {{% calendar-day dow="Friday" date="2026-05-01" %}}
 Course wrap-up, Part 2 — synthesis.
 
-- [Overall-Impact](objective): stakeholders, distribution mismatch, feedback loops, recourse
-- Discussion 376.4 (Fans and Skeptics) sharing — compare with the [Pew Research survey](https://www.pewresearch.org/internet/2025/04/03/how-the-us-public-and-ai-experts-view-artificial-intelligence/)
-- Christian framing ([Overall-PhilNarrative](objective) / [Overall-Faith](objective)): stewardship, shalom, imago Dei, what it means for the machine to imitate us
-- Closing commission
+- Course evaluations (first thing)
+- Slides: [CS 376 Review, Part 1](/slides/wrapup-376.html) (Part 2 — extends Monday's deck)
+  - Practical takeaways: discern demo from reliable system; data ≠ reality ≠ ideal; eval quant + qual, then critique the eval; be careful what you hand over (Replit-deletes-prod, vibe-coding, computer-use agents)
+  - [Overall-Impact](objective): stakeholders, distribution mismatch, feedback loops, recourse
+  - Discussion 376.4 (Fans and Skeptics) sharing — compare with the [Pew Research survey](https://www.pewresearch.org/internet/2025/04/03/how-the-us-public-and-ai-experts-view-artificial-intelligence/)
+  - Christian framing ([Overall-PhilNarrative](objective) / [Overall-Faith](objective)): data-rich world, image of God, misuse of intelligence, redemption, when the machine imitates us
+  - Closing commission
 
-<!-- Part 2 deck still to draft — can extend wrapup-376.qmd or split into wrapup-376-pt2.qmd. Existing material to draw from: w13-Fairness and Wrap-Up.pdf, 2025_05_02 wrap-up handout (adapt for 26sp). -->
+<!-- Part 2 lives in wrapup-376.qmd starting at the `# Friday` section. -->
 
 Final Discussion topics
 
