@@ -55,23 +55,16 @@ For each contribution, briefly describe what you did and why you think it was su
 
 ### Tentative Course Grade
 
-Compute your proposed course grade using the weights from the syllabus (*correction: using the following softmax-style computation*).
+Compute your proposed course grade using the weights from the syllabus, or propose your own weights if you think that would be more fair. Show your work:
 
 1. Construct a vector of your scores for each of the three components (Skills, Project, Community), scaled to 0-100. For example, if you had 88% for Skills, 90% for Project, and 100% for Community, your vector would be `[88, 90, 100]`.
-2. Construct a vector of logits for each of the three components (Skills, Project, Community) as, roughly, `logits_base = [0, -1.25, -1.95]`. (Note that `np.exp(logits_base)` gives the weights 70%, 20%, 10%.) Then adjust the Community logit as needed, e.g., set it to something like `-10` if you opted out, `-3` if you had one contribution, `-2.5` if you had two contributions, and `-1.95` (no adjustment) if you had three contributions.
-
-Then compute your weights as `weights = np.exp(logits) / np.exp(logits).sum()`, and your overall grade as `grade = (weights * scores).sum()`. Show the calculation. For example:
+2. Compute your final grade as a weighted average of these scores. For example, if you use the syllabus weights (70% Skills, 20% Project, 10% Community), you would compute it as follows:
 
 ```
 scores = [88, 90, 100]
-logits = np.array([0, -1.25, -1.95])
-logits[2] = -3 # (one Community contribution)
-weights = np.exp(logits) / np.exp(logits).sum()
-print(weights.round(2))
-[0.75, 0.21, 0.04]
+weights = [0.70, 0.20, 0.10]
 grade = np.dot(weights, scores)
 print(grade.round(2))
-88.93
 ```
 
 Finally: **what grade does this correspond to, and do you think it's a fair reflection of what you have learned in this class?** If you want to argue for a different grade than the formula gives, make your case.
