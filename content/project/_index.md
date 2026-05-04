@@ -46,6 +46,8 @@ Aim for 5-10 minutes. Slides are helpful but not required (you could scroll thro
 
 {{% details summary="Suggested outline" %}}
 
+Your outline should be driven by the story of your project, not a specific order, but the following elements might apply to some projects:
+
 - **What problem** are you trying to solve, and why does it matter?
 - **How you approached it**: how you framed it as an ML problem, what model/data you used
 - **What results** you got — both numbers and specific examples
@@ -53,6 +55,8 @@ Aim for 5-10 minutes. Slides are helpful but not required (you could scroll thro
 - **Limitations and what you'd do next**
 
 {{% /details %}}
+
+Ideally the presentation would *teach us something* about a topic or application area that we didn't discuss thoroughly in class.
 
 ### Technical Report
 
