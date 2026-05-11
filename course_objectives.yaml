@@ -146,7 +146,8 @@
 
 - id: TM-Architectures
   pillar: Tuneable Machines
-  class: 376-bonus
+  class: 376
+  status: optional
   description: I can compare and contrast the following neural architectures - CNN, RNN, and Transformer.
   criteria:
     - I can describe at least one strength and one limitation of each architecture for sequence modeling.
@@ -363,6 +364,7 @@
 - id: OG-Theory-Feedback
   pillar: Optimization Games
   class: 376
+  status: optional
   description: I can explain how feedback tuning can improve the performance and reliability of a model or agent.
   criteria:
     - I can explain the basic RLHF loop (generate samples → collect preferences → train reward model → optimize policy).
