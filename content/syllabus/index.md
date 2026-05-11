@@ -74,7 +74,6 @@ Upon successful completion of this course, students will be able to:
     - TM-SelfAttention
     - TM-TransformerDataFlow
     - TM-LLM-Generation
-    - TM-Architectures (bonus)
 2. **Describe the approach and computational requirements** of training and using modern generative AI systems, including pre-training, tuning, and learning from feedback
     - OG-LLM-Train
     - OG-SelfSupervised
