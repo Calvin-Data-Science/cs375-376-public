@@ -7,11 +7,8 @@ revised: 2026
 Objectives addressed:
 
 - [OG-LLM-Tokenization](objective)
-- [TM-LLM-Embeddings](objective)
 - [TM-LLM-Generation](objective)
 - [OG-SelfSupervised](objective)
-- [OG-LLM-APIs](objective)
-- [OG-LLM-Pretrained](objective)
 - [OG-LossFunctions](objective)
 
 Work through this notebook today to learn about what the outputs of a language model look like. You'll see how it's a token-by-token classification model.
