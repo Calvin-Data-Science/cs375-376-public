@@ -6,10 +6,9 @@ revised: 2026
 
 Objectives addressed:
 
-- [OG-LLM-Tokenization](objective)
-- [TM-LLM-Generation](objective)
-- [OG-SelfSupervised](objective)
-- [OG-LossFunctions](objective)
+- [OG-LLM-Tokenization](objective): the tokenization process in language models, including how text is converted into tokens
+- [TM-LLM-Generation](objective): the architecture and data flow of a causal language model, including how it generates outputs one token at a time based on previous tokens
+- [OG-SelfSupervised](objective): the optimization game of minimizing surprise (cross-entropy loss) on next-token prediction
 
 Work through this notebook today to learn about what the outputs of a language model look like. You'll see how it's a token-by-token classification model.
 
